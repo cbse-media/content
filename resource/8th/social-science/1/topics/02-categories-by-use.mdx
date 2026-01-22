@@ -31,18 +31,21 @@ Energy is the cornerstone of modern civilization. It powers buildings, transport
 *   **Renewables:** Sunlight, wind, flowing water.
 
 ```mermaid
-mindmap
+graph TD
   root((Use-Based Categories))
-    Essential for Life
-      Air
-      Water
-      Food/Soil
-    Materials
-      Wood
-      Metals like Iron/Gold
-      Stone like Marble
-    Energy
-      Fossil Fuels
-      Solar/Wind
-      Hydro
+  root --> Essential[Essential for Life]
+  root --> Materials
+  root --> Energy
+
+  Essential --> Air
+  Essential --> Water
+  Essential --> FoodSoil[Food/Soil]
+
+  Materials --> Wood
+  Materials --> Metals["Metals like Iron/Gold"]
+  Materials --> Stone["Stone like Marble"]
+
+  Energy --> FossilFuels[Fossil Fuels]
+  Energy --> SolarWind[Solar/Wind]
+  Energy --> Hydro
 ```

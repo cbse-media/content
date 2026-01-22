@@ -21,30 +21,17 @@ India is a vast country, so it is impossible to manage everything from one place
 
 <div class="flex justify-center my-6">
   <svg width="400" height="320" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
-    {/* Definitions for text clarity */}
-    <defs>
-      <style>
-        .label { font-family: sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; fill: currentColor; }
-        .desc { font-family: sans-serif; font-size: 12px; text-anchor: middle; fill: currentColor; opacity: 0.8; }
-        .shape { stroke: currentColor; stroke-width: 2; fill: none; }
-      </style>
-    </defs>
-
-    {/* Triangle Segments */}
-    {/* Top Tier: Central */}
-    <path d="M200,20 L150,110 L250,110 Z" class="shape" />
-    <text x="200" y="70" class="label">CENTRAL GOVERNMENT</text>
-    <text x="200" y="90" class="desc">(National Level)</text>
-
-    {/* Middle Tier: State */}
-    <path d="M150,110 L100,200 L300,200 L250,110 Z" class="shape" />
-    <text x="200" y="160" class="label">STATE GOVERNMENT</text>
-    <text x="200" y="180" class="desc">(Regional Level)</text>
-
-    {/* Bottom Tier: Local */}
-    <path d="M100,200 L50,290 L350,290 L300,200 Z" class="shape" />
-    <text x="200" y="250" class="label">LOCAL GOVERNMENT</text>
-    <text x="200" y="270" class="desc">(Town/Village Level)</text>
+    <g stroke="currentColor" stroke-width="2" fill="none">
+      <path d="M200,20 L150,110 L250,110 Z" />
+      <path d="M150,110 L100,200 L300,200 L250,110 Z" />
+      <path d="M100,200 L50,290 L350,290 L300,200 Z" />
+    </g>
+    <text x="200" y="70" font-family="sans-serif" font-size="14px" font-weight="bold" text-anchor="middle" fill="currentColor">CENTRAL GOVERNMENT</text>
+    <text x="200" y="90" font-family="sans-serif" font-size="12px" text-anchor="middle" fill="currentColor" opacity="0.8">(National Level)</text>
+    <text x="200" y="160" font-family="sans-serif" font-size="14px" font-weight="bold" text-anchor="middle" fill="currentColor">STATE GOVERNMENT</text>
+    <text x="200" y="180" font-family="sans-serif" font-size="12px" text-anchor="middle" fill="currentColor" opacity="0.8">(Regional Level)</text>
+    <text x="200" y="250" font-family="sans-serif" font-size="14px" font-weight="bold" text-anchor="middle" fill="currentColor">LOCAL GOVERNMENT</text>
+    <text x="200" y="270" font-family="sans-serif" font-size="12px" text-anchor="middle" fill="currentColor" opacity="0.8">(Town/Village Level)</text>
   </svg>
 </div>
 

@@ -19,25 +19,29 @@ Almost every part of the country relies on a specific set of grains and pulses. 
 #### Classification of Indian Staples
 
 ```mermaid
-mindmap
+graph TD
   root((Staple Foods))
-    Cereals
-      Rice
-      Wheat
-      Barley
-    Millets
-      Bajra (Pearl Millet)
-      Jowar (Sorghum)
-      Ragi (Finger Millet)
-    Pulses
-      Dals (Lentils)
-      Rajma (Kidney Beans)
-      Chickpeas
-    Spices
-      Turmeric
-      Cumin
-      Cardamom
-      Ginger
+  root --> Cereals
+  root --> Millets
+  root --> Pulses
+  root --> Spices
+
+  Cereals --> Rice
+  Cereals --> Wheat
+  Cereals --> Barley
+
+  Millets --> Bajra["Bajra (Pearl Millet)"]
+  Millets --> Jowar["Jowar (Sorghum)"]
+  Millets --> Ragi["Ragi (Finger Millet)"]
+
+  Pulses --> Dals["Dals (Lentils)"]
+  Pulses --> Rajma["Rajma (Kidney Beans)"]
+  Pulses --> Chickpeas
+
+  Spices --> Turmeric
+  Spices --> Cumin
+  Spices --> Cardamom
+  Spices --> Ginger
 ```
 
 ### The Diversity: Regional Variations
@@ -50,4 +54,4 @@ The unity lies in the *ingredients*, while the diversity lies in the *preparatio
 **Conclusion:** The same ingredients (**Unity**) are used in endless combinations to prepare a vast variety of dishes (**Diversity**).
 </Callout>
 
-![Detailed map of India showing regions and their associated crops like Rice, Wheat, and Millets](./placeholder.png)
+![Detailed map of India showing regions and their associated crops like Rice, Wheat, and Millets](/placeholder.png)

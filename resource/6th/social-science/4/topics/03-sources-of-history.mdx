@@ -16,34 +16,41 @@ Historians act like detectives. They use "sources"—clues left behind by people
 ### Classification of Sources
 
 ```mermaid
-mindmap
+graph TD
   root((SOURCES OF HISTORY))
-    Archaeological Sources
-      Structures
-        Monuments
-        Mounds
-      Inscriptions
-        Copper plates
-        Manuscripts
-      Excavations
-        Pottery and toys
-        Tools and weapons
-        Figurines
-    Literary Sources
-      Indian Literature
-        Vedas and Itihasas
-        Scientific texts
-        Poems and plays
-      Foreign Accounts
-        Travelogues
-        Chronicles
-    Artistic Sources
-      Paintings
-      Sculptures
-      Panels
-    Oral Sources
-      Folklore
-      Genealogical records
+  root --> Arch[Archaeological Sources]
+  root --> Lit[Literary Sources]
+  root --> Art[Artistic Sources]
+  root --> Oral[Oral Sources]
+
+  Arch --> Structures
+  Structures --> Monuments
+  Structures --> Mounds
+
+  Arch --> Inscriptions
+  Inscriptions --> CopperPlates[Copper plates]
+  Inscriptions --> Manuscripts
+
+  Arch --> Excavations
+  Excavations --> PotteryToys[Pottery and toys]
+  Excavations --> ToolsWeapons[Tools and weapons]
+  Excavations --> Figurines
+
+  Lit --> Indian[Indian Literature]
+  Indian --> VedasItihasas[Vedas and Itihasas]
+  Indian --> ScientificTexts[Scientific texts]
+  Indian --> PoemsPlays[Poems and plays]
+
+  Lit --> Foreign[Foreign Accounts]
+  Foreign --> Travelogues
+  Foreign --> Chronicles
+
+  Art --> Paintings
+  Art --> Sculptures
+  Art --> Panels
+
+  Oral --> Folklore
+  Oral --> Records[Genealogical records]
 ```
 
 ## Types of Evidence

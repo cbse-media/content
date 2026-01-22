@@ -18,23 +18,27 @@ At the end of the Neolithic period, humans began settling down and farming. Howe
 For a society to be termed a **civilisation**, it generally possesses the following features:
 
 ```mermaid
-mindmap
+graph TD
   root((Civilisation))
-    Urbanism
-      Town Planning
-      Cities
-      Drainage Systems
-    Governance
-      Administration
-      Management of resources
-    Economy
-      Productive Agriculture
-      Trade (Internal & External)
-      Craft Specialization
-    Culture
-      Writing/Script
-      Art & Architecture
-      Shared Ideas
+  root --> Urbanism
+  root --> Governance
+  root --> Economy
+  root --> Culture
+  
+  Urbanism --> TownPlanning[Town Planning]
+  Urbanism --> Cities
+  Urbanism --> DrainageSystems[Drainage Systems]
+  
+  Governance --> Administration
+  Governance --> ManagementOfResources[Management of resources]
+  
+  Economy --> ProductiveAgriculture[Productive Agriculture]
+  Economy --> Trade[Trade - Internal & External]
+  Economy --> CraftSpecialization[Craft Specialization]
+  
+  Culture --> Writing[Writing/Script]
+  Culture --> ArtArchitecture[Art & Architecture]
+  Culture --> SharedIdeas[Shared Ideas]
 ```
 
 1.  **Urbanism:** The growth of cities with town planning and public amenities (like drainage).

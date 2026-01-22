@@ -49,23 +49,28 @@ Finally, we look at Earth as a whole.
 *   **Climate Change:** Earth is at the "perfect distance" from the Sun, but human activity is disrupting this balance. We will discuss the urgent challenges of global warming.
 
 ```mermaid
-mindmap
+graph TD
   root((Grade 8 Science))
-    Micro World
-      Microbes
-      Health & Vaccines
-    Physics
-      Electricity
-      Force & Pressure
-      Light & Mirrors
-    Chemistry
-      Particles
-      Elements/Compounds
-      Solutions
-    Astronomy
-      Moon Phases
-      Calendars
-    Environment
-      Ecosystems
-      Climate Change
+  root --> Micro["Micro World"]
+  root --> Physics
+  root --> Chemistry
+  root --> Astronomy
+  root --> Environment
+
+  Micro --> Microbes
+  Micro --> HealthVaccines["Health & Vaccines"]
+
+  Physics --> Electricity
+  Physics --> ForcePressure["Force & Pressure"]
+  Physics --> LightMirrors["Light & Mirrors"]
+
+  Chemistry --> Particles
+  Chemistry --> ElementsCompounds["Elements/Compounds"]
+  Chemistry --> Solutions
+
+  Astronomy --> MoonPhases["Moon Phases"]
+  Astronomy --> Calendars
+
+  Environment --> Ecosystems
+  Environment --> ClimateChange["Climate Change"]
 ```

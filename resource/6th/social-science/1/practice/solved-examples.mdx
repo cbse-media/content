@@ -47,25 +47,30 @@ Based on the clues provided in the textbook:
 ## Social Science Themes (From Introduction)
 
 ```mermaid
-mindmap
+graph TD
   root((Social Science))
-    Theme A: Land and People
-      Geography
-      Maps
-      Environment
-    Theme B: Tapestry of the Past
-      History
-      Ancient India
-      Identities
-    Theme C: Cultural Heritage
-      Knowledge Traditions
-      Arts and Festivals
-    Theme D: Governance
-      Democracy
-      Local Government
-      Rights and Duties
-    Theme E: Economic Life
-      Value of Work
-      Livelihood
-      Resources
+  root --> ThemeA["Theme A: Land and People"]
+  root --> ThemeB["Theme B: Tapestry of the Past"]
+  root --> ThemeC["Theme C: Cultural Heritage"]
+  root --> ThemeD["Theme D: Governance"]
+  root --> ThemeE["Theme E: Economic Life"]
+
+  ThemeA --> Geography
+  ThemeA --> Maps
+  ThemeA --> Environment
+
+  ThemeB --> History
+  ThemeB --> AncientIndia[Ancient India]
+  ThemeB --> Identities
+
+  ThemeC --> KnowledgeTraditions[Knowledge Traditions]
+  ThemeC --> ArtsFestivals[Arts and Festivals]
+
+  ThemeD --> Democracy
+  ThemeD --> LocalGovernment[Local Government]
+  ThemeD --> RightsDuties[Rights and Duties]
+
+  ThemeE --> ValueOfWork[Value of Work]
+  ThemeE --> Livelihood
+  ThemeE --> Resources
 ```

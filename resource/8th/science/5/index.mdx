@@ -34,17 +34,20 @@ In this chapter, we explore how forces—pushes and pulls—govern the motion of
 | **Mass** | The amount of matter contained in an object. | Kilogram (kg) |
 
 ```mermaid
-mindmap
+graph TD
   root((Forces))
-    Contact Forces
-      Muscular Force
-      Friction
-    Non-Contact Forces
-      Magnetic Force
-      Electrostatic Force
-      Gravitational Force
-    Effects
-      Change Speed
-      Change Direction
-      Change Shape
+  root --> Contact[Contact Forces]
+  root --> NonContact[Non-Contact Forces]
+  root --> Effects
+
+  Contact --> Muscular[Muscular Force]
+  Contact --> Friction
+
+  NonContact --> Magnetic[Magnetic Force]
+  NonContact --> Electrostatic[Electrostatic Force]
+  NonContact --> Gravitational[Gravitational Force]
+
+  Effects --> ChangeSpeed[Change Speed]
+  Effects --> ChangeDirection[Change Direction]
+  Effects --> ChangeShape[Change Shape]
 ```
