@@ -1,0 +1,46 @@
+---
+title: "Floating and Sinking"
+description: "Why do some objects float? The role of density."
+date: 2025-01-15
+tags: ["floating", "buoyancy", "ice"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Rule of Floatation
+
+Whether an object floats or sinks depends (mostly) on its density relative to the fluid.
+
+*   **Float:** If Object Density < Fluid Density.
+*   **Sink:** If Object Density > Fluid Density.
+
+### Examples
+1.  **Wood vs Iron:** Wood floats on water ($<1 \text{ g/cm}^3$) while Iron sinks ($>1 \text{ g/cm}^3$).
+2.  **Oil on Water:** Oil floats because it is less dense than water.
+3.  **Ice on Water:** Ice floats because water expands when it freezes, making ice less dense than liquid water. This is crucial for aquatic life in winter!
+
+### The Egg Experiment
+*   **Fresh Water:** An egg sinks (Egg is denser than tap water).
+*   **Salt Water:** If you dissolve lots of salt, the water becomes denser. Eventually, the **Salt Water is denser than the egg**, and the egg floats!
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="250" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+    {/* Beaker */}
+    <rect x="50" y="50" width="100" height="150" fill="none" stroke="currentColor" stroke-width="2" />
+    {/* Water */}
+    <rect x="50" y="80" width="100" height="120" fill="#e0f7fa" opacity="0.5" />
+
+    {/* Egg Floating */}
+    <ellipse cx="100" cy="100" rx="20" ry="25" fill="#fff9c4" stroke="#fbc02d" stroke-width="2" />
+
+    {/* Salt Particles */}
+    <circle cx="60" cy="150" r="2" fill="gray" />
+    <circle cx="80" cy="180" r="2" fill="gray" />
+    <circle cx="120" cy="160" r="2" fill="gray" />
+    <circle cx="140" cy="190" r="2" fill="gray" />
+
+    <text x="100" y="220" text-anchor="middle" font-size="12">Floating Egg in Salt Water</text>
+  </svg>
+</div>

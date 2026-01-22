@@ -1,0 +1,38 @@
+---
+title: "Solutions: Sec 3.1 Numbers Telling Things"
+description: "Solutions to the children in a line puzzles."
+date: 2024-04-10
+tags: ["solutions", "sec-3.1"]
+order: 14
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 56: Figure It Out
+
+**Q1. Can the children rearrange themselves so that the children standing at the ends say ‘2’?**
+**Answer:** No.
+**Reasoning:** A child says '2' only if *both* neighbors are taller. Children at the ends of the line only have *one* neighbor. Therefore, they can say '0' (if taller than neighbor) or '1' (if shorter), but never '2'.
+
+**Q2. Can we arrange the children in a line so that all would say only 0s?**
+**Answer:** Yes.
+**Reasoning:** If all children are of the **exact same height**, then no neighbor is taller. The definition of '0' is "neither neighbor is taller".
+
+**Q4. There are 5 children of different heights. Can they stand such that four say ‘1’ and the last says ‘0’?**
+**Answer:** Yes.
+**Arrangement:** Ascending order (Shortest to Tallest).
+-   Child 1 (Shortest): Neighbor is taller. Says **1**.
+-   Child 2: Left is shorter, Right is taller. 1 neighbor taller. Says **1**.
+-   Child 3: Left is shorter, Right is taller. 1 neighbor taller. Says **1**.
+-   Child 4: Left is shorter, Right is taller. 1 neighbor taller. Says **1**.
+-   Child 5 (Tallest): Left is shorter. No right neighbor. 0 neighbors taller. Says **0**.
+
+**Q7. How would you rearrange five children so maximum number say '2'?**
+**Answer:**
+We want as many "valleys" (short children between tall ones) as possible.
+Arrangement: **Tall - Short - Tall - Short - Tall**
+-   Ends (Tall): Say 0.
+-   Inner Shorts: Both neighbors are Tall. They say **2**.
+-   Inner Tall (Middle): Both neighbors are Short. Says 0.
+Max number of '2's is **2**.

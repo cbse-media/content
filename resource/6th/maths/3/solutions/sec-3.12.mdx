@@ -1,0 +1,37 @@
+---
+title: "Solutions: Sec 3.12 Games"
+description: "Solutions to game strategy questions."
+date: 2024-04-10
+tags: ["solutions", "sec-3.12"]
+order: 22
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 72: Games
+
+**Game #2: Reach 99. Add 1-10.**
+**Strategy:**
+Target: 99. Step size: $10+1 = 11$.
+Winning numbers: $99, 88, 77, 66, 55, 44, 33, 22, 11$.
+**First move:** Say **11**.
+Then whatever opponent adds ($x$), you add ($11-x$).
+
+**Figure It Out (Page 72)**
+**Q3. 5-digit odd digits only (1, 3, 5, 7, 9).**
+Range: 35,000 to 75,000.
+Digits must be odd.
+-   **Largest:** Start with 7 (can't be 9, >75k). Next digits max possible: 9.
+    -   **73,999** (Wait, range is up to 75,000. 75,111 is > 75,000. 73,999 is valid).
+    -   *Correction from solutions:* Solution says 73,999.
+-   **Smallest:** Start with 3. Next digits min possible: 5 (wait, range starts at 35,000).
+    -   Min: **35,111**.
+-   **Closest to 50,000:**
+    -   Below: 39,999 (dist 10,001) - Wait, digits must be odd. 39,999 is valid.
+    -   Above: 51,111 (dist 1,111).
+    -   **Answer:** 51,111.
+
+**Q6. One 5-digit + Two 3-digit = 18,670.**
+Example: $18,000 + 335 + 335 = 18,670$.
+Textbook Example: $18,000 + 300 + 370$.

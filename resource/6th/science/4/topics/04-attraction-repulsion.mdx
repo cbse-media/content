@@ -1,0 +1,74 @@
+---
+title: "Attraction and Repulsion"
+description: "How magnets interact with each other and the sure test for magnetism."
+date: 2024-04-10
+tags: ["forces", "interaction", "repulsion"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Interaction Between Magnets
+
+When two magnets are brought close to each other, they exert a force on one another. The nature of this force depends on which poles are facing each other.
+
+### The Fundamental Law of Magnetism
+
+1.  **Like Poles Repel:**
+    *   North Pole (N) $\leftrightarrow$ North Pole (N) = **Repulsion** (Push away)
+    *   South Pole (S) $\leftrightarrow$ South Pole (S) = **Repulsion** (Push away)
+
+2.  **Unlike Poles Attract:**
+    *   North Pole (N) $\rightarrow \leftarrow$ South Pole (S) = **Attraction** (Pull together)
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+    {/* Case 1: Attraction */}
+    <text x="180" y="30" fill="currentColor" fontSize="16" fontWeight="bold">Attraction (Unlike Poles)</text>
+    
+    <rect x="50" y="50" width="100" height="30" fill="none" stroke="currentColor" strokeWidth="2" />
+    <text x="60" y="70" fill="currentColor" fontSize="14">S</text>
+    <text x="130" y="70" fill="currentColor" fontSize="14" fontWeight="bold">N</text>
+    
+    <rect x="250" y="50" width="100" height="30" fill="none" stroke="currentColor" strokeWidth="2" />
+    <text x="260" y="70" fill="currentColor" fontSize="14" fontWeight="bold">S</text>
+    <text x="330" y="70" fill="currentColor" fontSize="14">N</text>
+    
+    {/* Arrows for Attraction */}
+    <line x1="160" y1="65" x2="240" y2="65" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrow)" />
+    <path d="M 160 65 L 180 60 M 160 65 L 180 70" stroke="currentColor" fill="none"/>
+    <path d="M 240 65 L 220 60 M 240 65 L 220 70" stroke="currentColor" fill="none"/>
+
+    {/* Case 2: Repulsion */}
+    <text x="180" y="140" fill="currentColor" fontSize="16" fontWeight="bold">Repulsion (Like Poles)</text>
+    
+    <rect x="50" y="160" width="100" height="30" fill="none" stroke="currentColor" strokeWidth="2" />
+    <text x="60" y="180" fill="currentColor" fontSize="14">S</text>
+    <text x="130" y="180" fill="currentColor" fontSize="14" fontWeight="bold">N</text>
+    
+    <rect x="250" y="160" width="100" height="30" fill="none" stroke="currentColor" strokeWidth="2" />
+    <text x="260" y="180" fill="currentColor" fontSize="14" fontWeight="bold">N</text>
+    <text x="330" y="180" fill="currentColor" fontSize="14">S</text>
+
+    {/* Arrows for Repulsion */}
+    <line x1="155" y1="175" x2="185" y2="175" stroke="currentColor" strokeWidth="2" />
+    <path d="M 155 175 L 165 170 M 155 175 L 165 180" stroke="currentColor" fill="none"/>
+    
+    <line x1="245" y1="175" x2="215" y2="175" stroke="currentColor" strokeWidth="2" />
+    <path d="M 245 175 L 235 170 M 245 175 L 235 180" stroke="currentColor" fill="none"/>
+  </svg>
+</div>
+
+## Repulsion: The Sure Test
+
+How do you distinguish between a magnet and a simple iron bar?
+
+*   **Attraction is NOT a sure test:** A magnet attracts another magnet (unlike poles) AND it also attracts a simple iron piece. So, if an object is attracted, it could be a magnet OR just iron.
+*   **Repulsion IS a sure test:** Repulsion only happens between two magnets (like poles). An iron bar will never be repelled by a magnet. Therefore, if an object is repelled, it **must** be a magnet.
+
+<Callout variant="tip">
+**Summary:**
+*   Attraction $\rightarrow$ Magnet + Magnet (Unlike poles) **OR** Magnet + Magnetic Material.
+*   Repulsion $\rightarrow$ Magnet + Magnet (Like poles).
+</Callout>

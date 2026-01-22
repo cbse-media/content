@@ -1,0 +1,45 @@
+---
+title: "Solutions: Sec 3.8 Mental Math"
+description: "Solutions to mental math challenges."
+date: 2024-04-10
+tags: ["solutions", "sec-3.8"]
+order: 20
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 66: Figure It Out
+
+**Q1. Examples for scenarios**
+
+-   **5-digit + 5-digit > 90,250**
+    -   $50,000 + 50,000 = 100,000$.
+-   **5-digit - 5-digit < 56,503**
+    -   $60,000 - 50,000 = 10,000$.
+-   **4-digit + 4-digit = 6-digit sum**
+    -   Max 4-digit is 9999.
+    -   $9999 + 9999 = 19,998$.
+    -   This is a 5-digit number.
+    -   **Answer:** Impossible.
+
+## Page 67: Always, Sometimes, Never
+
+**a. 5-digit + 5-digit = 5-digit**
+-   $10,000 + 10,000 = 20,000$ (True).
+-   $90,000 + 90,000 = 180,000$ (False, gives 6-digit).
+-   **Answer:** Sometimes.
+
+**b. 4-digit + 2-digit = 4-digit**
+-   $1000 + 10 = 1010$ (True).
+-   $9999 + 10 = 10009$ (False, gives 5-digit).
+-   **Answer:** Sometimes (mostly true, except near boundary).
+
+**c. 4-digit + 2-digit = 6-digit**
+-   Max: $9999 + 99 = 10098$ (5-digit).
+-   **Answer:** Never.
+
+**d. 5-digit - 5-digit = 5-digit**
+-   $90,000 - 10,000 = 80,000$ (True).
+-   $10,001 - 10,000 = 1$ (False, gives 1-digit).
+-   **Answer:** Sometimes.

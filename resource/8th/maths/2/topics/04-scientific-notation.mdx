@@ -1,0 +1,60 @@
+---
+title: "Scientific Notation"
+description: "Standard form for writing very large or very small numbers."
+date: 2024-04-10
+tags: ["standard-form", "science", "notation"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Why Scientific Notation?
+
+In science, we deal with massive numbers (like the distance to stars) or tiny numbers (like the size of bacteria). Writing 20 zeroes is prone to error.
+
+**Scientific Notation** (or Standard Form) writes a number as:
+$$
+k \times 10^n
+$$
+Where:
+*   $1 \le k < 10$ (A number between 1 and 10)
+*   $n$ is an integer.
+
+## Examples
+
+### Large Numbers
+*   **Distance to Sun:** $149,600,000,000$ m
+*   Move decimal left 11 places to get 1.496.
+*   **Standard Form:** $1.496 \times 10^{11}$ m.
+
+### Converting to Standard Form
+1.  **5900** $\rightarrow$ $5.9 \times 1000 = 5.9 \times 10^3$
+2.  **80,00,000** $\rightarrow$ $8.0 \times 1000000 = 8 \times 10^6$
+
+## Comparisons in Space
+
+| Object Pair | Distance (m) | Scientific Notation |
+| :--- | :--- | :--- |
+| Sun - Earth | $149,600,000,000$ | $1.496 \times 10^{11}$ |
+| Sun - Saturn | $1,433,500,000,000$ | $1.4335 \times 10^{12}$ |
+
+To compare, look at the exponent first. $10^{12}$ is 10 times larger than $10^{11}$. So Saturn is roughly 10 times further from the Sun than Earth is.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+    <line x1="20" y1="50" x2="380" y2="50" stroke="currentColor" stroke-width="1" />
+
+    {/* Sun */}
+    <circle cx="20" cy="50" r="15" fill="orange" />
+    <text x="20" y="80" text-anchor="middle" font-size="10" fill="currentColor">Sun</text>
+
+    {/* Earth */}
+    <circle cx="80" cy="50" r="5" fill="blue" />
+    <text x="80" y="80" text-anchor="middle" font-size="10" fill="currentColor">Earth (10¹¹)</text>
+
+    {/* Saturn */}
+    <circle cx="350" cy="50" r="10" fill="gold" />
+    <text x="350" y="80" text-anchor="middle" font-size="10" fill="currentColor">Saturn (10¹²)</text>
+  </svg>
+</div>

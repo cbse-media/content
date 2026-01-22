@@ -1,0 +1,51 @@
+---
+title: "Hot or Cold?"
+description: "Understanding the limitations of our sense of touch in determining temperature."
+date: 2025-01-20
+tags: ["sense-of-touch", "heat", "activity"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Sense of Touch
+
+We know from experience that some bodies are hotter than others. Ice is cold, while boiling water is hot. Usually, we use our sense of touch to decide this. However, is our sense of touch reliable?
+
+### Activity: The Three Container Experiment
+
+To test the reliability of our touch, consider this classic experiment with three containers of water.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Container A: Hot */}
+    <rect x="50" y="50" width="100" height="120" rx="10" ry="10" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M50 80 Q100 90 150 80 V160 Q100 170 50 160 Z" fill="#ffcccb" opacity="0.5"/>
+    <text x="100" y="190" text-anchor="middle" fill="currentColor" font-weight="bold">A (Hot)</text>
+    
+    {/* Container B: Mix */}
+    <rect x="200" y="50" width="100" height="120" rx="10" ry="10" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M200 80 Q250 90 300 80 V160 Q250 170 200 160 Z" fill="#e0e0e0" opacity="0.5"/>
+    <text x="250" y="190" text-anchor="middle" fill="currentColor" font-weight="bold">B (Mix)</text>
+
+    {/* Container C: Cold */}
+    <rect x="350" y="50" width="100" height="120" rx="10" ry="10" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M350 80 Q400 90 450 80 V160 Q400 170 350 160 Z" fill="#add8e6" opacity="0.5"/>
+    <text x="400" y="190" text-anchor="middle" fill="currentColor" font-weight="bold">C (Cold)</text>
+  </svg>
+</div>
+
+**Steps:**
+1.  **Container A**: Hot water.
+2.  **Container B**: Lukewarm (mix of hot and cold) water.
+3.  **Container C**: Ice-cold water.
+4.  Dip your **right hand** in A (Hot) and **left hand** in C (Cold) for 2 minutes.
+5.  Now, dip **both hands** simultaneously into B.
+
+**Observation:**
+-   The right hand (coming from hot water) feels that water in B is **cool**.
+-   The left hand (coming from cold water) feels that water in B is **warm**.
+
+**Conclusion:**
+Since the same water cannot be both cool and warm at the same time, this proves that our sense of touch is relative and **unreliable** for scientific measurement. We need a device to measure hotness accurately.

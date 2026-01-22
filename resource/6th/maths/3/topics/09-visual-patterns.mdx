@@ -1,0 +1,49 @@
+---
+title: "Visual Number Patterns"
+description: "Geometric arrangements of numbers and finding sums quickly."
+date: 2024-04-10
+tags: ["patterns", "geometry"]
+order: 10
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Summing Patterns
+
+Consider a square grid of numbers where the outer layer is all 40s, the next is 50s, etc.
+Instead of adding one by one, use **multiplication**.
+
+### Example: The "40-50" Square
+Imagine a grid:
+-   4 corners are 40.
+-   Edges between corners have 40.
+-   Center has 50s.
+
+**Method:** Count how many 40s and how many 50s.
+$$ \text{Total} = (\text{Count of 40} \times 40) + (\text{Count of 50} \times 50) $$
+
+## Hexagonal Patterns
+Look at this hexagonal expansion.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200">
+    <polygon points="100,20 170,55 170,145 100,180 30,145 30,55" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="100" y="100" text-anchor="middle" fill="currentColor">15</text>
+    <text x="100" y="50" text-anchor="middle" fill="currentColor">25</text>
+    <text x="100" y="150" text-anchor="middle" fill="currentColor">25</text>
+    <text x="50" y="75" text-anchor="middle" fill="currentColor">25</text>
+    <text x="150" y="75" text-anchor="middle" fill="currentColor">25</text>
+  </svg>
+</div>
+
+The numbers often follow a rule:
+-   **Sum of vertices?**
+-   **Difference between layers?**
+
+In the textbook example (Page 14), we see $35$ surrounded by $25$s, surrounded by $15$s.
+The rule might be $15 \times 6$ (outer) $+ 25 \times 6$ (inner) $+ 35$ (center).
+
+<Callout variant="tip">
+**Optimization:** Always look for symmetry. If a number appears 6 times in a ring, calculate $6 \times N$ rather than $N+N+N+N+N+N$.
+</Callout>

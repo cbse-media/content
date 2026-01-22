@@ -1,0 +1,62 @@
+---
+title: "Practice: Pressure Calculations"
+description: "Extra problems to master P = F/A calculations."
+date: 2025-01-15
+tags: ["practice", "math", "physics"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Formula Review
+$$
+P = \frac{F}{A}
+$$
+
+### Problem 1: The High Heels vs. Flat Shoes
+A girl weighs $500 \text{ N}$.
+1.  **Case A:** She wears flat shoes with a total sole area of $0.05 \text{ m}^2$.
+2.  **Case B:** She wears high heels where the weight is concentrated on a heel area of just $0.001 \text{ m}^2$ (assume she stands on one heel for a moment).
+
+**Calculate the pressure in both cases.**
+
+<details>
+<summary>Click to Reveal Solution</summary>
+
+**Case A (Flats):**
+$$P = \frac{500}{0.05} = \frac{500}{5/100} = 500 \times 20 = \mathbf{10,000 \text{ Pa}}$$
+
+**Case B (Heels):**
+$$P = \frac{500}{0.001} = \frac{500}{1/1000} = 500 \times 1000 = \mathbf{500,000 \text{ Pa}}$$
+
+*Observation: The heels exert 50 times more pressure! This is why heels sink into grass.*
+</details>
+
+### Problem 2: The Brick
+A brick has dimensions $20 \text{ cm} \times 10 \text{ cm} \times 5 \text{ cm}$ and weighs $20 \text{ N}$.
+Calculate the **maximum** and **minimum** pressure it can exert on the ground.
+
+*Hint: Max pressure occurs on the smallest area. Min pressure occurs on the largest area.*
+
+<details>
+<summary>Click to Reveal Solution</summary>
+
+**Step 1: Calculate Areas (convert to meters!)**
+*   Face 1 ($20 \times 10$): $0.2 \times 0.1 = 0.02 \text{ m}^2$
+*   Face 2 ($20 \times 5$): $0.2 \times 0.05 = 0.01 \text{ m}^2$ (Smallest Area)
+*   Face 3 ($10 \times 5$): $0.1 \times 0.05 = 0.005 \text{ m}^2$ ... Wait.
+    *   $20 \times 10 = 200 \text{ cm}^2$
+    *   $20 \times 5 = 100 \text{ cm}^2$
+    *   $10 \times 5 = 50 \text{ cm}^2$ (Smallest Area is actually this one).
+
+**Correction:**
+*   Largest Area ($20 \times 10$): $0.02 \text{ m}^2$.
+*   Smallest Area ($10 \times 5$): $0.005 \text{ m}^2$.
+
+**Step 2: Calculate Pressure**
+*   **Minimum Pressure** (Largest Area):
+    $$P = \frac{20}{0.02} = \mathbf{1000 \text{ Pa}}$$
+*   **Maximum Pressure** (Smallest Area):
+    $$P = \frac{20}{0.005} = \mathbf{4000 \text{ Pa}}$$
+</details>

@@ -1,0 +1,78 @@
+---
+title: "The Integer Number Line"
+description: "Extending the ray to a full line, ordering integers, and comparing values."
+date: 2024-04-10
+tags: ["number-line", "comparison", "ordering"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## From Ray to Line
+
+Previously, we visualized numbers on a ray starting at 0 and going right. Now, we extend the line to the **left** to include negative numbers.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="100" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+    {/* Main Line */}
+    <line x1="20" y1="50" x2="480" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)" />
+    
+    {/* Arrow definitions */}
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10" fill="currentColor" />
+      </marker>
+    </defs>
+
+    {/* Ticks and Labels */}
+    {/* Zero */}
+    <line x1="250" y1="45" x2="250" y2="55" stroke="currentColor" stroke-width="2" />
+    <text x="250" y="75" text-anchor="middle" fill="currentColor" font-weight="bold">0</text>
+    
+    {/* Positives */}
+    <line x1="290" y1="45" x2="290" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="290" y="75" text-anchor="middle" fill="currentColor">1</text>
+    
+    <line x1="330" y1="45" x2="330" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="330" y="75" text-anchor="middle" fill="currentColor">2</text>
+    
+    <line x1="370" y1="45" x2="370" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="370" y="75" text-anchor="middle" fill="currentColor">3</text>
+    
+    <line x1="410" y1="45" x2="410" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="410" y="75" text-anchor="middle" fill="currentColor">4</text>
+
+    {/* Negatives */}
+    <line x1="210" y1="45" x2="210" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="210" y="75" text-anchor="middle" fill="currentColor">-1</text>
+    
+    <line x1="170" y1="45" x2="170" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="170" y="75" text-anchor="middle" fill="currentColor">-2</text>
+    
+    <line x1="130" y1="45" x2="130" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="130" y="75" text-anchor="middle" fill="currentColor">-3</text>
+    
+    <line x1="90" y1="45" x2="90" y2="55" stroke="currentColor" stroke-width="1" />
+    <text x="90" y="75" text-anchor="middle" fill="currentColor">-4</text>
+  </svg>
+</div>
+
+*   **Right of 0:** Positive Integers (Forward direction).
+*   **Left of 0:** Negative Integers (Backward direction).
+
+## Comparing Integers
+
+On the number line:
+*   Numbers to the **Right** are **Larger**.
+*   Numbers to the **Left** are **Smaller**.
+
+### Examples
+1.  **$+4$ vs $+1$:** $+4$ is to the right of $+1$, so $+4 > +1$.
+2.  **$-1$ vs $-4$:** $-1$ is to the right of $-4$, so $-1 > -4$.
+3.  **$-5$ vs $0$:** Any negative number is to the left of 0, so $-5 < 0$.
+
+<Callout variant="warning">
+**Common Mistake:**
+Do not ignore the sign! While $100$ is bigger than $1$, $-100$ is much smaller than $-1$. Imagine debt: owing ₹100 is worse (less money) than owing ₹1.
+</Callout>

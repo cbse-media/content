@@ -1,0 +1,60 @@
+---
+title: "Solved Examples"
+description: "Additional practice problems involving the Mine Shaft and large integer calculations."
+date: 2024-04-10
+tags: ["practice", "examples"]
+order: 17
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Example 1: The Mine Shaft
+
+**Problem:** A lift in a mine moves at a speed of 5 meters per minute. It starts from 10 meters above the ground.
+1.  Where will it be after 1 hour if it moves down?
+2.  How long will it take to reach -350 meters?
+
+### Solution
+
+**Part 1: Position after 1 hour**
+*   **Start Position:** $+10$ m.
+*   **Speed:** $5$ m/min downwards ($-5$).
+*   **Time:** $1$ hour = $60$ minutes.
+*   **Total Movement:** $60 \times (-5) = -300$ m.
+*   **Final Position:** $\text{Start} + \text{Movement} = 10 + (-300) = -290$ m.
+*   **Answer:** 290 meters below ground.
+
+**Part 2: Time to reach -350m**
+*   **Target:** $-350$.
+*   **Start:** $+10$.
+*   **Distance to travel:** $\text{Target} - \text{Start} = -350 - 10 = -360$ m.
+*   The lift must travel 360 meters down.
+*   **Speed:** 5m/min.
+*   **Time:** $360 \div 5 = 72$ minutes.
+*   **Answer:** 1 hour and 12 minutes.
+
+## Example 2: Magic Square
+
+In a magic square, each row, column, and diagonal sums to the same number. Check if this is a magic square:
+
+| 5 | -1 | -4 |
+|---|----|----|
+| -5| -2 | 7 |
+| 0 | 3 | -3 |
+
+**Check Rows:**
+1.  $5 + (-1) + (-4) = 0$
+2.  $-5 + (-2) + 7 = 0$
+3.  $0 + 3 + (-3) = 0$
+
+**Check Columns:**
+1.  $5 + (-5) + 0 = 0$
+2.  $-1 + (-2) + 3 = 0$
+3.  $-4 + 7 + (-3) = 0$
+
+**Check Diagonals:**
+1.  $5 + (-2) + (-3) = 0$
+2.  $-4 + (-2) + 0 = -6$ (Wait! This is not 0).
+
+**Conclusion:** Since one diagonal sums to -6, this is **NOT** a magic square.

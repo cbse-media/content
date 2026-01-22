@@ -1,0 +1,62 @@
+---
+title: "Properties of Squares and Rectangles"
+description: "Defining squares and rectangles based on their sides and angles."
+date: 2024-04-10
+tags: ["polygons", "square", "rectangle"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Rectangles
+
+A rectangle is a 4-sided polygon (quadrilateral) with specific rules:
+1.  **Opposite sides** are equal in length ($AB = CD$ and $BC = DA$).
+2.  **All angles** are equal to $90^\circ$ (Right angles).
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Rectangle ABCD */}
+    <rect x="50" y="50" width="200" height="100" stroke="currentColor" stroke-width="2" fill="none" />
+    
+    {/* Labels */}
+    <text x="40" y="45" fill="currentColor">A</text>
+    <text x="260" y="45" fill="currentColor">B</text>
+    <text x="260" y="170" fill="currentColor">C</text>
+    <text x="40" y="170" fill="currentColor">D</text>
+    
+    {/* Right Angle Markers */}
+    <path d="M 50 140 L 60 140 L 60 150" stroke="currentColor" fill="none" transform="translate(0,0)" />
+    {/* (Simplified markers for clarity) */}
+  </svg>
+</div>
+
+## Squares
+
+A square is a special type of rectangle.
+1.  **All 4 sides** are equal ($AB = BC = CD = DA$).
+2.  **All angles** are $90^\circ$.
+
+### Naming Convention
+When naming a shape like a square or rectangle, you must list the corners in order as you travel around the boundary (either clockwise or counter-clockwise).
+*   **Valid:** $PQRS$, $QRSP$, $RSPQ$, $SPQR$.
+*   **Invalid:** $PRSQ$ (crossing diagonally).
+
+### Rotated Figures
+If you rotate a square, it remains a square. The properties (equal sides, right angles) do not change just because the orientation changes.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Rotated Square (Diamond orientation) */}
+    <polygon points="100,20 180,100 100,180 20,100" stroke="currentColor" stroke-width="2" fill="none" />
+    <text x="100" y="15" fill="currentColor" text-anchor="middle">A</text>
+    <text x="190" y="100" fill="currentColor" text-anchor="start">B</text>
+    <text x="100" y="195" fill="currentColor" text-anchor="middle">C</text>
+    <text x="10" y="100" fill="currentColor" text-anchor="end">D</text>
+  </svg>
+</div>
+
+<Callout variant="info">
+**Tip:** A rotated square might look like a "diamond," but mathematically, if the corners are $90^\circ$ and sides are equal, it is still a square.
+</Callout>

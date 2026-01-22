@@ -1,0 +1,56 @@
+---
+title: "Parallelograms"
+description: "Understanding quadrilaterals with parallel opposite sides."
+date: 2024-04-10
+tags: ["parallelogram", "geometry"]
+order: 3
+draft: false
+---
+
+## Definition
+A **Parallelogram** is a quadrilateral in which both pairs of opposite sides are parallel.
+*   $AB \parallel DC$
+*   $AD \parallel BC$
+
+Rectangles and squares are special types of parallelograms.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Parallelogram */}
+    <polygon points="50,120 200,120 250,30 100,30" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Diagonals */}
+    <line x1="50" y1="120" x2="250" y2="30" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
+    <line x1="100" y1="30" x2="200" y2="120" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
+
+    {/* Labels */}
+    <text x="40" y="130" fill="currentColor">A</text>
+    <text x="210" y="130" fill="currentColor">B</text>
+    <text x="260" y="30" fill="currentColor">C</text>
+    <text x="90" y="30" fill="currentColor">D</text>
+
+    {/* Parallel markers */}
+    <path d="M 125 120 L 130 115 L 135 120" fill="none" stroke="currentColor" />
+    <path d="M 175 30 L 180 25 L 185 30" fill="none" stroke="currentColor" />
+
+    <path d="M 65 80 L 70 70 L 75 80" fill="none" stroke="currentColor" />
+    <path d="M 70 80 L 75 70 L 80 80" fill="none" stroke="currentColor" />
+
+    <path d="M 215 80 L 220 70 L 225 80" fill="none" stroke="currentColor" />
+    <path d="M 220 80 L 225 70 L 230 80" fill="none" stroke="currentColor" />
+  </svg>
+</div>
+
+## Properties
+
+### 1. Angles
+*   **Opposite angles are equal:** $\angle A = \angle C$ and $\angle B = \angle D$.
+*   **Adjacent angles sum to $180^\circ$:** Since opposite sides are parallel, consecutive angles are interior angles on the same side of the transversal.
+    $$ \angle A + \angle B = 180^\circ $$
+
+### 2. Sides
+*   **Opposite sides are equal:** $AB = DC$ and $AD = BC$.
+    *   *Proof:* Draw a diagonal. It forms two congruent triangles (ASA criterion using alternate interior angles).
+
+### 3. Diagonals
+*   **Bisect each other:** The diagonals intersect at their midpoints. Note that unlike rectangles, the diagonals of a general parallelogram are **not** equal in length.

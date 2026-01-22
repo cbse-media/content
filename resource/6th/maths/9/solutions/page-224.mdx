@@ -1,0 +1,68 @@
+---
+title: "Solutions: Page 224"
+description: "Solutions for Paper Folding Exercises 1-4."
+date: 2024-04-10
+tags: ["solutions", "grade-6", "paper-folding"]
+order: 4
+draft: false
+---
+
+## Exercises (Page 224)
+
+**1. In each of the following figures, a hole was punched in a folded square sheet of paper and then the paper was unfolded. Identify the line along which the paper was folded.**
+
+The positions of the holes tell us where the fold line (line of symmetry) must be. The fold line is always exactly halfway between the two matching holes.
+
+*   **(a)** Holes are side-by-side horizontally. **Fold:** Vertical line.
+*   **(b)** Holes are at diagonal corners. **Fold:** Diagonal line.
+*   **(c)** Holes are stacked vertically. **Fold:** Horizontal line.
+*   **(d)** Only one hole is visible, but the question implies unfolding. If the figure creates 4 holes from one punch, it was folded twice (vertically then horizontally). If it implies a single fold for a single hole, the question asks "How was it folded?" - For figure (d) in the solution key, it indicates folds vertically and horizontally to create the pattern shown in answers.
+
+**2. Given the line(s) of symmetry, find the other hole(s):**
+
+We need to "reflect" the existing hole across the dotted line.
+
+<div class="flex justify-center my-6">
+    <svg width="500" height="100" viewBox="0 0 500 100">
+        {/* a */}
+        <g transform="translate(50, 50)">
+            <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor"/>
+            <line x1="-30" y1="-30" x2="30" y2="30" stroke="currentColor" stroke-dasharray="3,3"/>
+            <circle cx="-15" cy="5" r="3" fill="blue" /> {/* Original */}
+            <circle cx="5" cy="-15" r="3" fill="red" /> {/* Reflection */}
+            <text x="-10" y="50" font-size="10">a</text>
+        </g>
+        {/* b */}
+        <g transform="translate(150, 50)">
+             <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor"/>
+             <line x1="-30" y1="0" x2="30" y2="0" stroke="currentColor" stroke-dasharray="3,3"/>
+             <circle cx="-15" cy="-15" r="3" fill="blue" />
+             <circle cx="-15" cy="15" r="3" fill="red" />
+             <text x="-10" y="50" font-size="10">b</text>
+        </g>
+         {/* c */}
+        <g transform="translate(250, 50)">
+             <polygon points="0,-35 30,25 -30,25" fill="none" stroke="currentColor"/>
+             <line x1="0" y1="-35" x2="0" y2="25" stroke="currentColor" stroke-dasharray="3,3"/>
+             <circle cx="-10" cy="5" r="3" fill="blue" />
+             <circle cx="10" cy="5" r="3" fill="red" />
+             <text x="-10" y="50" font-size="10">c</text>
+        </g>
+         {/* d */}
+        <g transform="translate(350, 50)">
+             <circle cx="0" cy="0" r="30" fill="none" stroke="currentColor"/>
+             <line x1="-25" y1="15" x2="25" y2="-15" stroke="currentColor" stroke-dasharray="3,3"/>
+             <circle cx="-10" cy="-15" r="3" fill="blue" />
+             <circle cx="15" cy="10" r="3" fill="red" />
+             <text x="-10" y="50" font-size="10">d</text>
+        </g>
+    </svg>
+</div>
+
+**3 & 4. Paper Cutting Predictions**
+
+**(a)** Vertical fold, cut a triangle pointing right.
+*   **Result:** When opened, you get a diamond or rhombus shape in the center.
+
+**(b)** Horizontal fold, cut a pattern on the edge.
+*   **Result:** The pattern mirrors on the top and bottom.

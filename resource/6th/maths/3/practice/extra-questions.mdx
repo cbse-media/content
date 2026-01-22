@@ -1,0 +1,50 @@
+---
+title: "Extra Practice & Challenges"
+description: "Additional problems to test your understanding of Number Play."
+date: 2024-04-10
+tags: ["practice", "challenge"]
+order: 23
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Challenge 1: The Lychrel Number
+We learned that 196 might never become a palindrome.
+**Try the Reverse-and-Add process on 196 for 5 steps.**
+1.  $196 + 691 = 887$
+2.  $887 + 788 = 1675$
+3.  $1675 + 5761 = 7436$
+4.  $7436 + 6347 = 13783$
+5.  $13783 + 38731 = 52514$
+Does it look like it's getting closer? The numbers just get bigger!
+
+## Challenge 2: Supercell Grid Design
+Design a $3 \times 3$ grid using numbers 1 to 9 (used once each) such that there are **5 supercells**.
+Is it possible?
+-   To be a supercell, a number must be larger than neighbors.
+-   Checkerboard pattern: Corners (4) + Center (1) = 5 cells.
+-   Place $9, 8, 7, 6, 5$ in the "Super" positions (Corners and Center).
+-   Place $1, 2, 3, 4$ in the "Edge" positions.
+-   Check: Center (5) must be larger than Edge neighbors (1,2,3,4). Yes!
+-   Corners (9,8,7,6) are definitely larger than neighbors (1,2,3,4).
+
+**Solution Grid:**
+$$
+\begin{matrix}
+9 & 1 & 8 \\
+2 & 5 & 3 \\
+7 & 4 & 6
+\end{matrix}
+$$
+(Verify: 5 is > 1,2,3,4? Yes. 9 > 1,2? Yes. etc.)
+
+## Challenge 3: Mental Math
+Calculate $999 \times 6$ without standard multiplication.
+**Strategy:**
+$$ 999 = 1000 - 1 $$
+$$ (1000 - 1) \times 6 = 6000 - 6 = 5994 $$
+
+Try: $34 \times 11$.
+**Strategy:** Split the 3 and 4, sum them (7), place in middle.
+$$ 374 $$

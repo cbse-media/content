@@ -1,0 +1,55 @@
+---
+title: "Artificial Satellites"
+description: "Moving from natural moons to man-made eyes in the sky."
+date: 2024-04-10
+tags: ["satellites", "ISRO", "space", "technology"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Natural vs. Artificial Satellites
+
+*   **Natural Satellite:** A celestial body orbiting a planet (e.g., The Moon).
+*   **Artificial Satellite:** A man-made machine launched into orbit.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2">
+    {/* Earth */}
+    <circle cx="150" cy="100" r="50" fill="currentColor" opacity="0.1" stroke="currentColor" />
+    <path d="M130 80 Q150 120 170 90" stroke="currentColor" fill="none" opacity="0.5"/>
+    <text x="140" y="105" font-size="12" fill="currentColor" stroke="none">Earth</text>
+
+    {/* Satellite Orbit */}
+    <ellipse cx="150" cy="100" rx="90" ry="30" stroke="currentColor" stroke-dasharray="5,5" />
+
+    {/* Satellite */}
+    <rect x="230" y="90" width="10" height="20" fill="currentColor" />
+    <line x1="230" y1="100" x2="210" y2="100" stroke="currentColor" /> {/* Panel Left */}
+    <rect x="200" y="90" width="10" height="20" stroke="currentColor" fill="none" />
+    <line x1="240" y1="100" x2="260" y2="100" stroke="currentColor" /> {/* Panel Right */}
+    <rect x="260" y="90" width="10" height="20" stroke="currentColor" fill="none" />
+
+    <text x="210" y="140" font-size="10" fill="currentColor" stroke="none">Artificial Satellite</text>
+  </svg>
+</div>
+
+## Applications of Satellites
+
+1.  **Communication:** Phone, Internet, and TV signals.
+2.  **Weather Monitoring:** Predicting cyclones, rain, and tracking clouds (e.g., INSAT series).
+3.  **Navigation:** GPS and NavIC (India's navigation system).
+4.  **Remote Sensing:** Mapping resources, forests, and water bodies (e.g., Cartosat, Bhuvan).
+5.  **Scientific Research:** Studying stars and galaxies (e.g., AstroSat).
+
+## India in Space (ISRO)
+The **Indian Space Research Organisation (ISRO)** has launched many successful missions:
+*   **Chandrayaan:** Series of missions to the Moon.
+*   **Mangalyaan:** Mission to Mars.
+*   **Aditya L1:** Mission to study the Sun.
+
+<Callout variant="warning">
+**Space Debris:**
+With so many satellites launching, dead satellites and rocket parts create "Space Junk". This is dangerous as it can collide with working satellites.
+</Callout>

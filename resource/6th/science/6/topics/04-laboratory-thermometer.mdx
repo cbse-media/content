@@ -1,0 +1,75 @@
+---
+title: "The Laboratory Thermometer"
+description: "Measuring temperature in scientific experiments."
+date: 2025-01-15
+tags: ["laboratory", "experiments", "measurement"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Structure
+A **laboratory thermometer** consists of a long, narrow, uniform glass tube with a **bulb** at one end.
+*   **Liquid:** Generally alcohol (colored red) or mercury.
+*   **Scale:** Celsius scale is marked along the tube.
+
+### Range
+Typically, a laboratory thermometer measures from **$-10^{\circ}\text{C}$ to $110^{\circ}\text{C}$**.
+
+<div class="flex justify-center my-6">
+  <svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Glass Tube */}
+    <rect x="50" y="60" width="500" height="30" rx="15" fill="none" stroke="currentColor" stroke-width="2"/>
+    {/* Liquid Column */}
+    <rect x="55" y="65" width="200" height="20" rx="10" fill="currentColor" opacity="0.5"/>
+    {/* Bulb */}
+    <circle cx="40" cy="75" r="15" fill="currentColor" opacity="0.7"/>
+    
+    {/* Markings */}
+    <line x1="100" y1="60" x2="100" y2="90" stroke="currentColor" stroke-width="2"/>
+    <text x="100" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="currentColor">-10</text>
+    
+    <line x1="150" y1="60" x2="150" y2="90" stroke="currentColor" stroke-width="2"/>
+    <text x="150" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="currentColor">0</text>
+    
+    <line x1="200" y1="60" x2="200" y2="90" stroke="currentColor" stroke-width="2"/>
+    <text x="200" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="currentColor">10</text>
+    
+    <line x1="500" y1="60" x2="500" y2="90" stroke="currentColor" stroke-width="2"/>
+    <text x="500" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="currentColor">110</text>
+    
+    {/* Small divisions example between 0 and 10 */}
+    <line x1="155" y1="60" x2="155" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="160" y1="60" x2="160" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="165" y1="60" x2="165" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="170" y1="60" x2="170" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="175" y1="60" x2="175" y2="80" stroke="currentColor" stroke-width="1.5"/> {/* Middle mark */}
+    <line x1="180" y1="60" x2="180" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="185" y1="60" x2="185" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="190" y1="60" x2="190" y2="75" stroke="currentColor" stroke-width="1"/>
+    <line x1="195" y1="60" x2="195" y2="75" stroke="currentColor" stroke-width="1"/>
+  </svg>
+</div>
+
+## Calculating Least Count (Smallest Value)
+To read a thermometer accurately, you must know the value of the smallest division.
+1.  Find the difference between two bigger marks (e.g., $10 - 0 = 10^{\circ}\text{C}$).
+2.  Count the number of divisions between them (e.g., 10 divisions).
+3.  Divide the difference by the number of divisions.
+
+$$
+\text{Value of one small division} = \frac{10^{\circ}\text{C}}{10} = 1^{\circ}\text{C}
+$$
+
+## Correct Usage
+When measuring the temperature of water or other substances:
+1.  **Immerse:** The bulb should be surrounded by the substance.
+2.  **Do Not Touch:** The bulb should **not** touch the bottom or sides of the container.
+3.  **Hold Vertically:** Keep the thermometer upright.
+4.  **Read While Immersed:** Do not take the thermometer out of the liquid to read it. The level will fall immediately.
+5.  **Eye Level:** Your eye must be in line with the top level of the liquid column to avoid parallax error.
+
+<Callout variant="warning">
+**Caution:** Laboratory thermometers are NOT used for body temperature because the liquid level falls as soon as it is removed from the body. Clinical thermometers have a "kink" or digital memory to hold the reading.
+</Callout>

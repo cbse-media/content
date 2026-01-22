@@ -1,0 +1,65 @@
+---
+title: "Laboratory Thermometer"
+description: "Using laboratory thermometers for scientific experiments."
+date: 2025-01-20
+tags: ["laboratory", "experiments", "least-count"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Purpose
+Used to measure the temperature of objects other than the human body (e.g., boiling water, ice, chemical reactions).
+
+## Structure
+-   A long, narrow, uniform glass tube.
+-   A bulb at one end containing liquid (alcohol colored red, or mercury).
+-   **Range:** Typically **-10°C to 110°C**.
+
+<div class="flex justify-center my-6">
+  <svg width="100" height="400" viewBox="0 0 100 400" xmlns="http://www.w3.org/2000/svg">
+    {/* Glass Tube */}
+    <rect x="40" y="20" width="20" height="350" rx="10" ry="10" stroke="currentColor" fill="none" stroke-width="2"/>
+    {/* Bulb */}
+    <circle cx="50" cy="370" r="15" fill="#ff4444" />
+    {/* Liquid Column */}
+    <rect x="46" y="100" width="8" height="270" fill="#ff4444" />
+    
+    {/* Markings */}
+    <line x1="40" y1="50" x2="60" y2="50" stroke="currentColor" stroke-width="1"/>
+    <text x="25" y="55" font-size="12" fill="currentColor">100</text>
+    
+    <line x1="40" y1="150" x2="60" y2="150" stroke="currentColor" stroke-width="1"/>
+    <text x="25" y="155" font-size="12" fill="currentColor">50</text>
+    
+    <line x1="40" y1="250" x2="60" y2="250" stroke="currentColor" stroke-width="1"/>
+    <text x="25" y="255" font-size="12" fill="currentColor">0</text>
+    
+    <line x1="40" y1="300" x2="60" y2="300" stroke="currentColor" stroke-width="1"/>
+    <text x="20" y="305" font-size="12" fill="currentColor">-10</text>
+  </svg>
+</div>
+
+## Finding the Least Count
+To measure accurately, you must know the value of the smallest division (Least Count).
+
+**Method:**
+1.  Find the difference between two big marks (e.g., $10^\circ C$ and $20^\circ C$). Difference = $10^\circ C$.
+2.  Count the number of divisions between them (e.g., 10 divisions).
+3.  Calculate:
+    $$
+    \text{Smallest Division} = \frac{10}{10} = 1^\circ C
+    $$
+
+## Proper Usage Techniques (Activity 7.5)
+Unlike a clinical thermometer, a laboratory thermometer generally does not have a "kink" to hold the mercury level. Therefore:
+
+1.  **Keep it Vertical:** Do not tilt the thermometer.
+2.  **Immersion:** The bulb must be fully immersed in the substance (e.g., water).
+3.  **No Contact:** The bulb should **not touch** the bottom or sides of the container.
+4.  **Read Inside:** Read the temperature **while the thermometer is still in the water**. If you take it out, the level falls immediately.
+
+<Callout variant="warning">
+**Crucial Difference:** You cannot use a laboratory thermometer to measure body temperature because the level drops as soon as you take it out of the mouth. Clinical thermometers have a special design (kink) or digital memory to hold the reading.
+</Callout>

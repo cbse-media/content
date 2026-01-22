@@ -1,0 +1,64 @@
+---
+title: "Electric Cells and Batteries"
+description: "From Lemon batteries to Lithium-ion: How we generate portable electricity."
+date: 2025-01-15
+tags: ["batteries", "voltaic-cell", "dry-cell"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## How Batteries Work
+
+Batteries convert **Chemical Energy** into **Electrical Energy**.
+
+### 1. The Voltaic Cell (The First Battery)
+Invented by Alessandro Volta, inspired by Galvani's frog leg experiments.
+*   **Components:**
+    *   **Electrodes:** Two different metal plates (e.g., Copper and Zinc).
+    *   **Electrolyte:** A liquid that conducts electricity (e.g., Salt solution or Lemon juice).
+*   **Working:** A chemical reaction between the metals and the liquid pushes electrons from one plate to the other, creating current.
+
+**DIY Lemon Battery:**
+You can make a simple cell using a lemon, a copper strip, and an iron nail. The lemon juice acts as the electrolyte!
+
+### 2. The Dry Cell (Common Battery)
+The batteries we use in remotes and clocks are "Dry Cells".
+*   **Why "Dry"?** The electrolyte is a moist paste (Ammonium chloride), not a liquid that can spill.
+*   **Structure:**
+    *   **Container:** Zinc (Negative Terminal).
+    *   **Center Rod:** Carbon (Positive Terminal).
+    *   **Electrolyte:** Paste surrounding the rod.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Outer Can */}
+    <rect x="50" y="40" width="100" height="220" fill="#e0e0e0" stroke="currentColor" stroke-width="2" />
+    <text x="20" y="150" fill="currentColor" font-size="12" transform="rotate(-90 20,150)">Zinc Can (-)</text>
+
+    {/* Carbon Rod */}
+    <rect x="90" y="20" width="20" height="240" fill="#333" />
+
+    {/* Metal Cap */}
+    <path d="M 90 20 L 110 20 L 110 30 L 90 30 Z" fill="#DAA520" />
+    <text x="130" y="30" fill="currentColor" font-size="12">Metal Cap (+)</text>
+
+    {/* Paste */}
+    <rect x="60" y="50" width="80" height="200" fill="url(#pastePattern)" opacity="0.3" />
+    <text x="160" y="150" fill="currentColor" font-size="12">Electrolyte Paste</text>
+
+    <defs>
+      <pattern id="pastePattern" width="10" height="10" patternUnits="userSpaceOnUse">
+        <circle cx="5" cy="5" r="1" fill="currentColor" />
+      </pattern>
+    </defs>
+  </svg>
+</div>
+
+### 3. Rechargeable Batteries
+Standard dry cells are single-use. Rechargeable batteries (like Lithium-ion in phones) can reverse the chemical reaction when plugged into power, allowing them to be reused hundreds of times.
+
+<Callout variant="info">
+**Future Tech:** Scientists are developing **Solid-state batteries** that are safer and last longer than current Lithium-ion batteries.
+</Callout>

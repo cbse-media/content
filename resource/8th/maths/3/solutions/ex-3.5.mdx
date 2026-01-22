@@ -1,0 +1,37 @@
+---
+title: "Figure It Out: Base-5 System"
+description: "Solutions to the Base-5 activity on Page 63."
+date: 2024-04-10
+tags: ["solutions", "base-5"]
+order: 12
+draft: false
+---
+
+## Question 1
+**Write in Base-5 system:**
+Symbols: $\triangle$ (1), $\square$ (5), $\hexagon$ (25), $\bigcirc$ (125), $\sim$ (625).
+
+*   **15:** Three 5s $\rightarrow$ $\square\square\square$
+*   **50:** Two 25s $\rightarrow$ $\hexagon\hexagon$
+*   **137:**
+    *   $125 \times 1 = 125$ ($\bigcirc$)
+    *   $137 - 125 = 12$.
+    *   $12 = 5 \times 2 + 2$ ($\square\square + \triangle\triangle$)
+    *   **Answer:** $\bigcirc \square\square \triangle\triangle$
+*   **293:**
+    *   $125 \times 2 = 250$ ($\bigcirc\bigcirc$)
+    *   $293 - 250 = 43$.
+    *   $25 \times 1 = 25$ ($\hexagon$)
+    *   $43 - 25 = 18$.
+    *   $5 \times 3 = 15$ ($\square\square\square$)
+    *   $18 - 15 = 3$ ($\triangle\triangle\triangle$)
+    *   **Answer:** $\bigcirc\bigcirc \hexagon \square\square\square \triangle\triangle\triangle$
+*   **651:**
+    *   $625 \times 1$ ($\sim$)
+    *   $25 \times 1$ ($\hexagon$)
+    *   $1 \times 1$ ($\triangle$)
+    *   **Answer:** $\sim \hexagon \triangle$
+
+## Question 2
+**Is there a number that cannot be represented?**
+No. Just like base-10, any integer can be broken down into powers of 5. As long as we have symbols for higher powers (or simply repeat the highest symbol enough times), we can write any number.

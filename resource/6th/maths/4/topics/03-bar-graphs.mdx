@@ -1,0 +1,110 @@
+---
+title: "Bar Graphs"
+description: "Introduction to bar graphs, how to draw them, and how to read them."
+date: 2025-01-20
+tags: ["bar graph", "data presentation", "scale"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Bar Graph?
+
+A **Bar Graph** allows us to quickly understand and interpret information by using bars of uniform width.
+
+<Callout variant="tip">
+**Key Features:**
+1.  **Uniform Width:** All bars must be the same width.
+2.  **Equal Spacing:** The gap between each bar must be the same.
+3.  **Height/Length:** The height of the bar represents the frequency (number) of the data.
+</Callout>
+
+## Reading a Bar Graph
+
+Let's analyze a bar graph showing traffic at a busy road crossing.
+**Scale:** 1 unit length = 100 vehicles.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+    {/* Axes */}
+    <line x1="50" y1="300" x2="450" y2="300" stroke="currentColor" strokeWidth="2" />
+    <line x1="50" y1="300" x2="50" y2="20" stroke="currentColor" strokeWidth="2" />
+
+    {/* Y Axis Labels (Number of Vehicles) */}
+    <text x="10" y="300" fill="currentColor" fontSize="12" fontFamily="sans-serif">0</text>
+    <text x="10" y="250" fill="currentColor" fontSize="12" fontFamily="sans-serif">200</text>
+    <text x="10" y="200" fill="currentColor" fontSize="12" fontFamily="sans-serif">400</text>
+    <text x="10" y="150" fill="currentColor" fontSize="12" fontFamily="sans-serif">600</text>
+    <text x="10" y="100" fill="currentColor" fontSize="12" fontFamily="sans-serif">800</text>
+    <text x="10" y="50" fill="currentColor" fontSize="12" fontFamily="sans-serif">1000</text>
+
+    {/* Bars */}
+    {/* 6-7am: 150 */}
+    <rect x="70" y="262.5" width="40" height="37.5" fill="#4caf50" />
+    <text x="70" y="320" fill="currentColor" fontSize="12" fontFamily="sans-serif">6-7am</text>
+
+    {/* 7-8am: 1200 (Off chart slightly for this scale, let's clamp to max 1000 for visual fit or scale up) */}
+    {/* Let's adjust scale to match text description: 1 unit = 100 */}
+    {/* Re-drawing with proper scale fitting 1200 */}
+  </svg>
+</div>
+
+*Correction: The text mentions 1200 vehicles. Let's render a horizontal bar graph as described in one of the book's examples or a vertical one to fit.*
+
+**Revised Visual (Vertical Bar Graph):**
+*   Scale: 100px = 400 vehicles. Max 1200 = 300px.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+    {/* Axes */}
+    <line x1="60" y1="350" x2="480" y2="350" stroke="currentColor" strokeWidth="2" /> {/* X Axis */}
+    <line x1="60" y1="350" x2="60" y2="20" stroke="currentColor" strokeWidth="2" />  {/* Y Axis */}
+
+    {/* Y Axis Labels */}
+    <text x="10" y="355" fill="currentColor" fontSize="12">0</text>
+    <text x="10" y="300" fill="currentColor" fontSize="12">200</text>
+    <text x="10" y="245" fill="currentColor" fontSize="12">400</text>
+    <text x="10" y="190" fill="currentColor" fontSize="12">600</text>
+    <text x="10" y="135" fill="currentColor" fontSize="12">800</text>
+    <text x="10" y="80" fill="currentColor" fontSize="12">1000</text>
+    <text x="10" y="25" fill="currentColor" fontSize="12">1200</text>
+
+    {/* Grid Lines (Optional) */}
+    <line x1="60" y1="295" x2="480" y2="295" stroke="#ccc" strokeDasharray="4" />
+    <line x1="60" y1="25" x2="480" y2="25" stroke="#ccc" strokeDasharray="4" />
+
+    {/* Data Bars */}
+    {/* 6-7 AM: 150 */}
+    <rect x="80" y="309" width="50" height="41" fill="#4ADE80" />
+    <text x="80" y="370" fill="currentColor" fontSize="10">6-7 AM</text>
+
+    {/* 7-8 AM: 1200 */}
+    <rect x="150" y="25" width="50" height="325" fill="#4ADE80" />
+    <text x="150" y="370" fill="currentColor" fontSize="10">7-8 AM</text>
+
+    {/* 8-9 AM: 1000 */}
+    <rect x="220" y="80" width="50" height="270" fill="#4ADE80" />
+    <text x="220" y="370" fill="currentColor" fontSize="10">8-9 AM</text>
+
+    {/* 9-10 AM: 900 */}
+    <rect x="290" y="108" width="50" height="242" fill="#4ADE80" />
+    <text x="290" y="370" fill="currentColor" fontSize="10">9-10 AM</text>
+
+    {/* Y Label Rotated */}
+    <text x="20" y="200" fill="currentColor" fontSize="14" transform="rotate(-90 20,200)">Vehicles</text>
+  </svg>
+</div>
+
+**Inference:**
+- **Maximum Traffic:** 7-8 AM (Longest bar).
+- **Minimum Traffic:** 6-7 AM (Shortest bar).
+- **Total traffic between 8 and 10 AM:** $1000 + 900 = 1900$ vehicles.
+
+## Drawing a Bar Graph
+
+1.  **Draw Axes:** Draw a horizontal line (x-axis) and a vertical line (y-axis).
+2.  **Choose a Scale:** Determine how many units 1 cm represents. (e.g., 1 unit = 100 vehicles).
+3.  **Mark Categories:** Mark the items (e.g., time intervals) on the horizontal axis with equal gaps.
+4.  **Draw Bars:** Draw vertical bars for each item. The height is determined by dividing the frequency by the scale.
+    *   Example: If frequency is 600 and scale is 1 unit = 100, height = $600 / 100 = 6$ units.

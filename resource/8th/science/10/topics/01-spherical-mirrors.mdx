@@ -1,0 +1,78 @@
+---
+title: "Spherical Mirrors: Concave and Convex"
+description: "Introduction to spherical mirrors, their definitions, and how to identify them."
+date: 2024-04-10
+tags: ["mirrors", "spherical", "concave", "convex"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What Are Spherical Mirrors?
+
+We are used to seeing **plane mirrors** (flat mirrors) in our homes. However, mirrors can also be curved. The most common type of curved mirror is the **spherical mirror**.
+
+Imagine a hollow glass sphere. If you cut a piece of it, the curved surface can act as a mirror.
+*   If the **inner** surface is shiny (reflecting), it is a **Concave Mirror**.
+*   If the **outer** surface is shiny (reflecting), it is a **Convex Mirror**.
+
+### Activity: The Spoon Experiment
+
+Take a shiny stainless steel spoon. It acts as a curved mirror.
+1.  **Inner Side (Scoop part):** Acts as a **Concave Mirror**. Your image may look inverted (upside down) if you are far, or magnified if you are very close.
+2.  **Outer Side (Bulging part):** Acts as a **Convex Mirror**. Your image is always upright (erect) but smaller in size.
+
+### Visualizing Spherical Mirrors
+
+Here is how we represent these mirrors in diagrams. The shaded side represents the non-reflecting (coated) back of the mirror.
+
+<div class="flex flex-col md:flex-row justify-center gap-8 my-6">
+  <div class="text-center">
+    <h4 class="mb-2">Concave Mirror</h4>
+    <svg width="200" height="200" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2">
+      {/* Mirror Surface: Curves Inwards relative to object on left */}
+      <path d="M140 40 Q100 100 140 160" stroke="currentColor" fill="none" />
+      {/* Hatching for non-reflecting side */}
+      <line x1="140" y1="40" x2="150" y2="30" opacity="0.5" />
+      <line x1="138" y1="55" x2="148" y2="45" opacity="0.5" />
+      <line x1="135" y1="70" x2="145" y2="60" opacity="0.5" />
+      <line x1="132" y1="85" x2="142" y2="75" opacity="0.5" />
+      <line x1="130" y1="100" x2="140" y2="90" opacity="0.5" />
+      <line x1="132" y1="115" x2="142" y2="105" opacity="0.5" />
+      <line x1="135" y1="130" x2="145" y2="120" opacity="0.5" />
+      <line x1="138" y1="145" x2="148" y2="135" opacity="0.5" />
+      <line x1="140" y1="160" x2="150" y2="150" opacity="0.5" />
+      {/* Labels */}
+      <text x="30" y="100" fill="currentColor" stroke="none" font-size="14">Reflecting Side</text>
+    </svg>
+    <p class="text-sm text-gray-500">Reflecting surface curves inwards</p>
+  </div>
+
+  <div class="text-center">
+    <h4 class="mb-2">Convex Mirror</h4>
+    <svg width="200" height="200" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2">
+      {/* Mirror Surface: Curves Outwards relative to object on left */}
+      <path d="M100 40 Q140 100 100 160" stroke="currentColor" fill="none" />
+      {/* Hatching for non-reflecting side (inside curve) */}
+      <line x1="100" y1="40" x2="90" y2="30" opacity="0.5" />
+      <line x1="105" y1="55" x2="95" y2="45" opacity="0.5" />
+      <line x1="108" y1="70" x2="98" y2="60" opacity="0.5" />
+      <line x1="110" y1="85" x2="100" y2="75" opacity="0.5" />
+      <line x1="111" y1="100" x2="101" y2="90" opacity="0.5" />
+      <line x1="110" y1="115" x2="100" y2="105" opacity="0.5" />
+      <line x1="108" y1="130" x2="98" y2="120" opacity="0.5" />
+      <line x1="105" y1="145" x2="95" y2="135" opacity="0.5" />
+      <line x1="100" y1="160" x2="90" y2="150" opacity="0.5" />
+      {/* Labels */}
+      <text x="10" y="100" fill="currentColor" stroke="none" font-size="14">Reflecting Side</text>
+    </svg>
+    <p class="text-sm text-gray-500">Reflecting surface bulges outwards</p>
+  </div>
+</div>
+
+<Callout variant="tip">
+**Memory Trick:**
+*   **Concave**: Like a "Cave" (curves inwards).
+*   **Convex**: "Vexed" or bulging out.
+</Callout>

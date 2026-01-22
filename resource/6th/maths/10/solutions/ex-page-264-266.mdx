@@ -1,0 +1,58 @@
+---
+title: "Solution: Page 264-266 (Explorations)"
+description: "Magic squares, grids, and number sequences."
+date: 2024-04-10
+tags: ["solutions", "puzzles"]
+order: 16
+draft: false
+---
+
+## Page 264: Border Sums
+
+**Q2. Complete the grids.**
+
+**Grid 1 (Border Sum +4)**
+*   Corner -10, -5, 9.
+*   Need to fill empty cells so rows/cols sum to +4.
+*   Top Row: $-10 + x + y = 4$.
+*   This requires trial and error based on the full grid structure provided in the book.
+    *   *Note: Without the exact visual of empty cells, we solve logic generally.*
+    *   If Left Column is $-10 + \dots + 9 = 4$, missing middle is $+5$.
+
+## Page 265: Figure it Out
+
+**1. Integers between pairs (increasing order):**
+*   **a. 0 and -7:** $-6, -5, -4, -3, -2, -1$.
+*   **b. -4 and 4:** $-3, -2, -1, 0, 1, 2, 3$.
+*   **c. -8 and -15:** $-14, -13, -12, -11, -10, -9$.
+*   **d. -30 and -23:** $-29, -28, -27, -26, -25, -24$.
+
+**2. Three numbers sum to -8:**
+*   Example: $-2, -3, -3$.
+*   Example: $-10, +1, +1$.
+
+**3. Dice Sums (Faces: -1, 2, -3, 4, -5, 6)**
+*   **Smallest Sum:** $(-5) + (-5) = -10$.
+*   **Largest Sum:** $6 + 6 = 12$.
+*   **Impossible Numbers:**
+    *   Can we get 11? Need $5+6$ (No 5). Need $6+5$ (No 5). Need $4+7$ (No 7). So **11 is impossible**.
+    *   (Requires checking all combinations).
+
+## Page 266: Sequences
+
+**6. Complete the sequences:**
+*   **a.** -40, -34, -28, -22... (Adding +6 each time)
+    *   Next: **-16, -10, -4**.
+*   **b.** 3, 4, 2, 5, 1, 6, 0, 7... (Pattern: Alternate +1, -2, +3, -4...)
+    *   Actually, look at alternating terms:
+    *   Odd pos: 3, 2, 1, 0, **-1, -2**. (Subtract 1)
+    *   Even pos: 4, 5, 6, 7, **8, 9**. (Add 1)
+    *   Next 3 terms: **-1, 8, -2**.
+*   **c.** ..., 12, 6, 1, -3, -6...
+    *   12 to 6 (-6)
+    *   6 to 1 (-5)
+    *   1 to -3 (-4)
+    *   -3 to -6 (-3)
+    *   Next: -6 to ? (-2) $\rightarrow$ **-8**.
+    *   Next: -8 to ? (-1) $\rightarrow$ **-9**.
+    *   Previous terms: Need to subtract -7 ($19 \to 12$) and -8 ($27 \to 19$). So starts with **27, 19**.

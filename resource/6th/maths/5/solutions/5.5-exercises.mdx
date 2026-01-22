@@ -1,0 +1,126 @@
+---
+title: "Solutions: Section 5.5"
+description: "Answers regarding Divisibility Tests (Page 124, 125, 126)."
+date: 2025-01-15
+tags: ["solutions", "divisibility"]
+order: 12
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 124: Figure it Out
+
+### Q. Is 8536 divisible by 4?
+Check last two digits: **36**.
+$36 \div 4 = 9$.
+**Answer:** Yes.
+
+## Page 125: Figure it Out
+
+### Q1. Leap Years
+**b. Leap years from 2024 to 2099.**
+Sequence: 2024, 2028, 2032...
+This is an Arithmetic Progression with diff 4.
+$2096$ is the last one (divisible by 4).
+Count: $(2096 - 2024) \div 4 + 1 = 72 \div 4 + 1 = 18 + 1 = 19$.
+**Answer:** 19 leap years.
+
+### Q2. Largest/Smallest 4-digit palindrome divisible by 4.
+**Divisibility by 4:** Last two digits must be div by 4.
+**Palindrome:** ABBA.
+So the number ends in A. Since it's even (div by 4), A must be 2, 4, 6, 8 (cannot be 0 as it's the first digit too).
+
+**Largest:** Start with A=8 (Since 9 is odd).
+8BB8. Maximize B $\to$ 9.
+8998. Div by 4? Last digits 98. $98 \div 4 = 24.5$ (No).
+Try next B $\to$ 8.
+8888. Div by 4? 88 yes.
+Wait, can A be 6? 6996. $96 \div 4 = 24$. Yes.
+Is there a larger one starting with 8?
+8888 works.
+Is there one starting with 9? No, must be even.
+Let's re-evaluate A.
+Number: $1000A + 100B + 10B + A$.
+Ends in $BA$. $10B + A$ divisible by 4. A is even.
+
+Largest starts with 8? 8998 (No). 8888 (Yes).
+But what if we start with 6? 6996?
+Wait, A must be the leading digit. 8 is larger than 6. So 8888 is a candidate.
+Try A=2, 4, 6, 8.
+Let's try finding a 9... No, must be even.
+Is there a number beginning with 9? 9xx9. Ends in 9 (Odd). Not divisible by 4.
+So max digit is 8.
+Candidate: 8998 (No). 8888 (Yes).
+What about B? We want max B.
+Try 8998 (98 not div by 4).
+Try 8778 (78 not div by 4).
+The condition for $10B + A$ divisible by 4 (where A=8):
+$10B + 8$. Since 8 is div by 4, $10B$ must be div by 4.
+$10B = 2 \times 5 \times B$. Needs another factor of 2. So B must be even.
+Max B = 8.
+**Largest:** 8888?
+Wait, check A=6. 6996. (96 div by 4). But 6 < 8.
+Check A=4. 4994 (94 no).
+Check A=2. 2992 (92 yes).
+
+Wait, I missed that 9000s are not possible.
+So **Largest is 8888**.
+
+**Smallest:** Start with A=2 (A=0 impossible).
+2002. 02 not div by 4.
+2112. 12 div by 4. Yes.
+Can we go lower? Start with 1? No, 1 is odd.
+Wait, A=1 is impossible for div by 4.
+Start with A=2?
+2002 (No).
+2112 (Yes).
+Is there a 4-digit number starting with 1 that is a palindrome and div by 4?
+1xx1 $\to$ Ends in 1 $\to$ Odd $\to$ No.
+So smallest must start with 2.
+Smallest B=0? 2002 (No).
+Smallest B=1? 2112.
+**Answer:** Largest 8888, Smallest 2112.
+*Correction from PDF Solution Check:*
+PDF Solution says Smallest: 1001 (Wait, 1001 is not div by 4, it's odd).
+PDF Solution Page 32 says: "Smallest 4-digit number divisible by 4 and also a palindrome: 1001."
+**CRITICAL ERROR IN SOURCE PDF:** 1001 is odd. It cannot be divisible by 4.
+My logic: Smallest must be even.
+Let's check the PDF text again. Q2: "Find the largest and smallest 4-digit numbers that are divisible by 4 and are also palindromes."
+Solution in PDF (Page 32) explicitly says "1001".
+This is mathematically incorrect ($1001 \div 4 = 250.25$).
+However, as an AI, I should point this out but maybe provide the mathematically correct one or note the discrepancy.
+Actually, let's look at the largest in PDF: 9999. ($9999$ is odd too!).
+The PDF solution page 32 seems to have ignored the "divisible by 4" constraint for the answer or provided a wrong answer.
+Wait, let me re-read the PDF image.
+PDF Page 32 Q2 Ans: "The largest 4-digit number divisible by 4 and also a palindrome: 9999... The smallest... 1001".
+Both are odd.
+Constraint: "Divisible by 4".
+This is a hallucination in the PDF's answer key or a typo in the question in the PDF (maybe they meant divisible by something else?).
+Given my role is to generate "high-quality, exam-oriented study material", I should provide the **correct** mathematical answer and perhaps add a note.
+Correct answers:
+Largest: 8888.
+Smallest: 2112.
+*Actually, let's re-verify A=1... No.*
+*Let's check A=2, B=1 -> 2112 / 4 = 528. Yes.*
+*Let's check A=2, B=0 -> 2002 / 4 = 500.5. No.*
+I will provide the mathematically correct calculation.
+
+## Page 126
+
+### Q4. Remainders
+**Number: 78**
+*   Div by 10: Remainder 8.
+*   Div by 5: $75$ is multiple. Remainder $78-75=3$.
+*   Div by 2: Even. Remainder 0.
+
+### Q5. 14560 divisibility
+Teacher asks 2, 4, 5, 8, 10.
+Guna checked two. Which two imply the rest?
+*   If div by 10 $\to$ div by 2 and 5.
+*   If div by 8 $\to$ div by 2 and 4.
+So checking **8 and 10** covers everything.
+*   10 covers 5, 2.
+*   8 covers 4, 2.
+*   Combined: 2, 4, 5, 8, 10.
+**Answer:** 8 and 10.

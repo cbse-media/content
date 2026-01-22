@@ -1,0 +1,70 @@
+---
+title: "Special Identities"
+description: "Geometric proofs and derivations of the square identities."
+date: 2024-04-10
+tags: ["identities", "geometry", "proofs"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Identity 1A: Square of a Sum
+
+When we multiply a number by itself, we get a square. If that number is a sum $(a+b)$, we are finding the area of a square with side length $(a+b)$.
+
+$$ (a + b)^2 = a^2 + 2ab + b^2 $$
+
+### Geometric Proof
+Imagine a large square with side $a+b$. We can split it into 4 sections:
+1.  A square of area $a^2$.
+2.  A square of area $b^2$.
+3.  Two identical rectangles of area $a \times b$.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Big Square */}
+    <rect x="10" y="10" width="180" height="180" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Dividing Lines */}
+    <line x1="130" y1="10" x2="130" y2="190" stroke="currentColor" stroke-width="1" />
+    <line x1="10" y1="130" x2="190" y2="130" stroke="currentColor" stroke-width="1" />
+
+    {/* Areas */}
+    <text x="70" y="70" font-size="20" fill="currentColor" text-anchor="middle">a²</text>
+    <text x="160" y="70" font-size="16" fill="currentColor" text-anchor="middle">ab</text>
+    <text x="70" y="160" font-size="16" fill="currentColor" text-anchor="middle">ab</text>
+    <text x="160" y="160" font-size="20" fill="currentColor" text-anchor="middle">b²</text>
+
+    {/* Side Labels */}
+    <text x="70" y="5" font-size="12" fill="currentColor" text-anchor="middle">a</text>
+    <text x="160" y="5" font-size="12" fill="currentColor" text-anchor="middle">b</text>
+    <text x="5" y="70" font-size="12" fill="currentColor" text-anchor="middle">a</text>
+    <text x="5" y="160" font-size="12" fill="currentColor" text-anchor="middle">b</text>
+  </svg>
+</div>
+
+## Identity 1B: Square of a Difference
+
+$$ (a - b)^2 = a^2 - 2ab + b^2 $$
+
+**Derivation:**
+We can derive this from Identity 1A by replacing $b$ with $(-b)$:
+$$ (a + (-b))^2 = a^2 + 2a(-b) + (-b)^2 $$
+$$ = a^2 - 2ab + b^2 $$
+
+## Identity 1C: Difference of Squares
+
+This is a very useful pattern for fast calculation.
+$$ (a + b)(a - b) = a^2 - b^2 $$
+
+**Why does this work?**
+Let's expand it using the distributive property:
+$$ (a + b)(a - b) = a(a - b) + b(a - b) $$
+$$ = a^2 - ab + ab - b^2 $$
+$$ = a^2 - b^2 $$
+*(The middle terms $-ab$ and $+ab$ cancel out!)*
+
+<Callout variant="info">
+**History Note:** The Indian mathematician **Sridharacharya (750 CE)** used a modified form of this identity: $a^2 = (a+b)(a-b) + b^2$ to calculate squares quickly.
+</Callout>

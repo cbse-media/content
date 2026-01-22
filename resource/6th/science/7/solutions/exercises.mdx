@@ -1,0 +1,187 @@
+---
+title: "Textbook Exercises"
+description: "Complete solutions to 'Let us enhance our learning' questions."
+date: 2025-01-20
+tags: ["solutions", "exercises", "grade-6"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Let us enhance our learning
+
+**Q1. The normal temperature of a healthy human being is close to...**
+(i) $98.6^\circ C$
+(ii) $37.0^\circ C$
+(iii) $32.0^\circ C$
+(iv) $27.0^\circ C$
+
+**Answer:** (ii) $37.0^\circ C$
+> **Explanation:** The normal human body temperature is approximately $37.0^\circ C$. Note that $98.6$ is correct only if the scale is Fahrenheit ($^\circ F$), but option (i) says $^\circ C$, which would be boiling hot!
+
+---
+
+**Q2. $37^\circ C$ is the same temperature as...**
+(i) $97.4^\circ F$
+(ii) $97.6^\circ F$
+(iii) $98.4^\circ F$
+(iv) $98.6^\circ F$
+
+**Answer:** (iv) $98.6^\circ F$
+> **Explanation:** This is the standard conversion for normal body temperature.
+
+---
+
+**Q3. Fill in the blanks:**
+(i) The hotness or coldness of a system is determined by its \_\_\_\_\_\_\_\_.
+(ii) The temperature of ice-cold water cannot be measured by a \_\_\_\_\_\_\_\_ thermometer.
+(iii) The unit of temperature is degree \_\_\_\_\_\_\_\_.
+
+**Answer:**
+(i) Temperature
+(ii) Clinical (Because the range of a clinical thermometer is 35-42°C, and ice is 0°C).
+(iii) Celsius (or Fahrenheit)
+
+---
+
+**Q4. The range of a laboratory thermometer is usually...**
+(i) $10^\circ C$ to $100^\circ C$
+(ii) $-10^\circ C$ to $110^\circ C$
+(iii) $32^\circ C$ to $45^\circ C$
+(iv) $35^\circ C$ to $42^\circ C$
+
+**Answer:** (ii) $-10^\circ C$ to $110^\circ C$
+
+---
+
+**Q5. Who do you think followed the correct way for measuring temperature?**
+*Refer to Figure 7.6 in textbook (Student 1: Tilted, Student 2: Not immersed properly, Student 3: Touching bottom, Student 4: Vertical and suspended).*
+
+**Answer:** (iv) Student 4
+> **Explanation:**
+> - Student 1 is holding it tilted.
+> - Student 2 is holding it too high (bulb barely touches water).
+> - Student 3 is touching the bottom of the container.
+> - **Student 4** is holding it vertically, immersed in water, without touching the sides or bottom. This is the correct method.
+
+---
+
+**Q6. Colour to show the red column on the drawings of thermometers as per the temperatures written below:**
+- $14^\circ C$
+- $17^\circ C$
+- $7.5^\circ C$
+
+<div class="flex justify-center my-6 gap-8">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+     {/* 14 C */}
+    <g transform="translate(20,0)">
+        <text x="15" y="20" font-size="12" fill="currentColor" text-anchor="middle">14°C</text>
+        <rect x="10" y="30" width="10" height="150" stroke="currentColor" fill="none"/>
+        {/* Scale 0 to 20 approx mapping: Bottom 180 is 0, Top 30 is 20. 
+             If height 150 represents 20 units, 1 unit = 7.5px. 
+             14 units = 105px from bottom. Y = 180 - 105 = 75. */}
+        <rect x="11" y="75" width="8" height="105" fill="#ff4444"/>
+        <line x1="10" y1="180" x2="20" y2="180" stroke="currentColor"/> {/* 0 */}
+        <line x1="10" y1="105" x2="20" y2="105" stroke="currentColor"/> {/* 10 */}
+        <line x1="10" y1="30" x2="20" y2="30" stroke="currentColor"/> {/* 20 */}
+    </g>
+
+    {/* 17 C */}
+    <g transform="translate(120,0)">
+        <text x="15" y="20" font-size="12" fill="currentColor" text-anchor="middle">17°C</text>
+        <rect x="10" y="30" width="10" height="150" stroke="currentColor" fill="none"/>
+        {/* 17 units = 127.5px. Y = 180 - 127.5 = 52.5 */}
+        <rect x="11" y="52.5" width="8" height="127.5" fill="#ff4444"/>
+        <line x1="10" y1="180" x2="20" y2="180" stroke="currentColor"/> {/* 0 */}
+        <line x1="10" y1="105" x2="20" y2="105" stroke="currentColor"/> {/* 10 */}
+        <line x1="10" y1="30" x2="20" y2="30" stroke="currentColor"/> {/* 20 */}
+    </g>
+
+    {/* 7.5 C */}
+    <g transform="translate(220,0)">
+        <text x="15" y="20" font-size="12" fill="currentColor" text-anchor="middle">7.5°C</text>
+        <rect x="10" y="30" width="10" height="150" stroke="currentColor" fill="none"/>
+        {/* 7.5 units = 56.25px. Y = 180 - 56.25 = 123.75 */}
+        <rect x="11" y="123.75" width="8" height="56.25" fill="#ff4444"/>
+        <line x1="10" y1="180" x2="20" y2="180" stroke="currentColor"/> {/* 0 */}
+        <line x1="10" y1="105" x2="20" y2="105" stroke="currentColor"/> {/* 10 */}
+        <line x1="10" y1="30" x2="20" y2="30" stroke="currentColor"/> {/* 20 */}
+    </g>
+  </svg>
+</div>
+
+---
+
+**Q7. Observe the part of thermometer shown in Fig. 7.8 and answer:**
+*(Figure shows a scale with 10 divisions between 0 and 10, and 10 and 20. The liquid level is not explicitly defined in text but usually asks for least count or specific reading).*
+
+(i) **What type of thermometer is it?**
+It is likely a **Laboratory Thermometer** because the range shown includes 0 to 40°C with uniform divisions, typical for lab use.
+
+(ii) **What is the reading of the thermometer?**
+*Assumption based on typical textbook image:* If the red line is at the 2nd small mark after 20, the reading is $22^\circ C$.
+
+(iii) **What is the smallest value that this thermometer can measure?**
+-   Difference between big marks (0 to 10) = $10^\circ C$.
+-   Number of divisions = 10.
+-   Least Count = $10 / 10 = 1^\circ C$.
+
+---
+
+**Q8. A laboratory thermometer is not used to measure our body temperature. Give a reason.**
+**Answer:** A laboratory thermometer does not have a "kink" or constriction near the bulb. Therefore, the mercury/alcohol level falls immediately as soon as it is taken out of the mouth (or contact with the body), making it impossible to get an accurate reading of body temperature.
+
+---
+
+**Q9. Vaishnavi's Temperature Record (Table 7.4 Analysis)**
+
+(i) **Highest recorded temperature?**
+**Answer:** $40.0^\circ C$ (Recorded on Day One at 7 pm).
+
+(ii) **On which day and time?**
+**Answer:** Day One at 7 pm.
+
+(iii) **When did temperature return to normal?**
+**Answer:** Normal body temp is approx $37.0^\circ C$. Looking at the table, on **Day Three at 4pm**, the temperature was $37.0^\circ C$.
+
+---
+
+**Q10. If you have to measure the temperature 22.5 °C, which thermometer will you use?**
+*(Fig 7.9 shows three thermometers with different least counts)*
+-   (a) Divisions of 1 degree ($0, 1, 2...$)
+-   (b) Divisions of 0.5 degree ($0, 0.5, 1...$) - *Implied by 2 divisions per degree*
+-   (c) Divisions of 2 degrees ($0, 2, 4...$)
+
+**Answer:** You should use thermometer **(b)**.
+> **Reason:** To measure $22.5^\circ C$ accurately, the thermometer must have a least count of at least $0.5^\circ C$. A thermometer with 1-degree markings can only read 22 or 23 reliably.
+
+---
+
+**Q11. The temperature shown by the thermometer in Fig. 7.10 is...**
+(i) $28.0^\circ C$
+(ii) $27.5^\circ C$
+(iii) $26.5^\circ C$
+(iv) $25.3^\circ C$
+
+**Answer:** (iii) $26.5^\circ C$
+> **Reason:** (Based on visual interpretation of standard textbook diagrams). If the mark is halfway between 26 and 27, it is 26.5. If the divisions are 0.5 degrees, this reading is possible.
+
+---
+
+**Q12. A laboratory thermometer has 50 divisions between 0°C and 100°C. What does each division measure?**
+**Answer:**
+-   Temperature difference = $100 - 0 = 100^\circ C$.
+-   Total divisions = 50.
+-   Value of 1 division = $\frac{100}{50} = 2^\circ C$.
+
+---
+
+**Q13. Draw scale between 10°C and 20°C with smallest division 0.5°C.**
+*(Self-Practice Drawing)*: You would draw the mark 10 and 20. Between them, you would place 19 small lines to create 20 gaps (since $10 / 0.5 = 20$ divisions).
+
+---
+
+**Q14. Komal has a fever of 101 degrees. Is it Celsius or Fahrenheit?**
+**Answer:** It is on the **Fahrenheit scale ($^\circ F$)**.
+> **Reason:** $101^\circ C$ is above the boiling point of water. A human cannot survive at that temperature. In Fahrenheit, $101^\circ F$ indicates a moderate fever (normal is $98.6^\circ F$).

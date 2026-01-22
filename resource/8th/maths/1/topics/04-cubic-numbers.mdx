@@ -1,0 +1,65 @@
+---
+title: "Cubic Numbers"
+description: "Introduction to cubes, Hardy-Ramanujan number, and properties."
+date: 2024-04-10
+tags: ["cubes", "ramanujan", "geometry"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Cube?
+
+A cube number is obtained by multiplying a number by itself three times: $n^3 = n \times n \times n$.
+Geometrically, it represents the volume of a cube.
+
+<div class="flex justify-center my-6">
+  <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Front Face */}
+    <rect x="30" y="50" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+    {/* Back Face */}
+    <rect x="60" y="20" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+    {/* Connecting Lines */}
+    <line x1="30" y1="50" x2="60" y2="20" stroke="currentColor" stroke-width="2"/>
+    <line x1="90" y1="50" x2="120" y2="20" stroke="currentColor" stroke-width="2"/>
+    <line x1="30" y1="110" x2="60" y2="80" stroke="currentColor" stroke-width="2"/>
+    <line x1="90" y1="110" x2="120" y2="80" stroke="currentColor" stroke-width="2"/>
+    <text x="75" y="140" font-family="sans-serif" font-size="12" text-anchor="middle" fill="currentColor">Volume = side³</text>
+  </svg>
+</div>
+
+## Hardy-Ramanujan Number: 1729
+
+1729 is known as the **Taxicab Number**. It is the smallest number that can be expressed as the sum of two cubes in two different ways.
+
+$$
+\begin{aligned}
+1729 &= 12^3 + 1^3 \\
+&= 1728 + 1 \\
+\\
+1729 &= 10^3 + 9^3 \\
+&= 1000 + 729
+\end{aligned}
+$$
+
+## Properties of Cubes
+
+1.  **Parity:** Cube of an even number is even ($2^3 = 8$). Cube of an odd number is odd ($3^3 = 27$).
+2.  **Last Digits:**
+    *   If a number ends in 1, its cube ends in 1.
+    *   If a number ends in 2, its cube ends in 8.
+    *   If a number ends in 3, its cube ends in 7.
+    *   If a number ends in 4, its cube ends in 4.
+    *   If a number ends in 5, its cube ends in 5.
+    *   If a number ends in 6, its cube ends in 6.
+    *   If a number ends in 7, its cube ends in 3.
+    *   If a number ends in 8, its cube ends in 2.
+    *   If a number ends in 9, its cube ends in 9.
+    *   If a number ends in 0, its cube ends in 0.
+
+<Callout variant="tip">
+Notice the pattern: numbers ending in 0, 1, 4, 5, 6, 9 keep the same unit digit.
+2 flips with 8.
+3 flips with 7.
+</Callout>

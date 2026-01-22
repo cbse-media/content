@@ -1,0 +1,86 @@
+---
+title: "Common Multiples and Factors"
+description: "Understanding factors, multiples, and commonalities between numbers."
+date: 2025-01-15
+tags: ["factors", "multiples", "perfect-numbers"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Common Multiples
+
+In the **Idli-Vada** game, we saw that some numbers belong to two groups at once.
+*   **Multiples of 3:** 3, 6, 9, 12, **15**, 18, 21, 24, 27, **30**...
+*   **Multiples of 5:** 5, 10, **15**, 20, 25, **30**...
+
+The numbers **15, 30, 45...** are multiples of *both* 3 and 5. These are called **Common Multiples**.
+
+## Factors and Divisors
+
+A **factor** (or divisor) is a number that divides another number exactly (leaving no remainder).
+
+### Jump Jackpot Example
+Imagine a game where you must jump in steps of a specific size to land exactly on a treasure at number **24**.
+*   Jump size 4? Yes: $4 \to 8 \to 12 \to 16 \to 20 \to 24$.
+*   Jump size 5? No: $5 \to 10 \to 15 \to 20 \to 25$ (Missed it!).
+
+The successful jump sizes are the **factors** of 24:
+$$ \text{Factors of 24: } 1, 2, 3, 4, 6, 8, 12, 24 $$
+
+<div class="flex justify-center my-6">
+  <svg width="600" height="100" viewBox="0 0 600 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Number Line */}
+    <line x1="10" y1="50" x2="590" y2="50" stroke="currentColor" stroke-width="2"/>
+    {/* Ticks */}
+    <g stroke="currentColor" stroke-width="1">
+      <line x1="10" y1="45" x2="10" y2="55"/> {/* 0 */}
+      <line x1="106" y1="45" x2="106" y2="55"/> {/* 4 */}
+      <line x1="202" y1="45" x2="202" y2="55"/> {/* 8 */}
+      <line x1="298" y1="45" x2="298" y2="55"/> {/* 12 */}
+      <line x1="394" y1="45" x2="394" y2="55"/> {/* 16 */}
+      <line x1="490" y1="45" x2="490" y2="55"/> {/* 20 */}
+      <line x1="586" y1="45" x2="586" y2="55"/> {/* 24 */}
+    </g>
+    {/* Labels */}
+    <text x="10" y="70" fill="currentColor" font-size="12" text-anchor="middle">0</text>
+    <text x="106" y="70" fill="currentColor" font-size="12" text-anchor="middle">4</text>
+    <text x="298" y="70" fill="currentColor" font-size="12" text-anchor="middle">12</text>
+    <text x="586" y="70" fill="currentColor" font-size="12" text-anchor="middle">24</text>
+    {/* Arcs */}
+    <path d="M10 50 Q 58 20 106 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <path d="M106 50 Q 154 20 202 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <path d="M202 50 Q 250 20 298 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <path d="M298 50 Q 346 20 394 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <path d="M394 50 Q 442 20 490 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <path d="M490 50 Q 538 20 586 50" stroke="currentColor" fill="none" stroke-dasharray="4 4"/>
+    <text x="300" y="90" fill="currentColor" font-size="14" text-anchor="middle">Jumping by 4s lands on 24</text>
+  </svg>
+</div>
+
+### Common Factors
+If treasures are kept on **14** and **36**, which jump size lands on **both**?
+*   Factors of 14: 1, 2, 7, 14
+*   Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36
+*   **Common Factors:** 1, 2.
+
+<Callout variant="tip">
+**Definition:** The jump sizes that land on both numbers are the **common factors** of those two numbers.
+</Callout>
+
+## Perfect Numbers
+
+A number is called a **Perfect Number** if the sum of all its factors is equal to twice the number.
+
+**Example: 28**
+*   Factors: 1, 2, 4, 7, 14, 28
+*   Sum: $1 + 2 + 4 + 7 + 14 + 28 = 56$
+*   Check: $28 \times 2 = 56$.
+*   Yes, 28 is a perfect number!
+
+**Example: 6**
+*   Factors: 1, 2, 3, 6
+*   Sum: $1 + 2 + 3 + 6 = 12$
+*   Check: $6 \times 2 = 12$.
+*   Yes, 6 is a perfect number!

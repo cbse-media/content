@@ -1,0 +1,46 @@
+---
+title: "Mayan and Chinese Systems"
+description: "Exploring the Vigesimal (Base-20) Mayan system and Chinese Rod Numerals."
+date: 2024-04-10
+tags: ["mayan", "chinese", "base-20"]
+order: 6
+draft: false
+---
+
+## The Mayan System (Base-20)
+Developed in Central America, this system used **Base-20**.
+It had a symbol for **Zero** (a shell shape), which was a major advancement.
+
+### Symbols
+*   **Dot ($\bullet$):** 1
+*   **Bar (—):** 5
+*   **Shell:** 0
+
+Numbers were written vertically.
+*   **Top Level:** Multiples of 400 ($20^2$) *[Wait, specific calendar counts varied, but pure math was base-20]*
+*   **Middle Level:** Multiples of 20 ($20^1$)
+*   **Bottom Level:** Multiples of 1 ($20^0$)
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Mayan 7: Bar and 2 dots */}
+    <circle cx="50" cy="40" r="5" fill="currentColor"/>
+    <circle cx="70" cy="40" r="5" fill="currentColor"/>
+    <rect x="40" y="55" width="40" height="10" fill="currentColor"/>
+    <text x="60" y="90" text-anchor="middle" fill="currentColor">7</text>
+
+    {/* Mayan 0: Shell */}
+    <path d="M 150 40 Q 180 40 180 60 Q 150 80 120 60 Q 120 40 150 40 M 150 40 L 150 80 M 130 50 L 170 50" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="150" y="100" text-anchor="middle" fill="currentColor">0 (Shell)</text>
+  </svg>
+</div>
+
+## The Chinese Rod Numerals (Base-10)
+A decimal place-value system used for calculation on counting boards.
+It alternated between **vertical** (Zong) and **horizontal** (Heng) rods to distinguish positions (Units vs Tens vs Hundreds).
+
+| Place | 1000s | 100s | 10s | 1s |
+| :--- | :--- | :--- | :--- | :--- |
+| **Type** | Heng | Zong | Heng | Zong |
+
+This prevented confusion when writing numbers like 11 (one vertical next to another vertical would look like 2).

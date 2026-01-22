@@ -1,0 +1,62 @@
+---
+title: "What is a Force?"
+description: "Defining force as a push or pull and understanding its effects on objects."
+date: 2025-01-15
+tags: ["force", "interaction", "physics-basics"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Definition of Force
+
+In science, a **Force** is generally defined as a **push** or a **pull** applied on an object.
+*   **Push:** Moving something away from you (e.g., kicking a football).
+*   **Pull:** Drawing something towards you (e.g., opening a drawer).
+
+<Callout variant="tip">
+**Interaction is Key:** Forces do not exist in isolation. At least **two objects** must interact for a force to come into play. For example, when you push a table, your hand interacts with the table.
+</Callout>
+
+## What Can a Force Do?
+
+A force can change the state of an object in several ways:
+
+1.  **Move from Rest:** Making a stationary ball move by kicking it.
+2.  **Change Speed:**
+    *   Pushing a moving swing harder makes it go faster.
+    *   Pulling back on a dog's leash slows it down.
+3.  **Change Direction:** A batsman hitting a cricket ball changes its path.
+4.  **Change Shape:** Squeezing a plastic bottle or stretching a rubber band.
+
+### Visualizing Push and Pull
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Floor */}
+    <line x1="20" y1="180" x2="380" y2="180" stroke="currentColor" stroke-width="2" />
+
+    {/* Box 1 (Push) */}
+    <rect x="50" y="100" width="80" height="80" fill="#e0e0e0" stroke="currentColor" stroke-width="2" />
+    <text x="90" y="145" text-anchor="middle" font-size="14" fill="currentColor">Object</text>
+    {/* Push Arrow */}
+    <line x1="20" y1="140" x2="50" y2="140" stroke="#ef4444" stroke-width="4" marker-end="url(#arrowhead)" />
+    <text x="35" y="130" text-anchor="middle" fill="#ef4444" font-size="12">Push</text>
+
+    {/* Box 2 (Pull) */}
+    <rect x="250" y="100" width="80" height="80" fill="#e0e0e0" stroke="currentColor" stroke-width="2" />
+    <text x="290" y="145" text-anchor="middle" font-size="14" fill="currentColor">Object</text>
+    {/* Pull Arrow */}
+    <line x1="330" y1="140" x2="380" y2="140" stroke="#3b82f6" stroke-width="4" marker-end="url(#arrowhead)" />
+    <text x="355" y="130" text-anchor="middle" fill="#3b82f6" font-size="12">Pull</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+The **SI Unit** of force is the **Newton (N)**.

@@ -1,0 +1,117 @@
+---
+title: "Figure It Out 1.1"
+description: "Solutions to the Figure It Out exercises on Page 10."
+date: 2024-04-10
+tags: ["solutions", "exercises", "squares"]
+order: 7
+draft: false
+---
+
+## Question 1
+**Which of the following numbers are not perfect squares?**
+(i) 2032 (ii) 2048 (iii) 1027 (iv) 1089
+
+**Solution:**
+We check the unit digits. A perfect square cannot end in 2, 3, 7, or 8.
+*   (i) 2032 ends in **2**. Not a square.
+*   (ii) 2048 ends in **8**. Not a square.
+*   (iii) 1027 ends in **7**. Not a square.
+*   (iv) 1089 ends in 9. It might be a square ($33^2 = 1089$).
+
+**Answer:** (i), (ii), and (iii) are not perfect squares.
+
+## Question 2
+**Which one among $64^2, 108^2, 292^2, 36^2$ has last digit 4?**
+
+**Solution:**
+The last digit of a square depends on the last digit of the number.
+*   $64^2 \to 4 \times 4 = 16$ (ends in 6)
+*   $108^2 \to 8 \times 8 = 64$ (**ends in 4**)
+*   $292^2 \to 2 \times 2 = 4$ (**ends in 4**)
+*   $36^2 \to 6 \times 6 = 36$ (ends in 6)
+
+**Answer:** $108^2$ and $292^2$.
+
+## Question 3
+**Given $125^2 = 15625$, what is the value of $126^2$?**
+
+**Solution:**
+We can use the identity $(n+1)^2 = n^2 + (n) + (n+1) = n^2 + 2n + 1$.
+Here $n = 125$.
+$126^2 = 125^2 + 125 + 126$
+$126^2 = 15625 + 251$
+
+**Answer:** (iv) $15625 + 251$.
+
+## Question 4
+**Find the length of the side of a square whose area is 441 m².**
+
+**Solution:**
+Area = Side $\times$ Side = $x^2 = 441$.
+We need to find $\sqrt{441}$.
+Prime factors of 441:
+$441 = 3 \times 147 = 3 \times 3 \times 49 = 3 \times 3 \times 7 \times 7$.
+Group pairs: $(3 \times 3) \times (7 \times 7)$.
+$\sqrt{441} = 3 \times 7 = 21$.
+
+**Answer:** 21 m.
+
+## Question 5
+**Find the smallest square number that is divisible by each of the following numbers: 4, 9, and 10.**
+
+**Solution:**
+1.  Find the LCM of 4, 9, 10.
+    *   $4 = 2^2$
+    *   $9 = 3^2$
+    *   $10 = 2 \times 5$
+    *   LCM = $2^2 \times 3^2 \times 5 = 4 \times 9 \times 5 = 180$.
+2.  Check prime factors of 180: $180 = 2 \times 2 \times 3 \times 3 \times 5$.
+3.  To make it a perfect square, all factors must be in pairs.
+4.  The factor 5 is unpaired. We must multiply by 5.
+5.  $180 \times 5 = 900$.
+
+**Answer:** 900.
+
+## Question 6
+**Find the smallest number by which 9408 must be multiplied so that the product is a perfect square. Find the square root of the product.**
+
+**Solution:**
+1.  Prime factorization of 9408:
+    $9408 \div 2 = 4704$
+    $4704 \div 2 = 2352$
+    $2352 \div 2 = 1176$
+    $1176 \div 2 = 588$
+    $588 \div 2 = 294$
+    $294 \div 2 = 147$
+    $147 \div 3 = 49$
+    $49 \div 7 = 7$
+    $7 \div 7 = 1$
+    Factors: $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 3 \times 7 \times 7$.
+2.  Group pairs: $(2\times2), (2\times2), (2\times2), (7\times7)$.
+3.  The factor **3** is left unpaired.
+4.  Smallest number to multiply is **3**.
+5.  New number: $9408 \times 3 = 28224$.
+6.  Square root = $2 \times 2 \times 2 \times 7 \times 3 = 8 \times 21 = 168$.
+
+**Answer:** Multiply by 3. Square root of product is 168.
+
+## Question 7
+**How many numbers lie between the squares of the following numbers?**
+(i) 16 and 17 (ii) 99 and 100
+
+**Solution:**
+Between $n^2$ and $(n+1)^2$, there are $2n$ non-square numbers.
+(i) Here $n=16$. Numbers = $2 \times 16 = 32$.
+(ii) Here $n=99$. Numbers = $2 \times 99 = 198$.
+
+## Question 8
+**Fill in the missing numbers:**
+$4^2 + 5^2 + 20^2 = (\underline{\quad})^2$
+$9^2 + 10^2 + (\underline{\quad})^2 = (\underline{\quad})^2$
+
+**Solution:**
+Pattern: $n^2 + (n+1)^2 + [n(n+1)]^2 = [n(n+1)+1]^2$.
+1.  $4^2 + 5^2 + 20^2$. Here $4 \times 5 = 20$. Next is 21.
+    Answer: **21**
+2.  $9^2 + 10^2 + (90)^2$. Next is 91.
+    Answer: **90, 91**

@@ -1,0 +1,40 @@
+---
+title: "The Collatz Conjecture"
+description: "An unsolved mathematical mystery involving a simple sequence rule."
+date: 2024-04-10
+tags: ["unsolved-math", "sequences"]
+order: 11
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Simple Rule
+
+Start with any whole number $n$.
+1.  If $n$ is **even**, divide it by 2 ($n/2$).
+2.  If $n$ is **odd**, multiply it by 3 and add 1 ($3n + 1$).
+3.  Repeat.
+
+### Example Sequence
+Start with **12**:
+1.  12 is even $\rightarrow 6$
+2.  6 is even $\rightarrow 3$
+3.  3 is odd $\rightarrow (3 \times 3) + 1 = 10$
+4.  10 is even $\rightarrow 5$
+5.  5 is odd $\rightarrow (3 \times 5) + 1 = 16$
+6.  16 is even $\rightarrow 8$
+7.  8 is even $\rightarrow 4$
+8.  4 is even $\rightarrow 2$
+9.  2 is even $\rightarrow 1$
+
+The sequence is: $12, 6, 3, 10, 5, 16, 8, 4, 2, 1$.
+
+## The Unsolved Mystery
+The German mathematician **Lothar Collatz** conjectured that **every starting number eventually reaches 1**.
+However, no one has been able to prove this is true for *every* number, nor has anyone found a number that *doesn't* reach 1.
+
+<Callout variant="info">
+**Try it:** Start with 7. The path is quite long!
+$7 \to 22 \to 11 \to 34 \to 17 \to 52 \to 26 \to 13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$.
+</Callout>

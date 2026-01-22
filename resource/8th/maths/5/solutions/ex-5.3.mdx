@@ -1,0 +1,77 @@
+---
+title: "Figure It Out: Cryptarithms & Logic"
+description: "Solutions to the comprehensive exercise set on Page 132-134."
+date: 2024-04-10
+tags: ["solutions", "puzzles"]
+order: 8
+draft: false
+---
+
+**1. If 31z5 is a multiple of 9.**
+Sum: $3+1+z+5 = 9+z$.
+For divisibility by 9, $9+z$ must be 9 or 18.
+$z=0$ or $z=9$. Both work.
+
+**2. Snehal's Claim (Mod 12 and 8).**
+*   Num 1: $12k + 8$.
+*   Num 2: $12m - 4$.
+*   Sum: $12(k+m) + 4$.
+*   Is $12(k+m) + 4$ divisible by 8?
+*   $12$ is divisible by 4, not 8.
+*   Example: $k=0, m=1$. Sum = $8 + 8 = 16$ (Yes).
+*   Example: $k=1, m=1$. Sum = $20 + 8 = 28$ (No, 28 is not div by 8).
+*   **Conclusion:** False.
+
+**3. Sum of two multiples of 3.**
+Let $3a$ and $3b$. Sum $3(a+b)$.
+*   If $(a+b)$ is even, sum is div by 6.
+*   If $(a+b)$ is odd, sum is not div by 6.
+
+**5. 48a23b is multiple of 18.**
+*   Even (b must be even: 0, 2, 4, 6, 8).
+*   Divisible by 9: $4+8+a+2+3+b = 17+a+b$.
+*   $17+a+b$ must be 18 or 27.
+*   $a+b = 1$ or $a+b = 10$.
+*   Check pairs with even $b$:
+    *   $b=0 \to a=1, a=10(X)$
+    *   $b=2 \to a=-1(X), a=8$
+    *   $b=4 \to a=6$
+    *   $b=6 \to a=4$
+    *   $b=8 \to a=2$
+*   **Pairs (a,b):** $(1,0), (8,2), (6,4), (4,6), (2,8)$.
+
+**6. 3p7q8 divisible by 44.**
+*   Divisible by 4: Last two digits $q8$. $q$ must be even ($0, 2, 4, 6, 8$).
+*   Divisible by 11: $(3+7+8) - (p+q) = 18 - (p+q)$ must be 0, 11, etc.
+*   $p+q = 7$ or $p+q = 18$.
+*   If $q$ is even:
+    *   $q=0 \to p=7$.
+    *   $q=2 \to p=5$.
+    *   $q=4 \to p=3$.
+    *   $q=6 \to p=1$.
+    *   $q=8 \to p=-1$ (No) or $p+q=18 \to p=10$ (No).
+*   **Solutions (p,q):** $(7,0), (5,2), (3,4), (1,6)$.
+
+**15. Cryptarithms**
+**(i) EF x E = GGG**
+*   $GGG = 111 \times G = 37 \times 3 \times G$.
+*   Since $E$ is a single digit, $EF$ is 2-digit.
+*   Try $E=3$: $EF \times 3 = GGG$. $37 \times 3 = 111$.
+*   Fits: $E=3, F=7, G=1$. ($37 \times 3 = 111$).
+
+**(ii) WOW x 5 = MEOW**
+*   $W \times 5$ ends in $W$. $W$ must be 0 or 5.
+*   If $W=0$: $0O0$ (Invalid first digit).
+*   So **W = 5**.
+*   $5O5 \times 5 = MEO5$.
+*   $5 \times 5 = 25$ (Carry 2).
+*   $5 \times O + 2$ ends in $O$.
+    *   $5O + 2 \equiv O \pmod{10}$.
+    *   Only solution is odd $O$ where $5O$ ends in 5. $5+2=7$. No.
+    *   Wait, $5 \times 2 = 10 \to 0$. $5 \times 7 = 35 \to 5$.
+    *   Let's test digits:
+    *   $O=2: 5 \times 2 + 2 = 12$ ($O=2$). Works.
+    *   $O=7: 5 \times 7 + 2 = 37$ ($O=7$). Works.
+*   **Case 1 (O=2):** $525 \times 5 = 2625$. $M=2, E=6, O=2, W=5$. (Matches O=2).
+*   **Case 2 (O=7):** $575 \times 5 = 2875$. $M=2, E=8, O=7, W=5$. (Matches O=7).
+*   Both are valid solutions.

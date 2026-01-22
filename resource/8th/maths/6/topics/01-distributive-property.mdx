@@ -1,0 +1,72 @@
+---
+title: "Properties of Multiplication"
+description: "Understanding the distributive property through increments and visualizations."
+date: 2024-04-10
+tags: ["distributivity", "multiplication", "algebra"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Increments in Products
+
+Consider the multiplication $23 \times 27$.
+*   If we increase the first number (23) by 1, the new product is $24 \times 27$.
+*   This effectively adds one more "set" of 27 to the total.
+*   Increase = 27.
+
+However, what if **both** numbers increase?
+Let the numbers be $a$ and $b$. If we increase both by 1, we get $(a+1)(b+1)$.
+
+$$
+(a+1)(b+1) = ab + a + b + 1
+$$
+
+The product increases by the sum of the original numbers plus 1.
+
+## Visualizing Distributivity
+
+The Distributive Property allows us to break numbers down.
+$$ a(b+c) = ab + ac $$
+
+We can visualize this as a grid of dots. If we have $a$ rows and $(b+c)$ columns, we can split them into a block of $b$ columns and a block of $c$ columns.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Block 1: ab */}
+    <rect x="10" y="10" width="100" height="80" fill="none" stroke="currentColor" stroke-dasharray="4" />
+    <text x="60" y="55" font-family="monospace" fill="currentColor" text-anchor="middle">ab</text>
+
+    {/* Block 2: ac */}
+    <rect x="120" y="10" width="60" height="80" fill="none" stroke="currentColor" stroke-dasharray="4" />
+    <text x="150" y="55" font-family="monospace" fill="currentColor" text-anchor="middle">ac</text>
+
+    {/* Labels */}
+    <text x="5" y="55" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="end">a rows</text>
+    <text x="60" y="110" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="middle">b columns</text>
+    <text x="150" y="110" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="middle">c columns</text>
+
+    {/* Arrow */}
+    <path d="M 60 10 Q 105 -10 150 10" fill="none" stroke="currentColor" marker-end="url(#arrow)" />
+    <text x="105" y="-15" fill="currentColor" text-anchor="middle" font-size="10">Distribution</text>
+  </svg>
+</div>
+
+## Generalizing to Two Binomials
+
+What happens if we multiply two sums?
+$$ (a + m)(b + n) $$
+
+We distribute each term in the first bracket to every term in the second bracket:
+1.  Multiply $a$ by $b \rightarrow ab$
+2.  Multiply $a$ by $n \rightarrow an$
+3.  Multiply $m$ by $b \rightarrow mb$
+4.  Multiply $m$ by $n \rightarrow mn$
+
+$$ (a + m)(b + n) = ab + an + mb + mn $$
+
+<Callout variant="tip">
+**Key Insight:** This works for subtraction too! Just treat subtraction as adding a negative number.
+$$(a - u)(b + v) = a(b+v) - u(b+v) = ab + av - ub - uv$$
+</Callout>

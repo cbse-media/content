@@ -1,0 +1,43 @@
+---
+title: "Cube Roots"
+description: "Finding cube roots using prime factorization."
+date: 2024-04-10
+tags: ["cube-roots", "factorization"]
+order: 6
+draft: false
+---
+
+## Definition
+The cube root of a number $x$ is that number which, when multiplied by itself three times, gives $x$.
+Denoted as $\sqrt[3]{x}$.
+
+$$
+\sqrt[3]{8} = 2 \quad \text{because} \quad 2 \times 2 \times 2 = 8
+$$
+
+## Prime Factorization Method
+
+To find the cube root, we factorize the number and group factors in **triplets** (groups of 3).
+
+**Example: Find $\sqrt[3]{3375}$**
+
+1.  **Prime Factorization:**
+    $3375 = 3 \times 3 \times 3 \times 5 \times 5 \times 5$
+
+2.  **Group in Triplets:**
+    $3375 = (3 \times 3 \times 3) \times (5 \times 5 \times 5)$
+
+3.  **Take one from each group:**
+    $\sqrt[3]{3375} = 3 \times 5$
+
+4.  **Result:**
+    $15$
+
+## Estimation Method
+For perfect cubes like 12167:
+1.  **Group digits:** Starting from the right, group in 3s. $\underline{12}, \underline{167}$.
+2.  **First group (167):** Ends in 7. Therefore, the cube root ends in **3** (since $3^3=27$).
+3.  **Second group (12):** Find the largest cube less than 12. $2^3 = 8$ and $3^3 = 27$. So, the ten's digit is **2**.
+4.  **Result:** 23.
+
+Check: $23 \times 23 \times 23 = 12167$. Correct.

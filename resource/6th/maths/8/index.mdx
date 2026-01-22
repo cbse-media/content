@@ -1,0 +1,72 @@
+---
+title: "Playing with Constructions"
+description: "Introduction to geometric constructions using a ruler and compass, exploring circles, squares, and rectangles."
+date: 2024-04-10
+tags: ["math", "grade-6", "geometry", "constructions"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Introduction
+
+Geometry is not just about calculating areas or angles; it is also about creating shapes with precision. In this chapter, we explore **Constructions**. We will move beyond freehand sketching and learn to use mathematical instruments to draw accurate geometric figures.
+
+### Tools of the Trade
+
+To play with constructions, we need two primary tools:
+
+1.  **The Ruler:** Used to draw straight lines and measure lengths.
+2.  **The Compass:** Used to draw circles and arcs, and to mark off equal lengths.
+
+### Chapter Overview
+
+We will progress through the following concepts:
+
+*   **Circles:** Understanding the center and radius.
+*   **Basic Shapes:** Properties of squares and rectangles.
+*   **Construction:** Step-by-step methods to draw squares and rectangles using given measurements.
+*   **Diagonals:** Exploring how diagonals relate to the sides and angles of quadrilaterals.
+*   **Equidistant Points:** finding points that are the same distance from two other points (intersection of circles).
+
+### Key Properties at a Glance
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+<div class="p-4 border rounded-lg">
+**Circle**
+*   **Center:** The fixed point from which all points on the curve are equidistant.
+*   **Radius:** The constant distance between the center and any point on the circle.
+</div>
+
+<div class="p-4 border rounded-lg">
+**Rectangle**
+*   **Sides:** Opposite sides are equal in length.
+*   **Angles:** All four angles are $90^\circ$ (Right angles).
+*   **Diagonals:** Equal in length and bisect each other.
+</div>
+
+<div class="p-4 border rounded-lg">
+**Square**
+*   **Sides:** All four sides are equal in length.
+*   **Angles:** All four angles are $90^\circ$.
+*   **Diagonals:** Equal in length and intersect at $90^\circ$.
+</div>
+
+</div>
+
+## Visualizing the Concepts
+
+Below is a map of how we classify the shapes we will construct:
+
+```mermaid
+graph TD
+    A[Quadrilaterals] --> B[Rectangle]
+    A --> C[Square]
+    B -->|All sides equal| C
+    C -->|Properties| D[All angles 90 degrees]
+    C -->|Properties| E[All sides equal]
+    B -->|Properties| F[Opposite sides equal]
+    B -->|Properties| D
+```

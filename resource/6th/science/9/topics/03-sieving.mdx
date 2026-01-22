@@ -1,0 +1,63 @@
+---
+title: "Sieving"
+description: "Using sieves to separate particles based on size differences."
+date: 2025-01-15
+tags: ["sieving", "size-separation", "construction", "cooking"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Sieving
+
+Sometimes, mixtures contain components that are of different sizes. Handpicking takes too long, and winnowing won't work if both components are heavy. In such cases, we use a **sieve**.
+
+**Definition:** Sieving is the process of separating solids from a mixture based on variations in particle size using a sieve (a mesh or net).
+
+### How it Works
+A sieve has small holes (pores). 
+*   **Smaller particles** pass through the holes.
+*   **Larger particles** (impurities) remain on the sieve.
+
+### Common Examples
+
+1.  **In the Kitchen (Flour):**
+    *   We sieve wheat flour to remove bran and small impurities that might have remained after grinding. The fine flour passes through, while the bran stays on top.
+    
+2.  **At Construction Sites (Sand):**
+    *   Large sieves are used to separate pebbles and stones from sand. Fine sand is needed for mixing cement, while stones would ruin the smooth finish.
+
+### Diagram: The Sieve Concept
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Sieve Frame */}
+    <ellipse cx="150" cy="50" rx="100" ry="20" stroke="currentColor" fill="none" stroke-width="3" />
+    <path d="M50 50 L80 150 L220 150 L250 50" stroke="currentColor" fill="none" stroke-width="3" />
+    <ellipse cx="150" cy="150" rx="70" ry="14" stroke="currentColor" fill="none" stroke-width="2" stroke-dasharray="4" />
+    
+    {/* Mesh Grid */}
+    <path d="M70 50 L230 50" stroke="currentColor" stroke-width="1" />
+    <path d="M80 40 L220 60" stroke="currentColor" stroke-width="1" />
+    <path d="M80 60 L220 40" stroke="currentColor" stroke-width="1" />
+    
+    {/* Particles */}
+    <circle cx="120" cy="40" r="4" fill="currentColor" />
+    <circle cx="150" cy="45" r="5" fill="currentColor" />
+    <circle cx="180" cy="40" r="4" fill="currentColor" />
+    
+    {/* Falling Particles */}
+    <circle cx="150" cy="100" r="1" fill="currentColor" />
+    <circle cx="140" cy="120" r="1" fill="currentColor" />
+    <circle cx="160" cy="110" r="1" fill="currentColor" />
+    
+    {/* Labels */}
+    <text x="10" y="40" fill="currentColor" font-size="12">Big Particles (Stay)</text>
+    <text x="200" y="120" fill="currentColor" font-size="12">Small Particles (Pass)</text>
+  </svg>
+</div>
+
+<Callout variant="warning">
+**Think:** If you try to sieve a mixture of rice and kidney beans (rajma) using a sieve with very large holes, both will fall through. The pore size of the sieve determines what gets separated!
+</Callout>

@@ -1,0 +1,71 @@
+---
+title: "Lenses: Convex and Concave"
+description: "Exploring transparent curved surfaces and how they form images."
+date: 2024-04-10
+tags: ["lenses", "refraction", "convex", "concave"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Lens?
+
+A lens is a piece of transparent material (like glass or plastic) with curved surfaces. Unlike mirrors which reflect light, lenses allow light to pass through them (refraction).
+
+### Types of Lenses
+
+1.  **Convex Lens:**
+    *   Thicker in the **middle** than at the edges.
+    *   It is a **Converging Lens** (bends light inwards).
+    *   **Image:** Can be Real or Virtual, Enlarged or Diminished, depending on distance.
+    *   **Activity:** It can burn paper by focusing sunlight (similar to a concave mirror).
+
+2.  **Concave Lens:**
+    *   Thicker at the **edges** than in the middle.
+    *   It is a **Diverging Lens** (spreads light outwards).
+    *   **Image:** Always Virtual, Erect, and **Diminished**.
+
+<div class="flex flex-col md:flex-row justify-center gap-12 my-6">
+  <div class="text-center">
+    <h4 class="mb-2">Convex Lens</h4>
+    <svg width="150" height="200" viewBox="0 0 150 200" fill="none" stroke="currentColor" stroke-width="2">
+      {/* Lens Shape */}
+      <path d="M75 20 Q105 100 75 180 Q45 100 75 20 Z" stroke="currentColor" fill="none" />
+      {/* Light Rays Converging */}
+      <line x1="10" y1="50" x2="60" y2="50" stroke="currentColor" marker-end="url(#arrow)" opacity="0.7" />
+      <line x1="90" y1="50" x2="140" y2="80" stroke="currentColor" opacity="0.7" />
+
+      <line x1="10" y1="150" x2="60" y2="150" stroke="currentColor" marker-end="url(#arrow)" opacity="0.7" />
+      <line x1="90" y1="150" x2="140" y2="120" stroke="currentColor" opacity="0.7" />
+
+      <text x="35" y="195" fill="currentColor" stroke="none" font-size="12">Converging</text>
+    </svg>
+  </div>
+
+  <div class="text-center">
+    <h4 class="mb-2">Concave Lens</h4>
+    <svg width="150" height="200" viewBox="0 0 150 200" fill="none" stroke="currentColor" stroke-width="2">
+      {/* Lens Shape */}
+      <path d="M50 20 Q75 100 50 180 L100 180 Q75 100 100 20 Z" stroke="currentColor" fill="none" />
+      {/* Light Rays Diverging */}
+      <line x1="10" y1="60" x2="60" y2="60" stroke="currentColor" marker-end="url(#arrow)" opacity="0.7" />
+      <line x1="90" y1="60" x2="140" y2="30" stroke="currentColor" opacity="0.7" />
+
+      <line x1="10" y1="140" x2="60" y2="140" stroke="currentColor" marker-end="url(#arrow)" opacity="0.7" />
+      <line x1="90" y1="140" x2="140" y2="170" stroke="currentColor" opacity="0.7" />
+
+      <text x="45" y="195" fill="currentColor" stroke="none" font-size="12">Diverging</text>
+    </svg>
+  </div>
+</div>
+
+<Callout variant="info">
+**Comparison:**
+A **Convex Lens** behaves similarly to a **Concave Mirror** (both converge light and form real images).
+A **Concave Lens** behaves similarly to a **Convex Mirror** (both diverge light and form virtual, smaller images).
+</Callout>
+
+### Applications of Lenses
+*   **Convex Lens:** Magnifying glasses, cameras, human eye, microscopes, telescopes.
+*   **Concave Lens:** Peepholes in doors, correction for short-sightedness (myopia).

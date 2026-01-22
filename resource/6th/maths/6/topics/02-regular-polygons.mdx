@@ -1,0 +1,60 @@
+---
+title: "Regular Polygons"
+description: "Understanding the perimeter of regular shapes like equilateral triangles, pentagons, and hexagons."
+date: 2024-04-10
+tags: ["polygon", "regular-polygon", "symmetry"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Regular Polygon?
+
+A **regular polygon** is a closed figure where:
+1.  All sides are equal in length.
+2.  All angles are equal in measure.
+
+Common examples include the equilateral triangle (3 sides), square (4 sides), regular pentagon (5 sides), and regular hexagon (6 sides).
+
+### General Formula for Perimeter
+
+Since all sides are equal, we can find the perimeter by multiplying the number of sides by the length of one side.
+
+$$
+\text{Perimeter of Regular Polygon} = (\text{Number of sides}) \times (\text{Length of one side})
+$$
+
+### Examples
+
+1.  **Equilateral Triangle:**
+    *   Sides: 3
+    *   Perimeter = $3 \times s$
+2.  **Square:**
+    *   Sides: 4
+    *   Perimeter = $4 \times s$
+3.  **Regular Pentagon:**
+    *   Sides: 5
+    *   Perimeter = $5 \times s$
+4.  **Regular Hexagon:**
+    *   Sides: 6
+    *   Perimeter = $6 \times s$
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Pentagon */}
+    <polygon points="70,20 120,60 100,120 40,120 20,60" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="70" y="140" text-anchor="middle" fill="currentColor" font-size="12">Pentagon (5s)</text>
+
+    {/* Hexagon */}
+    <polygon points="250,20 300,50 300,100 250,130 200,100 200,50" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="250" y="145" text-anchor="middle" fill="currentColor" font-size="12">Hexagon (6s)</text>
+  </svg>
+</div>
+
+### Split and Rejoin Concept
+
+Sometimes, shapes can be cut and rearranged.
+*   **Key Insight:** If you cut a shape and rearrange the pieces without overlap, the **area remains the same**, but the **perimeter may change**.
+
+*Example:* A rectangle cut into two pieces and joined end-to-end creates a long, thin shape with a larger perimeter than the original compact rectangle.

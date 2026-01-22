@@ -1,0 +1,66 @@
+---
+title: "Practice: Designing an Investigation"
+description: "Apply the scientific method to a new scenario."
+date: 2025-01-15
+tags: ["practice", "experiment-design"]
+order: 1
+draft: false
+---
+import Diagram from '@/components/Diagram.astro';
+import Callout from '@/components/Callout.astro'
+
+## Scenario: The Dissolving Sugar Mystery
+
+To practice the skills learned in the "Puri" experiment, let's apply the scientific method to a common kitchen observation.
+
+**Observation:** You notice that sugar seems to disappear faster in hot tea than in cold lemonade.
+
+### Step 1: Formulate a Question
+**Q:** Does the temperature of water affect how fast sugar dissolves?
+
+### Step 2: Identify Variables
+
+| Variable Type | What is it in this experiment? |
+| :--- | :--- |
+| **Independent Variable** <br/>*(What we change)* | The temperature of the water (Hot vs. Cold). |
+| **Dependent Variable** <br/>*(What we measure)* | The time taken for the sugar to completely dissolve (in seconds). |
+| **Control Variables** <br/>*(What we keep same)* | 1. Amount of water (e.g., 100ml).<br/>2. Amount of sugar (e.g., 1 teaspoon).<br/>3. Type of sugar (Granulated).<br/>4. Stirring speed (e.g., stir 5 times). |
+
+### Step 3: Experimental Setup (Diagram)
+
+<Diagram>
+```mermaid
+graph TD
+    subgraph Experiment A: Cold Water
+    A1[Glass 1: 100ml Cold Water] --> A2[Add 5g Sugar]
+    A2 --> A3[Stir]
+    A3 --> A4[Measure Time T1]
+    end
+
+    subgraph Experiment B: Hot Water
+    B1[Glass 2: 100ml Hot Water] --> B2[Add 5g Sugar]
+    B2 --> B3[Stir]
+    B3 --> B4[Measure Time T2]
+    end
+
+    style A1 fill:#e1f5fe,stroke:#01579b
+    style B1 fill:#fbe9e7,stroke:#bf360c
+```
+
+### Step 4: Hypothesize
+</Diagram>
+
+Based on the particle theory (which you will learn later in this book), we hypothesize that **higher temperature** makes particles move faster, so sugar should dissolve faster in hot water.
+
+### Step 5: Data Table Template
+
+Create a table like this in your notebook when you do the experiment:
+
+| Trial | Temperature ($^\circ C$) | Time to Dissolve (seconds) | Observations |
+| :--- | :--- | :--- | :--- |
+| 1 | Cold ($10^\circ C$) | | Water stayed clear longer |
+| 2 | Hot ($80^\circ C$) | | Sugar disappeared quickly |
+
+<Callout variant="success">
+**Conclusion:** If $T_{hot} < T_{cold}$, then our hypothesis is correct: Temperature increases the rate of dissolving.
+</Callout>

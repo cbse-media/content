@@ -1,0 +1,37 @@
+---
+title: "Solutions: Sec 3.5 & 3.6 Palindromes & Kaprekar"
+description: "Solutions regarding palindromes and the Kaprekar constant."
+date: 2024-04-10
+tags: ["solutions", "sec-3.5", "sec-3.6"]
+order: 18
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 61: Digit Detectives
+**Q: How many times does '7' occur in 1-100?**
+-   Units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times).
+-   Tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times).
+-   **Total:** 20 times.
+
+**Q: How many times in 1-1000?**
+-   1-100: 20 times.
+-   There are 10 hundreds (0-99, 100-199...). So $20 \times 10 = 200$ from last two digits.
+-   Plus the hundreds place (700-799): 100 times.
+-   **Total:** 300 times.
+
+## Page 62: Puzzle Time
+**Riddle:** 5-digit palindrome, odd. $t = 2u$, $h = 2t$.
+**Solution:** 12421. (Detailed in Topic 05).
+
+## Page 63: Kaprekar Constant
+**Q: Try with 3-digit numbers.**
+-   Let's try 321.
+    -   $321 - 123 = 198$
+    -   $981 - 189 = 792$
+    -   $972 - 279 = 693$
+    -   $963 - 369 = 594$
+    -   $954 - 459 = 495$
+    -   $954 - 459 = 495$ (Repeats).
+**Result:** For 3-digit numbers, the constant is **495**.

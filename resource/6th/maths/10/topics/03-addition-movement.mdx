@@ -1,0 +1,87 @@
+---
+title: "Addition & Subtraction as Movement"
+description: "Using the number line to perform addition and subtraction."
+date: 2024-04-10
+tags: ["addition", "subtraction", "operations"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Addition: The Movement Rule
+
+We can solve integer problems using the formula:
+$$
+\text{Starting Point} + \text{Movement} = \text{Target Point}
+$$
+
+*   **Positive Movement:** Move Right.
+*   **Negative Movement:** Move Left.
+
+### Example 1: $(+2) + (+3)$
+1.  Start at **$+2$**.
+2.  Add **$+3$** (Move 3 steps Right).
+3.  Land on **$+5$**.
+$$
+(+2) + (+3) = +5
+$$
+
+### Example 2: $(+2) + (-5)$
+1.  Start at **$+2$**.
+2.  Add **$-5$** (Move 5 steps Left).
+3.  Cross 0 and land on **$-3$**.
+$$
+(+2) + (-5) = -3
+$$
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+    {/* Number Line */}
+    <line x1="20" y1="80" x2="380" y2="80" stroke="currentColor" stroke-width="2" />
+    <line x1="200" y1="75" x2="200" y2="85" stroke="currentColor" stroke-width="2" />
+    <text x="200" y="100" text-anchor="middle" fill="currentColor" font-weight="bold">0</text>
+    
+    {/* Labels */}
+    <text x="240" y="100" text-anchor="middle" fill="currentColor">2</text>
+    <text x="140" y="100" text-anchor="middle" fill="currentColor">-3</text>
+
+    {/* Jump */}
+    <path d="M 240 70 Q 190 20 140 70" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    <text x="190" y="40" text-anchor="middle" fill="currentColor" font-size="12">Move 5 Left (-5)</text>
+
+     <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+## Subtraction: Distance Rule
+
+Subtraction answers the question: "How much do I need to move to get from Start to Target?"
+
+$$
+\text{Target} - \text{Start} = \text{Movement Needed}
+$$
+
+### Example: $2 - 5$
+*   Target: $2$
+*   Wait! Let's rephrase. Usually subtraction is $A - B$. 
+*   Standard view: Start at $A$, take away $B$.
+*   Better View for Integers: **Adding the Inverse**.
+
+### The Golden Rule of Subtraction
+To subtract a number, simply **add its inverse**.
+
+$$
+A - B = A + (-B)
+$$
+
+1.  **Example:** $5 - 2 = 5 + (-2) = 3$
+2.  **Example:** $2 - 5 = 2 + (-5) = -3$
+3.  **Example:** $5 - (-2)$
+    *   Inverse of $-2$ is $+2$.
+    *   So, $5 + (+2) = 7$.
+    *   *Subtracting a negative is like adding a positive!*

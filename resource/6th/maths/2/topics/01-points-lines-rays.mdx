@@ -1,0 +1,107 @@
+---
+title: "Points, Lines, and Rays"
+description: "Definitions and differences between points, line segments, lines, and rays."
+date: 2024-04-10
+tags: ["geometry", "points", "lines", "rays"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 2.1 Point
+
+A **point** determines a precise location. It has no length, breadth, or height. We usually represent it with a dot and name it using a single capital letter.
+
+*   **Models:** The tip of a compass, the sharpened end of a pencil, the pointed end of a needle.
+*   **Notation:** Point $P$, Point $Z$.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="100" viewBox="0 0 200 100" class="stroke-current text-gray-800 dark:text-gray-100">
+    <circle cx="50" cy="50" r="3" fill="currentColor" />
+    <text x="50" y="75" text-anchor="middle" fill="currentColor" font-size="16">P</text>
+
+    <circle cx="150" cy="30" r="3" fill="currentColor" />
+    <text x="150" y="55" text-anchor="middle" fill="currentColor" font-size="16">Z</text>
+  </svg>
+</div>
+
+## 2.2 Line Segment
+
+If you mark two points, A and B, on a paper, the **shortest route** connecting them is the **line segment** from A to B.
+
+*   **End Points:** It has two fixed end points, $A$ and $B$.
+*   **Notation:** $\overline{AB}$ or $\overline{BA}$.
+*   **Length:** It has a definite length that can be measured.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="100" viewBox="0 0 300 100" class="stroke-current text-gray-800 dark:text-gray-100">
+    {/* Line Segment */}
+    <line x1="50" y1="50" x2="250" y2="50" stroke="currentColor" stroke-width="2" />
+    {/* Endpoints */}
+    <circle cx="50" cy="50" r="4" fill="currentColor" />
+    <circle cx="250" cy="50" r="4" fill="currentColor" />
+    {/* Labels */}
+    <text x="50" y="80" text-anchor="middle" fill="currentColor" font-size="16">A</text>
+    <text x="250" y="80" text-anchor="middle" fill="currentColor" font-size="16">B</text>
+    <text x="150" y="30" text-anchor="middle" fill="currentColor" font-size="14">Line Segment AB</text>
+  </svg>
+</div>
+
+## 2.3 Line
+
+Imagine extending a line segment $\overline{AB}$ endlessly in both directions. This forms a **line**.
+
+*   **Properties:** It has no end points and extends forever. It cannot be drawn completely on paper, so we use arrows at the ends to show it continues.
+*   **Notation:** $\overleftrightarrow{AB}$ or a small letter like $l$, $m$.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="100" viewBox="0 0 300 100" class="stroke-current text-gray-800 dark:text-gray-100">
+    <defs>
+      <marker id="arrow-start" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M9,0 L9,6 L0,3 z" fill="currentColor" />
+      </marker>
+      <marker id="arrow-end" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+    {/* Line */}
+    <line x1="20" y1="50" x2="280" y2="50" stroke="currentColor" stroke-width="2" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+    {/* Points on line */}
+    <circle cx="80" cy="50" r="3" fill="currentColor" />
+    <circle cx="220" cy="50" r="3" fill="currentColor" />
+    {/* Labels */}
+    <text x="80" y="80" text-anchor="middle" fill="currentColor" font-size="16">A</text>
+    <text x="220" y="80" text-anchor="middle" fill="currentColor" font-size="16">B</text>
+    <text x="290" y="40" text-anchor="middle" fill="currentColor" font-size="16" font-style="italic">m</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Uniqueness:** Any two points determine a **unique** line that passes through both of them.
+</Callout>
+
+## 2.4 Ray
+
+A **ray** is a portion of a line that starts at one point (called the starting or initial point) and goes on endlessly in *one* direction.
+
+*   **Models:** Beam of light from a lighthouse, sun rays, light from a torch.
+*   **Notation:** $\overrightarrow{AP}$. Here, $A$ is the starting point, and it passes through $P$.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" class="stroke-current text-gray-800 dark:text-gray-100">
+    <defs>
+      <marker id="arrow-ray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+    {/* Ray */}
+    <line x1="50" y1="100" x2="250" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow-ray)" />
+    {/* Points */}
+    <circle cx="50" cy="100" r="4" fill="currentColor" />
+    <circle cx="150" cy="60" r="3" fill="currentColor" />
+    {/* Labels */}
+    <text x="40" y="120" text-anchor="middle" fill="currentColor" font-size="16">A (Starting Point)</text>
+    <text x="160" y="50" text-anchor="middle" fill="currentColor" font-size="16">P</text>
+  </svg>
+</div>

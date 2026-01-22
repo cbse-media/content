@@ -1,0 +1,73 @@
+---
+title: "Divisibility Algebra"
+description: "Using place value expansion to prove divisibility rules for 9, 3, and 11."
+date: 2024-04-10
+tags: ["divisibility", "proofs", "algebra"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Logic of Place Value
+
+Any number $N$ can be written using powers of 10.
+Example: $4725 = 4(1000) + 7(100) + 2(10) + 5$.
+
+To check divisibility, we replace $10$ with remainders.
+
+## Divisibility by 9
+
+**Key Fact:** $10 \div 9$ leaves a remainder of $1$.
+Therefore, $100, 1000, 10^n$ all leave a remainder of $1$ when divided by $9$.
+
+**Proof:**
+Consider a 3-digit number $abc = 100a + 10b + c$.
+$$
+\begin{aligned}
+N &= 100a + 10b + c \\
+&= (99 + 1)a + (9 + 1)b + c \\
+&= (99a + 9b) + (a + b + c)
+\end{aligned}
+$$
+The first part $(99a + 9b)$ is clearly divisible by 9.
+Therefore, $N$ is divisible by 9 if and only if $(a + b + c)$ is divisible by 9.
+
+<Callout variant="success">
+**Rule:** A number is divisible by 9 if the **sum of its digits** is divisible by 9.
+</Callout>
+
+## Divisibility by 3
+
+**Key Fact:** $10 \div 3$ leaves a remainder of $1$.
+The logic is identical to 9.
+$$
+N = (99a + 9b) + (a + b + c)
+$$
+Since $(99a + 9b)$ is divisible by 3, $N$ depends entirely on the sum of digits $(a+b+c)$.
+
+## Divisibility by 11
+
+**Key Fact:** Powers of 10 alternate remainders when divided by 11.
+*   $1 \equiv 1$
+*   $10 = 11 - 1 \equiv -1$
+*   $100 = 99 + 1 \equiv 1$
+*   $1000 = 1001 - 1 \equiv -1$
+
+**Proof:**
+Consider $abcd = 1000a + 100b + 10c + d$.
+$$
+\begin{aligned}
+N &= 1000a + 100b + 10c + d \\
+&\equiv (-1)a + (1)b + (-1)c + d \pmod{11} \\
+&\equiv (b + d) - (a + c) \pmod{11}
+\end{aligned}
+$$
+
+<Callout variant="success">
+**Rule:** A number is divisible by 11 if the difference between the sum of digits at odd places and the sum of digits at even places is 0 or a multiple of 11.
+</Callout>
+
+### Composite Rules
+*   **Divisibility by 6:** Must be divisible by **2** AND **3**.
+*   **Divisibility by 24:** Checking 4 and 6 is NOT enough (e.g., 12 is divisible by 4 and 6 but not 24). You must check **3** and **8** (since 3 and 8 are coprime).

@@ -1,0 +1,74 @@
+---
+title: "Zero and Negative Exponents"
+description: "Exploring what happens when the exponent is zero or negative."
+date: 2024-04-10
+tags: ["negative-exponents", "zero", "concept"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Zero Exponent
+
+What is $2^0$?
+Using the division law:
+$$
+2^4 \div 2^4 = 2^{4-4} = 2^0
+$$
+But any number divided by itself is 1.
+$$
+\frac{2 \times 2 \times 2 \times 2}{2 \times 2 \times 2 \times 2} = 1
+$$
+Therefore:
+$$
+a^0 = 1 \quad (\text{for } a \neq 0)
+$$
+
+## Negative Exponents
+
+What happens if we continue dividing?
+Start with $2^3 = 8$.
+*   Divide by 2 $\rightarrow 2^2 = 4$
+*   Divide by 2 $\rightarrow 2^1 = 2$
+*   Divide by 2 $\rightarrow 2^0 = 1$
+*   Divide by 2 $\rightarrow 2^{-1} = \frac{1}{2}$
+*   Divide by 2 $\rightarrow 2^{-2} = \frac{1}{4} = \frac{1}{2^2}$
+
+**General Rule:**
+$$
+a^{-n} = \frac{1}{a^n}
+$$
+
+### Visualizing on a Number Line
+
+We can map powers on a vertical line. Notice how positive powers grow large upwards, while negative powers get closer and closer to zero (but never touch it!).
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="400" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+    {/* Vertical Line */}
+    <line x1="100" y1="20" x2="100" y2="380" stroke="currentColor" stroke-width="2" />
+
+    {/* Ticks and Labels */}
+    <line x1="90" y1="50" x2="110" y2="50" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="55" fill="currentColor">2³ = 8</text>
+
+    <line x1="90" y1="100" x2="110" y2="100" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="105" fill="currentColor">2² = 4</text>
+
+    <line x1="90" y1="150" x2="110" y2="150" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="155" fill="currentColor">2¹ = 2</text>
+
+    <line x1="90" y1="200" x2="110" y2="200" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="205" fill="currentColor">2⁰ = 1</text>
+
+    <line x1="90" y1="250" x2="110" y2="250" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="255" fill="currentColor">2⁻¹ = 1/2</text>
+
+    <line x1="90" y1="300" x2="110" y2="300" stroke="currentColor" stroke-width="2" />
+    <text x="130" y="305" fill="currentColor">2⁻² = 1/4</text>
+
+    {/* Arrowhead */}
+    <polygon points="100,20 95,30 105,30" fill="currentColor" />
+  </svg>
+</div>

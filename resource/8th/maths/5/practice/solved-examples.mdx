@@ -1,0 +1,43 @@
+---
+title: "Solved Examples"
+description: "Additional worked-out problems to reinforce concepts."
+date: 2024-04-10
+tags: ["practice", "examples"]
+order: 9
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Example 1: Parity Logic
+**Question:** If $n$ is an integer, prove that $n^2 + n$ is always even.
+
+**Solution:**
+We can factor the expression:
+$$ n^2 + n = n(n+1) $$
+This is the product of two consecutive integers.
+In any pair of consecutive integers, one must be even and the other odd.
+Since $\text{Even} \times \text{Odd} = \text{Even}$, the product is always even.
+
+## Example 2: Finding Divisors
+**Question:** Check if 12345 is divisible by 15.
+
+**Solution:**
+For divisibility by 15, the number must be divisible by both **3** and **5**.
+1.  **Check 5:** The number ends in 5. **Yes.**
+2.  **Check 3:** Sum of digits $= 1 + 2 + 3 + 4 + 5 = 15$.
+    Since 15 is divisible by 3, the number is divisible by 3. **Yes.**
+**Conclusion:** 12345 is divisible by 15.
+
+## Example 3: Cryptarithm Logic
+**Question:** Find $A$ and $B$ if $2A \times A = 1B A$.
+
+**Solution:**
+1.  Units digit: $A \times A$ ends in $A$.
+    Possible values for $A$: $0, 1, 5, 6$.
+2.  Test values:
+    *   $A=0$: $20 \times 0 = 0$ (Not 3 digits).
+    *   $A=1$: $21 \times 1 = 21$ (Not 3 digits).
+    *   $A=5$: $25 \times 5 = 125$. Here $B=2$. Fits $1BA$.
+    *   $A=6$: $26 \times 6 = 156$. Here $B=5$. Fits $1BA$.
+**Answer:** Two solutions: $25 \times 5 = 125$ or $26 \times 6 = 156$.

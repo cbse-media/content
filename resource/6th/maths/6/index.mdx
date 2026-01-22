@@ -1,0 +1,52 @@
+---
+title: "Perimeter and Area"
+description: "Understanding the concepts of perimeter and area for plane figures like rectangles, squares, and triangles."
+date: 2024-04-10
+tags: ["math", "geometry", "grade-6", "perimeter", "area"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Chapter Overview
+
+In this chapter, we explore two fundamental concepts of geometry: **Perimeter** and **Area**. We will learn how to calculate the distance around closed figures and the amount of space enclosed within them.
+
+### What You Will Learn
+1.  **Perimeter:** Measuring the boundary of polygons (rectangles, squares, triangles).
+2.  **Regular Polygons:** General formulas for shapes with equal sides.
+3.  **Area:** Quantifying the region inside a closed shape.
+4.  **Area Estimation:** Using grid paper to find areas of irregular shapes.
+5.  **Triangle Area:** Deriving the area of a triangle using rectangles.
+
+### Formula Sheet
+
+<Callout variant="tip">
+**Quick Reference**
+
+| Shape | Perimeter Formula | Area Formula |
+| :--- | :--- | :--- |
+| **Rectangle** | $2 \times (\text{length} + \text{breadth})$ | $\text{length} \times \text{breadth}$ |
+| **Square** | $4 \times \text{side}$ | $\text{side} \times \text{side}$ |
+| **Equilateral Triangle** | $3 \times \text{side}$ | (Derived from base and height) |
+| **Regular $n$-gon** | $n \times \text{side}$ | - |
+</Callout>
+
+### Visual Guide
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Rectangle */}
+    <rect x="20" y="50" width="120" height="80" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="80" y="40" text-anchor="middle" fill="currentColor" font-size="14">Perimeter = 2(l+b)</text>
+    <text x="80" y="95" text-anchor="middle" fill="currentColor" font-size="14">Area = l × b</text>
+    <text x="80" y="150" text-anchor="middle" fill="currentColor" font-size="12">Rectangle</text>
+
+    {/* Square */}
+    <rect x="220" y="50" width="80" height="80" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="260" y="40" text-anchor="middle" fill="currentColor" font-size="14">Perimeter = 4s</text>
+    <text x="260" y="95" text-anchor="middle" fill="currentColor" font-size="14">Area = s²</text>
+    <text x="260" y="150" text-anchor="middle" fill="currentColor" font-size="12">Square</text>
+  </svg>
+</div>

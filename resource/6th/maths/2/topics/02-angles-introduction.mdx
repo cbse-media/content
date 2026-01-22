@@ -1,0 +1,70 @@
+---
+title: "Introduction to Angles"
+description: "Understanding angles, vertices, arms, and how to name them."
+date: 2024-04-10
+tags: ["angles", "geometry", "vertex", "arms"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 2.5 What is an Angle?
+
+An **angle** is formed by two rays having a common starting point.
+
+*   **Vertex:** The common starting point (e.g., point $B$).
+*   **Arms:** The two rays forming the angle (e.g., $\overrightarrow{BD}$ and $\overrightarrow{BE}$).
+
+### Naming an Angle
+We can name an angle in three ways:
+1.  Using the vertex letter: **Angle B** or **$\angle B$**.
+2.  Using three letters with the vertex in the middle: **Angle DBE** or **$\angle DBE$**.
+3.  Alternatively: **Angle EBD** or **$\angle EBD$**.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" class="stroke-current text-gray-800 dark:text-gray-100">
+    <defs>
+      <marker id="arrow-angle" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+    {/* Rays */}
+    <line x1="50" y1="150" x2="250" y2="150" stroke="currentColor" stroke-width="2" marker-end="url(#arrow-angle)" />
+    <line x1="50" y1="150" x2="200" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow-angle)" />
+    {/* Points */}
+    <circle cx="50" cy="150" r="4" fill="currentColor" />
+    <text x="40" y="170" fill="currentColor" font-size="16">B (Vertex)</text>
+
+    <circle cx="200" cy="150" r="3" fill="currentColor" />
+    <text x="200" y="180" fill="currentColor" font-size="16">E</text>
+
+    <circle cx="160" cy="76" r="3" fill="currentColor" />
+    <text x="150" y="60" fill="currentColor" font-size="16">D</text>
+
+    {/* Arc */}
+    <path d="M 90 150 A 40 40 0 0 0 78 122" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <text x="100" y="130" fill="currentColor" font-size="14">Arm</text>
+    <text x="150" y="140" fill="currentColor" font-size="14">Arm</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Note:** In specifying the angle using three letters (like $\angle DBE$), the vertex is **always** written as the middle letter.
+</Callout>
+
+## 2.6 Comparing Angles (Size as Rotation)
+
+The **size** of an angle is not the length of its arms. Instead, it is the **amount of rotation** or turn needed about the vertex to move the first ray to the second ray.
+
+*   Imagine opening a book cover. The more you rotate the cover, the larger the angle.
+*   Imagine the blades of scissors opening. Wider opening = Larger angle.
+
+### Superimposition
+We can compare two angles by placing one over the other (superimposition).
+1.  Place the vertices together.
+2.  Align one arm of the first angle with one arm of the second.
+3.  Check where the other arm falls.
+
+*   If the arms overlap completely, the angles are **equal**.
+*   If the arm of the second angle falls "outside" the first, the second angle is **greater**.

@@ -1,0 +1,41 @@
+---
+title: "Digital Roots"
+description: "Understanding the recursive sum of digits."
+date: 2024-04-10
+tags: ["digital-root", "vedic-math"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Digital Root?
+
+The **Digital Root** of a number is the single digit obtained by repeatedly adding the digits of the number until a single digit remains.
+
+**Example:** Find the digital root of $489710$.
+1.  Sum 1: $4 + 8 + 9 + 7 + 1 + 0 = 29$
+2.  Sum 2: $2 + 9 = 11$
+3.  Sum 3: $1 + 1 = 2$
+**Digital Root = 2**
+
+## Properties
+
+1.  **Divisibility by 9:** If the Digital Root is 9, the number is divisible by 9.
+2.  **Remainders:** The Digital Root is equivalent to the remainder when the number is divided by 9.
+    *   *Exception:* If the remainder is 0, the Digital Root is 9.
+
+### Pattern in Consecutive Numbers
+Digital roots follow a repeating cycle: $1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, \dots$
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="50" font-family="monospace" font-size="14" fill="currentColor">Number: 1  2  3  4  5  6  7  8  9  10 11</text>
+    <text x="10" y="80" font-family="monospace" font-size="14" fill="currentColor">D.Root: 1  2  3  4  5  6  7  8  9  1  2</text>
+    <line x1="260" y1="60" x2="290" y2="60" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Math Trick:** When calculating Digital Roots, you can ignore any '9's or any digits that sum to 9 (e.g., 3 and 6). This is called "Casting out Nines".
+</Callout>

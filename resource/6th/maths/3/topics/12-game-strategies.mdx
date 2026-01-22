@@ -1,0 +1,41 @@
+---
+title: "Games and Winning Strategies"
+description: "Using math to ensure a win in number games."
+date: 2024-04-10
+tags: ["game-theory", "logic"]
+order: 13
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Game of 21
+
+**Rules:**
+1.  Start at 0.
+2.  Two players take turns adding 1, 2, or 3 to the count.
+3.  The player who reaches **21** wins.
+
+### Winning Strategy
+To ensure you reach 21, you must be the one to reach **17**.
+Why? If you are at 17:
+-   Opponent adds 1 $\to$ 18. You add 3 $\to$ 21.
+-   Opponent adds 2 $\to$ 19. You add 2 $\to$ 21.
+-   Opponent adds 3 $\to$ 20. You add 1 $\to$ 21.
+
+To reach 17, you must reach **13**.
+To reach 13, you must reach **9**.
+To reach 9, you must reach **5**.
+To reach 5, you must reach **1**.
+
+**Strategy:**
+-   Go first.
+-   Say **1**.
+-   Whatever the opponent adds ($x$), you add ($4-x$).
+-   This ensures you land on multiples of 4 plus 1: $1, 5, 9, 13, 17, 21$.
+
+## General Rule
+If the target is $T$ and you can add numbers $1$ to $k$:
+The winning positions are multiples of $(k+1)$.
+-   If $T$ is a multiple of $(k+1)$, the second player wins (if they play perfectly).
+-   If $T$ is not a multiple, the first player wins by taking the remainder of $T \div (k+1)$.

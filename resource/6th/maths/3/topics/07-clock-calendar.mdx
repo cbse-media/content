@@ -1,0 +1,33 @@
+---
+title: "Clock and Calendar Numbers"
+description: "Finding patterns in time and dates."
+date: 2024-04-10
+tags: ["time", "patterns"]
+order: 8
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Clock Patterns
+Digital clocks show patterns like:
+-   **Repeated Digits:** $11:11, 22:22$ (on 24h clock), $4:44$.
+-   **Palindromic Times:** $10:01, 12:21, 05:50$.
+
+### Problem: Next Palindrome
+If the time is **10:01**, when is the next palindromic time?
+1.  The hours are 10. The only palindrome with 10 is 10:01.
+2.  Next hour is 11. Palindromes: $11:11$.
+3.  Difference: from 10:01 to 11:11 is **1 hour 10 minutes** (70 minutes).
+
+## Calendar Patterns
+Dates can also be palindromes (e.g., **11/02/2011** reads the same forwards and backwards if we ignore slashes).
+
+**Calendar Repetition:**
+Did you know calendars repeat?
+-   A standard year calendar repeats every 11 years (usually).
+-   The entire cycle of dates and days repeats every 28 years (guaranteed).
+
+<Callout variant="info">
+**Activity:** Find a date where the digits repeat in a pattern, like 20/12/2012 (2, 0, 1, 2 repeats).
+</Callout>

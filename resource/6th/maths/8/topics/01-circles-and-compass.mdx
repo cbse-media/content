@@ -1,0 +1,56 @@
+---
+title: "Circles and the Compass"
+description: "Understanding how to draw circles and defining radius and center."
+date: 2024-04-10
+tags: ["circles", "compass", "geometry"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Circle
+
+A circle is a simple closed curve where every point on the curve is at the same distance from a fixed point inside it.
+
+<Callout variant="tip">
+**Key Definitions:**
+*   **Center (P):** The fixed point.
+*   **Radius:** The fixed distance from the center to the edge.
+</Callout>
+
+### Using a Compass
+
+A compass has a metal tip and a pencil tip. To draw a circle:
+1.  **Fix the needle:** Place the sharp metal tip at the point you want to be the **center**.
+2.  **Set the radius:** Open the compass so the distance between the needle and the pencil tip matches your desired radius (e.g., 4 cm).
+3.  **Rotate:** Spin the compass to draw the curve.
+
+### Visual Representation
+
+Here is a circle with center $P$ and a radius of 4 units.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Circle */}
+    <circle cx="150" cy="150" r="100" stroke="currentColor" stroke-width="2" fill="none" />
+    
+    {/* Center Point */}
+    <circle cx="150" cy="150" r="3" fill="currentColor" />
+    <text x="140" y="145" fill="currentColor" font-size="16" font-family="sans-serif">P</text>
+    
+    {/* Radius Line */}
+    <line x1="150" y1="150" x2="250" y2="150" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,5" />
+    <text x="180" y="140" fill="currentColor" font-size="14" font-family="sans-serif">Radius (4 cm)</text>
+    
+    {/* Point on circle */}
+    <circle cx="250" cy="150" r="3" fill="currentColor" />
+    <text x="255" y="155" fill="currentColor" font-size="16" font-family="sans-serif">Q</text>
+  </svg>
+</div>
+
+### Thinking about Distance
+If you mark a point $P$ and want to find *all* points that are exactly 4 cm away from $P$, they will form a circle.
+*   Points **inside** the circle are less than 4 cm from $P$.
+*   Points **outside** the circle are more than 4 cm from $P$.
+*   Points **on** the circle are exactly 4 cm from $P$.

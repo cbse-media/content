@@ -1,0 +1,51 @@
+---
+title: "Solved Examples & Common Mistakes"
+description: "Additional practice problems and analysis of common protractor errors."
+date: 2024-04-10
+tags: ["practice", "mistakes", "examples"]
+order: 20
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Mind the Mistake (Protractor Errors)
+
+Students often make mistakes when reading a protractor. Let's analyze the errors from Page 32.
+
+### Case 1: $\angle U = 35^\circ$?
+**Mistake:** The student placed the baseline on the edge of the protractor plastic, not the $0^\circ$ line.
+**Correction:** Align the arm of the angle exactly with the $0^\circ$ - $180^\circ$ line.
+
+### Case 2: $\angle V = 80^\circ$?
+**Mistake:** The vertex of the angle is NOT at the center point of the protractor.
+**Correction:** Place the center of the protractor's base exactly on the vertex.
+
+### Case 3: $\angle W = 70^\circ$?
+**Mistake:** Reading the wrong scale. The angle is obtuse (wide), but $70^\circ$ is acute.
+**Correction:** Read the scale that starts at $0^\circ$ on the side of the arm. The correct measure is $110^\circ$.
+
+### Case 4: $\angle Z = 85^\circ$?
+**Mistake:** The baseline is not aligned with either arm.
+**Correction:** Rotate the protractor so the $0^\circ$ line lies flat on one of the arms.
+
+## Triangle Angle Sum Conjecture
+
+**Experiment:**
+If you measure the three angles of *any* triangle (like in Page 31), and add them up, what do you get?
+
+$$
+\text{Sum} = \angle A + \angle B + \angle C
+$$
+
+**Result:** You will find the sum is always very close to or exactly **$180^\circ$**.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="150" viewBox="0 0 200 150" class="stroke-current text-gray-800 dark:text-gray-100">
+    <polygon points="20,130 180,130 100,20" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="10" y="140" fill="currentColor">A</text>
+    <text x="190" y="140" fill="currentColor">B</text>
+    <text x="100" y="15" fill="currentColor">C</text>
+    <text x="80" y="100" fill="currentColor" font-size="12">A+B+C = 180°</text>
+  </svg>
+</div>

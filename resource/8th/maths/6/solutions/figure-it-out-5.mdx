@@ -1,0 +1,53 @@
+---
+title: "Figure It Out: Advanced Patterns"
+description: "Solutions for Page 155-156 (Calendars, Remainders, Tiling)."
+date: 2024-04-10
+tags: ["solutions", "patterns"]
+order: 10
+draft: false
+---
+
+## 4. Calendar 2x2 Square
+Let numbers be:
+$$
+\begin{matrix}
+x & x+1 \\
+x+7 & x+8
+\end{matrix}
+$$
+Diagonals:
+1.  $x(x+8) = x^2 + 8x$
+2.  $(x+1)(x+7) = x^2 + 7x + x + 7 = x^2 + 8x + 7$
+
+**Observation:** The product of the secondary diagonal (top-right to bottom-left) is always **7 more** than the main diagonal.
+$55 - 48 = 7$. Confirmed.
+
+## 6. Remainders with 7
+Let $N_1 = 7a + 3$ and $N_2 = 7b + 5$.
+*   **Sum:** $(7a+3) + (7b+5) = 7(a+b) + 8 = 7(a+b+1) + 1$.
+    *   Remainder: **1**.
+*   **Difference:** $(7a+3) - (7b+5)$.
+    *   Wait, use modular arithmetic logic. $3 - 5 = -2 \equiv 5 \pmod 7$.
+    *   Remainder: **5**.
+*   **Product:** $(3)(5) = 15 = 14 + 1$.
+    *   Remainder: **1**.
+
+## 10. Dhauli Park Area
+Total Area = $(g+g+w) \times (g+w) = (2g+w)(g+w)$.
+Green Area = $2g^2$.
+Tiled Area = Total - Green.
+$$ (2g^2 + 2gw + gw + w^2) - 2g^2 $$
+$$ = 3gw + w^2 $$
+$$ = w(3g + w) $$
+
+## 11. Pattern Sequence
+**(ii) Step 10:**
+*   Step 1: 4 blocks.
+*   Step 2: 7 blocks.
+*   Step 3: 10 blocks.
+*   Pattern: Starts at 4, adds 3 each time.
+*   Step 10: $4 + 9(3) = 31$.
+
+**(iii) Step $y$:**
+Formula: $3y + 1$.
+(Check: $y=1 \rightarrow 4$. $y=2 \rightarrow 7$. Correct).

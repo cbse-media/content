@@ -1,0 +1,85 @@
+---
+title: "Rectangles and Squares"
+description: "Defining properties of rectangles and squares using diagonals and congruence."
+date: 2024-04-10
+tags: ["rectangle", "square", "properties"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Rectangle
+
+A **Rectangle** is a quadrilateral in which:
+1.  The angles are all right angles ($90^\circ$).
+2.  The opposite sides are of equal length and parallel.
+
+### Diagonal Properties
+A defining characteristic of a rectangle is found in its diagonals. By using the SAS (Side-Angle-Side) congruence condition on the triangles formed by the diagonals, we can deduce:
+
+1.  **Lengths are Equal:** The diagonals of a rectangle are of equal length ($AC = BD$).
+2.  **Bisect Each Other:** The diagonals intersect at their midpoints ($OA = OC$ and $OB = OD$).
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Rectangle ABCD */}
+    <rect x="50" y="50" width="200" height="100" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Diagonals */}
+    <line x1="50" y1="50" x2="250" y2="150" stroke="currentColor" stroke-width="1.5" />
+    <line x1="250" y1="50" x2="50" y2="150" stroke="currentColor" stroke-width="1.5" />
+
+    {/* Labels */}
+    <text x="40" y="45" fill="currentColor">A</text>
+    <text x="260" y="45" fill="currentColor">B</text>
+    <text x="260" y="165" fill="currentColor">C</text>
+    <text x="40" y="165" fill="currentColor">D</text>
+    <text x="150" y="115" fill="currentColor">O</text>
+
+    {/* Right Angle markers */}
+    <path d="M 50 140 L 60 140 L 60 150" fill="none" stroke="currentColor" />
+    <path d="M 240 150 L 240 140 L 250 140" fill="none" stroke="currentColor" />
+    <path d="M 250 60 L 240 60 L 240 50" fill="none" stroke="currentColor" />
+    <path d="M 60 50 L 60 60 L 50 60" fill="none" stroke="currentColor" />
+  </svg>
+</div>
+
+## The Square
+
+A **Square** is a special type of rectangle.
+*   **Definition:** A quadrilateral in which all angles are $90^\circ$ and all sides are of equal length.
+*   **Venn Relationship:** Every square is a rectangle, but not every rectangle is a square.
+
+### Diagonal Properties of a Square
+Since a square is a rectangle, its diagonals are equal and bisect each other. However, it has extra properties:
+1.  **Perpendicular Intersection:** The diagonals intersect at $90^\circ$.
+2.  **Angle Bisectors:** The diagonals bisect the angles of the square (each part is $45^\circ$).
+
+<Callout variant="tip">
+**Geometric Proof:** In a square, the triangles formed by the diagonals (e.g., $\Delta AOB$) are isosceles right-angled triangles.
+</Callout>
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Square */}
+    <rect x="50" y="50" width="100" height="100" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Diagonals */}
+    <line x1="50" y1="50" x2="150" y2="150" stroke="currentColor" stroke-width="1.5" />
+    <line x1="150" y1="50" x2="50" y2="150" stroke="currentColor" stroke-width="1.5" />
+
+    {/* Perpendicular Marker at center */}
+    <path d="M 95 100 L 100 95 L 105 100 L 100 105 Z" fill="currentColor" />
+
+    {/* Labels */}
+    <text x="40" y="45" fill="currentColor">A</text>
+    <text x="160" y="45" fill="currentColor">B</text>
+    <text x="160" y="165" fill="currentColor">C</text>
+    <text x="40" y="165" fill="currentColor">D</text>
+
+    {/* 45 degree angles */}
+    <text x="70" y="65" font-size="10" fill="currentColor">45°</text>
+    <text x="70" y="145" font-size="10" fill="currentColor">45°</text>
+  </svg>
+</div>

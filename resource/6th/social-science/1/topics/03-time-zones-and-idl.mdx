@@ -1,0 +1,39 @@
+---
+title: "Time Zones and Time Calculation"
+description: "Understanding how longitude determines local and standard time."
+date: 2024-04-10
+tags: ["time-zones", "IST", "GMT", "IDL"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Why does Time Change?
+As the Earth rotates from **West to East**, different longitudes face the Sun at different times.
+
+### The Math of Time
+The Earth completes a $360^\circ$ rotation in 24 hours.
+- $360^\circ \div 24 \text{ hours} = 15^\circ \text{ per hour}$.
+- Therefore, $1^\circ$ change in longitude = **4 minutes**.
+
+## Local Time vs. Standard Time
+- **Local Time:** Determined by the position of the Sun at a specific longitude.
+- **Standard Time:** A uniform time adopted by a country to avoid confusion.
+
+### Indian Standard Time (IST)
+India uses the $82.5^\circ \text{E}$ longitude as its standard meridian.
+- IST is **5 hours 30 minutes ahead** of Greenwich Mean Time (GMT).
+
+$$
+\text{Time difference} = 82.5^\circ \times 4 \text{ min} = 330 \text{ min} = 5.5 \text{ hours}
+$$
+
+## International Date Line (IDL)
+The IDL is located approximately at $180^\circ$ longitude.
+- Crossing it from **East to West**: Add a day (Sunday becomes Monday).
+- Crossing it from **West to East**: Subtract a day (Monday becomes Sunday).
+
+<Callout variant="warning">
+The International Date Line is not a straight line. It zig-zags to avoid crossing through countries, so that a single country doesn't have two different dates at the same time!
+</Callout>

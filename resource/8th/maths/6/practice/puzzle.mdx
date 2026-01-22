@@ -1,0 +1,37 @@
+---
+title: "Coin Conjoin Puzzle"
+description: "Solution to the Coin Conjoin puzzle on Page 158."
+date: 2024-04-10
+tags: ["puzzle", "logic"]
+order: 12
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Problem
+You have a triangle of 10 coins (pointing up). You need to invert it (point down) by moving the minimum number of coins.
+
+## Solution Logic
+
+1.  **Triangle T3 (6 coins):**
+    *   Move the 3 corners? No.
+    *   Move just 2 coins.
+    *   Move the top coin to the bottom center.
+    *   Move two bottom corners up.
+
+2.  **Triangle T4 (10 coins):**
+    *   The triangle has 4 rows (1, 2, 3, 4).
+    *   To invert it, we basically need to remove the "corners" that define the shape and place them on the opposite side.
+    *   **Minimum Moves:** **3**.
+    *   **How:**
+        1.  Move the top tip coin to the very bottom (below the row of 4).
+        2.  Move the two coins at the ends of the bottom row (row 4) to the top positions (forming the new base of the inverted triangle).
+
+## General Formula
+For a triangle with side length $n$:
+$$ \text{Moves} = \lfloor \frac{n(n+1)}{6} \rfloor $$
+
+*   $n=3$ (6 coins): $\lfloor 12/6 \rfloor = 2$.
+*   $n=4$ (10 coins): $\lfloor 20/6 \rfloor = 3$.
+*   $n=5$ (15 coins): $\lfloor 30/6 \rfloor = 5$.

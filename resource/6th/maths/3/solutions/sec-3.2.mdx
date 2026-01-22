@@ -1,0 +1,48 @@
+---
+title: "Solutions: Sec 3.2 Supercells"
+description: "Solutions to the supercell grid puzzles."
+date: 2024-04-10
+tags: ["solutions", "sec-3.2"]
+order: 15
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 57: Figure It Out
+
+**Q1. Colour the supercells.**
+Row: `6828, 670, 9435, 3780, 3708, 7308, 8000, 5583, 52`
+-   **6828**: > 670 (Yes)
+-   **9435**: > 670 AND > 3780 (Yes)
+-   **7308**: > 3708 AND < 8000 (No)
+-   **8000**: > 7308 AND > 5583 (Yes)
+-   **52**: End. Neighbor 5583 is larger. (No)
+**Supercells:** 6828, 9435, 8000.
+
+**Q5. Pattern for maximum supercells.**
+-   For a line of $N$ cells.
+-   To maximize supercells, we want a pattern like `High, Low, High, Low...`
+-   **Even N (e.g., 4):** `H, L, H, L` $\rightarrow$ 2 supercells ($N/2$).
+-   **Odd N (e.g., 5):** `H, L, H, L, H` $\rightarrow$ 3 supercells ($(N+1)/2$).
+
+**Q6. Can you fill a table without repeating numbers such that there are no supercells?**
+**Answer:** No.
+**Reasoning:** In any finite set of distinct numbers, there is always a **largest** number. That largest number will definitely be larger than all its neighbors. Therefore, the cell containing the largest number must be a supercell.
+
+**Q7. Will the cell having the largest number always be a supercell?**
+**Answer:** Yes (as explained above).
+**Will the cell having the smallest number be a supercell?**
+**Answer:** No. It is smaller than all its neighbors, so it cannot be a supercell.
+
+## Page 58: Table 2 Puzzle
+
+**Task:** Fill with 5-digit numbers using digits 1, 0, 6, 3, 9. (Table 2 in PDF).
+**Constraint:** Only colored cells are supercells.
+**Solution Logic:**
+The colored cells must contain large permutations (e.g., 96310).
+The non-colored cells neighbors to supercells must be smaller permutations (e.g., 10369).
+
+**Biggest number in table:** 96,310.
+**Smallest even number:** 10,396 (ends in 6).
+**Smallest > 50,000:** 60,193.

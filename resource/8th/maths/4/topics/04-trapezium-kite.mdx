@@ -1,0 +1,67 @@
+---
+title: "Trapezium and Kite"
+description: "Exploring quadrilaterals with specific symmetry or parallel conditions."
+date: 2024-04-10
+tags: ["trapezium", "kite", "geometry"]
+order: 5
+draft: false
+---
+
+## Trapezium
+A **Trapezium** is a quadrilateral with **at least one pair of parallel opposite sides**.
+
+*   **Isosceles Trapezium:** A trapezium where the non-parallel sides are of equal length. In an isosceles trapezium:
+    *   Angles on the same base are equal.
+    *   Diagonals are of equal length.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+    {/* Trapezium */}
+    <polygon points="80,30 220,30 260,100 40,100" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Parallel Arrows */}
+    <path d="M 150 30 L 145 25 M 150 30 L 145 35" stroke="currentColor" fill="none" />
+    <path d="M 150 100 L 145 95 M 150 100 L 145 105" stroke="currentColor" fill="none" />
+
+    <text x="30" y="110" fill="currentColor">A</text>
+    <text x="270" y="110" fill="currentColor">B</text>
+    <text x="230" y="25" fill="currentColor">C</text>
+    <text x="70" y="25" fill="currentColor">D</text>
+  </svg>
+</div>
+
+## Kite
+A **Kite** is a quadrilateral with two distinct pairs of equal-length adjacent sides.
+*   $AB = BC$
+*   $CD = DA$
+
+### Properties
+1.  **Perpendicular Diagonals:** The diagonals intersect at $90^\circ$.
+2.  **One Bisector:** One diagonal (the main axis) bisects the other diagonal.
+3.  **Angles:** One pair of opposite angles are equal (the ones between the unequal sides).
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="250" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+    {/* Kite Points */}
+    <polygon points="100,20 160,100 100,230 40,100" fill="none" stroke="currentColor" stroke-width="2" />
+
+    {/* Diagonals */}
+    <line x1="100" y1="20" x2="100" y2="230" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
+    <line x1="40" y1="100" x2="160" y2="100" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
+
+    {/* Labels */}
+    <text x="100" y="15" text-anchor="middle" fill="currentColor">A</text>
+    <text x="170" y="100" fill="currentColor">B</text>
+    <text x="100" y="245" text-anchor="middle" fill="currentColor">C</text>
+    <text x="30" y="100" fill="currentColor">D</text>
+
+    {/* Side marks */}
+    <line x1="65" y1="60" x2="75" y2="60" stroke="currentColor" />
+    <line x1="125" y1="60" x2="135" y2="60" stroke="currentColor" />
+
+    <line x1="65" y1="160" x2="75" y2="160" stroke="currentColor" />
+    <line x1="65" y1="165" x2="75" y2="165" stroke="currentColor" />
+    <line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" />
+    <line x1="125" y1="165" x2="135" y2="165" stroke="currentColor" />
+  </svg>
+</div>

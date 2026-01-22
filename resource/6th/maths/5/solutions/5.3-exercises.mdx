@@ -1,0 +1,53 @@
+---
+title: "Solutions: Section 5.3"
+description: "Answers regarding Co-prime numbers (Pages 115, 116)."
+date: 2025-01-15
+tags: ["solutions", "co-prime"]
+order: 10
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 115: Safe Pairs
+
+### Q. Check if these pairs are safe (Co-prime).
+"Safe" means Jumpy cannot land on both with a jump size > 1.
+This means they have no common factors > 1.
+
+**a. 15 and 39**
+*   Factors of 15: 1, 3, 5.
+*   Factors of 39: 1, 3, 13.
+*   Common: 3. **Not Safe.**
+
+**b. 4 and 15**
+*   Factors of 4: 1, 2, 4.
+*   Factors of 15: 1, 3, 5.
+*   Common: 1. **Safe (Co-prime).**
+
+**c. 18 and 29**
+*   29 is prime. 18 is not a multiple of 29.
+*   **Safe (Co-prime).**
+
+**d. 20 and 55**
+*   Both divisible by 5. **Not Safe.**
+
+## Page 116
+
+### Q. Which pairs are co-prime?
+**a. 18 and 35:**
+*   $18 = 2 \times 3^2$
+*   $35 = 5 \times 7$
+*   No common factors. **Co-prime.**
+
+**b. 15 and 37:**
+*   37 is prime. **Co-prime.**
+
+**c. 30 and 415:**
+*   Both end in 0 or 5. Divisible by 5. **Not Co-prime.**
+
+**d. 17 and 69:**
+*   17 is prime. $17 \times 4 = 68$. 69 is not a multiple. **Co-prime.**
+
+**e. 81 and 18:**
+*   Both divisible by 9. **Not Co-prime.**

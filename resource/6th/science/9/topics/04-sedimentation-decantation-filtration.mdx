@@ -1,0 +1,72 @@
+---
+title: "Sedimentation, Decantation, and Filtration"
+description: "Techniques for separating insoluble solids from liquids."
+date: 2025-01-15
+tags: ["sedimentation", "decantation", "filtration", "water-purification"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Separating Solids from Liquids
+
+When you have a mixture of an insoluble solid (like mud, sand, or tea leaves) and a liquid, we use a three-step approach: Sedimentation, Decantation, and Filtration.
+
+### 1. Sedimentation
+If you mix sand in water and let it stand undisturbed, the sand particles are heavier than water. Gravity pulls them down.
+*   **Definition:** The process of settling down of the heavier insoluble component at the bottom of a liquid is called **sedimentation**.
+*   The solid layer at the bottom is called **sediment**.
+
+### 2. Decantation
+Once the sediment has settled, the clear liquid remains on top. We can carefully pour this liquid out without disturbing the sediment.
+*   **Definition:** The process of removing the liquid (water) by tilting the vessel after sedimentation is called **decantation**.
+*   **Example:** Separating oil from water (since oil floats) is also a form of decantation. Washing rice involves decanting the cloudy water.
+
+### 3. Filtration
+Decantation is not perfect. Sometimes fine particles (like tea leaves or fine mud) flow out with the liquid. To remove these, we use a filter.
+*   **Definition:** The process of separating insoluble solid components from a liquid by passing it through a filter is called **filtration**.
+
+**Types of Filters:**
+1.  **Strainer:** Metal or plastic mesh (used for tea).
+2.  **Cloth:** Woven threads create pores. Multiple layers make the pores smaller.
+3.  **Filter Paper:** Has extremely fine pores, suitable for laboratory experiments.
+
+<Callout variant="tip">
+**Comparison:** 
+*   **Decantation:** Quick, but less accurate (fine particles remain).
+*   **Filtration:** Slower, but very accurate (removes very fine particles).
+</Callout>
+
+### Experimental Setup: Filtration
+
+<div class="flex justify-center my-6">
+  <svg width="250" height="300" viewBox="0 0 250 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Stand */}
+    <rect x="20" y="250" width="100" height="10" fill="currentColor" />
+    <rect x="65" y="50" width="10" height="200" fill="currentColor" />
+    <rect x="65" y="100" width="80" height="5" fill="currentColor" />
+    
+    {/* Funnel */}
+    <polygon points="120,100 170,100 145,150" stroke="currentColor" fill="none" stroke-width="2"/>
+    <rect x="143" y="150" width="4" height="40" fill="currentColor" />
+    
+    {/* Filter Paper Cone inside Funnel */}
+    <path d="M125 105 L165 105 L145 145 Z" stroke="currentColor" fill="none" stroke-dasharray="2,2" />
+
+    {/* Flask */}
+    <path d="M125 250 L165 250 L155 200 L155 180 L135 180 L135 200 Z" stroke="currentColor" fill="none" stroke-width="2"/>
+    
+    {/* Drops */}
+    <circle cx="145" cy="195" r="2" fill="currentColor" />
+    <circle cx="145" cy="210" r="2" fill="currentColor" />
+    
+    {/* Labels */}
+    <text x="180" y="120" fill="currentColor" font-size="12">Filter Paper</text>
+    <text x="180" y="160" fill="currentColor" font-size="12">Funnel</text>
+    <text x="180" y="240" fill="currentColor" font-size="12">Filtrate (Clear Water)</text>
+  </svg>
+</div>
+
+*   **Residue:** The solid left on the filter paper.
+*   **Filtrate:** The clear liquid collected in the flask.

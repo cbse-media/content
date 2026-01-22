@@ -1,0 +1,77 @@
+---
+title: "Chapter 1: A Square and A Cube"
+description: "Introduction to square and cubic numbers, their properties, patterns, and roots."
+date: 2024-04-10
+tags: ["math", "algebra", "squares", "cubes", "grade-8"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Introduction: The Locker Puzzle
+
+Imagine a secret room with 100 lockers numbered 1 to 100. All lockers are initially closed.
+- **Person 1** opens every locker.
+- **Person 2** toggles every 2nd locker (closes it if open, opens it if closed).
+- **Person 3** toggles every 3rd locker.
+- And so on, until **Person 100** toggles the 100th locker.
+
+**Which lockers remain open at the end?**
+
+<Callout variant="tip">
+**The Secret:** A locker remains open if it is toggled an **odd number of times**.
+The number of times a locker is toggled equals its number of **factors**.
+Only **Perfect Squares** (like 1, 4, 9, 16...) have an odd number of factors.
+</Callout>
+
+Why? Factors usually come in pairs (e.g., for 12: $1\times12, 2\times6, 3\times4$). But for a perfect square like 36, one factor pairs with itself ($6\times6$), resulting in an odd count of factors ($1, 2, 3, 4, 6, 9, 12, 18, 36$).
+
+## Formula Sheet
+
+### 1. Squares ($n^2$)
+A square number is the product of a number multiplied by itself.
+
+$$
+n^2 = n \times n
+$$
+
+| Number ($n$) | Square ($n^2$) | Number ($n$) | Square ($n^2$) |
+| :--- | :--- | :--- | :--- |
+| 1 | 1 | 11 | 121 |
+| 2 | 4 | 12 | 144 |
+| 3 | 9 | 13 | 169 |
+| 4 | 16 | 14 | 196 |
+| 5 | 25 | 15 | 225 |
+| 6 | 36 | 16 | 256 |
+| 7 | 49 | 17 | 289 |
+| 8 | 64 | 18 | 324 |
+| 9 | 81 | 19 | 361 |
+| 10 | 100 | 20 | 400 |
+
+### 2. Cubes ($n^3$)
+A cubic number is the product of a number multiplied by itself three times.
+
+$$
+n^3 = n \times n \times n
+$$
+
+| Number ($n$) | Cube ($n^3$) |
+| :--- | :--- |
+| 1 | 1 |
+| 2 | 8 |
+| 3 | 27 |
+| 4 | 64 |
+| 5 | 125 |
+| 6 | 216 |
+| 7 | 343 |
+| 8 | 512 |
+| 9 | 729 |
+| 10 | 1000 |
+
+## Topics Covered
+1. **Square Numbers:** Visual proofs and properties.
+2. **Patterns:** Unit digits, zeros, and triangular numbers.
+3. **Square Roots:** Finding roots via subtraction and factorization.
+4. **Cubic Numbers:** Properties and the Hardy-Ramanujan number.
+5. **Cube Roots:** Prime factorization and estimation.

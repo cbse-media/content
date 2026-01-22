@@ -1,0 +1,68 @@
+---
+title: "Figure It Out: Patterns & Logic"
+description: "Solutions to exercises on Page 122."
+date: 2024-04-10
+tags: ["solutions", "patterns"]
+order: 6
+draft: false
+---
+
+## Questions 1-4
+
+**1. The sum of four consecutive numbers is 34. What are these numbers?**
+Let numbers be $x, x+1, x+2, x+3$.
+$4x + 6 = 34$
+$4x = 28 \implies x = 7$.
+**Numbers:** 7, 8, 9, 10.
+
+**2. Suppose p is the greatest of five consecutive numbers. Describe others.**
+If $p$ is greatest: $p-1, p-2, p-3, p-4$.
+
+**3. True/False Statements:**
+*   (i) **Sum of two even numbers is a multiple of 3.**
+    *   *Sometimes True.* (e.g., $2+4=6$ Yes, $2+2=4$ No).
+*   (ii) **If not divisible by 18, then not divisible by 9.**
+    *   *False.* Example: 9 or 27. Divisible by 9 but not 18.
+*   (iii) **If two numbers are not divisible by 6, sum is not divisible by 6.**
+    *   *False.* Example: 2 and 4. Sum is 6.
+*   (iv) **Sum of multiple of 6 and multiple of 9 is multiple of 3.**
+    *   *Always True.* Both 6 and 9 are multiples of 3. Sum of multiples of 3 is a multiple of 3.
+*   (v) **Sum of multiple of 6 and multiple of 3 is multiple of 9.**
+    *   *Sometimes True.* $6 + 3 = 9$ (Yes). $6 + 6 = 12$ (No).
+
+**4. Numbers with remainder 2 (div by 3) and 2 (div by 4).**
+*   Number $N = 3a + 2$ and $N = 4b + 2$.
+*   $N - 2$ is divisible by 3 and 4.
+*   LCM(3, 4) = 12.
+*   $N - 2 = 12k \implies N = 12k + 2$.
+*   **Numbers:** 14, 26, 38...
+
+## Questions 5-8
+
+**5. Pebble Riddle**
+*   Rem 1 mod 3.
+*   Rem 1 mod 5.
+*   Rem 0 mod 7.
+*   From first two: $N$ ends in 1 or 6. $N = 15k + 1$.
+*   Possible values: 16, 31, 46, 61, 76, 91...
+*   Check divisibility by 7: 91 is divisible by 7 ($7 \times 13$).
+*   **Answer:** 91 pebbles.
+
+**6. Sum of three numbers (remainder 2 mod 6).**
+*   Let numbers be $6a+2, 6b+2, 6c+2$.
+*   Sum = $6(a+b+c) + 6$.
+*   Sum = $6(a+b+c+1)$.
+*   This is clearly a multiple of 6.
+*   **Answer:** True.
+
+**7. Remainders of 4779 and 661.**
+*   $4779 \equiv 5 \pmod 7$.
+*   $661 \equiv 3 \pmod 7$.
+*   (i) $4779 + 661 \equiv 5 + 3 = 8 \equiv 1 \pmod 7$.
+*   (ii) $4779 - 661 \equiv 5 - 3 = 2 \pmod 7$.
+
+**8. Remainder 2 (div 3), 3 (div 4), 4 (div 5).**
+*   Notice the pattern: Remainder is always (Divisor - 1).
+*   $N = \text{LCM}(3, 4, 5)k - 1$.
+*   $\text{LCM}(3, 4, 5) = 60$.
+*   Smallest number ($k=1$): $60 - 1 = 59$.

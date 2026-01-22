@@ -1,0 +1,66 @@
+---
+title: "Measuring and the Number Line"
+description: "Using paper folding and number lines to represent fractions."
+date: 2025-01-15
+tags: ["number-line", "measurement"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Measuring with Paper Strips
+
+Imagine a strip of paper representing **1 unit**.
+1.  Fold it in half $\rightarrow$ Each part is $\frac{1}{2}$.
+2.  Fold it in half again $\rightarrow$ You now have 4 equal parts. Each is $\frac{1}{4}$.
+3.  Fold it again $\rightarrow$ You have 8 equal parts. Each is $\frac{1}{8}$.
+
+We can collect these units:
+*   2 times $\frac{1}{4} = \frac{2}{4}$
+*   3 times $\frac{1}{4} = \frac{3}{4}$
+*   4 times $\frac{1}{4} = \frac{4}{4} = 1$ (The whole strip)
+
+## Fractions on the Number Line
+
+We place integers ($0, 1, 2, \dots$) on the number line. We can also place fractions between them.
+The distance between 0 and 1 is one unit.
+
+If we divide this distance into 2 equal parts, the midpoint is $\frac{1}{2}$.
+If we divide it into 3 equal parts, the marks are at $\frac{1}{3}$ and $\frac{2}{3}$.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="150" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Main Line */}
+    <line x1="50" y1="100" x2="450" y2="100" stroke="currentColor" stroke-width="2" />
+    <line x1="440" y1="95" x2="450" y2="100" stroke="currentColor" stroke-width="2" />
+    <line x1="440" y1="105" x2="450" y2="100" stroke="currentColor" stroke-width="2" />
+
+    {/* Ticks 0 and 1 and 2 */}
+    <line x1="50" y1="90" x2="50" y2="110" stroke="currentColor" stroke-width="2" />
+    <text x="50" y="130" text-anchor="middle" fill="currentColor">0</text>
+
+    <line x1="250" y1="90" x2="250" y2="110" stroke="currentColor" stroke-width="2" />
+    <text x="250" y="130" text-anchor="middle" fill="currentColor">1</text>
+
+    <line x1="450" y1="90" x2="450" y2="110" stroke="currentColor" stroke-width="2" />
+    <text x="450" y="130" text-anchor="middle" fill="currentColor">2</text>
+
+    {/* Fraction Ticks (Thirds) */}
+    <line x1="116" y1="95" x2="116" y2="105" stroke="currentColor" stroke-width="1.5" />
+    <text x="116" y="80" text-anchor="middle" fill="currentColor" font-size="12">1/3</text>
+
+    <line x1="183" y1="95" x2="183" y2="105" stroke="currentColor" stroke-width="1.5" />
+    <text x="183" y="80" text-anchor="middle" fill="currentColor" font-size="12">2/3</text>
+
+    {/* Fraction Ticks (Halves) */}
+    <line x1="150" y1="100" x2="150" y2="100" stroke="currentColor" stroke-width="1" />
+    {/* Just illustrating thirds above, let's do halves below */}
+
+    <text x="250" y="60" text-anchor="middle" fill="currentColor" font-weight="bold">Number Line representing Thirds</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Note:** There are countless fractions between 0 and 1!
+</Callout>

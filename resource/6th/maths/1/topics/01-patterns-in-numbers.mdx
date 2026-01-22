@@ -1,0 +1,53 @@
+---
+title: "Patterns in Numbers"
+description: "Exploring basic number sequences including odd, even, triangular, square, and Virahanka numbers."
+date: 2024-04-10
+tags: ["number-theory", "sequences", "fibonacci"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Number Sequences
+
+Among the most basic patterns in mathematics are **number sequences**. A sequence is simply a list of numbers that follow a specific rule.
+
+The most fundamental sequence is the set of **Whole Numbers**:
+$$ 0, 1, 2, 3, 4, \dots $$
+
+### Key Number Sequences
+
+Table 1 lists some of the most important sequences studied in mathematics.
+
+| Sequence Name | Terms | Pattern / Rule |
+| :--- | :--- | :--- |
+| **All 1's** | $1, 1, 1, 1, 1, \dots$ | Constant value. |
+| **Counting Numbers** | $1, 2, 3, 4, 5, 6, 7, \dots$ | Increasing by 1. |
+| **Odd Numbers** | $1, 3, 5, 7, 9, 11, 13, \dots$ | Numbers not divisible by 2. |
+| **Even Numbers** | $2, 4, 6, 8, 10, 12, 14, \dots$ | Numbers divisible by 2. |
+| **Triangular Numbers** | $1, 3, 6, 10, 15, 21, 28, \dots$ | Numbers that can form a triangle. |
+| **Square Numbers** | $1, 4, 9, 16, 25, 36, 49, \dots$ | Numbers that can form a square ($n^2$). |
+| **Cubes** | $1, 8, 27, 64, 125, 216, \dots$ | Numbers formed by $n^3$. |
+| **Virahānka Numbers** | $1, 2, 3, 5, 8, 13, 21, \dots$ | Each number is the sum of the previous two (often called Fibonacci). |
+| **Powers of 2** | $1, 2, 4, 8, 16, 32, 64, \dots$ | Doubling the previous number. |
+| **Powers of 3** | $1, 3, 9, 27, 81, 243, \dots$ | Tripling the previous number. |
+
+<Callout variant="tip">
+**Did You Know?**
+The **Virahānka numbers** (1, 2, 3, 5, 8...) are widely known as Fibonacci numbers in the West, but they were described earlier by Indian mathematician Virahānka in the context of analyzing poetic meters.
+</Callout>
+
+### Recognizing Rules
+To find the rule of a sequence, look at the difference between consecutive terms or the ratio between them.
+
+*   **Linear Growth:** If the difference is constant (e.g., Counting Numbers $+1$, Odd Numbers $+2$).
+*   **Exponential Growth:** If the ratio is constant (e.g., Powers of 2 $\times 2$).
+*   **Geometric Growth:** Sequences like Square numbers grow based on the size of the shape they represent.
+
+$$
+\text{Square Number (n)} = n \times n = n^2
+$$
+$$
+\text{Cube Number (n)} = n \times n \times n = n^3
+$$

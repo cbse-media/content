@@ -1,0 +1,75 @@
+---
+title: "Relations Among Sequences"
+description: "Discovering how adding odd numbers creates squares and other beautiful mathematical relationships."
+date: 2024-04-10
+tags: ["odd-numbers", "square-numbers", "summation"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Surprising Relationships
+
+Number sequences are often related to each other. One of the most famous examples is the relationship between **Odd Numbers** and **Square Numbers**.
+
+### Adding Odd Numbers
+What happens when we add consecutive odd numbers starting from 1?
+
+$$
+\begin{aligned}
+1 &= 1 &= 1^2 \\
+1 + 3 &= 4 &= 2^2 \\
+1 + 3 + 5 &= 9 &= 3^2 \\
+1 + 3 + 5 + 7 &= 16 &= 4^2 \\
+1 + 3 + 5 + 7 + 9 &= 25 &= 5^2
+\end{aligned}
+$$
+
+**Conclusion:** The sum of the first $n$ odd numbers is equal to the $n$-th square number ($n^2$).
+
+#### Visual Proof
+We can visualize this by taking a square grid and "peeling" off L-shaped layers. Each layer contains an odd number of dots.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Grid of 16 dots (4x4) */}
+    {/* 1st Odd (1) - Top Left - Red */}
+    <circle cx="50" cy="50" r="8" fill="#e63946" />
+    
+    {/* 2nd Odd (3) - Blue */}
+    <circle cx="80" cy="50" r="8" fill="#457b9d" />
+    <circle cx="80" cy="80" r="8" fill="#457b9d" />
+    <circle cx="50" cy="80" r="8" fill="#457b9d" />
+
+    {/* 3rd Odd (5) - Green */}
+    <circle cx="110" cy="50" r="8" fill="#2a9d8f" />
+    <circle cx="110" cy="80" r="8" fill="#2a9d8f" />
+    <circle cx="110" cy="110" r="8" fill="#2a9d8f" />
+    <circle cx="80" cy="110" r="8" fill="#2a9d8f" />
+    <circle cx="50" cy="110" r="8" fill="#2a9d8f" />
+
+    {/* 4th Odd (7) - Orange */}
+    <circle cx="140" cy="50" r="8" fill="#e9c46a" />
+    <circle cx="140" cy="80" r="8" fill="#e9c46a" />
+    <circle cx="140" cy="110" r="8" fill="#e9c46a" />
+    <circle cx="140" cy="140" r="8" fill="#e9c46a" />
+    <circle cx="110" cy="140" r="8" fill="#e9c46a" />
+    <circle cx="80" cy="140" r="8" fill="#e9c46a" />
+    <circle cx="50" cy="140" r="8" fill="#e9c46a" />
+  </svg>
+</div>
+
+### Adding Up and Down
+Another way to generate square numbers is by adding counting numbers up to a peak and then back down to 1.
+
+$$
+\begin{aligned}
+1 &= 1 &= 1^2 \\
+1 + 2 + 1 &= 4 &= 2^2 \\
+1 + 2 + 3 + 2 + 1 &= 9 &= 3^2 \\
+1 + 2 + 3 + 4 + 3 + 2 + 1 &= 16 &= 4^2
+\end{aligned}
+$$
+
+This visualizes the square tilted on its corner, or "stacked" diagonally.

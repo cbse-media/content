@@ -1,0 +1,43 @@
+---
+title: "Drawing Angles"
+description: "Step-by-step guide to drawing angles using a protractor."
+date: 2024-04-10
+tags: ["drawing", "construction", "protractor"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 2.10 Drawing an Angle
+
+Suppose you want to draw an angle $\angle TIN = 30^\circ$.
+
+### Step-by-Step
+1.  **Draw a Ray:** Draw a ray $\overrightarrow{IN}$. This will be one arm of the angle.
+2.  **Position Protractor:** Place the center of the protractor on point $I$ (the vertex) and align the baseline with ray $\overrightarrow{IN}$.
+3.  **Mark the Point:** Find the $30^\circ$ mark on the scale starting from $0^\circ$ (at $N$). Mark a dot there and label it $T$.
+4.  **Join the Line:** Remove the protractor. Use a ruler to draw a line connecting $I$ to $T$.
+5.  **Label:** You have now drawn $\angle TIN = 30^\circ$.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" class="stroke-current text-gray-800 dark:text-gray-100">
+     <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+    {/* Base Ray */}
+    <line x1="50" y1="120" x2="250" y2="120" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="40" y="120" fill="currentColor" text-anchor="middle">I</text>
+    <text x="250" y="140" fill="currentColor" text-anchor="middle">N</text>
+
+    {/* Angled Ray */}
+    <line x1="50" y1="120" x2="200" y2="40" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="210" y="40" fill="currentColor">T</text>
+
+    {/* Arc */}
+    <path d="M 100 120 A 50 50 0 0 0 92 97" fill="none" stroke="currentColor" />
+    <text x="110" y="105" fill="currentColor">30°</text>
+  </svg>
+</div>

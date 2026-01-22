@@ -1,0 +1,39 @@
+---
+title: "Estimating Area using Grid Paper"
+description: "Techniques for finding the area of irregular shapes using graph paper."
+date: 2024-04-10
+tags: ["area", "estimation", "grid-paper"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Grid Method
+
+We can estimate the area of simple closed shapes (even curved ones like leaves) using squared paper or graph paper where every square measures $1 \text{ unit} \times 1 \text{ unit}$.
+
+### The Rules of Estimation
+
+1.  **Full Squares:** Count full squares as **1 sq unit**.
+2.  **Half Squares:** Count exact half squares as **$\frac{1}{2}$ sq unit**.
+3.  **More than Half:** If a shape covers more than half of a square, count it as **1 sq unit**.
+4.  **Less than Half:** If a shape covers less than half of a square, **ignore it** (count as 0).
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+    </defs>
+    <rect width="300" height="200" fill="url(#grid)" />
+
+    {/* Irregular Shape */}
+    <path d="M 100 40 Q 160 20 200 60 T 220 140 T 120 160 T 60 100 Z" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="150" y="110" text-anchor="middle" fill="currentColor" font-size="14">Irregular Shape</text>
+  </svg>
+</div>
+
+### Why not use circles?
+Squares pack tightly without gaps. Circles leave gaps between them, making it impossible to cover a surface completely to measure area accurately. This is why standard units of area are squares ($m^2$, $cm^2$).

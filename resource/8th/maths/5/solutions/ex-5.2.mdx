@@ -1,0 +1,56 @@
+---
+title: "Figure It Out: Divisibility & Roots"
+description: "Solutions to Divisibility shortcuts and Digital Root problems."
+date: 2024-04-10
+tags: ["solutions", "divisibility"]
+order: 7
+draft: false
+---
+
+## Divisibility by 9 (Page 126)
+
+**1. Check Divisibility by 9:**
+*   (i) 123: Sum $1+2+3=6$ (No).
+*   (ii) 405: Sum $4+0+5=9$ (Yes).
+*   (iii) 8888: Sum 32 (No).
+*   (iv) 93547: Sum 28 (No).
+*   (v) 358095: Sum 30 (No).
+
+**2. Smallest multiple of 9 with no odd digits.**
+*   Digits must be even ($0, 2, 4, 6, 8$).
+*   Sum must be 9? Impossible with only even numbers.
+*   Sum must be 18.
+*   Smallest number requires fewest digits, smallest leading digit.
+*   Try 288: Sum 18. Even digits. **Answer: 288**.
+
+**3. Multiple of 9 closest to 6000.**
+*   $6000 \div 9$: Remainder is sum of digits $6$.
+*   $6000 - 6 = 5994$. (Distance 6).
+*   Next multiple: $5994 + 9 = 6003$. (Distance 3).
+*   **Answer:** 6003.
+
+**4. Multiples of 9 between 4300 and 4400.**
+*   First multiple: Sum of $43xy$ needs to be 9 or 18.
+*   $4+3=7$. Need 2 more. $4302$.
+*   Last multiple: $4392$.
+*   Sequence: $4302, 4311 \dots 4392$.
+*   Count: $\frac{4392 - 4302}{9} + 1 = 10 + 1 = 11$.
+
+## Digital Roots (Page 131)
+
+**1. Digital root of 8-digit number is 5.**
+*   Add 10. $+10$ adds $1+0=1$ to the root.
+*   New root = $5 + 1 = 6$.
+
+**2. Sequence adding 11.**
+*   Adding 11 is like adding 2 to the digital root (since $1+1=2$).
+*   Sequence: $x, x+2, x+4 \dots$ (mod 9).
+
+**3. Root of $9a + 36b + 13$.**
+*   $9a$ and $36b$ are multiples of 9. Their digital root contribution is 9 (or 0).
+*   Only 13 matters. Root of $13 = 1+3 = 4$.
+*   **Answer:** 4.
+
+**4. Conjectures:**
+*   (i) Parity: A number and its digital root **do not** always share parity (e.g., 12 is even, root 3 is odd). But $N - \text{Root}(N)$ is always a multiple of 9.
+*   (ii) Remainder: Digital root is the remainder mod 9.

@@ -1,0 +1,59 @@
+---
+title: "Solutions: Section 5.4"
+description: "Answers regarding Prime Factorisation (Page 120, 122)."
+date: 2025-01-15
+tags: ["solutions", "factorisation"]
+order: 11
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 120: Figure it Out
+
+### Q1. Prime Factorisations
+*   **64:** $2 \times 2 \times 2 \times 2 \times 2 \times 2$ ($2^6$)
+*   **105:** $3 \times 5 \times 7$
+*   **320:** $32 \times 10 = 2^5 \times 2 \times 5 = 2^6 \times 5$ ($2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 5$)
+*   **1000:** $10 \times 10 \times 10 = (2 \times 5)^3 = 2 \times 2 \times 2 \times 5 \times 5 \times 5$
+
+### Q2. Identify the number
+Factors: one 2, two 3s, one 11.
+$$ \text{Number} = 2 \times (3 \times 3) \times 11 $$
+$$ = 2 \times 9 \times 11 $$
+$$ = 18 \times 11 = \mathbf{198} $$
+
+### Q3. Three primes < 30 product 1955
+Ends in 5, so 5 is a factor.
+$1955 \div 5 = 391$.
+We need two primes that multiply to 391.
+Try primes: 7 (no), 11 (no), 13 (no), 17.
+$391 \div 17 = 23$.
+23 is prime.
+**Answer:** 5, 17, 23.
+
+## Page 122: Figure it Out
+
+### Q1. Co-prime check via factorisation
+**a. 30 and 45**
+$30 = 2 \times 3 \times 5$
+$45 = 3 \times 3 \times 5$
+Common factors 3 and 5. **No.**
+
+**b. 57 and 85**
+$57 = 3 \times 19$
+$85 = 5 \times 17$
+No common factors. **Yes.**
+
+### Q2. Divisibility check via factorisation
+**a. 225 divisible by 27?**
+$225 = 5 \times 5 \times 3 \times 3$
+$27 = 3 \times 3 \times 3$
+225 only has two 3s. 27 needs three 3s.
+**No.**
+
+**b. 96 divisible by 24?**
+$24 = 2 \times 2 \times 2 \times 3$
+$96 = 2 \times 2 \times 2 \times 2 \times 2 \times 3$
+96 contains all factors of 24.
+**Yes.**

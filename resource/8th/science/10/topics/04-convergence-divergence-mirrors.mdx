@@ -1,0 +1,73 @@
+---
+title: "Convergence and Divergence in Mirrors"
+description: "How spherical mirrors manipulate beams of light."
+date: 2024-04-10
+tags: ["convergence", "divergence", "focus", "solar"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Interaction with Parallel Beams
+
+When multiple parallel rays of light (like sunlight) fall on spherical mirrors, they behave differently based on the shape of the mirror.
+
+### 1. Concave Mirror: The Converging Mirror
+
+A concave mirror reflects parallel rays such that they all meet (converge) at a single point called the **Focus**.
+
+*   This concentrates energy at one spot.
+*   **Activity:** If you hold a concave mirror towards the sun and focus the light on a piece of paper, the paper will burn! This is because the heat is concentrated.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2">
+    {/* Concave Mirror */}
+    <path d="M250 20 Q220 100 250 180" stroke="currentColor" fill="none" />
+    <line x1="0" y1="100" x2="280" y2="100" stroke="currentColor" stroke-dasharray="2,2" opacity="0.5" /> {/* Principal Axis */}
+
+    {/* Rays */}
+    <line x1="50" y1="60" x2="238" y2="60" stroke="currentColor" marker-end="url(#arrow)" />
+    <line x1="238" y1="60" x2="150" y2="100" stroke="currentColor" /> {/* Reflection to Focus */}
+
+    <line x1="50" y1="140" x2="238" y2="140" stroke="currentColor" marker-end="url(#arrow)" />
+    <line x1="238" y1="140" x2="150" y2="100" stroke="currentColor" /> {/* Reflection to Focus */}
+
+    <text x="140" y="120" fill="currentColor" stroke="none" font-size="14">Focus Point</text>
+    <text x="100" y="190" fill="currentColor" stroke="none" font-size="14">Concave: Converging</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+### 2. Convex Mirror: The Diverging Mirror
+
+A convex mirror reflects parallel rays such that they spread out (diverge). They appear to originate from a focal point behind the mirror.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2">
+    {/* Convex Mirror */}
+    <path d="M150 20 Q180 100 150 180" stroke="currentColor" fill="none" />
+    <line x1="50" y1="100" x2="250" y2="100" stroke="currentColor" stroke-dasharray="2,2" opacity="0.5" /> {/* Principal Axis */}
+
+    {/* Rays */}
+    <line x1="50" y1="60" x2="162" y2="60" stroke="currentColor" marker-end="url(#arrow)" />
+    <line x1="162" y1="60" x2="220" y2="20" stroke="currentColor" /> {/* Diverging Reflection */}
+    <line x1="162" y1="60" x2="200" y2="85" stroke="currentColor" stroke-dasharray="2,2" opacity="0.3" /> {/* Virtual path to focus */}
+
+    <line x1="50" y1="140" x2="162" y2="140" stroke="currentColor" marker-end="url(#arrow)" />
+    <line x1="162" y1="140" x2="220" y2="180" stroke="currentColor" /> {/* Diverging Reflection */}
+    <line x1="162" y1="140" x2="200" y2="115" stroke="currentColor" stroke-dasharray="2,2" opacity="0.3" /> {/* Virtual path to focus */}
+
+    <text x="50" y="190" fill="currentColor" stroke="none" font-size="14">Convex: Diverging</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Application:**
+Solar concentrators use large **concave mirrors** to focus sunlight to heat liquids for generating electricity or melting metals.
+</Callout>

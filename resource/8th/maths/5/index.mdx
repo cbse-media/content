@@ -1,0 +1,53 @@
+---
+title: "Chapter 5: Number Play"
+description: "Explore patterns in numbers, divisibility rules, parity logic, and solve algebraic puzzles."
+date: 2024-04-10
+tags: ["math", "number-theory", "grade-8"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Introduction
+
+Mathematics is often called a game of patterns. In this chapter, we move beyond simple calculation to explore the *nature* of numbers. Why do some numbers behave the way they do? How can we predict if a number is divisible by 9 without dividing? What hidden rules govern the sum of consecutive numbers?
+
+This chapter focuses on **Generalised Forms of Numbers**, **Tests of Divisibility**, and **Logic Puzzles** (Cryptarithms).
+
+## Key Concepts
+
+### 1. General Form of Numbers
+Any number can be written in expanded form using place values.
+For a 2-digit number $ab$:
+$$ ab = 10a + b $$
+For a 3-digit number $abc$:
+$$ abc = 100a + 10b + c $$
+
+### 2. Parity (Even and Odd)
+*   **Addition Rules:**
+    *   Even + Even = Even
+    *   Odd + Odd = Even
+    *   Even + Odd = Odd
+*   **Multiplication Rules:**
+    *   Even × Any Integer = Even
+    *   Odd × Odd = Odd
+
+### 3. Divisibility Summary
+
+| Divisor | Rule | Logic |
+| :--- | :--- | :--- |
+| **2** | Ends in 0, 2, 4, 6, 8 | $10k$ is always even. |
+| **3** | Sum of digits is divisible by 3 | $10 \equiv 1 \pmod 3$ |
+| **4** | Last two digits divisible by 4 | $100$ is divisible by 4. |
+| **5** | Ends in 0 or 5 | $10k$ is divisible by 5. |
+| **6** | Divisible by 2 AND 3 | Factors of 6 are coprime. |
+| **9** | Sum of digits is divisible by 9 | $10 \equiv 1 \pmod 9$ |
+| **10** | Ends in 0 | Definition of base 10. |
+| **11** | Difference of alternating digit sums is divisible by 11 | $10 \equiv -1 \pmod{11}$ |
+
+## Topics Covered
+1.  **Patterns & Parity:** Sums of consecutive numbers and logic puzzles involving signs.
+2.  **Divisibility Algebra:** Using letter-numbers to prove why divisibility shortcuts work.
+3.  **Digital Roots:** Repeatedly adding digits to find the "root" of a number.
+4.  **Cryptarithms:** Solving puzzles where digits are disguised as letters.

@@ -1,0 +1,84 @@
+---
+title: "Practice: Classifying Activities"
+description: "Additional solved examples to practice classifying economic activities."
+date: 2025-01-15
+tags: ["practice", "classification", "sectors"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Classify the following activities
+
+Read the scenarios below and classify them into **Primary**, **Secondary**, or **Tertiary** sectors.
+
+### Scenario 1: The Furniture Maker
+**Activity:** A carpenter buys wood from a depot and builds a chair.
+*   **Answer:** **Secondary Sector**.
+*   **Reason:** The carpenter is transforming raw material (wood) into a finished good (chair). This is manufacturing/processing.
+
+### Scenario 2: The Coal Miner
+**Activity:** A worker digs underground to bring coal to the surface.
+*   **Answer:** **Primary Sector**.
+*   **Reason:** This involves the direct extraction of a natural resource (mineral) from the earth.
+
+### Scenario 3: The Software Engineer
+**Activity:** A person writes code for a new mobile app.
+*   **Answer:** **Tertiary Sector**.
+*   **Reason:** This is a service. No physical good is being extracted or manufactured directly; intellectual skill is being provided to support other functions.
+
+### Scenario 4: The Baker
+**Activity:** Baking a cake using flour, sugar, and eggs.
+*   **Answer:** **Secondary Sector**.
+*   **Reason:** The baker processes raw food ingredients (primary outputs) into a new product (cake).
+
+### Scenario 5: The Call Center Employee
+**Activity:** Answering customer queries over the phone.
+*   **Answer:** **Tertiary Sector**.
+*   **Reason:** This is a communication service supporting business operations.
+
+---
+
+## Visual Classification Exercise
+
+Look at the supply chain of **Tomato Ketchup** and identify the sectors:
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="150" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Step 1 */}
+    <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="50" y="55" text-anchor="middle" font-size="10" fill="currentColor">Tomato</text>
+    <text x="50" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">Primary</text>
+
+    {/* Arrow */}
+    <path d="M90 50 L130 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+
+    {/* Step 2 */}
+    <rect x="140" y="20" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="170" y="55" text-anchor="middle" font-size="10" fill="currentColor">Truck</text>
+    <text x="170" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">Tertiary</text>
+
+    {/* Arrow */}
+    <path d="M210 50 L250 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+
+    {/* Step 3 */}
+    <path d="M260 20 L320 20 L320 80 L260 80 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="290" y="55" text-anchor="middle" font-size="10" fill="currentColor">Factory</text>
+    <text x="290" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">Secondary</text>
+
+     {/* Arrow */}
+    <path d="M330 50 L370 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+
+    {/* Step 4 */}
+    <rect x="380" y="20" width="60" height="60" rx="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="410" y="55" text-anchor="middle" font-size="10" fill="currentColor">Supermarket</text>
+    <text x="410" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">Tertiary</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>

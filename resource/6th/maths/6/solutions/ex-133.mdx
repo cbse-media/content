@@ -1,0 +1,55 @@
+---
+title: "Page 133: Matha Pachchi & Deep Dive"
+description: "Solutions for the tracking running problems and races."
+date: 2024-04-10
+tags: ["solutions", "perimeter", "logic", "puzzle"]
+order: 11
+draft: false
+---
+
+## Matha Pachchi: Akshi vs Toshi
+
+**Scenario:**
+*   **Akshi's Track (Outer):** Rectangle $70\text{ m} \times 40\text{ m}$.
+*   **Toshi's Track (Inner):** Rectangle $60\text{ m} \times 30\text{ m}$.
+
+**1. Total distance Akshi covered in 5 rounds:**
+$$
+\begin{aligned}
+\text{Perimeter (Akshi)} &= 2 \times (70 + 40) = 2 \times 110 = 220\text{ m} \\
+\text{Distance} &= 5 \times 220 = 1100\text{ m}
+\end{aligned}
+$$
+
+**2. Total distance Toshi covered in 7 rounds:**
+$$
+\begin{aligned}
+\text{Perimeter (Toshi)} &= 2 \times (60 + 30) = 2 \times 90 = 180\text{ m} \\
+\text{Distance} &= 7 \times 180 = 1260\text{ m}
+\end{aligned}
+$$
+**Conclusion:** Toshi ran a longer distance ($1260 > 1100$).
+
+## Deep Dive (Page 134)
+
+**Problem:** Two square tracks, Inner (100m side) and Outer (150m side). Common finish line. Race length is 350m. Where should they start?
+
+**Analysis:**
+*   Race distance needed: 350 m.
+*   The finish line is in the middle of a side. Let's analyze the path backwards from the finish line.
+*   **Inner Runner (A):**
+    *   Side length = 100 m.
+    *   Path to finish: Half side (50m) + Full Side (100m) + Full Side (100m) + Full Side (100m) = 350m.
+    *   This means runner A starts exactly at the finish line (completes exactly 1 round minus 50m? No, $350 = 3.5 \times 100$).
+    *   Actually, let's look at the solution provided: "From point A to flag: $100+100+100+50 = 350$". This implies starting at a corner or specific point.
+*   **Outer Runner (B):**
+    *   Side length = 150 m.
+    *   Path: $75 \text{ (half side)} + 150 + 125$?
+    *   Solution says: $125 + 150 + 75 = 350$.
+    *   $75$ is the final stretch (half side). $150$ is one full side. $125$ is the start of the side ($150 - 25$?).
+    *   Actually, $125 + 150 + 75 = 350$. This means they run 1 full side ($150$), one half side ($75$) to finish, and start $125$m back.
+
+**Akshi vs Toshi Triangle Debate (Page 134)**
+*   **Akshi:** Perimeter is 9 units.
+*   **Toshi:** It's more than 9 units.
+*   **Reasoning:** The diagonal of a square is longer than its side. The "slanted" lines in the triangle on the grid are diagonals of the grid squares. Their length is greater than 1 unit. Therefore, the sum is greater than just counting grid lines. Toshi is correct.

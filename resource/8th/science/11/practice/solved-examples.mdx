@@ -1,0 +1,48 @@
+---
+title: "Practice: Logic & Calculations"
+description: "Deep dive into the math of moonrise and shadow lengths."
+date: 2024-04-10
+tags: ["practice", "math", "astronomy"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The 50-Minute Delay
+
+**Observation:** You noticed in the chapter that the Moon rises about 50 minutes later every day. Why?
+
+**The Physics:**
+1.  Earth rotates $360^\circ$ in 24 hours.
+2.  While Earth rotates, the Moon revolves around Earth in the same direction.
+3.  In 24 hours, the Moon moves about $12^\circ$ to $13^\circ$ in its orbit.
+4.  So, when Earth completes one full rotation (360 degrees), the Moon is no longer in the same spot—it has moved ahead!
+5.  Earth has to rotate an *extra* $13^\circ$ to catch up to the Moon.
+
+**The Math:**
+*   Earth rotates $360^\circ$ in $1440$ minutes (24 hrs).
+*   Speed of rotation: $1440 / 360 = 4$ minutes per degree.
+*   Extra rotation needed: $\approx 12.5^\circ$.
+*   Time taken: $12.5^\circ \times 4 \text{ min/degree} = 50$ minutes.
+
+**Conclusion:** That is why Moonrise is delayed by 50 minutes daily.
+
+## Activity Analysis: Shadow Sticks (Activity 11.3)
+
+**Goal:** Find the shortest shadow to determine "Local Noon".
+
+**Procedure:**
+1.  Place a stick vertically on flat ground.
+2.  Mark the tip of the shadow every 10 minutes from 11:00 AM to 1:00 PM.
+3.  Measure the length of the shadow at each mark.
+
+**Outcome:**
+*   The shadow is longest in the morning and evening.
+*   The shadow is **shortest** exactly when the Sun is at its highest point in the sky.
+*   This moment is **Local Noon**. It might not be exactly 12:00 PM on your watch (which follows Standard Time for the whole country).
+
+<Callout variant="tip">
+**Did you know?**
+The line connecting the North and South celestial poles passing directly overhead is called the **Meridian**. When the Sun crosses the meridian, it is noon. "AM" stands for *Ante Meridiem* (Before Meridian) and "PM" stands for *Post Meridiem* (After Meridian).
+</Callout>

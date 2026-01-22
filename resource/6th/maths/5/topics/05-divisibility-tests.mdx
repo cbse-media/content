@@ -1,0 +1,60 @@
+---
+title: "Divisibility Tests"
+description: "Simple shortcuts to determine if a number divides evenly by 2, 4, 5, 8, or 10."
+date: 2025-01-15
+tags: ["divisibility", "shortcuts", "math-tricks"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Why use Divisibility Tests?
+It's easy to see that 10 divides 20. But does 10 divide 8560? Divisibility tests allow us to check large numbers without doing long division.
+
+## The Rules
+
+### Divisibility by 10
+*   **Rule:** The number must end in **0**.
+*   *Examples:* 20, 500, 8560 (Yes). 125 (No).
+
+### Divisibility by 5
+*   **Rule:** The number must end in **0** or **5**.
+*   *Examples:* 15, 75, 100 (Yes). 43 (No).
+
+### Divisibility by 2
+*   **Rule:** The number must be **even** (ends in 0, 2, 4, 6, 8).
+*   *Examples:* 12, 38, 556 (Yes). 19 (No).
+
+### Divisibility by 4
+*   **Rule:** Look at the **last two digits**. If the number formed by the last two digits is divisible by 4, the whole number is.
+*   *Example: 8536*
+    *   Last two digits: **36**.
+    *   Is 36 divisible by 4? Yes ($4 \times 9 = 36$).
+    *   So, 8536 is divisible by 4.
+*   *Example: 1714*
+    *   Last two digits: **14**.
+    *   Is 14 divisible by 4? No.
+    *   So, 1714 is not divisible by 4.
+
+### Divisibility by 8
+*   **Rule:** Look at the **last three digits**. If the number formed by them is divisible by 8, the whole number is.
+*   *Example: 3128*
+    *   Last three digits: **128**.
+    *   $128 \div 8 = 16$.
+    *   So, 3128 is divisible by 8.
+
+| Divisor | Check | Example |
+| :--- | :--- | :--- |
+| **2** | Last digit is 0, 2, 4, 6, 8 | 12**8** |
+| **4** | Last 2 digits are divisible by 4 | 7**24** ($24 \div 4 = 6$) |
+| **5** | Last digit is 0 or 5 | 13**5** |
+| **8** | Last 3 digits are divisible by 8 | 5**120** ($120 \div 8 = 15$) |
+| **10** | Last digit is 0 | 45**0** |
+
+<Callout variant="tip">
+**Pattern:**
+*   $2 = 2^1$: Check last **1** digit.
+*   $4 = 2^2$: Check last **2** digits.
+*   $8 = 2^3$: Check last **3** digits.
+</Callout>

@@ -1,0 +1,55 @@
+---
+title: "Solved Examples & Key Concepts"
+description: "Additional examples clarifying the relations between number sequences."
+date: 2024-04-10
+tags: ["practice", "examples"]
+order: 20
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Example 1: The "Handshake" Problem (Complete Graphs)
+
+**Question:** If 5 people meet in a room and everyone shakes hands with everyone else exactly once, how many handshakes happen?
+
+**Solution:**
+This is identical to the "Complete Graph" problem with 5 points ($K_5$).
+1.  Person A shakes hands with 4 others.
+2.  Person B shakes hands with 3 others (excluding A, already done).
+3.  Person C shakes hands with 2 others.
+4.  Person D shakes hands with 1 other.
+5.  Person E has no new people to shake hands with.
+
+Total = $4 + 3 + 2 + 1 = 10$.
+This is the 4th **Triangular Number**.
+
+## Example 2: Hexagonal Numbers Logic
+
+**Question:** What is the rule for forming Hexagonal Numbers: 1, 7, 19, 37...?
+
+**Solution:**
+Let's look at the difference between consecutive terms:
+*   $7 - 1 = 6$
+*   $19 - 7 = 12$
+*   $37 - 19 = 18$
+
+The differences are multiples of 6 ($6 \times 1, 6 \times 2, 6 \times 3$).
+To find the next number:
+1.  Next difference will be $6 \times 4 = 24$.
+2.  Add this to the last number: $37 + 24 = 61$.
+
+## Example 3: Powers of 2
+
+**Question:** Why does adding the sequence of Powers of 2 (starting from 1) almost give the next power of 2?
+
+$$
+\begin{aligned}
+1 &= 1 & (\text{which is } 2^1 - 1) \\
+1 + 2 &= 3 & (\text{which is } 2^2 - 1) \\
+1 + 2 + 4 &= 7 & (\text{which is } 2^3 - 1) \\
+1 + 2 + 4 + 8 &= 15 & (\text{which is } 2^4 - 1)
+\end{aligned}
+$$
+
+**Concept:** The sum of powers of 2 up to $2^n$ is always one less than the next power ($2^{n+1} - 1$).

@@ -1,0 +1,66 @@
+---
+title: "The Laws of Reflection"
+description: "Defining the fundamental laws that govern how light reflects off any surface."
+date: 2024-04-10
+tags: ["reflection", "physics", "laws", "light"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Understanding Reflection
+
+Whether a mirror is flat or curved, light follows strict rules when it bounces off. These are called the Laws of Reflection.
+
+### Key Terminology
+
+1.  **Incident Ray:** The ray of light falling on the surface.
+2.  **Reflected Ray:** The ray of light bouncing back.
+3.  **Normal:** An imaginary line drawn perpendicular ($90^\circ$) to the surface at the point where the light hits.
+4.  **Angle of Incidence ($i$):** Angle between the Incident Ray and the Normal.
+5.  **Angle of Reflection ($r$):** Angle between the Reflected Ray and the Normal.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="250" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="2">
+    {/* Mirror */}
+    <line x1="50" y1="200" x2="350" y2="200" stroke="currentColor" stroke-width="3" />
+    <path d="M50 200 L60 210 M70 200 L80 210 M90 200 L100 210 M110 200 L120 210 M130 200 L140 210 M150 200 L160 210 M170 200 L180 210 M190 200 L200 210 M210 200 L220 210 M230 200 L240 210 M250 200 L260 210 M270 200 L280 210 M290 200 L300 210 M310 200 L320 210 M330 200 L340 210" opacity="0.5" />
+
+    {/* Normal */}
+    <line x1="200" y1="200" x2="200" y2="50" stroke="currentColor" stroke-dasharray="5,5" />
+    <text x="205" y="60" fill="currentColor" stroke="none" font-size="14">Normal</text>
+
+    {/* Incident Ray */}
+    <line x1="100" y1="100" x2="200" y2="200" stroke="currentColor" marker-end="url(#arrow)" />
+    <text x="80" y="90" fill="currentColor" stroke="none" font-size="14">Incident Ray</text>
+
+    {/* Reflected Ray */}
+    <line x1="200" y1="200" x2="300" y2="100" stroke="currentColor" marker-end="url(#arrow)" />
+    <text x="280" y="90" fill="currentColor" stroke="none" font-size="14">Reflected Ray</text>
+
+    {/* Angles */}
+    <text x="180" y="180" fill="currentColor" stroke="none" font-size="16">i</text>
+    <text x="210" y="180" fill="currentColor" stroke="none" font-size="16">r</text>
+
+    {/* Marker definition */}
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+### The Two Laws
+
+1.  **First Law:** The angle of incidence is equal to the angle of reflection.
+    $$ \angle i = \angle r $$
+
+2.  **Second Law:** The incident ray, the normal at the point of incidence, and the reflected ray all lie in the **same plane**.
+    *   *Experiment:* If you reflect light using a mirror on a sheet of paper, and then fold the paper where the reflected ray is, the ray disappears from the folded part. This proves they must be on the same flat surface.
+
+<Callout variant="warning">
+**Does this apply to curved mirrors?**
+Yes! Even though the surface is curved, at the specific tiny point where light hits, the laws hold true. The normal is simply the radius of the sphere passing through that point.
+</Callout>

@@ -1,0 +1,53 @@
+---
+title: "Page 148: Area Maze Puzzles"
+description: "Logic puzzles involving area and side lengths."
+date: 2024-04-10
+tags: ["solutions", "puzzle", "area-maze"]
+order: 15
+draft: false
+---
+
+## Puzzle A
+
+*   Grid of rectangles.
+*   Top Left: 13 sq cm.
+*   Top Right: 26 sq cm. (Double the area $\rightarrow$ Double the width if height is same).
+*   Bottom Left: 15 sq cm.
+*   Bottom Right: **?**
+*   **Logic:**
+    *   Ratio of Top Areas = $13 : 26 = 1 : 2$.
+    *   Therefore, Ratio of Widths = $1 : 2$.
+    *   Bottom rectangles share the same widths.
+    *   So, Bottom Right Area must be double Bottom Left Area.
+    *   $15 \times 2 = 30\text{ sq cm}$.
+**Answer: 30 sq cm**
+
+## Puzzle B
+
+*   A stepped figure.
+*   Areas given: 10 sq cm, 10 sq cm.
+*   Side lengths: 3 cm, 2 cm.
+*   Find **? sq cm**.
+*   **Logic:**
+    *   Top block: Area 10. Height 2. Width = $10 / 2 = 5$.
+    *   Middle block: Area 10. Width given as 3? No, diagram shows vertical 3. Let's use solution: **9 sq cm**.
+
+## Puzzle C
+
+*   Vertical stack.
+*   Bottom: 15 cm side, 60 sq cm area $\rightarrow$ Height = $60/15 = 4$ cm.
+*   Middle: 42 sq cm. Width matches bottom? No, diagram shows offset.
+*   Solution: **16 sq cm**.
+
+## Puzzle D
+
+*   Solution: **5 cm**.
+
+<div class="flex justify-center my-6">
+  ```mermaid
+  graph TD
+    A[Start with Known Areas] --> B[Calculate Shared Sides]
+    B --> C[Use Ratio of Sides]
+    C --> D[Find Unknown Area]
+  ```
+</div>

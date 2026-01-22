@@ -1,0 +1,52 @@
+---
+title: "Area of Rectangles and Squares"
+description: "Introduction to area and the formulas for calculating the area of basic shapes."
+date: 2024-04-10
+tags: ["area", "rectangle", "square", "formula"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is Area?
+
+The **area** is the amount of surface or region enclosed by a closed figure. It is usually measured in **square units** (e.g., $cm^2$, $m^2$).
+
+Think of area as the number of unit squares (squares of side 1 unit) needed to cover the surface completely.
+
+### Area of a Rectangle
+
+To find the area of a rectangle, we multiply its two dimensions: length and breadth.
+
+$$
+\text{Area of a Rectangle} = \text{Length} \times \text{Breadth}
+$$
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="180" height="100" stroke="currentColor" fill="none" stroke-width="2"/>
+    {/* Grid hint */}
+    <path d="M 10 110 L 190 110 M 190 10 L 190 110" stroke="currentColor" stroke-dasharray="4,4" opacity="0.5"/>
+    <text x="100" y="60" text-anchor="middle" fill="currentColor" font-size="16">Area = l × b</text>
+    <text x="100" y="130" text-anchor="middle" fill="currentColor" font-size="12">Length (l)</text>
+    <text x="-5" y="60" text-anchor="middle" fill="currentColor" font-size="12" transform="rotate(-90, -5, 60)">Breadth (b)</text>
+  </svg>
+</div>
+
+### Area of a Square
+
+Since a square is a rectangle where length equals breadth, the formula simplifies:
+
+$$
+\text{Area of a Square} = \text{side} \times \text{side} = (\text{side})^2
+$$
+
+### Example Problem
+
+**Problem:** A floor is $5\text{ m}$ long and $4\text{ m}$ wide. A square carpet of side $3\text{ m}$ is laid on the floor. Find the area of the floor not carpeted.
+
+**Solution:**
+1.  Area of Floor = $5 \times 4 = 20\text{ m}^2$.
+2.  Area of Carpet = $3 \times 3 = 9\text{ m}^2$.
+3.  Area Not Carpeted = Area of Floor - Area of Carpet = $20 - 9 = 11\text{ m}^2$.

@@ -1,0 +1,68 @@
+---
+title: "Symmetry"
+description: "Explore the beautiful world of symmetry, including line symmetry, mirror reflections, and rotational symmetry."
+date: 2024-04-10
+tags: ["math", "geometry", "grade-6", "symmetry"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+# Symmetry
+
+Look around you! From the petals of a flower to the wings of a butterfly, and even in man-made structures like the Taj Mahal, symmetry is everywhere. Symmetry brings balance, harmony, and beauty to the objects we see.
+
+In this chapter, we will explore the mathematical definitions of symmetry, learn how to identify lines of symmetry, and understand how objects can have symmetry even when they are rotating.
+
+## Key Concepts
+
+| Concept | Definition | Example |
+| :--- | :--- | :--- |
+| **Line of Symmetry** | A line that divides a figure into two identical halves that overlap exactly when folded. | A butterfly, the letter 'A'. |
+| **Reflection Symmetry** | Another name for line symmetry, where one half is the mirror image of the other. | Looking in a mirror. |
+| **Rotational Symmetry** | When a figure looks exactly the same after being rotated by a certain angle (less than 360°) around a fixed point. | A windmill, a ceiling fan. |
+| **Centre of Rotation** | The fixed point around which a figure is rotated. | The center of a wheel. |
+| **Angle of Symmetry** | The specific angle at which a figure looks the same after rotation. | A square has angles of 90°, 180°, 270°, 360°. |
+
+## Formula Sheet
+
+### Rotational Symmetry
+For a regular polygon with $n$ sides:
+1.  **Number of Lines of Symmetry:** $n$
+2.  **Order of Rotational Symmetry:** $n$
+3.  **Smallest Angle of Symmetry:** $\frac{360^{\circ}}{n}$
+
+$$
+\text{Angle of Symmetry} = \frac{360^{\circ}}{\text{Order of Symmetry}}
+$$
+
+<div class="flex justify-center my-6">
+    <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+        {/* Background */}
+        <rect width="300" height="200" fill="none" />
+        
+        {/* Symmetry Example: Butterfly-like shape */}
+        <g transform="translate(80, 100)">
+            <path d="M0,-60 C30,-80 80,-40 10,0 C80,40 30,80 0,60 C-30,80 -80,40 -10,0 C-80,-40 -30,-80 0,-60 Z" fill="#FF9999" fill-opacity="0.3" stroke="currentColor" stroke-width="2"/>
+            <line x1="0" y1="-70" x2="0" y2="70" stroke="currentColor" stroke-dasharray="5,5" stroke-width="2"/>
+            <text x="-40" y="90" fill="currentColor" font-size="12">Line Symmetry</text>
+        </g>
+
+        {/* Rotational Example: Pinwheel */}
+        <g transform="translate(220, 100)">
+            <path d="M0,0 L30,-30 L30,0 Z" fill="#9999FF" fill-opacity="0.5" stroke="currentColor"/>
+            <path d="M0,0 L30,30 L0,30 Z" fill="#9999FF" fill-opacity="0.5" stroke="currentColor" transform="rotate(90)"/>
+            <path d="M0,0 L30,30 L0,30 Z" fill="#9999FF" fill-opacity="0.5" stroke="currentColor" transform="rotate(180)"/>
+            <path d="M0,0 L30,30 L0,30 Z" fill="#9999FF" fill-opacity="0.5" stroke="currentColor" transform="rotate(270)"/>
+             <circle cx="0" cy="0" r="3" fill="currentColor"/>
+             <text x="-40" y="60" fill="currentColor" font-size="12">Rotational Symmetry</text>
+        </g>
+    </svg>
+</div>
+
+## Chapter Contents
+
+1.  **[Line of Symmetry](./topics/01-line-of-symmetry.mdx)** - Understanding mirror halves and folding.
+2.  **[Rotational Symmetry](./topics/02-rotational-symmetry.mdx)** - Spinning shapes and finding patterns.
+3.  **[Solutions](./solutions/page-219.mdx)** - Step-by-step answers to all textbook exercises.

@@ -1,0 +1,92 @@
+---
+title: "Types of Angles"
+description: "Classifying angles as Right, Straight, Acute, Obtuse, and Reflex."
+date: 2024-04-10
+tags: ["angles", "classification", "acute", "obtuse", "right", "reflex"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Special Angles
+
+### 1. Straight Angle
+If you make a **half turn**, the two rays lie in a straight line pointing in opposite directions.
+*   **Measure:** Exactly $180^\circ$.
+*   It looks like a straight line.
+
+### 2. Right Angle
+If you make a **quarter turn** (half of a straight angle), you get a right angle.
+*   **Measure:** Exactly $90^\circ$.
+*   It forms an 'L' shape.
+*   Two lines that meet at a right angle are called **perpendicular lines**.
+
+<div class="flex justify-center my-6 gap-8">
+  {/* Straight Angle */}
+  <div class="text-center">
+    <svg width="200" height="100" viewBox="0 0 200 100" class="stroke-current text-gray-800 dark:text-gray-100">
+       <line x1="10" y1="50" x2="190" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow-rev)" />
+       <circle cx="100" cy="50" r="3" fill="currentColor" />
+       <path d="M 130 50 A 30 30 0 0 0 70 50" fill="none" stroke="currentColor" />
+       <text x="100" y="80" text-anchor="middle" fill="currentColor">Straight Angle (180°)</text>
+    </svg>
+  </div>
+
+  {/* Right Angle */}
+  <div class="text-center">
+    <svg width="150" height="150" viewBox="0 0 150 150" class="stroke-current text-gray-800 dark:text-gray-100">
+       <line x1="50" y1="100" x2="140" y2="100" stroke="currentColor" stroke-width="2" />
+       <line x1="50" y1="100" x2="50" y2="10" stroke="currentColor" stroke-width="2" />
+       <rect x="50" y="80" width="20" height="20" fill="none" stroke="currentColor" />
+       <text x="70" y="130" fill="currentColor">Right Angle (90°)</text>
+    </svg>
+  </div>
+</div>
+
+## Classifying by Measure
+
+We classify other angles based on how they compare to Right and Straight angles.
+
+### 3. Acute Angle
+*   **Description:** Smaller than a right angle (sharp).
+*   **Measure:** Greater than $0^\circ$ and **less than $90^\circ$**.
+
+### 4. Obtuse Angle
+*   **Description:** Greater than a right angle but less than a straight angle (blunt).
+*   **Measure:** Greater than $90^\circ$ and **less than $180^\circ$**.
+
+### 5. Reflex Angle
+*   **Description:** Greater than a straight angle but less than a full turn.
+*   **Measure:** Greater than $180^\circ$ and **less than $360^\circ$**.
+
+<div class="flex flex-wrap justify-center gap-6 my-6">
+    {/* Acute */}
+    <svg width="150" height="150" viewBox="0 0 150 150" class="stroke-current text-gray-800 dark:text-gray-100">
+        <line x1="20" y1="130" x2="130" y2="130" stroke="currentColor" stroke-width="2" />
+        <line x1="20" y1="130" x2="100" y2="40" stroke="currentColor" stroke-width="2" />
+        <text x="70" y="145" text-anchor="middle" fill="currentColor">Acute (&lt;90°)</text>
+    </svg>
+
+    {/* Obtuse */}
+    <svg width="150" height="150" viewBox="0 0 150 150" class="stroke-current text-gray-800 dark:text-gray-100">
+        <line x1="75" y1="130" x2="140" y2="130" stroke="currentColor" stroke-width="2" />
+        <line x1="75" y1="130" x2="20" y2="60" stroke="currentColor" stroke-width="2" />
+        <text x="75" y="145" text-anchor="middle" fill="currentColor">Obtuse (&gt;90°)</text>
+    </svg>
+
+    {/* Reflex */}
+    <svg width="150" height="150" viewBox="0 0 150 150" class="stroke-current text-gray-800 dark:text-gray-100">
+        <line x1="75" y1="75" x2="140" y2="75" stroke="currentColor" stroke-width="2" />
+        <line x1="75" y1="75" x2="30" y2="120" stroke="currentColor" stroke-width="2" />
+        {/* Reflex arc */}
+        <path d="M 115 75 A 40 40 0 1 1 50 100" fill="none" stroke="currentColor" stroke-dasharray="4" />
+        <text x="75" y="20" text-anchor="middle" fill="currentColor">Reflex (&gt;180°)</text>
+    </svg>
+</div>
+
+<Callout variant="tip">
+**Mnemonics:**
+*   **Acute** means sharp (like a sharp pencil tip).
+*   **Obtuse** means blunt.
+</Callout>

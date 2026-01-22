@@ -1,0 +1,60 @@
+---
+title: "Digits in Disguise (Cryptarithms)"
+description: "Solving arithmetic puzzles where letters replace digits."
+date: 2024-04-10
+tags: ["puzzles", "logic", "algebra"]
+order: 5
+draft: false
+---
+
+## What are Cryptarithms?
+
+Cryptarithms are puzzles where digits are replaced by letters.
+**Rules:**
+1.  Each letter represents a unique digit ($0-9$).
+2.  The first digit of a number cannot be 0.
+3.  Standard arithmetic rules apply.
+
+## Example 1: Addition
+$$
+\begin{array}{c}
+  \quad A \ 1 \\
++ \ 1 \ B \\
+\hline
+  \quad B \ 0
+\end{array}
+$$
+
+**Solution:**
+1.  **Units Column:** $1 + B$ ends in $0$.
+    *   $1 + B = 10 \implies B = 9$.
+    *   Carry over 1.
+2.  **Tens Column:** $1 (\text{carry}) + A + 1 = B$.
+    *   Since $B = 9$, $2 + A = 9 \implies A = 7$.
+3.  **Check:** $71 + 19 = 90$. Correct.
+
+## Example 2: Multiplication
+$$
+\begin{array}{c}
+  \quad A \ B \\
+\times \quad \quad 5 \\
+\hline
+  \quad C \ A \ B
+\end{array}
+$$
+
+**Analysis:**
+1.  **Units Digit:** $B \times 5$ ends in $B$.
+    *   Possible values for $B$: $0$ or $5$.
+2.  **If B = 0:** $A0 \times 5 = CA0$.
+    *   $5 \times A$ ends in $A$. Possible $A$: $5$ (since $5 \times 5 = 25$).
+    *   If $A=5, B=0$: $50 \times 5 = 250$.
+    *   $C=2, A=5, B=0$. Fits the pattern $CAB$.
+3.  **If B = 5:** $A5 \times 5 = CA5$.
+    *   $5 \times 5 = 25$ (Carry 2).
+    *   $(5 \times A) + 2$ ends in $A$.
+    *   Try $A=2$: $(5 \times 2) + 2 = 12$. Ends in 2.
+    *   If $A=2, B=5$: $25 \times 5 = 125$.
+    *   $C=1, A=2, B=5$. Fits.
+
+**Answer:** Two solutions exist ($50 \times 5 = 250$ or $25 \times 5 = 125$).

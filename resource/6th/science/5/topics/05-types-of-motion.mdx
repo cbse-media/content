@@ -1,0 +1,80 @@
+---
+title: "Types of Motion"
+description: "Explaining Linear, Circular, Oscillatory, and Periodic motion with examples."
+date: 2025-01-20
+tags: ["linear", "circular", "oscillatory", "periodic"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 1. Linear Motion (Rectilinear Motion)
+When an object moves along a **straight line**, it is called linear motion.
+
+*   **Examples:**
+    *   A car moving on a straight road.
+    *   Soldiers marching in a parade.
+    *   A stone falling freely from a roof.
+    *   A sprinter running a 100m race on a straight track.
+
+## 2. Circular Motion
+When an object moves along a **circular path**, keeping a fixed distance from a central point.
+
+*   **Examples:**
+    *   A stone tied to a thread and whirled around.
+    *   Hands of a clock.
+    *   Blades of a fan.
+    *   A merry-go-round.
+
+<Callout variant="info">
+**Note:** In circular motion, the *position* of the object changes, but its *distance* from the center remains constant.
+</Callout>
+
+## 3. Oscillatory Motion
+When an object moves **to and fro** (back and forth) about a fixed position (mean position), it is called oscillatory motion.
+
+*   **Examples:**
+    *   A swing moving back and forth.
+    *   The pendulum of a clock.
+    *   The string of a guitar when plucked.
+    *   A metal strip pressed and released.
+
+## 4. Periodic Motion
+If an object repeats its motion after a fixed interval of time, it is called periodic motion.
+*   **Note:** Both circular motion (like a fan) and oscillatory motion (like a pendulum) are often periodic.
+
+## Comparison Chart
+
+| Type of Motion | Path | Examples |
+| :--- | :--- | :--- |
+| **Linear** | Straight Line | Dropping a coin |
+| **Circular** | Circle | Moon orbiting Earth |
+| **Oscillatory** | To and Fro | Ringing of a bell |
+
+## Visualizing Motion Paths
+
+<div class="flex justify-center my-6 gap-8">
+  {/* Linear */}
+  <svg width="100" height="100" viewBox="0 0 100 100">
+    <text x="50" y="20" text-anchor="middle" fill="currentColor" font-size="12">Linear</text>
+    <line x1="20" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+  </svg>
+
+  {/* Circular */}
+  <svg width="100" height="100" viewBox="0 0 100 100">
+    <text x="50" y="20" text-anchor="middle" fill="currentColor" font-size="12">Circular</text>
+    <circle cx="50" cy="60" r="30" fill="none" stroke="currentColor" stroke-dasharray="4" />
+    <circle cx="50" cy="60" r="3" fill="currentColor" />
+    <circle cx="50" cy="30" r="4" fill="currentColor" />
+  </svg>
+
+  {/* Oscillatory */}
+  <svg width="100" height="100" viewBox="0 0 100 100">
+    <text x="50" y="20" text-anchor="middle" fill="currentColor" font-size="12">Oscillatory</text>
+    <path d="M 20 50 Q 50 80 80 50" fill="none" stroke="currentColor" stroke-width="2" />
+    <path d="M 80 50 Q 50 20 20 50" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2" />
+    <line x1="50" y1="50" x2="50" y2="80" stroke="currentColor" />
+    <circle cx="50" cy="80" r="5" fill="currentColor" />
+  </svg>
+</div>

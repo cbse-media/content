@@ -1,0 +1,41 @@
+---
+title: "Observing Similarity in Change"
+description: "Understanding why some resized images look distorted while others look natural."
+date: 2024-04-10
+tags: ["similarity", "scaling", "images"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Digital Image Problem
+
+Imagine you have a picture of a tiger.
+*   **Image A (Original):** Width 60 mm, Height 40 mm.
+*   **Image C (Resized):** Width 30 mm, Height 20 mm.
+
+Why does Image C look like a smaller version of A, while other resizing attempts look distorted?
+
+### The Mathematical Reason
+In Image C, both the width and the height were reduced by the **same factor**.
+*   Width: $60 \rightarrow 30$ (Halved or multiplied by $\frac{1}{2}$)
+*   Height: $40 \rightarrow 20$ (Halved or multiplied by $\frac{1}{2}$)
+
+<Callout variant="success">
+**Key Rule:** For two figures to be **similar**, their dimensions must change by the **same factor** (multiplication).
+</Callout>
+
+### Why Subtraction Doesn't Work
+Consider Image B:
+*   Width: $60 - 20 = 40$ mm
+*   Height: $40 - 20 = 20$ mm
+
+Even though we subtracted the same amount (20 mm) from both sides, the image looks distorted.
+*   Height factor: $20/40 = 0.5$
+*   Width factor: $40/60 \approx 0.67$
+
+Since the factors ($0.5$ and $0.67$) are different, the proportions are lost.
+
+### Proportional Change
+We say changes are **proportional** when quantities are multiplied or divided by the same constant. This preserves the "shape" of the object.

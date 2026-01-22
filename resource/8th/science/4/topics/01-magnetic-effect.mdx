@@ -1,0 +1,60 @@
+---
+title: "Magnetic Effect of Electric Current"
+description: "Discovering how electricity and magnetism are linked, and how electromagnets work."
+date: 2025-01-15
+tags: ["magnetism", "oersted", "electromagnet"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Oersted's Discovery
+
+In 1820, a Danish scientist named **Hans Christian Oersted** noticed something strange. When he switched on an electric circuit, a compass needle lying nearby moved!
+
+*   **Observation:** A compass needle deflects when placed near a current-carrying wire.
+*   **Conclusion:** Electric current produces a **magnetic field** around it.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Wire */}
+    <line x1="50" y1="100" x2="350" y2="100" stroke="currentColor" stroke-width="4" />
+    <text x="200" y="80" fill="currentColor" text-anchor="middle">Current Carrying Wire</text>
+
+    {/* Compass */}
+    <circle cx="200" cy="150" r="30" stroke="currentColor" stroke-width="2" fill="none" />
+    <polygon points="200,130 190,160 210,160" fill="red" opacity="0.7" /> {/* North pole */}
+    <polygon points="200,170 190,160 210,160" fill="gray" opacity="0.5" /> {/* South pole */}
+    <text x="200" y="195" fill="currentColor" text-anchor="middle" font-size="12">Magnetic Compass</text>
+
+    {/* Field Lines Indication */}
+    <path d="M 160 100 Q 160 130 200 130 Q 240 130 240 100" stroke="currentColor" stroke-width="1" stroke-dasharray="4" fill="none"/>
+  </svg>
+</div>
+
+## Electromagnets
+
+We can use this effect to create temporary magnets called **electromagnets**.
+
+### How to make one?
+1.  Take a magnetic material (like an iron nail).
+2.  Wind an insulated copper wire tightly around it in a coil.
+3.  Connect the wire ends to a battery.
+
+When current flows, the nail behaves like a strong magnet and can attract paper clips. When the current stops, it loses its magnetism.
+
+### Polarity of an Electromagnet
+An electromagnet has a **North Pole** and a **South Pole**, just like a bar magnet.
+*   If the compass North pole is attracted to End A, then End A is the **South Pole** (unlike poles attract).
+*   If you reverse the direction of current (swap battery terminals), the poles of the electromagnet also reverse.
+
+### Factors Affecting Strength
+The strength of an electromagnet depends on:
+1.  **Current Strength:** More cells (batteries) $\rightarrow$ Stronger magnet.
+2.  **Number of Turns:** More turns in the coil $\rightarrow$ Stronger magnet.
+3.  **Core Material:** Using soft iron as a core makes it much stronger than air or wood.
+
+<Callout variant="tip">
+**Real World Use:** Giant electromagnets attached to cranes are used in scrap yards to lift heavy iron loads and separate magnetic metals from waste.
+</Callout>

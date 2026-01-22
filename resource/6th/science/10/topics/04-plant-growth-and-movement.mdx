@@ -1,0 +1,64 @@
+---
+title: "Growth and Movement in Plants"
+description: "How plants respond to directional stimuli like light and gravity."
+date: 2025-01-25
+tags: ["tropism", "geotropism", "phototropism", "plant-movement"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Directional Growth (Tropisms)
+Plants may not walk, but they move by growing. This growth is directional, responding to stimuli like light (**Phototropism**) and gravity (**Geotropism**).
+
+## Activity 10.3: Roots and Shoots
+An experiment with seedlings placed in different orientations (upright vs. inverted) helps us understand this.
+
+### Observations
+1.  **Upright Plant:** Roots grow down, shoot grows up.
+2.  **Inverted Plant:**
+    *   The **Root** bends and turns **downwards** (towards gravity).
+    *   The **Shoot** bends and turns **upwards** (away from gravity/towards light).
+3.  **Side Lighting:** If light comes from only one side, the shoot bends towards the light.
+
+### Visualizing Plant Response
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Ground Line */}
+    <line x1="50" y1="250" x2="350" y2="250" stroke="currentColor" stroke-width="2" />
+    
+    {/* Pot */}
+    <rect x="150" y="200" width="60" height="50" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="180" y="230" text-anchor="middle" font-size="12" fill="currentColor">Pot</text>
+    
+    {/* Stem bending towards sun */}
+    <path d="M 180 200 Q 180 150 240 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+    
+    {/* Leaves */}
+    <ellipse cx="240" cy="100" rx="15" ry="8" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-30 240 100)" />
+    <ellipse cx="230" cy="110" rx="15" ry="8" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(30 230 110)" />
+    
+    {/* Sun */}
+    <circle cx="320" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="2" />
+    <line x1="320" y1="20" x2="320" y2="10" stroke="currentColor" stroke-width="2" />
+    <line x1="320" y1="80" x2="320" y2="90" stroke="currentColor" stroke-width="2" />
+    <line x1="290" y1="50" x2="280" y2="50" stroke="currentColor" stroke-width="2" />
+    <line x1="350" y1="50" x2="360" y2="50" stroke="currentColor" stroke-width="2" />
+    <line x1="300" y1="30" x2="290" y2="20" stroke="currentColor" stroke-width="2" />
+    <line x1="340" y1="70" x2="350" y2="80" stroke="currentColor" stroke-width="2" />
+    <line x1="300" y1="70" x2="290" y2="80" stroke="currentColor" stroke-width="2" />
+    <line x1="340" y1="30" x2="350" y2="20" stroke="currentColor" stroke-width="2" />
+
+    {/* Labels */}
+    <text x="260" y="140" text-anchor="start" font-size="14" fill="currentColor">Shoot bends to light</text>
+    <text x="320" y="110" text-anchor="middle" font-size="12" fill="currentColor">Stimulus (Light)</text>
+    
+  </svg>
+</div>
+
+## Key Findings
+*   **Roots** are positively geotropic (grow down) and negatively phototropic (grow away from light).
+*   **Shoots** are negatively geotropic (grow up) and positively phototropic (grow towards light).
+*   This ensures roots find water/soil and leaves find sunlight.

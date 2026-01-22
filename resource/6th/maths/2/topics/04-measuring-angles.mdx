@@ -1,0 +1,56 @@
+---
+title: "Measuring Angles"
+description: "Using degrees and a protractor to quantify angles."
+date: 2024-04-10
+tags: ["degrees", "protractor", "measurement"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 2.9 Degrees
+
+To measure angles precisely, we use a unit called a **degree** ($^\circ$).
+Imagine a full circle (one full turn) divided into **360 equal parts**.
+*   **1 Full Turn** = $360^\circ$
+*   **Straight Angle** (half turn) = $180^\circ$
+*   **Right Angle** (quarter turn) = $90^\circ$
+
+## Using a Protractor
+
+A **protractor** is a geometric tool shaped like a semicircle, divided into 180 equal parts (degrees).
+
+### Reading a Protractor
+Most protractors have **two scales**:
+1.  **Inner Scale:** Usually counts $0^\circ$ to $180^\circ$ from **Right to Left** (Counter-Clockwise).
+2.  **Outer Scale:** Usually counts $0^\circ$ to $180^\circ$ from **Left to Right** (Clockwise).
+
+### How to Measure
+1.  Place the **center point** of the protractor on the **vertex** of the angle.
+2.  Align the **baseline** (the $0^\circ$ line) with one arm of the angle.
+3.  Read the value where the *other arm* crosses the scale.
+    *   **Tip:** Look at the $0^\circ$ mark you started with. If you used the $0^\circ$ on the right, read the inner scale. If you used the $0^\circ$ on the left, read the outer scale.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="220" viewBox="0 0 400 220" class="stroke-current text-gray-800 dark:text-gray-100">
+    {/* Semi Circle */}
+    <path d="M 50 200 A 150 150 0 0 1 350 200 Z" fill="none" stroke="currentColor" stroke-width="2" />
+    <line x1="50" y1="200" x2="350" y2="200" stroke="currentColor" stroke-width="2" />
+    <circle cx="200" cy="200" r="3" fill="currentColor" />
+
+    {/* Ticks (simplified) */}
+    <line x1="200" y1="200" x2="200" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="2" />
+    <text x="200" y="40" text-anchor="middle" fill="currentColor">90°</text>
+
+    <line x1="200" y1="200" x2="330" y2="125" stroke="currentColor" stroke-width="2" stroke="red" />
+    <text x="340" y="120" fill="red">30°</text>
+
+    <text x="360" y="200" fill="currentColor">0°</text>
+    <text x="40" y="200" fill="currentColor">180°</text>
+  </svg>
+</div>
+
+<Callout variant="warning">
+**Common Mistake:** Do not just read the number blindly. Check if the angle looks acute or obtuse. If you are measuring an acute angle and read $150^\circ$, you are likely reading the wrong scale!
+</Callout>

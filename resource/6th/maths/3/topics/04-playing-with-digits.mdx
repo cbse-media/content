@@ -1,0 +1,39 @@
+---
+title: "Playing with Digits"
+description: "Exploring digit sums and properties of multi-digit numbers."
+date: 2024-04-10
+tags: ["digits", "arithmetic"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Digit Sums
+
+A **digit sum** is found by adding all the digits of a number together.
+
+**Example:**
+For the number $176$:
+$$ 1 + 7 + 6 = 14 $$
+
+For the number $68$:
+$$ 6 + 8 = 14 $$
+
+Interestingly, different numbers can have the same digit sum.
+
+### Properties
+-   **Smallest Number with Digit Sum 14:** To make the number small, we want fewer digits. To use fewer digits, we use the largest possible digits (9).
+    -   $14 - 9 = 5$. So digits are 5 and 9.
+    -   Smallest order: $59$.
+-   **Largest 5-digit number with Digit Sum 14:** We want the largest digits at the start.
+    -   $9, \dots$ (Remaining sum 5)
+    -   $95000$ (Sum: $9+5+0+0+0 = 14$).
+
+### Consecutive Digits Pattern
+Calculate digit sums for consecutive digits:
+1.  $123 \rightarrow 1+2+3 = 6$
+2.  $234 \rightarrow 2+3+4 = 9$
+3.  $345 \rightarrow 3+4+5 = 12$
+
+**Observation:** The sums increase by 3 each time. This is because each digit in the sequence increases by 1 ($1 \to 2$, $2 \to 3$, $3 \to 4$), so the total sum increases by $1+1+1 = 3$.

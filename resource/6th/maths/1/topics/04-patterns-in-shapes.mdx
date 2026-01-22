@@ -1,0 +1,61 @@
+---
+title: "Patterns in Shapes"
+description: "Investigating sequences in geometry, including Regular Polygons, Complete Graphs, and the Koch Snowflake."
+date: 2024-04-10
+tags: ["geometry", "polygons", "fractals"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Shape Sequences
+
+Just as we have patterns in numbers, we have patterns in shapes. This is the foundation of **Geometry**.
+
+### 1. Regular Polygons
+A **regular polygon** is a shape with equal-length sides and equal angles. The sequence starts with 3 sides.
+
+| Sides | Name |
+| :--- | :--- |
+| 3 | Equilateral Triangle |
+| 4 | Square |
+| 5 | Regular Pentagon |
+| 6 | Regular Hexagon |
+| 7 | Regular Heptagon |
+
+The number of sides follows the **Counting Numbers** sequence starting at 3 ($3, 4, 5, 6, \dots$). The number of corners (vertices) follows the exact same sequence.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2">
+    {/* Triangle */}
+    <polygon points="50,20 20,80 80,80" />
+    <text x="50" y="105" stroke="none" fill="currentColor" text-anchor="middle" font-size="12">Triangle (3)</text>
+
+    {/* Square */}
+    <rect x="130" y="30" width="50" height="50" />
+    <text x="155" y="105" stroke="none" fill="currentColor" text-anchor="middle" font-size="12">Square (4)</text>
+
+    {/* Pentagon */}
+    <polygon points="250,20 220,45 230,80 270,80 280,45" />
+    <text x="250" y="105" stroke="none" fill="currentColor" text-anchor="middle" font-size="12">Pentagon (5)</text>
+  </svg>
+</div>
+
+### 2. Complete Graphs
+A **Complete Graph** is a shape where every corner is connected to every other corner by a line.
+*   **K2 (2 points):** 1 line.
+*   **K3 (3 points):** 3 lines (Triangle).
+*   **K4 (4 points):** 6 lines (Square with X inside).
+*   **K5 (5 points):** 10 lines (Pentagon with star inside).
+
+The sequence of the *number of lines* in Complete Graphs is: **1, 3, 6, 10, 15...**
+<Callout variant="tip">
+**Pattern Alert:** This is the **Triangular Number** sequence!
+</Callout>
+
+### 3. Koch Snowflake
+The Koch Snowflake is a fractal pattern. You start with a triangle and repeatedly add smaller triangles to the middle of every side.
+*   The boundary gets more complex with each step.
+*   The number of line segments grows rapidly: **3, 12, 48, 192...**
+*   This sequence is $3 \times$ **Powers of 4**.

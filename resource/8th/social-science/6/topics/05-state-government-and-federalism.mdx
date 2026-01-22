@@ -1,0 +1,60 @@
+---
+title: "State Government & Federalism"
+description: "How the parliamentary system functions at the State level and the division of powers."
+date: 2024-04-10
+tags: ["federalism", "state-government", "lists", "vidhan-sabha"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Parallel Structure
+India practices **federalism**, where power is distributed between the Center and States. The State structure mirrors the Union structure.
+
+| Feature | Union Government | State Government |
+| :--- | :--- | :--- |
+| **Const. Head** | President | Governor |
+| **Exec. Head** | Prime Minister | Chief Minister |
+| **Legislature** | Bicameral (Lok Sabha + Rajya Sabha) | Unicameral or Bicameral |
+| **Lower House** | Lok Sabha | Vidhan Sabha (Legislative Assembly) |
+| **Upper House** | Rajya Sabha | Vidhan Parishad (Legislative Council) |
+| **Responsibility**| To Lok Sabha | To Vidhan Sabha |
+
+<Callout variant="info">
+**Bicameral States**
+Most states are unicameral (only Vidhan Sabha). States with a bicameral system (Vidhan Sabha + Vidhan Parishad) include **Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, and Uttar Pradesh**.
+</Callout>
+
+## Division of Powers: The Three Lists
+The Constitution clarifies who can make laws on which subject through three lists.
+
+*   **Union List:** Subjects relevant to the whole country (e.g., Defence, Foreign Affairs). Only Union Govt acts here.
+*   **State List:** Local subjects (e.g., Police, Agriculture). State Govt acts here.
+*   **Concurrent List:** Shared subjects (e.g., Education, Environment). Both can legislate, but Union law prevails in conflict.
+
+### Venn Diagram of Lists
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Union List Circle */}
+    <circle cx="180" cy="150" r="120" stroke="currentColor" stroke-width="3" fill="none" opacity="0.8" />
+    <text x="120" y="150" font-family="sans-serif" font-size="16" fill="currentColor" font-weight="bold">UNION LIST</text>
+
+    {/* State List Circle */}
+    <circle cx="320" cy="150" r="120" stroke="currentColor" stroke-width="3" fill="none" opacity="0.8" />
+    <text x="360" y="150" font-family="sans-serif" font-size="16" fill="currentColor" font-weight="bold">STATE LIST</text>
+
+    {/* Concurrent List Overlap */}
+    <text x="250" y="130" font-family="sans-serif" font-size="14" fill="currentColor" text-anchor="middle" font-weight="bold">CONCURRENT</text>
+    <text x="250" y="150" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Education</text>
+    <text x="250" y="170" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Environment</text>
+
+    {/* Labels outside */}
+    <text x="250" y="290" font-family="sans-serif" font-size="12" fill="currentColor" text-anchor="middle" font-style="italic">Fig: Interdependence of Federalism</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Note:** Even though Education is on the Concurrent List, the RTE Act is applicable all over India. If the Union legislates on a Concurrent subject, States are bound to follow it.
+</Callout>

@@ -1,0 +1,44 @@
+---
+title: "Mesopotamian (Babylonian) System"
+description: "The first positional number system using Base-60."
+date: 2024-04-10
+tags: ["babylonian", "base-60", "place-value"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Sexagesimal System (Base-60)
+The Mesopotamians used **Base-60**. This legacy survives today in how we measure time (60 seconds = 1 minute) and angles (360 degrees).
+
+## Symbols
+They used only two basic marks made by a stylus on clay:
+1.  **Pin/Wedge ($\triangledown$):** Represents **1**.
+2.  **Hook/Angle (<):** Represents **10**.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    {/* 1 */}
+    <path d="M 50 20 L 60 20 L 55 60 Z" fill="currentColor"/>
+    <text x="55" y="80" text-anchor="middle" fill="currentColor">1</text>
+
+    {/* 10 */}
+    <path d="M 120 40 L 150 30 L 150 50 Z" fill="currentColor"/>
+    <text x="135" y="80" text-anchor="middle" fill="currentColor">10</text>
+  </svg>
+</div>
+
+## Place Value
+Numbers were written in groups. The value depended on the position (powers of 60).
+
+**Example: 640**
+$$
+640 = (10 \times 60) + 40
+$$
+*   **Left Group (60s place):** Hook (10) representing $10 \times 60$.
+*   **Right Group (1s place):** 4 Hooks (40).
+
+<Callout variant="warning">
+**The Zero Problem:** Initially, they had no zero. A blank space was used, which could be confusing. Later, a placeholder symbol was introduced, but it wasn't a full zero number like we use today.
+</Callout>

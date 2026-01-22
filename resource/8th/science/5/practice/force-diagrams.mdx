@@ -1,0 +1,57 @@
+---
+title: "Practice: Visualizing Forces"
+description: "Learn how to draw and interpret Free Body Diagrams."
+date: 2025-01-15
+tags: ["practice", "diagrams", "physics"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Free Body Diagram?
+
+In physics, we use diagrams to show all the forces acting on a single object. This helps us predict how the object will move.
+
+### Example 1: A Book on a Table
+
+When a book rests on a table, it doesn't move. Does that mean no forces are acting? No! It means the forces are **balanced**.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Table Surface */}
+    <line x1="50" y1="150" x2="150" y2="150" stroke="currentColor" stroke-width="2" />
+
+    {/* Book */}
+    <rect x="80" y="130" width="40" height="20" fill="#3b82f6" />
+
+    {/* Gravity Force */}
+    <line x1="100" y1="140" x2="100" y2="180" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="110" y="170" fill="#ef4444" font-size="12">Weight (Gravity)</text>
+
+    {/* Normal Force */}
+    <line x1="100" y1="140" x2="100" y2="100" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="110" y="110" fill="#10b981" font-size="12">Reaction Force</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+1.  **Gravity:** Pulls the book down.
+2.  **Reaction Force (Normal Force):** The table pushes the book up.
+3.  **Result:** They cancel each other out. Net force = 0.
+
+### Example 2: Pushing a Box
+
+Imagine pushing a heavy box across the floor.
+
+1.  **Applied Force (Push):** Acts in the direction of motion.
+2.  **Friction:** Acts opposite to the direction of motion.
+3.  **Gravity:** Pulls down.
+4.  **Reaction:** Floor pushes up.
+
+**Key Rule:** The box will only move if your **Push > Friction**.

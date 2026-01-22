@@ -1,0 +1,75 @@
+---
+title: "Correct Measuring Techniques"
+description: "How to use a ruler correctly, handle broken scales, and measure curved lines."
+date: 2025-01-20
+tags: ["measurement", "technique", "practical"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## How to Use a Scale Correctly
+
+Measuring length seems simple, but small errors can lead to wrong results. Follow these three rules:
+
+### 1. Placement of the Scale
+Place the scale **in contact** with the object along its length.
+*   Do not tilt the scale.
+*   Align the zero mark exactly with one end of the object.
+
+### 2. Correct Eye Position (Parallax Error)
+Your eye must be exactly in front of the point where the measurement is to be taken. If you look from the left or right, the reading will be incorrect. This is called **Parallax Error**.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Object */}
+    <rect x="50" y="150" width="300" height="20" fill="#ddd" stroke="currentColor" />
+    
+    {/* Eye Positions */}
+    {/* Center (Correct) */}
+    <g transform="translate(200, 50)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="currentColor"/>
+      <circle cx="0" cy="0" r="5" fill="currentColor"/>
+      <line x1="0" y1="20" x2="0" y2="100" stroke="currentColor" stroke-dasharray="4" />
+      <text x="0" y="-20" text-anchor="middle" fill="currentColor" font-weight="bold">Correct</text>
+    </g>
+    
+    {/* Left (Incorrect) */}
+    <g transform="translate(100, 50)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ff0000" opacity="0.5"/>
+      <line x1="0" y1="20" x2="100" y2="100" stroke="#ff0000" stroke-dasharray="4" opacity="0.5"/>
+      <text x="0" y="-20" text-anchor="middle" fill="currentColor">Wrong</text>
+    </g>
+
+    {/* Right (Incorrect) */}
+    <g transform="translate(300, 50)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ff0000" opacity="0.5"/>
+      <line x1="0" y1="20" x2="-100" y2="100" stroke="#ff0000" stroke-dasharray="4" opacity="0.5"/>
+      <text x="0" y="-20" text-anchor="middle" fill="currentColor">Wrong</text>
+    </g>
+  </svg>
+</div>
+
+### 3. Measuring with a Broken Scale
+If the zero mark is broken or invisible:
+1.  Start from a full mark (e.g., $1.0 \text{ cm}$).
+2.  Note the reading at the other end.
+3.  **Subtract** the starting mark from the final reading.
+
+**Formula:**
+$$
+\text{Actual Length} = \text{Final Reading} - \text{Initial Reading}
+$$
+
+*Example:* Start at $1.0 \text{ cm}$, end at $10.4 \text{ cm}$.
+Length = $10.4 - 1.0 = 9.4 \text{ cm}$.
+
+## Measuring a Curved Line
+You cannot measure a curved line directly with a straight ruler.
+
+**Method:**
+1.  Use a **thread** or string.
+2.  Place the thread along the curved line carefully, matching every curve.
+3.  Mark the start and end points on the thread.
+4.  Straighten the thread and measure the distance between the marks using a meter scale.

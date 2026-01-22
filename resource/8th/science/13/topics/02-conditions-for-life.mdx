@@ -1,0 +1,58 @@
+---
+title: "What Makes Earth Habitable?"
+description: "The Goldilocks Zone, Gravity, Atmosphere, and Magnetic Fields."
+date: 2024-04-10
+tags: ["habitable-zone", "goldilocks", "magnetic-field", "atmosphere"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## 1. Position: The Goldilocks Zone
+
+Earth is located at just the right distance from the Sun. This region is called the **Habitable Zone** or **Goldilocks Zone**.
+*   **Too Close:** Water evaporates (like on Venus).
+*   **Too Far:** Water freezes (like on Mars).
+*   **Just Right:** Water exists as **liquid**, which is essential for life.
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="200" viewBox="0 0 500 200" fill="none" stroke="currentColor" stroke-width="2">
+    {/* Sun */}
+    <circle cx="0" cy="100" r="50" fill="orange" stroke="none" />
+    <text x="10" y="105" fill="white" font-weight="bold" font-size="14">SUN</text>
+
+    {/* Hot Zone */}
+    <rect x="60" y="50" width="100" height="100" fill="red" opacity="0.2" stroke="none" />
+    <text x="80" y="40" fill="currentColor" font-size="12" stroke="none">Too Hot</text>
+    <circle cx="90" cy="100" r="5" fill="gray" /> {/* Mercury */}
+    <circle cx="130" cy="100" r="8" fill="#d4a017" /> {/* Venus */}
+
+    {/* Habitable Zone */}
+    <rect x="180" y="50" width="120" height="100" fill="green" opacity="0.2" stroke="none" />
+    <text x="200" y="40" fill="currentColor" font-size="12" stroke="none">Habitable Zone</text>
+    <circle cx="240" cy="100" r="9" fill="blue" /> {/* Earth */}
+    <text x="230" y="130" fill="currentColor" font-size="10" stroke="none">Earth</text>
+
+    {/* Cold Zone */}
+    <rect x="320" y="50" width="150" height="100" fill="blue" opacity="0.2" stroke="none" />
+    <text x="350" y="40" fill="currentColor" font-size="12" stroke="none">Too Cold</text>
+    <circle cx="350" cy="100" r="6" fill="red" /> {/* Mars */}
+  </svg>
+</div>
+
+## 2. Size and Gravity
+Earth is massive enough to have strong gravity.
+*   **Role:** Gravity holds the **atmosphere** in place.
+*   If Earth were smaller (like Mars), the gravity would be too weak, and the air would escape into space.
+*   The atmosphere provides Oxygen for breathing and contains the **Ozone Layer**, which blocks harmful UV rays.
+
+## 3. Magnetic Field
+Earth acts like a giant magnet due to the movement of molten iron in its core.
+*   **Role:** It creates a protective shield called the **Magnetosphere**.
+*   **Function:** It deflects **Solar Wind** and **Cosmic Rays** (harmful high-energy particles) from space, protecting the atmosphere and life.
+
+<Callout variant="info">
+**Did you know?**
+If Earth's magnetic field disappeared, the solar wind could strip away our ozone layer, exposing us to deadly radiation!
+</Callout>

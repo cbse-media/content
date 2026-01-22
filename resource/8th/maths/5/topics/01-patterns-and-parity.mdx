@@ -1,0 +1,73 @@
+---
+title: "Patterns, Parity, and Consecutive Numbers"
+description: "Exploring sums of consecutive numbers and the logic of even/odd parity."
+date: 2024-04-10
+tags: ["patterns", "parity", "algebra"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Sums of Consecutive Numbers
+
+Can every number be written as a sum of consecutive natural numbers? Let's verify.
+*   $3 = 1 + 2$
+*   $5 = 2 + 3$
+*   $6 = 1 + 2 + 3$
+*   $10 = 1 + 2 + 3 + 4$
+
+<Callout variant="info">
+**Power of 2 Exception:** Powers of 2 ($2, 4, 8, 16 \dots$) **cannot** be written as the sum of consecutive natural numbers.
+</Callout>
+
+### The 4-Number Sign Puzzle
+Take any 4 consecutive numbers, say $3, 4, 5, 6$. Place `+` or `-` signs between them.
+Example:
+$$ 3 + 4 - 5 + 6 = 8 $$
+$$ 3 - 4 - 5 - 6 = -12 $$
+
+**Observation:** The result is always **EVEN**.
+
+#### Algebraic Proof
+Let the four numbers be $a, b, c, d$.
+Consider the expression $S = a + b + c + d$.
+If we change the sign of $b$ from $+$ to $-$, the new sum is $S' = a - b + c + d$.
+The difference is $S - S' = 2b$.
+Since $2b$ is always an even number, changing a sign changes the total sum by an even amount.
+Therefore, if the initial sum is even (or odd), all variations will maintain the same **parity**.
+
+For 4 consecutive integers (e.g., $n, n+1, n+2, n+3$):
+Sum $= 4n + 6 = 2(2n + 3)$.
+Since $2(2n+3)$ is a multiple of 2, the sum is always **even**. Thus, any variation of signs will also result in an even number.
+
+## Pairs to Make Fours (Multiples of 4)
+
+When do two even numbers sum to a multiple of 4?
+Even numbers are of two types:
+1.  **Multiples of 4 ($4k$):** $4, 8, 12 \dots$ (Remainder 0)
+2.  **Not Multiples of 4 ($4k+2$):** $2, 6, 10 \dots$ (Remainder 2)
+
+### Visualizing the Logic
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Case 1: 4p + 4q */}
+    <text x="50" y="20" font-weight="bold" fill="currentColor">4p + 4q</text>
+    <rect x="20" y="30" width="80" height="40" fill="none" stroke="currentColor" stroke-dasharray="2"/>
+    <circle cx="30" cy="40" r="3" fill="currentColor"/><circle cx="50" cy="40" r="3" fill="currentColor"/><circle cx="70" cy="40" r="3" fill="currentColor"/><circle cx="90" cy="40" r="3" fill="currentColor"/>
+    <text x="60" y="90" font-size="12" text-anchor="middle" fill="currentColor">Rows of 4 complete</text>
+
+    {/* Case 2: (4p+2) + (4q+2) */}
+    <text x="250" y="20" font-weight="bold" fill="currentColor">(4p+2) + (4q+2)</text>
+    <rect x="220" y="30" width="80" height="40" fill="none" stroke="currentColor" stroke-dasharray="2"/>
+    <circle cx="230" cy="40" r="3" fill="currentColor"/><circle cx="250" cy="40" r="3" fill="currentColor"/>
+    <text x="270" y="45" font-size="20" fill="currentColor">+</text>
+    <circle cx="300" cy="40" r="3" fill="currentColor"/><circle cx="320" cy="40" r="3" fill="currentColor"/>
+    <text x="275" y="90" font-size="12" text-anchor="middle" fill="currentColor">2 + 2 = 4 (New row of 4)</text>
+  </svg>
+</div>
+
+**Conclusion:**
+*   Sum of two multiples of 4 $\rightarrow$ **Multiple of 4**.
+*   Sum of two non-multiples of 4 (even) $\rightarrow$ **Multiple of 4** (because $2+2=4$).

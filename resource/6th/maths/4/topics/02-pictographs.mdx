@@ -1,0 +1,69 @@
+---
+title: "Pictographs"
+description: "Understanding how to represent data visually using pictures and symbols."
+date: 2025-01-20
+tags: ["pictograph", "visual data", "scale"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Pictograph?
+
+A **Pictograph** represents data through pictures of objects. It helps answer questions about data with just a quick glance. Instead of looking at numbers, you look at symbols.
+
+### Key Components
+
+1.  **Symbol**: A picture that represents the item (e.g., a smiley face for a student, a bulb for electricity).
+2.  **Scale/Key**: This is crucial. It tells you what **one symbol** represents.
+    *   Example: $1 \text{ Smiley} = 1 \text{ Student}$
+    *   Example: $1 \text{ Smiley} = 10 \text{ Students}$
+
+If the scale is large (e.g., 1 symbol = 10 items), we might use partial pictures to represent smaller numbers.
+*   Half a symbol $\approx 5$ items.
+
+### Example: Library Books
+
+Let's look at an example where 1 Book Symbol represents 1 Book borrowed.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Grid lines */}
+    <line x1="100" y1="50" x2="380" y2="50" stroke="#ccc" strokeWidth="1" />
+    <line x1="100" y1="100" x2="380" y2="100" stroke="#ccc" strokeWidth="1" />
+    <line x1="100" y1="150" x2="380" y2="150" stroke="#ccc" strokeWidth="1" />
+
+    {/* Labels */}
+    <text x="20" y="55" fill="currentColor" fontSize="14" fontFamily="sans-serif">Monday</text>
+    <text x="20" y="105" fill="currentColor" fontSize="14" fontFamily="sans-serif">Tuesday</text>
+    <text x="20" y="155" fill="currentColor" fontSize="14" fontFamily="sans-serif">Wednesday</text>
+
+    {/* Books Row 1 (5 books) */}
+    <rect x="110" y="40" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="140" y="40" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="170" y="40" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="200" y="40" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="230" y="40" width="20" height="20" fill="currentColor" opacity="0.7"/>
+
+    {/* Books Row 2 (3 books) */}
+    <rect x="110" y="90" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="140" y="90" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="170" y="90" width="20" height="20" fill="currentColor" opacity="0.7"/>
+
+    {/* Books Row 3 (2 books) */}
+    <rect x="110" y="140" width="20" height="20" fill="currentColor" opacity="0.7"/>
+    <rect x="140" y="140" width="20" height="20" fill="currentColor" opacity="0.7"/>
+
+    {/* Legend */}
+    <text x="280" y="20" fill="currentColor" fontSize="12" fontFamily="sans-serif">Scale: 1 Square = 1 Book</text>
+  </svg>
+</div>
+
+**Interpretation:**
+- **Monday:** 5 symbols $\times$ 1 = 5 books.
+- **Tuesday:** 3 symbols $\times$ 1 = 3 books.
+- **Wednesday:** 2 symbols $\times$ 1 = 2 books.
+
+### Challenges with Pictographs
+While pictographs are visually appealing, they can be difficult to draw if the data is large or not a perfect multiple of the scale (e.g., representing 27 students when 1 symbol = 10 students). This is where Bar Graphs become more useful.

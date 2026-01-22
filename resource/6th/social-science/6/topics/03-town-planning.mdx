@@ -1,0 +1,66 @@
+---
+title: "Town Planning & Architecture"
+description: "Understanding the layout of Harappan cities, including the Citadel, Lower Town, and the Great Bath."
+date: 2024-04-10
+tags: ["architecture", "urban-planning", "great-bath", "bricks"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## A Planned Urban Layout
+
+The most striking feature of the Harappan civilisation was its **town planning**. Unlike the haphazard growth of many modern cities, Harappan cities followed a grid system.
+
+### Structural Features
+1.  **Bipartite Layout:** Most cities were divided into two parts:
+    *   **Upper Town (Citadel):** Built on a raised platform, often fortified. Likely used by the elite or for public purposes.
+    *   **Lower Town:** Larger area where common people lived.
+2.  **Streets:** Wide streets oriented to cardinal directions (North-South, East-West), cutting each other at right angles.
+3.  **Bricks:** Buildings were made of **baked bricks** of a standardized ratio (1:2:4). The quality of construction was uniform across small and big houses.
+
+### The Great Bath (Mohenjo-daro)
+Located in the Citadel of Mohenjo-daro, this structure is a masterpiece of engineering.
+
+*   **Dimensions:** Roughly $12 \text{ m} \times 7 \text{ m}$.
+*   **Construction:** Watertight brickwork sealed with natural **bitumen** (tar).
+*   **Features:** Steps leading down from two sides, surrounded by rooms (for changing), and a large drain to empty the tank.
+*   **Purpose:** Likely used for special **ritual baths** on religious occasions.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    {/* Ground */}
+    <rect x="50" y="50" width="300" height="150" fill="none" stroke="currentColor" stroke-width="2"/>
+
+    {/* The Bath Pool */}
+    <rect x="100" y="80" width="200" height="90" fill="none" stroke="currentColor" stroke-width="2" rx="2"/>
+    <text x="200" y="130" text-anchor="middle" fill="currentColor" font-size="12">Water Tank</text>
+
+    {/* Steps North */}
+    <line x1="140" y1="80" x2="140" y2="100" stroke="currentColor" stroke-width="1"/>
+    <line x1="260" y1="80" x2="260" y2="100" stroke="currentColor" stroke-width="1"/>
+    <line x1="140" y1="90" x2="260" y2="90" stroke="currentColor" stroke-width="1"/>
+    <text x="200" y="95" text-anchor="middle" fill="currentColor" font-size="8">Steps</text>
+
+    {/* Steps South */}
+    <line x1="140" y1="170" x2="140" y2="150" stroke="currentColor" stroke-width="1"/>
+    <line x1="260" y1="170" x2="260" y2="150" stroke="currentColor" stroke-width="1"/>
+    <line x1="140" y1="160" x2="260" y2="160" stroke="currentColor" stroke-width="1"/>
+    <text x="200" y="165" text-anchor="middle" fill="currentColor" font-size="8">Steps</text>
+
+    {/* Rooms */}
+    <rect x="60" y="60" width="30" height="30" fill="none" stroke="currentColor"/>
+    <rect x="60" y="100" width="30" height="30" fill="none" stroke="currentColor"/>
+    <rect x="310" y="60" width="30" height="30" fill="none" stroke="currentColor"/>
+    <text x="75" y="80" text-anchor="middle" fill="currentColor" font-size="8">Room</text>
+
+    {/* Well */}
+    <circle cx="325" cy="75" r="5" fill="none" stroke="currentColor"/>
+    <text x="325" y="55" text-anchor="middle" fill="currentColor" font-size="8">Well</text>
+  </svg>
+</div>
+
+<Callout variant="warning">
+**Note:** The existence of warehouses suggests that goods were stored for trade or distribution, indicating an organized administration.
+</Callout>

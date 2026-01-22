@@ -1,0 +1,38 @@
+---
+title: "Solution: Figure It Out 1.3"
+description: "Visual patterns: Triangles, Squares, and Hexagons."
+date: 2024-04-10
+tags: ["solutions", "visual-math"]
+order: 12
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Section 1.3: Visualising Number Sequences
+
+**Q2. Why are 1, 3, 6, 10... called triangular numbers? Why are 1, 4, 9... called square numbers? Why are 1, 8, 27... called cubes?**
+
+**Answer:**
+*   They are called **Triangular Numbers** because that specific number of dots can be arranged to form a perfect equilateral triangle.
+*   They are called **Square Numbers** because the dots can form a perfect square grid with equal rows and columns.
+*   They are called **Cubes** because unit blocks of that quantity can form a solid 3D cube ($2\times2\times2=8$, etc.).
+
+**Q3. You will have noticed that 36 is both a triangular number and a square number!**
+
+**Answer:**
+*   **As a Square:** $6 \times 6 = 36$.
+*   **As a Triangle:** Sum of $1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36$.
+
+**Q4. What would you call the following sequence of numbers: 1, 7, 19, 37...?**
+
+**Answer:**
+These are called **Hexagonal Numbers**.
+*   **Next Number:** The pattern of differences is multiples of 6 ($+6, +12, +18$). The next difference is $+24$.
+*   $37 + 24 = \mathbf{61}$.
+
+**Q5. Can you think of pictorial ways to visualise the sequence of Powers of 2? Powers of 3?**
+
+**Answer:**
+*   **Powers of 2 ($1, 2, 4, 8$):** Can be visualized as a line branching into 2, then those branching into 2 (Binary Tree), or identifying dimensions (Point, Line, Square, Cube corners).
+*   **Powers of 3 ($1, 3, 9, 27$):** Can be visualized as a triangle splitting into 3 smaller triangles, or a tree where every branch splits into three.

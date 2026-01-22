@@ -1,0 +1,55 @@
+---
+title: "Square Pairs Puzzle"
+description: "Solution to the Square Pairs puzzle on Page 18."
+date: 2024-04-10
+tags: ["puzzle", "fun", "logic"]
+order: 9
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Problem
+Arrange numbers 1 to 17 in a row such that the sum of every adjacent pair is a square number.
+
+## Strategy
+Let's map out possible neighbors for each number (1-17) that sum to a square (4, 9, 16, 25, 36).
+
+*   **1:** 3, 8, 15
+*   **2:** 7, 14
+*   **3:** 1, 6, 13
+*   **4:** 5, 12
+*   **5:** 4, 11
+*   **6:** 3, 10
+*   **7:** 2, 9
+*   **8:** 1, 17
+*   **9:** 7, 16
+*   **10:** 6, 15
+*   **11:** 5, 14
+*   **12:** 4, 13
+*   **13:** 3, 12
+*   **14:** 2, 11
+*   **15:** 1, 10
+*   **16:** 9 (only one neighbor!)
+*   **17:** 8 (only one neighbor!)
+
+<Callout variant="tip">
+**Key Insight:** Since 16 and 17 have only **one** possible neighbor each (9 and 8 respectively), they must be at the **ends** of the row.
+</Callout>
+
+## The Sequence
+Start with 17:
+1.  **17** must connect to **8** ($17+8=25$).
+2.  **8** connects to 17 (used) or **1** ($8+1=9$).
+3.  **1** connects to 8 (used) or 3 or 15.
+    *   If we pick 3: $1 \to 3 \to 6 \to 10 \to 15 \dots$
+    *   If we pick 15: $1 \to 15 \to 10 \to 6 \to 3 \dots$
+    Let's trace from the other end (16) to meet in the middle.
+
+Start with 16:
+**16** $\to$ **9** $\to$ **7** $\to$ **2** $\to$ **14** $\to$ **11** $\to$ **5** $\to$ **4** $\to$ **12** $\to$ **13** $\to$ **3** $\to$ **6** $\to$ **10** $\to$ **15** $\to$ **1** $\to$ **8** $\to$ **17**.
+
+## Final Answer
+**16, 9, 7, 2, 14, 11, 5, 4, 12, 13, 3, 6, 10, 15, 1, 8, 17**
+
+(Check pairs: $16+9=25, 9+7=16, 7+2=9 \dots 8+17=25$. All squares!)

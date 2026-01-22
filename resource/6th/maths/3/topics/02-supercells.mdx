@@ -1,0 +1,78 @@
+---
+title: "Supercells"
+description: "A logic puzzle involving grids and comparing numbers to their neighbors."
+date: 2024-04-10
+tags: ["grids", "logic", "puzzles"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Supercell?
+
+In a grid of numbers, a cell is called a **Supercell** (or is "coloured") if the number inside it is **larger** than numbers in all adjacent cells.
+
+-   **1D (Row) Case:** Check left and right.
+-   **2D (Grid) Case:** Check top, bottom, left, and right.
+
+### Example
+
+Consider the following row:
+$$ 200 \quad 577 \quad 626 \quad 345 \quad 790 \quad 694 \quad 109 \quad 198 $$
+
+Let's check specific numbers:
+1.  **626**: Neighbors are $577$ and $345$. Since $626 > 577$ AND $626 > 345$, **626 is a Supercell**.
+2.  **200**: Neighbor is $577$. $200 < 577$. Not a Supercell.
+3.  **198** (End): Neighbor is $109$. $198 > 109$. **198 is a Supercell**.
+
+### Visualizing Supercells in 2D
+
+In the grid below, Green cells represent Supercells.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    {/* Row 1 */}
+    <rect x="10" y="10" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="40" y="35" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">2430</text>
+
+    <rect x="80" y="10" width="60" height="40" fill="#90EE90" stroke="currentColor" stroke-width="2"/>
+    <text x="110" y="35" font-family="Arial" font-size="14" fill="black" text-anchor="middle">7500</text>
+
+    <rect x="150" y="10" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="180" y="35" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">7350</text>
+
+    <rect x="220" y="10" width="60" height="40" fill="#90EE90" stroke="currentColor" stroke-width="2"/>
+    <text x="250" y="35" font-family="Arial" font-size="14" fill="black" text-anchor="middle">9870</text>
+
+    {/* Row 2 */}
+    <rect x="10" y="60" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="40" y="85" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">3115</text>
+
+    <rect x="80" y="60" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="110" y="85" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">4795</text>
+
+    <rect x="150" y="60" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="180" y="85" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">9124</text>
+
+    <rect x="220" y="60" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="250" y="85" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">9230</text>
+
+    {/* Row 3 */}
+    <rect x="10" y="110" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="40" y="135" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">4580</text>
+
+    <rect x="80" y="110" width="60" height="40" fill="#90EE90" stroke="currentColor" stroke-width="2"/>
+    <text x="110" y="135" font-family="Arial" font-size="14" fill="black" text-anchor="middle">8632</text>
+
+    <rect x="150" y="110" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="180" y="135" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">8280</text>
+
+    <rect x="220" y="110" width="60" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="250" y="135" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">3446</text>
+  </svg>
+</div>
+
+<Callout variant="tip">
+**Strategy:** To create many supercells, you need to alternate small and large numbers (like a checkerboard pattern of peaks and valleys).
+</Callout>

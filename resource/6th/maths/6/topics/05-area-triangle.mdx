@@ -1,0 +1,40 @@
+---
+title: "Area of a Triangle"
+description: "Deriving the area of a triangle by visualizing it as half of a rectangle."
+date: 2024-04-10
+tags: ["area", "triangle", "geometry-proof"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Relationship between Rectangle and Triangle
+
+If you draw a diagonal across a rectangle, you divide it into two identical triangles.
+
+*   The two triangles overlap exactly.
+*   Therefore, their areas are equal.
+*   Area of each triangle = $\frac{1}{2} \times$ Area of the Rectangle.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    <rect x="50" y="20" width="200" height="100" stroke="currentColor" fill="none" stroke-width="2"/>
+    <line x1="50" y1="120" x2="250" y2="20" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="100" y="100" fill="currentColor" font-size="14">Triangle 1</text>
+    <text x="180" y="50" fill="currentColor" font-size="14">Triangle 2</text>
+  </svg>
+</div>
+
+### Generalizing for Any Triangle
+
+Even if the triangle is not a right-angled triangle (formed by the diagonal of a rectangle), we can often split it or box it into rectangles to find its area.
+
+**Key Concept:**
+The area of a triangle is half the product of its base and the perpendicular height.
+
+$$
+\text{Area of Triangle} = \frac{1}{2} \times \text{Base} \times \text{Height}
+$$
+
+*(Note: In this specific chapter, the text focuses heavily on the grid method and the "half-rectangle" concept rather than just memorizing the $1/2 \times b \times h$ formula immediately, encouraging visual understanding.)*

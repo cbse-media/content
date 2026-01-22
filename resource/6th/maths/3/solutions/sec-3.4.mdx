@@ -1,0 +1,34 @@
+---
+title: "Solutions: Sec 3.4 Playing with Digits"
+description: "Solutions to digit sums and counts."
+date: 2024-04-10
+tags: ["solutions", "sec-3.4"]
+order: 17
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 60: Figure It Out
+
+**Digit Count Table:**
+-   **1-digit:** 9 (1 to 9)
+-   **2-digits:** 90 (10 to 99)
+-   **3-digits:** 900 (100 to 999)
+-   **4-digits:** 9,000
+-   **5-digits:** 90,000
+
+**Q1. Digit sum 14**
+-   **b. Smallest number:** 59 ($5+9=14$).
+-   **c. Largest 5-digit number:** 95000.
+-   **d. How big a number?** You can make an infinitely large number by adding zeros (e.g., $5900000...$) or by adding 1s (e.g., $1111...$ fourteen times). The question asks "How big", implying magnitude or length. You can always make a bigger number by adding more digits that sum to 0 (zeros) or distributing the sum into ones.
+
+**Q2. Digit sums from 40 to 70**
+-   40 (4), 41 (5), ... 49 (13)
+-   50 (5), ...
+-   **Observation:** The digit sum increases by 1 until the number ends in 9, then drops. (e.g., $49 \to 13$, $50 \to 5$).
+
+**Q3. Consecutive digits (3-digit)**
+-   $123 (6), 234 (9), 345 (12), 456 (15), 567 (18), 678 (21), 789 (24)$.
+-   **Pattern:** Multiples of 3.
+-   **Reason:** $(n) + (n+1) + (n+2) = 3n + 3 = 3(n+1)$. The sum is always divisible by 3.

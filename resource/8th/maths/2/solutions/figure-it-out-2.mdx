@@ -1,0 +1,78 @@
+---
+title: "Figure It Out: Pages 26-27"
+description: "Solutions to exercises on simplification, large numbers, and scientific notation."
+date: 2024-04-10
+tags: ["solutions", "scientific-notation", "simplification"]
+order: 7
+draft: false
+---
+
+## Part 1 (Page 26)
+
+**1. Find out the units digit in the value of $2^{224} \div 4^{32}$.**
+
+**Solution:**
+First, simplify the expression to a single base.
+We know $4 = 2^2$, so $4^{32} = (2^2)^{32} = 2^{64}$.
+Expression: $2^{224} \div 2^{64} = 2^{224-64} = 2^{160}$.
+
+Now, look at the pattern of units digits for powers of 2:
+*   $2^1 = 2$
+*   $2^2 = 4$
+*   $2^3 = 8$
+*   $2^4 = 16$ (ends in 6)
+*   $2^5 = 32$ (ends in 2 again)
+
+The pattern repeats every 4 powers: 2, 4, 8, 6.
+Divide exponent 160 by 4: $160 \div 4 = 40$ (remainder 0).
+Remainder 0 corresponds to the 4th position in the cycle, which is **6**.
+**Answer:** The units digit is 6.
+
+**2. There are 5 bottles in a container. Every day, a new container is brought in. How many bottles after 40 days?**
+
+**Solution:**
+This describes linear growth (adding containers).
+*   Day 1: 5 bottles.
+*   Day 2: 10 bottles.
+*   Day 40: $40 \times 5 = 200$ bottles.
+
+**3. Write the given number as the product of two or more powers in three different ways.**
+(i) $64^3$
+*   Way 1: $(2^6)^3 = 2^{18}$
+*   Way 2: $(4^3)^3 = 4^9$
+*   Way 3: $(8^2)^3 = 8^6$
+
+**4. True/False Explanations:**
+(i) *Cube numbers are also square numbers.* **Sometimes True** (e.g., $64 = 4^3 = 8^2$).
+(ii) *Fourth powers are also square numbers.* **Always True**. $x^4 = (x^2)^2$.
+(v) *$q^{46}$ is both a 4th power and a 6th power.* **False**. 46 is not divisible by 4 or 6.
+
+**5. Simplify:**
+(i) $10^{-2} \times 10^{-5} = 10^{-7}$
+(ii) $5^7 \div 5^4 = 5^3$
+(iv) $(13^{-2})^{-3} = 13^{(-2 \times -3)} = 13^6$
+
+**6. If $12^2 = 144$ what is $(1.2)^2$?**
+**Solution:**
+$(1.2)^2 = (\frac{12}{10})^2 = \frac{144}{100} = 1.44$.
+Similarly, $(0.12)^2 = 0.0144$.
+
+## Part 2 (Page 27)
+
+**7. Circle numbers that are the same.**
+*   $2^4 \times 3^6 = 16 \times 729$
+*   $6^4 \times 3^2 = (2 \times 3)^4 \times 3^2 = 2^4 \times 3^4 \times 3^2 = 2^4 \times 3^6$. (Same as first).
+*   $18^2 \times 6^2 = (18 \times 6)^2 = 108^2$.
+    Also $18^2 \times 6^2 = (2 \times 3^2)^2 \times (2 \times 3)^2 = 2^2 \times 3^4 \times 2^2 \times 3^2 = 2^4 \times 3^6$. (Same).
+**Answer:** $2^4 \times 3^6$, $6^4 \times 3^2$, and $18^2 \times 6^2$ are all equal.
+
+**9. A dairy plans to produce 8.5 billion packets. How many digits for a unique ID?**
+**Solution:**
+8.5 billion = $8.5 \times 10^9 = 8,500,000,000$.
+This is a 10-digit number.
+To cover all these items with a unique ID, we need at least **10 digits** (since $10^{10} = 10 \text{ billion}$).
+
+**13. Scientific Notation Calculations:**
+(iii) **Bacterial cells:** 38 trillion = $38 \times 10^{12} = 3.8 \times 10^{13}$.
+Population of world $\approx 8 \text{ billion} = 8 \times 10^9$.
+Total bacteria = $(3.8 \times 10^{13}) \times (8 \times 10^9) = 30.4 \times 10^{22} = 3.04 \times 10^{23}$.

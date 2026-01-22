@@ -1,0 +1,74 @@
+---
+title: "Solutions: Page 226"
+description: "Solutions for Paper Cutting Exercises 5-7."
+date: 2024-04-10
+tags: ["solutions", "grade-6", "paper-cutting"]
+order: 5
+draft: false
+---
+
+## Exercises (Page 226)
+
+**5. Suppose you have to get each of these shapes with some folds and a single straight cut. How will you do it?**
+
+*   **a. The hole in the centre is a square.**
+    *   **Strategy:** Fold the paper vertically, then horizontally (quarter fold).
+    *   **Cut:** Cut the corner that corresponds to the center of the paper. Since the desired shape is a square (straight edges), you cut diagonally across that corner if the square is tilted, or cut a square notch if it's aligned.
+    *   **Correct Method:** Fold vertically, then horizontally. At the closed corner (center), cut off a small isosceles right triangle. When unfolded, the 4 triangles form a square (diamond orientation).
+
+*   **b. The hole in the centre is a square (aligned).**
+    *   **Strategy:** Fold vertically, then horizontally.
+    *   **Cut:** Cut a square notch at the closed corner.
+
+**6. How many lines of symmetry do these shapes have?**
+
+*   **(a) Square diamond shape with extensions:**
+    *   Looking at the figure, it has symmetry along the vertical, horizontal, and both diagonal axes.
+    *   **Answer:** 4 Lines of Symmetry.
+
+*   **(b) A triangle with equal sides and equal angles (Equilateral Triangle):**
+    *   **Answer:** 3 Lines of Symmetry.
+
+*   **(c) A hexagon with equal sides and equal angles (Regular Hexagon):**
+    *   **Answer:** 6 Lines of Symmetry.
+
+**7. Trace each figure and draw the lines of symmetry, if any:**
+
+<div class="flex justify-center my-6">
+    <svg width="400" height="200" viewBox="0 0 400 200">
+        {/* Figure 1: Overlapping Squares */}
+        <g transform="translate(50, 50)">
+            <rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor"/>
+            <rect x="-10" y="-10" width="20" height="20" fill="none" stroke="currentColor"/>
+            {/* Lines */}
+            <line x1="0" y1="-30" x2="0" y2="30" stroke="red" stroke-dasharray="3,3"/>
+            <line x1="-30" y1="0" x2="30" y2="0" stroke="red" stroke-dasharray="3,3"/>
+            <line x1="-25" y1="-25" x2="25" y2="25" stroke="red" stroke-dasharray="3,3"/>
+            <line x1="-25" y1="25" x2="25" y2="-25" stroke="red" stroke-dasharray="3,3"/>
+            <text x="-20" y="50" font-size="10">4 Lines</text>
+        </g>
+
+         {/* Figure 2: Elongated Hexagon */}
+        <g transform="translate(150, 50)">
+            <polygon points="0,-30 20,-10 20,10 0,30 -20,10 -20,-10" fill="none" stroke="currentColor"/>
+            <line x1="0" y1="-35" x2="0" y2="35" stroke="red" stroke-dasharray="3,3"/>
+            <line x1="-25" y1="0" x2="25" y2="0" stroke="red" stroke-dasharray="3,3"/>
+            <text x="-20" y="50" font-size="10">2 Lines</text>
+        </g>
+        
+        {/* Figure 3: Odd Polygon */}
+        <g transform="translate(250, 50)">
+            <polygon points="0,-20 30,0 20,20 -20,20 -30,0" fill="none" stroke="currentColor"/>
+            <line x1="0" y1="-25" x2="0" y2="25" stroke="red" stroke-dasharray="3,3"/>
+            <text x="-20" y="50" font-size="10">1 Line</text>
+        </g>
+
+        {/* Figure 4: Star */}
+        <g transform="translate(350, 50)">
+            <path d="M0,-30 L10,-10 L30,0 L10,10 L0,30 L-10,10 L-30,0 L-10,-10 Z" fill="none" stroke="currentColor"/>
+             <line x1="0" y1="-35" x2="0" y2="35" stroke="red" stroke-dasharray="3,3"/>
+             <line x1="-35" y1="0" x2="35" y2="0" stroke="red" stroke-dasharray="3,3"/>
+            <text x="-20" y="50" font-size="10">2 Lines</text>
+        </g>
+    </svg>
+</div>

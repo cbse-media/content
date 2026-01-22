@@ -1,0 +1,57 @@
+---
+title: "Patterns on the Number Line"
+description: "Identifying and placing large numbers on a number line."
+date: 2024-04-10
+tags: ["number-line", "geometry"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Locating Numbers
+
+Placing numbers on a number line helps us understand their magnitude relative to one another.
+
+### Example Sequence
+Consider the numbers: $2180, 2754, 1500, 3600, 9950, 9590, 1050, 3050, 5030, 5300, 8400$.
+
+When drawing a number line from $1000$ to $10,000$, we look for benchmarks (like multiples of 1000).
+
+<div class="flex justify-center my-6">
+  <svg width="600" height="100" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
+    {/* Main Line */}
+    <line x1="50" y1="50" x2="550" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+
+    {/* Ticks */}
+    <line x1="50" y1="45" x2="50" y2="55" stroke="currentColor" stroke-width="2"/>
+    <text x="50" y="70" font-size="10" text-anchor="middle" fill="currentColor">1000</text>
+
+    <line x1="100" y1="45" x2="100" y2="55" stroke="currentColor" stroke-width="2"/>
+    <text x="100" y="70" font-size="10" text-anchor="middle" fill="currentColor">2000</text>
+
+    <line x1="150" y1="45" x2="150" y2="55" stroke="currentColor" stroke-width="2"/>
+    <text x="150" y="70" font-size="10" text-anchor="middle" fill="currentColor">3000</text>
+
+    {/* Plotted Points */}
+    <circle cx="58" cy="50" r="3" fill="red"/>
+    <text x="58" y="35" font-size="10" text-anchor="middle" fill="red">2180</text>
+
+    <circle cx="140" cy="50" r="3" fill="blue"/>
+    <text x="140" y="35" font-size="10" text-anchor="middle" fill="blue">2754</text>
+
+    {/* More ticks implied */}
+  </svg>
+</div>
+
+### Finding Patterns
+
+Look at the jumps between numbers.
+-   **Sequence A:** $2010, 2020, \dots$ (Jump of 10)
+-   **Sequence B:** $9996, 9997, \dots$ (Jump of 1)
+-   **Sequence C:** $15077, 15078, \dots$ (Jump of 1)
+-   **Sequence D:** $86705, 87705, \dots$ (Jump of 1000)
+
+<Callout variant="tip">
+**Key Skill:** Always check the difference between consecutive marks on a number line to determine the "scale" or "interval".
+</Callout>

@@ -1,0 +1,55 @@
+---
+title: "Non-Contact Forces"
+description: "Forces that act from a distance without physical contact: Magnetic, Electrostatic, and Gravitational."
+date: 2025-01-15
+tags: ["gravity", "magnetism", "electrostatics"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What are Non-Contact Forces?
+
+These forces can exert a push or pull even from a distance, without touching the object.
+
+### 1. Magnetic Force
+A magnet can attract iron objects or repel other magnets without touching them.
+*   **Attraction:** Unlike poles (North-South) pull each other.
+*   **Repulsion:** Like poles (North-North) push each other away.
+
+### 2. Electrostatic Force
+The force exerted by a charged body on another charged or uncharged body.
+*   **Experiment:** Rub a plastic straw with paper/polythene. It acquires an **electric charge**. It can now attract small pieces of paper.
+*   **Rule:**
+    *   Like charges repel (+ and +).
+    *   Unlike charges attract (+ and -).
+
+### 3. Gravitational Force (Gravity)
+Why does an apple fall down? Because the Earth pulls it.
+*   **Definition:** The force of attraction between any two objects in the universe.
+*   **On Earth:** The Earth pulls everything towards its center. This pull is called the **Force of Gravity**.
+*   **Nature:** Gravity is *always* attractive. It never repels.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Earth */}
+    <circle cx="150" cy="250" r="120" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+    <path d="M 50 200 Q 150 150 250 200" fill="none" stroke="#2196f3" stroke-width="1" opacity="0.5" />
+    <text x="150" y="280" text-anchor="middle" fill="#1565c0" font-weight="bold">EARTH</text>
+
+    {/* Object Falling */}
+    <circle cx="150" cy="50" r="10" fill="#ef5350" />
+    <text x="170" y="55" fill="currentColor" font-size="12">Object</text>
+
+    {/* Gravity Arrow */}
+    <line x1="150" y1="65" x2="150" y2="120" stroke="#212121" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="160" y="100" fill="currentColor" font-size="12">Gravity</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#212121" />
+      </marker>
+    </defs>
+  </svg>
+</div>

@@ -1,0 +1,43 @@
+---
+title: "Solutions: Sec 3.7 Clock & Calendar"
+description: "Solutions to time and date pattern questions."
+date: 2024-04-10
+tags: ["solutions", "sec-3.7"]
+order: 19
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Page 64: Figure It Out
+
+**Q1. Pratibha's Digits: 4, 7, 3, 2**
+Smallest: 2347, Largest: 7432.
+Diff: 5085, Sum: 9779.
+
+**a. Diff between largest/smallest > 5085:**
+Try digits: 9, 1, 2, 3.
+Largest: 9321. Smallest: 1239.
+Diff: $9321 - 1239 = 8082$ (> 5085).
+
+**Q2. Sum of smallest and largest 5-digit palindrome?**
+-   Smallest 5-digit palindrome: **10001**.
+-   Largest 5-digit palindrome: **99999**.
+-   **Sum:** $10001 + 99999 = 110,000$.
+-   **Difference:** $99999 - 10001 = 89,998$.
+
+**Q3. Time is 10:01. Next palindrome?**
+-   Next is **11:11**.
+-   Minutes between 10:01 and 11:11 = 59 min (to 11:00) + 11 min = **70 minutes**.
+-   One after that? **12:21**.
+-   Time from 11:11 to 12:21 = 49 min (to 12:00) + 21 min = **70 minutes**.
+
+**Q4. Rounds for 5683 to reach Kaprekar?**
+1.  $8653 - 3568 = 5085$
+2.  $8550 - 0558$ (Correction: use 5085 digits: 8,5,5,0) $\to 8550 - 0558 = 7992$
+3.  $9972 - 2799 = 7173$
+4.  $7731 - 1377 = 6354$
+5.  $6543 - 3456 = 3087$
+6.  $8730 - 0378 = 8352$
+7.  $8532 - 2358 = 6174$
+**Answer:** It takes about 7-8 steps (Textbook answer key says 8).

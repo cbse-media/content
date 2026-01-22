@@ -1,0 +1,77 @@
+---
+title: "Perimeter of Plane Figures"
+description: "Learning how to calculate the perimeter of rectangles, squares, and general polygons."
+date: 2024-04-10
+tags: ["perimeter", "rectangle", "square"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is Perimeter?
+
+The **perimeter** of any closed plane figure is the distance covered along its boundary when you go around it once. For a polygon (a closed figure made of line segments), the perimeter is simply the **sum of the lengths of all its sides**.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 50 100 L 100 50 L 200 50 L 250 100 Z" stroke="currentColor" fill="none" stroke-width="2" stroke-dasharray="5,5"/>
+    <circle cx="50" cy="100" r="3" fill="currentColor" />
+    <text x="30" y="110" fill="currentColor" font-size="12">Start</text>
+    <text x="150" y="130" fill="currentColor" font-size="14" text-anchor="middle">Distance around the boundary</text>
+  </svg>
+</div>
+
+### Perimeter of a Rectangle
+
+Consider a rectangle $ABCD$ with length $l$ and breadth $b$. Since opposite sides of a rectangle are equal:
+*   $AB = CD = \text{length} (l)$
+*   $BC = DA = \text{breadth} (b)$
+
+$$
+\begin{aligned}
+\text{Perimeter} &= AB + BC + CD + DA \\
+&= l + b + l + b \\
+&= 2 \times l + 2 \times b \\
+&= 2 \times (l + b)
+\end{aligned}
+$$
+
+<Callout variant="tip">
+**Formula:** Perimeter of a rectangle = $2 \times (\text{length} + \text{breadth})$
+</Callout>
+
+### Perimeter of a Square
+
+A square is a special type of rectangle where all four sides are equal in length. If the length of a side is $s$:
+
+$$
+\begin{aligned}
+\text{Perimeter} &= s + s + s + s \\
+&= 4 \times s
+\end{aligned}
+$$
+
+<Callout variant="tip">
+**Formula:** Perimeter of a square = $4 \times \text{length of a side}$
+</Callout>
+
+### Perimeter of a Triangle
+
+For a triangle with sides of lengths $a$, $b$, and $c$:
+
+$$
+\text{Perimeter} = a + b + c
+$$
+
+If the triangle is **equilateral** (all sides equal), the perimeter is $3 \times \text{side}$.
+
+<div class="flex justify-center my-6">
+  <svg width="200" height="180" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,20 20,160 180,160" stroke="currentColor" fill="none" stroke-width="2"/>
+    <text x="50" y="90" fill="currentColor" font-size="14">s</text>
+    <text x="150" y="90" fill="currentColor" font-size="14">s</text>
+    <text x="100" y="175" fill="currentColor" font-size="14" text-anchor="middle">s</text>
+    <text x="100" y="140" fill="currentColor" font-size="12" text-anchor="middle">Equilateral Triangle</text>
+  </svg>
+</div>

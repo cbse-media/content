@@ -1,0 +1,45 @@
+---
+title: "Solved Examples: Base Conversions"
+description: "Practice problems for converting between Base-10 and other historical bases."
+date: 2024-04-10
+tags: ["practice", "bases"]
+order: 17
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Example 1: Converting to Mayan
+**Convert 45 to Mayan Numerals.**
+
+**Solution:**
+1.  Determine the base: 20.
+2.  Divide 45 by 20:
+    $$45 \div 20 = 2 \text{ remainder } 5$$
+3.  **Top position (20s):** 2 (Two dots $\bullet\bullet$)
+4.  **Bottom position (1s):** 5 (One bar —)
+
+## Example 2: Converting to Base-5
+**Convert 34 to Base-5.**
+
+**Solution:**
+1.  Powers of 5: 1, 5, 25.
+2.  Largest power $\le$ 34 is 25.
+    $$34 \div 25 = 1 \text{ remainder } 9$$
+3.  Next power is 5.
+    $$9 \div 5 = 1 \text{ remainder } 4$$
+4.  Last power is 1.
+    $$4 \div 1 = 4$$
+5.  **Result:** $114_5$ ($1 \times 25 + 1 \times 5 + 4 \times 1$).
+
+## Example 3: Mesopotamian Addition
+**Add $12$ and $50$ in Base-60.**
+
+**Solution:**
+1.  Convert to Base-10 sum: $12 + 50 = 62$.
+2.  Convert 62 to Base-60.
+    $$62 = 1 \times 60 + 2$$
+3.  **Representation:**
+    *   60s place: 1 Wedge ($\triangledown$)
+    *   1s place: 2 Wedges ($\triangledown\triangledown$)
+    *   Written: $\triangledown \quad \triangledown\triangledown$

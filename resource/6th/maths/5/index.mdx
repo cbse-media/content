@@ -1,0 +1,76 @@
+---
+title: "Prime Time: Chapter Overview"
+description: "Introduction to factors, multiples, prime numbers, and divisibility through interactive games and patterns."
+date: 2025-01-15
+tags: ["math", "grade-6", "primes", "factors"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Introduction
+
+Welcome to **Prime Time**! In this chapter, we explore the building blocks of numbers. Just like a house is built of bricks, numbers are built of factors and primes. We will learn how to break numbers down, find patterns in them, and use these patterns to solve puzzles.
+
+### The Idli-Vada Game
+
+Imagine sitting in a circle playing a number game.
+*   When it's your turn, if your number is a multiple of **3**, you say **"Idli"**.
+*   If your number is a multiple of **5**, you say **"Vada"**.
+*   If your number is a multiple of **both 3 and 5**, you say **"Idli-Vada"**!
+
+This simple game introduces us to **Common Multiples**.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Circle 1: Multiples of 3 */}
+    <circle cx="140" cy="125" r="100" stroke="currentColor" stroke-width="2" fill="none" opacity="0.8"/>
+    <text x="80" y="40" fill="currentColor" font-size="14" font-weight="bold">Multiples of 3</text>
+
+    {/* Circle 2: Multiples of 5 */}
+    <circle cx="260" cy="125" r="100" stroke="currentColor" stroke-width="2" fill="none" opacity="0.8"/>
+    <text x="280" y="40" fill="currentColor" font-size="14" font-weight="bold">Multiples of 5</text>
+
+    {/* Numbers in 3 only */}
+    <text x="100" y="100" fill="currentColor" font-size="12">3, 6, 9, 12</text>
+    <text x="90" y="130" fill="currentColor" font-size="12">18, 21, 24</text>
+    <text x="110" y="160" fill="currentColor" font-size="12">27, 33</text>
+
+    {/* Numbers in 5 only */}
+    <text x="280" y="100" fill="currentColor" font-size="12">5, 10, 20</text>
+    <text x="290" y="130" fill="currentColor" font-size="12">25, 35, 40</text>
+    <text x="270" y="160" fill="currentColor" font-size="12">50, 55</text>
+
+    {/* Intersection */}
+    <text x="200" y="115" fill="currentColor" font-size="14" font-weight="bold" text-anchor="middle">15</text>
+    <text x="200" y="145" fill="currentColor" font-size="14" font-weight="bold" text-anchor="middle">30, 45</text>
+
+    {/* Label */}
+    <text x="200" y="240" fill="currentColor" font-size="12" text-anchor="middle" font-style="italic">Common Multiples (Idli-Vada)</text>
+  </svg>
+</div>
+
+## Chapter Topics
+
+1.  **Common Multiples and Factors:** Understanding relationships between numbers.
+2.  **Prime Numbers:** Identifying numbers with exactly two factors.
+3.  **Co-prime Numbers:** Pairs of numbers that share no common factors (except 1).
+4.  **Prime Factorisation:** Breaking composites down to their prime roots.
+5.  **Divisibility Tests:** Shortcuts to check if a number divides evenly.
+6.  **Fun with Numbers:** Logic puzzles and special number properties.
+
+## Formula Sheet
+
+| Concept | Definition | Example |
+| :--- | :--- | :--- |
+| **Factor** | A number that divides another exactly. | Factors of 6: 1, 2, 3, 6 |
+| **Multiple** | A number obtained by multiplying it by an integer. | Multiples of 3: 3, 6, 9... |
+| **Prime Number** | Has exactly two factors: 1 and itself. | 2, 3, 5, 7, 11 |
+| **Composite Number** | Has more than two factors. | 4, 6, 8, 9, 10 |
+| **Perfect Number** | Sum of factors = $2 \times$ Number. | 6 ($1+2+3+6 = 12$) |
+| **Co-prime** | Two numbers with HCF = 1. | (4, 9), (15, 8) |
+
+<Callout variant="tip">
+**Did you know?** The number **1** is neither prime nor composite!
+</Callout>

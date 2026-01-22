@@ -1,0 +1,60 @@
+---
+title: "Factors Affecting Evaporation"
+description: "Why clothes dry faster on a sunny, windy day compared to a humid, rainy day."
+date: 2024-04-10
+tags: ["evaporation", "weather", "experiments"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What Makes Water Evaporate Faster?
+
+Evaporation happens all the time, but the **rate** (speed) of evaporation changes based on surrounding conditions.
+
+### 1. Exposed Surface Area
+*   **Observation:** Water in a wide plate evaporates faster than water in a small bottle cap.
+*   **Reason:** More water molecules are exposed to the air, allowing them to escape faster.
+*   **Application:** We spread out wet clothes to dry them.
+
+<div class="flex justify-center my-6">
+  <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Bottle Cap */}
+    <rect x="50" y="80" width="40" height="20" fill="none" stroke="currentColor" stroke-width="2" />
+    <path d="M 55 90 Q 70 95 85 90" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <text x="35" y="120" fill="currentColor" font-size="12">Small Area (Slow)</text>
+
+    {/* Plate */}
+    <path d="M 200 80 Q 250 110 300 80" fill="none" stroke="currentColor" stroke-width="2" />
+    <path d="M 210 85 Q 250 100 290 85" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <text x="210" y="120" fill="currentColor" font-size="12">Large Area (Fast)</text>
+    
+    {/* Arrows showing evaporation */}
+    <path d="M 70 80 L 70 50" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+    <path d="M 220 80 L 220 50" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+    <path d="M 250 80 L 250 50" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+    <path d="M 280 80 L 280 50" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+  </svg>
+</div>
+
+### 2. Temperature (Heat)
+*   **Observation:** Clothes dry faster in sunlight than in shade.
+*   **Reason:** Heat provides energy for water to turn into vapour quickly.
+
+### 3. Wind Speed
+*   **Observation:** Clothes dry faster on a windy day.
+*   **Reason:** Wind carries away the water vapour surrounding the wet object, allowing more water to evaporate.
+
+### 4. Humidity
+*   **Definition:** The amount of water vapour present in the air.
+*   **Observation:** Clothes dry slowly on a rainy (humid) day.
+*   **Reason:** The air is already full of water vapour, so it cannot accept much more from the wet clothes.
+
+### Summary of Conditions for Fast Evaporation
+| Condition | Effect on Evaporation |
+| :--- | :--- |
+| **High Temperature** | Increases Speed |
+| **Large Surface Area** | Increases Speed |
+| **Strong Wind** | Increases Speed |
+| **High Humidity** | Decreases Speed |

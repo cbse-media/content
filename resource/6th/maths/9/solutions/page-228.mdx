@@ -1,0 +1,66 @@
+---
+title: "Solutions: Page 228"
+description: "Solutions for Kolam and Triangle exercises 8-11."
+date: 2024-04-10
+tags: ["solutions", "grade-6", "drawing"]
+order: 6
+draft: false
+---
+
+## Exercises (Page 228)
+
+**8. Find the lines of symmetry for the kolam below.**
+
+The Kolam is a star-like pattern made of overlapping diamonds and squares.
+**Answer:** It has **6** lines of symmetry (3 passing through the vertices, 3 passing between the vertices) due to its hexagonal structure.
+
+**9. Draw the following triangles:**
+
+*   **a. A triangle with exactly one line of symmetry.**
+    *   **Solution:** An Isosceles Triangle (but not equilateral).
+*   **b. A triangle with exactly three lines of symmetry.**
+    *   **Solution:** An Equilateral Triangle.
+*   **c. A triangle with no line of symmetry.**
+    *   **Solution:** A Scalene Triangle (all sides different lengths).
+
+**Question:** Is it possible to draw a triangle with exactly two lines of symmetry?
+**Answer:** **No.** If a triangle has two lines of symmetry, the third median must also be a line of symmetry, making it an equilateral triangle with three lines. You cannot have exactly two.
+
+**10. Draw figures with curved boundaries:**
+
+*   **a. Exactly one line of symmetry:** A semi-circle or a mushroom shape.
+*   **b. Exactly two lines of symmetry:** An ellipse (oval) or a figure-8 shape.
+*   **c. Exactly four lines of symmetry:** A flower with 4 petals or a shape like a clover.
+
+**11. Copy on squared paper. Complete them so that the blue line is a line of symmetry.**
+
+<div class="flex justify-center my-6">
+    <svg width="500" height="200" viewBox="0 0 500 200">
+        {/* Grid setup helper */}
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="lightgray" stroke-width="1"/>
+        </pattern>
+        
+        {/* b */}
+        <g transform="translate(50, 20)">
+            <rect width="100" height="100" fill="url(#grid)" stroke="gray"/>
+            {/* Original */}
+            <path d="M20,60 L20,40 L40,40 L40,20 L60,20 L60,40 L100,60" fill="none" stroke="black" stroke-width="2"/>
+            {/* Symmetry Line */}
+            <line x1="20" y1="60" x2="100" y2="60" stroke="blue" stroke-width="2"/>
+            {/* Completion (Mirror below) */}
+            <path d="M20,60 L20,80 L40,80 L40,100 L60,100 L60,80 L100,60" fill="none" stroke="red" stroke-width="2" stroke-dasharray="4,4"/>
+        </g>
+
+        {/* c */}
+        <g transform="translate(200, 20)">
+            <rect width="100" height="100" fill="url(#grid)" stroke="gray"/>
+            {/* Original */}
+            <path d="M20,80 L20,60 L40,60 L40,40 L60,40 L60,20 L80,20" fill="none" stroke="black" stroke-width="2"/>
+            {/* Symmetry Line (Diagonal) */}
+            <line x1="0" y1="100" x2="100" y2="0" stroke="blue" stroke-width="2"/>
+             {/* Completion */}
+            <path d="M20,80 L40,80 L40,60 L60,60 L60,40 L80,40 L80,20" fill="none" stroke="red" stroke-width="2" stroke-dasharray="4,4"/>
+        </g>
+    </svg>
+</div>

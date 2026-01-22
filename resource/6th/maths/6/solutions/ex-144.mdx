@@ -1,0 +1,40 @@
+---
+title: "Page 144: Area by Decomposition"
+description: "Finding areas of irregular polygons by splitting them into triangles and rectangles."
+date: 2024-04-10
+tags: ["solutions", "area", "decomposition"]
+order: 13
+draft: false
+---
+
+## Figure It Out
+
+**Task:** Find the areas of the figures on the grid by dividing them into rectangles and triangles.
+
+*(Note: Grid squares are assumed to be 1 unit).*
+
+**Figure a (Parallelogram-like):**
+*   Base = 4 units. Height = 6 units.
+*   Area = $4 \times 6 = 24$ sq units.
+
+**Figure b (Trapezoid/Triangle combo):**
+*   Decompose into a central rectangle and side triangles.
+*   Solution says: **30 sq units**.
+
+**Figure c (Complex Polygon):**
+*   Solution says: **48 sq units**.
+
+**Figure d (M-shape/Polygon):**
+*   Solution says: **16 sq units**.
+
+**Figure e (Diamond/Kite):**
+*   Solution says: **12 sq units**.
+*   Calculation: Box it in a rectangle of $4 \times 6 = 24$. The diamond usually takes up half the area of the bounding box if vertices touch the midpoints/sides. $24 / 2 = 12$.
+
+<Callout variant="tip">
+**Method:** To solve these on grid paper:
+1.  Draw a bounding rectangle around the shape.
+2.  Calculate the area of the bounding rectangle.
+3.  Calculate the areas of the empty triangles in the corners (using $\frac{1}{2} \times b \times h$).
+4.  Subtract the corner areas from the bounding box area.
+</Callout>

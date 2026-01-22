@@ -1,0 +1,56 @@
+---
+title: "Equidistant Points"
+description: "Finding points that are the same distance from two other points."
+date: 2024-04-10
+tags: ["locus", "construction", "circles"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The "House" Construction Problem
+
+Imagine you need to draw a roof for a house. You have the base $BC$, and you need a peak point $A$ such that $AB = 5$ cm and $AC = 5$ cm.
+
+### The Concept
+How do we find a point that is exactly 5 cm from $B$ and 5 cm from $C$?
+
+1.  **Locus from B:** All points 5 cm from $B$ lie on a circle centered at $B$ with radius 5 cm.
+2.  **Locus from C:** All points 5 cm from $C$ lie on a circle centered at $C$ with radius 5 cm.
+3.  **Intersection:** The point where these two circles meet satisfies **both** conditions.
+
+### Steps
+1.  Draw the base line (e.g., $BC$).
+2.  With $B$ as center and radius 5 cm, draw an arc.
+3.  With $C$ as center and radius 5 cm, draw an arc intersecting the first one.
+4.  Mark the intersection point $A$.
+5.  Join $AB$ and $AC$.
+
+<div class="flex justify-center my-6">
+  <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    {/* Points B and C */}
+    <line x1="100" y1="200" x2="200" y2="200" stroke="currentColor" stroke-width="2" />
+    <text x="90" y="215" fill="currentColor">B</text>
+    <text x="210" y="215" fill="currentColor">C</text>
+    
+    {/* Arcs */}
+    {/* Arc from B */}
+    <path d="M 100 200 A 100 100 0 0 1 180 120" stroke="currentColor" stroke-dasharray="5,5" fill="none" />
+    {/* Arc from C */}
+    <path d="M 200 200 A 100 100 0 0 0 120 120" stroke="currentColor" stroke-dasharray="5,5" fill="none" />
+    
+    {/* Intersection A */}
+    <circle cx="150" cy="113.4" r="4" fill="currentColor" />
+    <text x="145" y="100" fill="currentColor">A</text>
+    
+    {/* Connecting Lines */}
+    <line x1="100" y1="200" x2="150" y2="113.4" stroke="currentColor" stroke-width="2" />
+    <line x1="200" y1="200" x2="150" y2="113.4" stroke="currentColor" stroke-width="2" />
+    
+    <text x="100" y="150" fill="currentColor" font-size="12">5 cm</text>
+    <text x="180" y="150" fill="currentColor" font-size="12">5 cm</text>
+  </svg>
+</div>
+
+This method creates an **Isosceles Triangle** (or Equilateral if the base is also 5 cm).

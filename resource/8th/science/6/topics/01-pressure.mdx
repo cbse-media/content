@@ -1,0 +1,77 @@
+---
+title: "What is Pressure?"
+description: "Defining pressure as Force per unit Area and exploring real-life examples."
+date: 2025-01-15
+tags: ["pressure", "force", "area"]
+order: 1
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Concept of Pressure
+
+Imagine two students, Megha and Pawan, carrying identical heavy bags. Megha is comfortable, but Pawan is in pain.
+*   **Megha's Bag:** Broad straps.
+*   **Pawan's Bag:** Narrow straps.
+
+Why does the narrow strap hurt more? The **weight** (force) is the same, but the **area** of contact is different.
+
+### Definition
+
+**Pressure** is the force acting perpendicularly on a unit area of a surface.
+
+$$
+\text{Pressure} = \frac{\text{Force}}{\text{Area}}
+$$
+
+*   **SI Unit:** Newton per square metre ($N/m^2$), also called **Pascal (Pa)**.
+
+### Effect of Area on Pressure
+
+Since Area is in the denominator of the formula, changing the area has the opposite effect on pressure.
+
+1.  **Decreasing Area increases Pressure:**
+    *   **Knives:** Have very sharp edges (small area) to cut easily with less force.
+    *   **Nails:** Have pointed tips to drive into walls easily.
+
+2.  **Increasing Area decreases Pressure:**
+    *   **School Bags:** Wide straps spread the weight over a larger shoulder area, reducing pain.
+    *   **Porters:** Place a round cloth (*pagdi*) on their heads to increase the contact area for heavy loads.
+    *   **Dams:** Have broad bases to withstand high water pressure at the bottom.
+
+### Visualizing Pressure
+
+<div class="flex justify-center my-6">
+  <svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+    {/* Ground */}
+    <line x1="50" y1="200" x2="450" y2="200" stroke="currentColor" stroke-width="2" />
+
+    {/* Scenario A: Sharp/Narrow */}
+    <rect x="100" y="100" width="40" height="100" fill="#ef4444" opacity="0.8" />
+    <text x="120" y="90" text-anchor="middle" fill="currentColor">Force (100N)</text>
+    <line x1="120" y1="95" x2="120" y2="130" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="120" y="230" text-anchor="middle" fill="currentColor">Small Area = High Pressure</text>
+
+    {/* Scenario B: Broad */}
+    <rect x="300" y="100" width="120" height="100" fill="#3b82f6" opacity="0.8" />
+    <text x="360" y="90" text-anchor="middle" fill="currentColor">Force (100N)</text>
+    <line x1="360" y1="95" x2="360" y2="130" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="360" y="230" text-anchor="middle" fill="currentColor">Large Area = Low Pressure</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+</div>
+
+<Callout variant="info">
+**Example Calculation:**
+If a force of $100 \text{ N}$ acts on an area of $2 \text{ m}^2$:
+$$P = \frac{100}{2} = 50 \text{ Pa}$$
+If the same force acts on an area of $1 \text{ m}^2$:
+$$P = \frac{100}{1} = 100 \text{ Pa}$$
+**Halving the area doubles the pressure!**
+</Callout>

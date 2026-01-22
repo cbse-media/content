@@ -1,0 +1,68 @@
+---
+title: "Standard Units of Length"
+description: "Understanding the International System of Units (SI) and metric conversions."
+date: 2025-01-20
+tags: ["SI units", "metric system", "conversions"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The International System of Units (SI)
+
+To solve the confusion caused by local units (like inches, feet, or handspans), countries across the world adopted a standard set of units known as the **International System of Units** (SI Units).
+
+<Callout variant="tip">
+**Key Definition:** The SI unit of length is the **Metre**. Its symbol is **m**.
+</Callout>
+
+### Sub-units of the Metre
+
+Ideally, we use different units depending on the size of the object we are measuring.
+
+1.  **Millimetre (mm):** Used for very small lengths (e.g., thickness of a coin, tip of a pencil).
+    *   $1 \text{ cm} = 10 \text{ mm}$
+    *   $1 \text{ mm} = 0.1 \text{ cm}$
+
+2.  **Centimetre (cm):** Used for medium-small lengths (e.g., length of a pencil, notebook, mobile phone).
+    *   $1 \text{ m} = 100 \text{ cm}$
+
+3.  **Kilometre (km):** Used for long distances (e.g., distance between two cities).
+    *   $1 \text{ km} = 1000 \text{ m}$
+
+## Conversion Visualization
+
+<div class="flex justify-center my-6">
+  <svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+    {/* Main Line */}
+    <line x1="50" y1="75" x2="550" y2="75" stroke="currentColor" stroke-width="2" />
+    
+    {/* Nodes */}
+    <circle cx="100" cy="75" r="5" fill="currentColor" />
+    <circle cx="300" cy="75" r="5" fill="currentColor" />
+    <circle cx="500" cy="75" r="5" fill="currentColor" />
+    
+    {/* Labels */}
+    <text x="100" y="50" text-anchor="middle" fill="currentColor" font-weight="bold">km</text>
+    <text x="300" y="50" text-anchor="middle" fill="currentColor" font-weight="bold">m</text>
+    <text x="500" y="50" text-anchor="middle" fill="currentColor" font-weight="bold">cm</text>
+    
+    {/* Arrows for conversion */}
+    <path d="M 110 85 Q 200 120 290 85" fill="none" stroke="currentColor" stroke-dasharray="4"/>
+    <text x="200" y="110" text-anchor="middle" fill="currentColor" font-size="12">x 1000</text>
+    
+    <path d="M 310 85 Q 400 120 490 85" fill="none" stroke="currentColor" stroke-dasharray="4"/>
+    <text x="400" y="110" text-anchor="middle" fill="currentColor" font-size="12">x 100</text>
+  </svg>
+</div>
+
+## Rules for Writing Units
+
+1.  **Lowercase:** Units are usually written in lowercase (e.g., metre, not Metre), unless at the start of a sentence.
+2.  **Symbols:** Symbols are lowercase (km, m, cm).
+3.  **No Plurals:** Never add an 's' to the symbol.
+    *   *Correct:* 50 kg, 10 cm.
+    *   *Incorrect:* 50 kgs, 10 cms.
+4.  **No Full Stop:** Do not put a dot after the symbol unless it is the end of a sentence.
+5.  **Spacing:** Always leave a space between the number and the unit (e.g., $15 \text{ cm}$).

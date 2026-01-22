@@ -1,0 +1,80 @@
+---
+title: "Prime and Composite Numbers"
+description: "Understanding prime numbers, composite numbers, and the Sieve of Eratosthenes."
+date: 2025-01-15
+tags: ["prime", "composite", "sieve-of-eratosthenes"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What makes a number Prime?
+
+We can arrange objects in rectangular shapes.
+*   **12 figs:** Can be arranged as $1 \times 12$, $2 \times 6$, $3 \times 4$.
+*   **7 figs:** Can ONLY be arranged as $1 \times 7$.
+
+Numbers like 7, which have only two factors (1 and the number itself), are called **Prime Numbers**.
+Numbers like 12, which have more than two factors, are called **Composite Numbers**.
+
+| Type | Definition | Examples |
+| :--- | :--- | :--- |
+| **Prime** | Exactly 2 factors (1 and itself). | 2, 3, 5, 7, 11, 13, 17, 19 |
+| **Composite** | More than 2 factors. | 4, 6, 8, 9, 10, 12, 14, 15 |
+| **Neither** | The number 1 has only 1 factor. | 1 |
+
+<Callout variant="warning">
+**Important:** 1 is neither prime nor composite.
+</Callout>
+
+## Finding Primes: Sieve of Eratosthenes
+
+Eratosthenes, a Greek mathematician, developed a method to find primes between 1 and 100.
+
+**Steps:**
+1.  Cross out **1**.
+2.  Circle **2** (Prime), then cross out all multiples of 2 ($4, 6, 8...$).
+3.  Circle **3** (Prime), then cross out all multiples of 3 ($6, 9, 12...$).
+4.  Circle **5** (next uncrossed number), cross out its multiples.
+5.  Continue this process. The circled numbers are Primes.
+
+<div class="flex justify-center my-6">
+  <div class="grid grid-cols-10 gap-1 text-center font-mono text-sm max-w-md border border-gray-300 p-2">
+    {/* Row 1 */}
+    <div class="text-gray-400 line-through">1</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">2</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">3</div>
+    <div class="text-gray-400 line-through">4</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">5</div>
+    <div class="text-gray-400 line-through">6</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">7</div>
+    <div class="text-gray-400 line-through">8</div>
+    <div class="text-gray-400 line-through">9</div>
+    <div class="text-gray-400 line-through">10</div>
+    {/* Row 2 */}
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">11</div>
+    <div class="text-gray-400 line-through">12</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">13</div>
+    <div class="text-gray-400 line-through">14</div>
+    <div class="text-gray-400 line-through">15</div>
+    <div class="text-gray-400 line-through">16</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">17</div>
+    <div class="text-gray-400 line-through">18</div>
+    <div class="font-bold border border-green-500 rounded-full bg-green-100 dark:bg-green-900">19</div>
+    <div class="text-gray-400 line-through">20</div>
+  </div>
+</div>
+*(Partial grid shown for illustration)*
+
+## Twin Primes
+Pairs of prime numbers that have a difference of exactly 2 are called **Twin Primes**.
+*   (3, 5)
+*   (5, 7)
+*   (11, 13)
+*   (17, 19)
+*   (41, 43)
+
+<Callout variant="tip">
+**Fun Fact:** Mathematicians are still trying to find the largest prime number. The largest known prime is millions of digits long!
+</Callout>

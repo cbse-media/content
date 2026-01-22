@@ -1,0 +1,71 @@
+---
+title: "The Token Model"
+description: "Using colored tokens and zero pairs to visualize integer arithmetic."
+date: 2024-04-10
+tags: ["tokens", "visualization", "zero-pairs"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Tokens and Zero Pairs
+
+Imagine we have two types of tokens:
+*   **Positive Token (+):** Represents $+1$ (e.g., Green/Red).
+*   **Negative Token (-):** Represents $-1$ (e.g., Red/Blue).
+
+### The Zero Pair
+One positive token and one negative token cancel each other out. Their sum is zero.
+$$
+(+1) + (-1) = 0
+$$
+
+## Addition with Tokens
+
+**Task: Add $(+3) + (-2)$**
+1.  Place 3 positive tokens: `(+) (+) (+)`
+2.  Place 2 negative tokens: `(-) (-)`
+3.  Group them into zero pairs.
+    *   Pair 1: `(+)` and `(-)` $\rightarrow$ Cancel.
+    *   Pair 2: `(+)` and `(-)` $\rightarrow$ Cancel.
+4.  What is left? One `(+)`.
+    *   **Result:** $+1$.
+
+<div class="flex justify-center my-6">
+```mermaid
+graph TD
+    subgraph Calculation
+    A((+)) --- B((+)) --- C((+))
+    D((-)) --- E((-))
+    style A fill:#9f9,stroke:#333
+    style B fill:#9f9,stroke:#333
+    style C fill:#9f9,stroke:#333
+    style D fill:#f99,stroke:#333
+    style E fill:#f99,stroke:#333
+    
+    A --- D
+    B --- E
+    C
+    end
+    
+    C --> Result[Result: +1]
+```
+</div>
+
+## Subtraction with Tokens
+
+**Task: Subtract $(+3) - (-2)$**
+1.  Start with 3 positive tokens: `(+) (+) (+)`
+2.  We need to "take away" 2 negative tokens.
+3.  **Problem:** We don't have any negative tokens to take away!
+4.  **Solution:** Add **Zero Pairs**. Adding zero pairs doesn't change the value.
+    *   Add 2 zero pairs: `(+) (-)` and `(+) (-)`.
+    *   Now we have: `(+) (+) (+)` and `(+) (-)` `(+) (-)`.
+5.  Now, take away the 2 negative tokens `(-) (-)`.
+6.  What is left?
+    *   Original `(+) (+) (+)` PLUS the two positives from the zero pairs `(+) (+)`.
+    *   Total: 5 Positives.
+    *   **Result:** $+5$.
+
+This proves why $3 - (-2) = 3 + 2 = 5$.

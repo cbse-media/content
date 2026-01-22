@@ -1,0 +1,43 @@
+---
+title: "Number Patterns"
+description: "Using algebra to define and predict sequences."
+date: 2024-04-10
+tags: ["sequences", "patterns", "logic"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Triangular Patterns
+
+Consider a pattern of circles arranged in triangles or squares.
+If we examine the number of items in each step, we can often find a quadratic formula ($an^2 + bn + c$).
+
+**Example:**
+*   Step 1: 3 items
+*   Step 2: 8 items
+*   Step 3: 15 items
+
+Let's look at the structure.
+*   $3 = 1 \times 3$
+*   $8 = 2 \times 4$
+*   $15 = 3 \times 5$
+
+The pattern is $k \times (k+2)$.
+Expression: $k^2 + 2k$.
+
+## Sum of Squares Pattern
+
+$$ 2(a^2 + b^2) = (a+b)^2 + (a-b)^2 $$
+
+This identity connects the sum of squares to the square of sum and square of difference.
+
+**Verification:**
+RHS $= (a^2 + 2ab + b^2) + (a^2 - 2ab + b^2)$
+$= 2a^2 + 2b^2$
+$= 2(a^2 + b^2)$ = LHS.
+
+<Callout variant="success">
+**Application:** If you know the sum $(a+b)$ and the difference $(a-b)$, you can easily find the sum of squares without knowing the numbers themselves!
+</Callout>
