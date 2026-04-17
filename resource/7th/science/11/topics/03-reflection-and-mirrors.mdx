@@ -1,0 +1,51 @@
+---
+title: "Reflection and Mirrors"
+description: "Understand how smooth surfaces change the direction of light, and the characteristics of images formed by plane mirrors."
+date: 2024-04-10
+tags: ["reflection", "mirrors", "lateral-inversion"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Reflection of Light
+
+When light traveling in a straight line hits a shiny, highly polished surface (like a steel plate or a mirror), it bounces off. 
+
+<Callout variant="tip">
+**Definition:** This change in the direction of light by a mirror or a shiny surface is called the **reflection of light**.
+</Callout>
+
+If you shine a torch onto a mirror in a dark room, you can see the beam of light hitting the mirror and instantly bouncing off in a new, straight direction!
+
+## Images Formed in a Plane Mirror
+
+A plane mirror is a standard flat mirror. When you look into it, you see an **image** of yourself (the **object**). The image formed by a plane mirror has very specific, predictable characteristics:
+
+1.  **Size:** The image is the exact same size as the object.
+2.  **Orientation:** The image is upright (erect). Your head is at the top, not upside down.
+3.  **Distance:** The image appears to be exactly the same distance *behind* the mirror as the object is *in front* of the mirror. If you step back, your image steps back too!
+4.  **Cannot be caught on a screen:** If you place a piece of paper behind the mirror, you won't see your face projected onto it. The image only exists *inside* the mirror.
+
+### Lateral Inversion
+
+There is one major difference between you and your mirror image. 
+If you stand in front of a mirror and raise your **left** arm, your image raises its **right** arm! 
+
+This perceived left-right reversal is called **lateral inversion**.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Text -->
+  <text x="50" y="80" font-size="24" font-weight="bold" fill="currentColor">AMBULANCE</text>
+  <!-- Mirror line -->
+  <line x1="210" y1="20" x2="210" y2="130" stroke-width="3" stroke-dasharray="10,5" />
+  <!-- Reflected Text -->
+  <g transform="translate(430, 0) scale(-1, 1)">
+    <text x="50" y="80" font-size="24" font-weight="bold" fill="#ef4444">AMBULANCE</text>
+  </g>
+</svg>
+</div>
+
+*Why is the word "AMBULANCE" often written backwards on the front of the vehicle? Because when a driver ahead looks in their rear-view mirror, lateral inversion flips the backwards text so it reads perfectly forward!*

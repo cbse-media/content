@@ -1,0 +1,71 @@
+---
+title: "Angles Formed by Transversals"
+description: "Discover corresponding angles, alternate angles, and consecutive interior angles formed by a transversal cutting across parallel lines."
+date: 2024-04-10
+tags: ["transversals", "corresponding-angles", "alternate-angles", "interior-angles"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+When a transversal line intersects two parallel lines, the 8 angles formed have very specific, mathematically perfect relationships. 
+
+## The Four Types of Angle Pairs
+
+Using the standard 8-angle diagram, let's identify the pairs:
+
+<div class="flex justify-center my-6">
+<svg width="350" height="220" viewBox="0 0 350 220" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Parallel Line l -->
+  <line x1="50" y1="70" x2="280" y2="70" stroke-width="2" />
+  <path d="M 265 65 L 275 70 L 265 75" stroke-width="2" />
+  <text x="290" y="75" fill="currentColor" font-size="16">l</text>
+  
+  <!-- Parallel Line m -->
+  <line x1="50" y1="150" x2="280" y2="150" stroke-width="2" />
+  <path d="M 265 145 L 275 150 L 265 155" stroke-width="2" />
+  <text x="290" y="155" fill="currentColor" font-size="16">m</text>
+  
+  <!-- Transversal t -->
+  <line x1="120" y1="20" x2="200" y2="200" stroke-width="2" />
+  <text x="200" y="215" fill="currentColor" font-size="16">t</text>
+  
+  <!-- Angle Labels Top -->
+  <text x="135" y="55" fill="currentColor" font-size="14">1</text>
+  <text x="165" y="65" fill="currentColor" font-size="14">2</text>
+  <text x="125" y="90" fill="currentColor" font-size="14">4</text>
+  <text x="160" y="85" fill="currentColor" font-size="14">3</text>
+  
+  <!-- Angle Labels Bottom -->
+  <text x="170" y="135" fill="currentColor" font-size="14">5</text>
+  <text x="200" y="145" fill="currentColor" font-size="14">6</text>
+  <text x="160" y="170" fill="currentColor" font-size="14">8</text>
+  <text x="195" y="165" fill="currentColor" font-size="14">7</text>
+</svg>
+</div>
+
+### 1. Corresponding Angles
+Angles that are in the same relative position at each intersection.
+*   **Pairs:** ($\angle 1$ and $\angle 5$), ($\angle 2$ and $\angle 6$), ($\angle 4$ and $\angle 8$), ($\angle 3$ and $\angle 7$)
+*   **Rule:** When lines are parallel, corresponding angles are **equal**. ($\angle 1 = \angle 5$)
+
+### 2. Alternate Interior Angles
+Angles that are on opposite sides of the transversal and *between* the two lines.
+*   **Pairs:** ($\angle 3$ and $\angle 5$), ($\angle 4$ and $\angle 6$)
+*   **Rule:** When lines are parallel, alternate interior angles are **equal**. ($\angle 3 = \angle 5$)
+
+### 3. Alternate Exterior Angles
+Angles that are on opposite sides of the transversal and *outside* the two parallel lines.
+*   **Pairs:** ($\angle 1$ and $\angle 7$), ($\angle 2$ and $\angle 8$)
+*   **Rule:** When lines are parallel, alternate exterior angles are **equal**. ($\angle 1 = \angle 7$)
+
+### 4. Interior Angles on the Same Side
+Angles that are on the *same side* of the transversal and *between* the two lines. These are also known as Consecutive Interior Angles.
+*   **Pairs:** ($\angle 4$ and $\angle 5$), ($\angle 3$ and $\angle 6$)
+*   **Rule:** When lines are parallel, interior angles on the same side add up to $180^\circ$. They are **supplementary**. ($\angle 4 + \angle 5 = 180^\circ$)
+
+<Callout variant="warning">
+**The "If and Only If" Condition**
+If two lines are intersected by a transversal, and *any* pair of corresponding angles are equal, then the lines **must be parallel**. This works backwards too! If you measure the angles and they aren't perfectly equal, the lines are not parallel and will eventually intersect.
+</Callout>

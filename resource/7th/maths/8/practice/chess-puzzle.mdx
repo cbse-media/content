@@ -1,0 +1,37 @@
+---
+title: "Practice: Chess Puzzles (Non-attacking Queens)"
+description: "A fun logical puzzle testing your spatial reasoning based on the rules of Chess."
+date: 2024-04-10
+tags: ["puzzle", "chess", "logic", "spatial-reasoning"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Queen's Movement
+
+In the game of Chess, the **Queen** is the most powerful piece. She can move any number of empty squares in any direction:
+1.  **Horizontally** (left or right along the rank)
+2.  **Vertically** (up or down along the file)
+3.  **Diagonally** (in an X-shape across the board)
+
+If another piece is in the path of her movement, she is "attacking" that piece.
+
+## The Puzzle: Non-Attacking Queens
+
+**Goal:** Place $8$ Queens on a standard $8 \times 8$ chess grid so that **no two queens attack each other**. 
+
+This means:
+*   No two queens can share the same row.
+*   No two queens can share the same column.
+*   No two queens can share the same diagonal.
+
+<Callout variant="tip">
+**How to solve it:**
+This is a famous mathematical problem! Because no two queens can share a row or column, we know exactly one queen must be placed in each column, and exactly one queen must be placed in each row.
+
+The trick is making sure the diagonals don't cross. Try starting by placing a Queen in the top-left, and then moving to the next column. Since the row and diagonals are blocked, you'll have to place the next Queen a knight's move away (e.g., down two, right one). Keep testing until all 8 fit!
+</Callout>
+
+*(Note: There are exactly 92 distinct solutions to the 8-Queens puzzle! Challenge your friends to find just one of them without looking it up).*

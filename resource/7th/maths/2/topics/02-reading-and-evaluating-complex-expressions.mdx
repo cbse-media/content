@@ -1,0 +1,49 @@
+---
+title: "Reading and Evaluating Complex Expressions"
+description: "Learn how to use brackets to resolve ambiguity in complex mathematical expressions."
+date: 2024-04-10
+tags: ["complex-expressions", "brackets", "bodmas"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Problem of Ambiguity
+
+Sometimes, when an expression has multiple operations and no context, there can be more than one way to evaluate it. Let's look at an example:
+
+**Expression:** $30 + 5 \times 4$
+
+*   **Purna's Method:** Purna added $30$ and $5$ first to get $35$, and then multiplied by $4$. $35 \times 4 = \mathbf{140}$.
+*   **Mallesh's Method:** Mallesh multiplied $5$ and $4$ first to get $20$, and then added $30$. $30 + 20 = \mathbf{50}$.
+
+Who is right? Just looking at $30 + 5 \times 4$, the order is confusing. Just as punctuation marks (like commas) resolve confusion in language, **brackets** resolve confusion in mathematics.
+
+## Using Brackets in Expressions
+
+Brackets `( )` tell us exactly which part of the expression to evaluate first.
+
+If the situation meant we had $30$ loose marbles and $5$ bags containing $4$ marbles each, the correct notation uses brackets around the multiplication:
+$$ 30 + (5 \times 4) $$
+
+<Callout variant="warning">
+**Rule of Brackets:**
+When evaluating an expression having brackets, we must **first** find the value of the expression *inside* the brackets before performing other operations outside of it.
+</Callout>
+
+### Example: Calculating Change
+Irfan bought a pack of biscuits for ₹15 and a packet of *toor dal* for ₹56. He gave the shopkeeper a ₹100 note. Write an expression for his change.
+
+*   Total cost = $15 + 56$
+*   Money given = $100$
+
+If we write: $100 - 15 + 56$
+Evaluating left-to-right: $100 - 15 = 85$. Then $85 + 56 = 141$. He gets ₹141 back? That's absurd; he only paid ₹100!
+
+**Correct Expression with Brackets:**
+We must subtract the *total sum* of his items from $100$.
+$$ 100 - (15 + 56) $$
+Evaluate inside the bracket first: $15 + 56 = 71$.
+$$ 100 - 71 = 29 $$
+Irfan will get back ₹29.

@@ -1,0 +1,45 @@
+---
+title: "Exercise 6.2: Magic Square Puzzles"
+description: "Step-by-step solutions for creating and manipulating $3 \times 3$ magic squares."
+date: 2024-04-10
+tags: ["solutions", "magic-squares", "grids"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Figure it Out (Pages 10 - 11)
+
+**1. How many different magic squares can be made using the numbers $1 - 9$?**
+*   **Solution:** There is essentially only *one* core arrangement for a $3 \times 3$ magic square using 1-9 (center must be 5, corners must be even numbers 2, 4, 6, 8, and middle edges must be odd numbers 1, 3, 7, 9). 
+However, you can rotate this square 4 times, and reflect it (mirror image) 4 times. 
+Therefore, there are **8 different visual variations** of the same magic square.
+
+**2. Create a magic square using the numbers $2 - 10$. What strategy would you use?**
+*   **Solution Strategy:** We know the standard magic square uses 1-9. The numbers 2-10 are exactly $1$ more than the numbers 1-9. 
+We can simply take the standard magic square and **add 1 to every single cell**.
+*   **New Magic Sum:** The old sum was 15. Since we added 1 to three cells in a row, the new sum will be $15 + 3 = \mathbf{18}$. The center number becomes $5 + 1 = \mathbf{6}$.
+
+**3. Take a magic square, and...**
+**(a) Increase each number by 1.** 
+*   **Solution:** Yes, it remains a magic square. The magic sum increases by 3 (if it's a 3x3 grid).
+**(b) Double each number.**
+*   **Solution:** Yes, it remains a magic square. If $a+b+c = S$, then $2a+2b+2c = 2(a+b+c) = 2S$. The new magic sum is exactly double the old magic sum.
+
+**4. What other operations can be performed on a magic square to yield another magic square?**
+*   **Solution:** You can multiply each number by a constant, divide each number by a constant, or subtract a constant from every number. Any linear mathematical operation applied uniformly to all cells preserves the magic square property.
+
+**5. Discuss ways of creating a magic square using any set of 9 consecutive numbers (like $2 - 10$, $3 - 11$).**
+*   **Solution:** 
+    1.  Find the median (the 5th number in the sorted list). Place this in the **center**.
+    2.  Find the sum of the 9 numbers and divide by 3 to get your target **magic sum**. (Or just multiply the center number by 3).
+    3.  Place the remaining numbers just as you would the 1-9 square: the "even" relative positions in the corners, the "odd" relative positions on the edges.
+
+**6. Using the generalised form, find a magic square if the centre number is 25.**
+*   **Solution:** If the center is 25, the magic sum must be $25 \times 3 = \mathbf{75}$.
+We need 9 consecutive numbers with 25 in the middle. These numbers are $21, 22, 23, 24, 25, 26, 27, 28, 29$.
+Place them following the standard pattern.
+
+**7. Is it possible to get a magic square by filling nine non-consecutive numbers?**
+*   **Solution:** **Yes!** For example, you can take a standard magic square and multiply every number by 2 (yielding $2, 4, 6, 8, 10, 12, 14, 16, 18$). These are not consecutive integers, but they form a perfectly valid magic square with a magic sum of 30.

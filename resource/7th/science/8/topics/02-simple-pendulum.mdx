@@ -1,0 +1,70 @@
+---
+title: "The Simple Pendulum"
+description: "Learn about the physics of the simple pendulum, time periods, and the genius of Galileo and Christiaan Huygens."
+date: 2024-04-10
+tags: ["pendulum", "oscillation", "time-period", "galileo"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Simple Pendulum?
+
+A simple pendulum consists of a small metallic ball—called the **bob**—suspended from a rigid support by a long, weightless thread.
+
+### The Mechanics of Oscillation
+When the bob is resting straight down, it is in its **mean position**. If you pull the bob slightly to one side and release it, it begins to swing back and forth. This to-and-fro movement is an **oscillatory motion**. It is also a **periodic motion** because it repeats its path after a fixed, identical interval of time.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Rigid Support -->
+  <line x1="100" y1="20" x2="200" y2="20" stroke-width="4" />
+  
+  <!-- Left Extreme (B) -->
+  <line x1="150" y1="20" x2="70" y2="130" stroke-width="1" stroke-dasharray="4" />
+  <circle cx="70" cy="130" r="10" fill="currentColor" opacity="0.3" />
+  <text x="70" y="155" fill="currentColor" text-anchor="middle" font-size="12">Extreme (B)</text>
+  
+  <!-- Right Extreme (A) -->
+  <line x1="150" y1="20" x2="230" y2="130" stroke-width="1" stroke-dasharray="4" />
+  <circle cx="230" cy="130" r="10" fill="currentColor" opacity="0.3" />
+  <text x="230" y="155" fill="currentColor" text-anchor="middle" font-size="12">Extreme (A)</text>
+  
+  <!-- Mean Position (O) -->
+  <line x1="150" y1="20" x2="150" y2="150" stroke-width="2" />
+  <circle cx="150" cy="150" r="10" fill="currentColor" />
+  <text x="150" y="175" fill="currentColor" text-anchor="middle" font-size="12">Mean (O)</text>
+  
+  <!-- Swing Arc -->
+  <path d="M 70 130 Q 150 160 230 130" stroke-width="1" stroke-dasharray="2" fill="none" />
+</svg>
+</div>
+
+### Defining One Oscillation
+
+The pendulum completes **one oscillation** when:
+1.  The bob starts from the mean position ($O$), moves to the extreme left ($B$), swings to the extreme right ($A$), and finally returns to the center ($O$).
+2.  *Alternatively*, you can measure it from extreme to extreme: starting at $A$, swinging to $B$, and returning back to $A$.
+
+<Callout variant="tip">
+**Definition:**
+The time taken by the pendulum to complete exactly one full oscillation is called its **time period**.
+</Callout>
+
+## The Genius of Galileo
+
+In the 16th century, the famous scientist Galileo Galilei noticed a swinging lamp in a church. Using his own pulse as a stopwatch, he realized something incredible: no matter how wide the lamp swung, it always took the exact same amount of time to swing back and forth!
+
+Through experimentation, scientists discovered the fundamental rules of the pendulum:
+1.  **Mass doesn't matter:** The time period does *not* depend on how heavy the bob is.
+2.  **Length matters:** The time period depends *only* on the length of the string. A longer string makes a slower pendulum.
+
+Because a pendulum of a specific length will always have the exact same, constant time period, it became the perfect mechanism to build highly accurate **pendulum clocks** (invented by Christiaan Huygens in 1656).
+
+## The SI Unit of Time
+
+In modern science, the standard **SI unit of time is the second (s)**.
+Larger units are built from the second:
+*   $60 \text{ seconds (s)} = 1 \text{ minute (min)}$
+*   $60 \text{ minutes (min)} = 1 \text{ hour (h)}$

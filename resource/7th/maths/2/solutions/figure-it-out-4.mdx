@@ -1,0 +1,95 @@
+---
+title: "Figure it Out: Removing Brackets & Grouping"
+description: "Solutions for applying bracket rules, changing signs, and identifying equal expressions based on mathematical properties."
+date: 2024-04-10
+tags: ["solutions", "brackets", "grouping", "associative-property"]
+order: 8
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Questions (Page 14 & 15)
+
+**1. Fill in the blanks with numbers, and boxes with operation signs such that the expressions on both sides are equal.**
+
+**(a) $24 + (6 - 4) = 24 + 6$ \_\_\_\_**
+*   **Solution:** Because the bracket is preceded by a `+`, signs do not change. 
+    Answer: **$- 4$**
+
+**(b) $38 + ($ \_\_\_\_ \_\_\_\_ $) = 38 + 9 - 4$**
+*   **Solution:** To end up with $+9$ and $-4$, they must have been inside a positive bracket.
+    Answer: **$(9 - 4)$**
+
+**(c) $24 - (6 + 4) = 24$ \_\_\_\_ $6 - 4$**
+*   **Solution:** Because the bracket is preceded by a `-`, the $+6$ becomes $-6$, and the $+4$ becomes $-4$.
+    Answer: **$-$** (minus)
+
+**(d) $24 - 6 - 4 = 24 - 6$ \_\_\_\_**
+*   **Solution:** Here, we are just removing the brackets from $(6+4)$ mathematically, which we did in the previous step. 
+    Answer: **$- 4$**
+
+**(e) $27 - (8 + 3) = 27$ \_\_\_\_ $8$ \_\_\_\_ $3$**
+*   **Solution:** Bracket preceded by `-`. Signs change.
+    Answer: $27$ **$-$** $8$ **$-$** $3$
+
+**(f) $27 - ($ \_\_\_\_ \_\_\_\_ $) = 27 - 8 + 3$**
+*   **Solution:** We want the final result to be $-8$ and $+3$. If we pull a `-` sign out into a bracket, the inner signs flip. $-8$ becomes $8$, and $+3$ becomes $-3$.
+    Answer: **$(8 - 3)$**
+
+---
+
+**2. Remove the brackets and write the expression having the same value.**
+
+**(a) $14 + (12 + 10)$** $\rightarrow$ **$14 + 12 + 10$**
+**(b) $14 - (12 + 10)$** $\rightarrow$ **$14 - 12 - 10$**
+**(c) $14 + (12 - 10)$** $\rightarrow$ **$14 + 12 - 10$**
+**(d) $14 - (12 - 10)$** $\rightarrow$ **$14 - 12 + 10$**
+**(e) $-14 + 12 - 10$** $\rightarrow$ (No brackets to remove, already simplified)
+**(f) $14 - (-12 - 10)$** $\rightarrow$ **$14 + 12 + 10$**
+
+---
+
+**3. Find the values of the following expressions. When are the two expressions equal?**
+
+**(a) $(6 + 10) - 2$ AND $6 + (10 - 2)$**
+*   LHS: $16 - 2 = 14$
+*   RHS: $6 + 8 = 14$
+*   **Result:** **Equal.** (Associative property holds here).
+
+**(b) $16 - (8 - 3)$ AND $(16 - 8) - 3$**
+*   LHS: $16 - 5 = 11$
+*   RHS: $8 - 3 = 5$
+*   **Result:** **Not Equal.** (Subtraction is not associative).
+
+**(c) $27 - (18 + 4)$ AND $27 + (-18 - 4)$**
+*   LHS: $27 - 22 = 5$
+*   RHS: $27 + (-22) = 5$
+*   **Result:** **Equal.** (The second expression is exactly the first expression with the bracket expanded!).
+
+---
+
+**4. In each of the sets of expressions below, identify those that have the same value.**
+
+**(a) Set: `319 + 537`, `319 - 537`, `-537 + 319`, `537 - 319`**
+*   **Solution:** By the commutative property, exchanging terms keeps the value the same. 
+    **`319 - 537`** is equal to **`-537 + 319`**.
+
+**(b) Set: `87 + 46 - 109`, `87 - 46 - 109`, `87 + 46 + 109`, `87 - 46 + 109`, `87 - (46 + 109)`, `(87 - 46) + 109`**
+*   **Solution:** 
+    *   Match 1: Expanding `87 - (46 + 109)` flips the signs inside, resulting in `87 - 46 - 109`. So these two are **equal**.
+    *   Match 2: Because addition is associative, `(87 - 46) + 109` is the exact same as writing `87 - 46 + 109`. So these two are **equal**.
+
+---
+
+**5. Add brackets at appropriate places in the expressions such that they lead to the values indicated.**
+
+**(a) $34 - 9 + 12 = 13$**
+*   **Solution:** $34 - (9 + 12) = 34 - 21 = 13$
+
+**(b) $56 - 14 - 8 = 34$**
+*   **Solution:** $56 - (14 + 8) = 56 - 22 = 34$
+
+**(c) $-22 - 12 + 10 + 22 = -22$**
+*   **Solution:** Place brackets around the middle terms: $-22 - (12 + 10) + 22$. 
+    Check: $-22 - 22 + 22 = -44 + 22 = -22$.

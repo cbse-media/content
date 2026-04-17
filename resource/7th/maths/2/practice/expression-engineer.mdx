@@ -1,0 +1,52 @@
+---
+title: "Practice: Expression Engineer"
+description: "A fun puzzle to test your arithmetic expression building skills!"
+date: 2024-04-10
+tags: ["puzzle", "expression-building", "bodmas"]
+order: 10
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Puzzle Time!
+
+Using a fixed set of numbers along with the four operations (`+`, `-`, `\times`, `\div`) and brackets `( )` as needed, can you create expressions that evaluate to specific targets?
+
+### Challenge 1: The Four 4s
+Using exactly **four 4's**, create expressions to get all values from 1 to 10.
+
+*Hint: You can combine them! For example, $44 \div 44 = 1$.*
+
+**Possible Solutions:**
+*   **1** = $(4 \div 4) \times (4 \div 4)$
+*   **2** = $(4 \div 4) + (4 \div 4)$
+*   **3** = $(4 + 4 + 4) \div 4$
+*   **4** = $4 + 4 \times (4 - 4)$
+*   **5** = $(4 \times 4 + 4) \div 4$
+*   **6** = $(4 + 4) \div 4 + 4$
+*   **7** = $(44 \div 4) - 4$
+*   **8** = $4 + 4 + 4 - 4$
+*   **9** = $4 \div 4 + 4 + 4$
+*   **10** = $(44 - 4) \div 4$
+
+<Callout variant="tip">
+**Can you go up to 20?** 
+Try creating expressions for 11 through 20 on a separate piece of paper using the same rules!
+</Callout>
+
+### Challenge 2: Make 100
+Using the digits **$1$ to $9$** exactly once in ascending order, make an expression with a value of $100$.
+
+**Solution:**
+There are many ways to solve this classic puzzle, but here is one famous solution that uses addition and subtraction by grouping digits into larger numbers:
+
+$$ 1 + 2 + 34 - 5 + 67 - 8 + 9 = 100 $$
+
+Let's check the math:
+*   $1 + 2 = 3$
+*   $3 + 34 = 37$
+*   $37 - 5 = 32$
+*   $32 + 67 = 99$
+*   $99 - 8 = 91$
+*   $91 + 9 = 100$. It works!

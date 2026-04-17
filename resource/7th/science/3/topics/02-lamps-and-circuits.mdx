@@ -1,0 +1,52 @@
+---
+title: "Lamps and Simple Circuits"
+description: "Explore how incandescent lamps and LEDs work, and how to build a complete electrical circuit."
+date: 2024-04-10
+tags: ["electric-lamp", "led", "circuit", "filament"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Electric Lamp
+
+There are two common types of lamps used in portable devices like torches.
+
+### 1. Incandescent Lamp (Traditional Bulb)
+If you look inside the glass bulb of an older torch, you will see a very thin wire. This wire is called the **filament**. 
+*   The filament is supported by two thicker wires.
+*   One thick wire connects to the **metal case** at the base of the bulb.
+*   The other thick wire connects to the **metal tip** at the very bottom center of the base.
+*   These two points (the case and the tip) are the two **terminals** of the lamp.
+
+When electric current passes through the filament, it gets extremely hot and glows to produce light!
+
+### 2. Light Emitting Diode (LED)
+Modern torches use LEDs. LEDs do not have a filament. They also have two terminals, but they look like two wire legs:
+*   The **longer wire** is the **positive (+)** terminal.
+*   The **shorter wire** is the **negative (-)** terminal.
+
+<Callout variant="warning">
+**Crucial Difference:**
+An incandescent bulb will glow no matter which way you connect it to the battery. 
+An LED is directional! Current can only flow through it in one direction. The positive (longer) wire *must* connect to the positive terminal of the battery, and the negative (shorter) wire to the negative terminal.
+</Callout>
+
+## An Electrical Circuit
+
+To make a lamp glow, we must create a path for the electricity to flow. 
+
+<Callout variant="info">
+**Definition:**
+An **electrical circuit** is a complete, unbroken path that allows electric current to flow from the positive terminal of a power source, through a device (like a lamp), and back to the negative terminal.
+</Callout>
+
+*   The lamp will **only** glow when the circuit is complete.
+*   The direction of the electric current is taken to be from the **positive (+)** terminal to the **negative (-)** terminal of the electric cell.
+
+### Why might a lamp not glow?
+1.  The circuit is broken (a wire is loose).
+2.  The cells are connected incorrectly (e.g., positive to positive).
+3.  With an LED, the polarity is reversed (long leg connected to negative).
+4.  The lamp is "fused" (the thin filament inside the incandescent bulb is broken, stopping the flow of current).

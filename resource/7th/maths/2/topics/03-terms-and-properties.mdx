@@ -1,0 +1,80 @@
+---
+title: "Terms and Properties of Expressions"
+description: "Understand the concept of 'terms' in an expression and explore the commutative, associative, and distributive properties."
+date: 2024-04-10
+tags: ["terms", "properties-of-addition", "distributive-property", "removing-brackets"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What are "Terms" in an Expression?
+
+When an expression has multiple operations and no brackets, we use the notion of **terms** to determine the order.
+Terms are the parts of an expression separated by a `+` sign.
+
+For example, in $12 + 7$, the terms are **$12$** and **$7$**.
+
+### Handling Subtraction
+What about $83 - 14$? We know that subtracting a number is the same as adding its inverse (opposite sign).
+$$ 83 - 14 = 83 + (-14) $$
+Here, the terms are **$83$** and **$-14$**.
+
+### Handling Multiplication and Division
+Multiplications and divisions group numbers into a *single term*.
+In the expression $6 \times 5 + 3$, the terms are **$(6 \times 5)$** and **$3$**.
+
+## Swapping and Grouping (Properties of Addition)
+
+### 1. Commutative Property (Swapping)
+In an expression having only additions (or where subtractions are converted to negative terms), swapping the terms does not change the value.
+
+<div class="flex justify-center my-6">
+<svg width="400" height="80" viewBox="0 0 400 80" stroke="currentColor" fill="none" class="text-foreground">
+    <circle cx="100" cy="40" r="30" stroke-width="2" />
+    <text x="100" y="45" text-anchor="middle" fill="currentColor" font-size="16">Term 1</text>
+    
+    <text x="145" y="45" text-anchor="middle" fill="currentColor" font-size="20">+</text>
+    
+    <circle cx="190" cy="40" r="30" stroke-width="2" />
+    <text x="190" y="45" text-anchor="middle" fill="currentColor" font-size="16">Term 2</text>
+    
+    <text x="240" y="45" text-anchor="middle" fill="currentColor" font-size="20">=</text>
+    
+    <circle cx="290" cy="40" r="30" stroke-width="2" />
+    <text x="290" y="45" text-anchor="middle" fill="currentColor" font-size="16">Term 2</text>
+    
+    <text x="335" y="45" text-anchor="middle" fill="currentColor" font-size="20">+</text>
+    
+    <circle cx="380" cy="40" r="30" stroke-width="2" />
+    <text x="380" y="45" text-anchor="middle" fill="currentColor" font-size="16">Term 1</text>
+</svg>
+</div>
+
+### 2. Associative Property (Grouping)
+Grouping the terms of an expression in either order gives the same value.
+$$ (-7) + 10 + (-11) $$
+*   Grouping first two: $((-7) + 10) + (-11) = 3 + (-11) = -8$
+*   Grouping last two: $(-7) + (10 + (-11)) = (-7) + (-1) = -8$
+
+## Removing Brackets
+
+Removing brackets simplifies expressions so we can easily swap and group terms.
+
+<Callout variant="warning">
+**Important Rule for Removing Brackets:**
+*   When brackets are preceded by a **negative sign** (`-`), the signs of the terms *inside* the brackets change!
+    $$ 200 - (40 + 3) = 200 - 40 - 3 $$
+*   When brackets are preceded by a **positive sign** (`+` or none), the terms inside do NOT change their signs.
+    $$ 28 + (35 - 10) = 28 + 35 - 10 $$
+</Callout>
+
+## The Distributive Property
+
+Consider the expression: $10 \times 98 + 3 \times 98$.
+This means taking the sum of "$10$ times $98$" and "$3$ times $98$". Together, that makes $13$ times $98$!
+
+$$ 10 \times 98 + 3 \times 98 = (10 + 3) \times 98 = 13 \times 98 $$
+
+**Rule:** The multiple of a sum (or difference) is the same as the sum (or difference) of the multiples.

@@ -1,0 +1,127 @@
+---
+title: "Solved Examples: Lines and Angles"
+description: "Step-by-step solutions for geometric problems involving transversals, parallel lines, and angle theorems."
+date: 2024-04-10
+tags: ["solved-examples", "geometry", "transversals", "angles"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Example 1: Finding All Angles
+
+**Question:** In the figure below, parallel lines $l$ and $m$ are intersected by the transversal $t$. If $\angle 6$ is $135^\circ$, what are the measures of all the other angles?
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <line x1="50" y1="60" x2="250" y2="60" stroke-width="2" />
+  <line x1="50" y1="140" x2="250" y2="140" stroke-width="2" />
+  <line x1="120" y1="20" x2="180" y2="180" stroke-width="2" />
+  
+  <text x="260" y="65" fill="currentColor" font-size="16">l</text>
+  <text x="260" y="145" fill="currentColor" font-size="16">m</text>
+  <text x="185" y="190" fill="currentColor" font-size="16">t</text>
+  
+  <text x="135" y="50" fill="currentColor" font-size="12">2</text>
+  <text x="165" y="55" fill="currentColor" font-size="12">3</text>
+  <text x="120" y="80" fill="currentColor" font-size="12">1</text>
+  <text x="150" y="75" fill="currentColor" font-size="12">4</text>
+  
+  <text x="155" y="130" fill="currentColor" font-size="12">6 (135°)</text>
+  <text x="135" y="160" fill="currentColor" font-size="12">5</text>
+  <text x="165" y="155" fill="currentColor" font-size="12">8</text>
+  <text x="185" y="130" fill="currentColor" font-size="12">7</text>
+</svg>
+</div>
+
+**Solution:**
+We are given $\angle 6 = 135^\circ$.
+1.  **Corresponding Angles:** $\angle 2$ corresponds to $\angle 6$. Therefore, $\angle 2 = 135^\circ$.
+2.  **Vertically Opposite Angles:** $\angle 8$ is vertically opposite to $\angle 6$. Therefore, $\angle 8 = 135^\circ$. 
+    Similarly, $\angle 4$ is vertically opposite to $\angle 2$. $\angle 4 = 135^\circ$.
+3.  **Linear Pairs:** $\angle 5$ and $\angle 6$ form a straight line. 
+    $\angle 5 + \angle 6 = 180^\circ$
+    $\angle 5 = 180^\circ - 135^\circ = \mathbf{45^\circ}$.
+4.  **Using properties to find the rest:**
+    *   $\angle 7$ is vertically opposite to $\angle 5 \implies \angle 7 = 45^\circ$.
+    *   $\angle 1$ is corresponding to $\angle 5 \implies \angle 1 = 45^\circ$.
+    *   $\angle 3$ is vertically opposite to $\angle 1 \implies \angle 3 = 45^\circ$.
+
+---
+
+## Example 2: Checking for Parallel Lines
+
+**Question:** In the figure below, lines $l$ and $m$ are intersected by the transversal $t$. If $\angle a$ is $120^\circ$ and $\angle f$ is $70^\circ$, are lines $l$ and $m$ parallel to each other?
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <line x1="50" y1="80" x2="250" y2="60" stroke-width="2" />
+  <line x1="50" y1="140" x2="250" y2="140" stroke-width="2" />
+  <line x1="150" y1="20" x2="100" y2="180" stroke-width="2" />
+  
+  <text x="260" y="65" fill="currentColor" font-size="16">l</text>
+  <text x="260" y="145" fill="currentColor" font-size="16">m</text>
+  <text x="90" y="190" fill="currentColor" font-size="16">t</text>
+  
+  <text x="135" y="70" fill="currentColor" font-size="12">a (120°)</text>
+  <text x="165" y="80" fill="currentColor" font-size="12">b</text>
+  <text x="120" y="130" fill="currentColor" font-size="12">e</text>
+  <text x="150" y="130" fill="currentColor" font-size="12">f (70°)</text>
+</svg>
+</div>
+
+**Solution:**
+1.  $\angle a = 120^\circ$. Because $\angle a$ and $\angle b$ form a linear pair on line $l$:
+    $\angle a + \angle b = 180^\circ$
+    $120^\circ + \angle b = 180^\circ \implies \angle b = \mathbf{60^\circ}$.
+2.  Now look at $\angle b$ and $\angle f$. They are **corresponding angles**.
+3.  For lines $l$ and $m$ to be parallel, corresponding angles *must* be equal.
+    However, $\angle b = 60^\circ$ and $\angle f = 70^\circ$.
+4.  Since $60^\circ \neq 70^\circ$, **lines $l$ and $m$ are NOT parallel**.
+
+---
+
+## Example 3: Multiple Parallel Intersections
+
+**Question:** In the figure, line segment $AB$ is parallel to $CD$, and $AD$ is parallel to $BC$. $\angle DAC$ is $65^\circ$ and $\angle ADC$ is $60^\circ$. What are the measures of angles $\angle CAB$, $\angle ABC$, and $\angle BCD$?
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <polygon points="100,50 250,50 200,150 50,150" stroke="currentColor" stroke-width="2" fill="none" />
+  <line x1="100" y1="50" x2="200" y2="150" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <text x="90" y="40" fill="currentColor" font-size="14">A</text>
+  <text x="260" y="40" fill="currentColor" font-size="14">B</text>
+  <text x="210" y="170" fill="currentColor" font-size="14">C</text>
+  <text x="35" y="170" fill="currentColor" font-size="14">D</text>
+  
+  <text x="110" y="75" fill="currentColor" font-size="12">65°</text>
+  <text x="70" y="140" fill="currentColor" font-size="12">60°</text>
+</svg>
+</div>
+
+**Solution:**
+Because the opposite sides are parallel ($AB \parallel CD$ and $AD \parallel BC$), this shape is a parallelogram. We use transversal theorems to solve it.
+
+1.  **Find $\angle BCD$:**
+    Look at parallel lines $AD$ and $BC$. The line $CD$ acts as a transversal.
+    $\angle ADC$ and $\angle BCD$ are interior angles on the same side of the transversal.
+    Therefore, they add up to $180^\circ$:
+    $60^\circ + \angle BCD = 180^\circ \implies \mathbf{\angle BCD = 120^\circ}$.
+
+2.  **Find $\angle DAB$:**
+    Look at parallel lines $AB$ and $CD$. The line $AD$ acts as a transversal.
+    $\angle ADC$ and $\angle DAB$ are interior angles on the same side.
+    $60^\circ + \angle DAB = 180^\circ \implies \angle DAB = 120^\circ$.
+
+3.  **Find $\angle CAB$:**
+    We know $\angle DAB = 120^\circ$.
+    From the figure, $\angle DAB$ is made of two smaller angles: $\angle DAC + \angle CAB$.
+    $65^\circ + \angle CAB = 120^\circ \implies \mathbf{\angle CAB = 55^\circ}$.
+
+4.  **Find $\angle ABC$:**
+    Using the same interior angles logic on $AB \parallel CD$ with transversal $BC$:
+    $\angle BCD + \angle ABC = 180^\circ$
+    $120^\circ + \angle ABC = 180^\circ \implies \mathbf{\angle ABC = 60^\circ}$.
+    *(Notice how opposite angles of the parallelogram are equal: $ADC = ABC = 60^\circ$!)*

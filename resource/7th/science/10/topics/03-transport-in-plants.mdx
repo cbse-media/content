@@ -1,0 +1,56 @@
+---
+title: "Transport in Plants: Xylem and Phloem"
+description: "Learn about the vascular system of plants that transports water up from the roots and food down from the leaves."
+date: 2024-04-10
+tags: ["xylem", "phloem", "transport", "vascular-system"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Plant's Plumbing System
+
+For photosynthesis to happen in the leaves, water must travel all the way up from the soil. Once the food is made in the leaves, it must travel all the way down to feed the roots. How does a tree move these materials without a heart to pump them?
+
+Plants have a specialized transport system made of two types of tube-like structures:
+
+### 1. Xylem: The Water Pipes
+The **xylem** is a network of tubes that runs from the roots, up through the stem, and out into the branches and leaves. 
+*   **Function:** It transports **water and dissolved minerals** absorbed from the soil.
+*   **Direction:** The flow in the xylem is strictly **upwards** (one-way).
+
+*Experiment:* If you put a white flower (like a balsam or celery stalk) into a glass of water mixed with red ink, the flower petals will turn red after a few hours. If you cut the stem, you will see microscopic red dots—these are the xylem tubes carrying the colored water upwards!
+
+### 2. Phloem: The Food Delivery
+Once the leaves manufacture food (glucose) via photosynthesis, it needs to be delivered to the stem, roots, fruits, and seeds for energy and storage.
+*   **Function:** The **phloem** is a network of tubes that transports the **prepared food**.
+*   **Direction:** The flow in the phloem is **two-way** (up and down) because food needs to reach all living parts of the plant.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Plant Stem -->
+  <rect x="130" y="20" width="40" height="160" fill="#a3e635" stroke="currentColor" stroke-width="2" />
+  
+  <!-- Xylem Tube -->
+  <rect x="135" y="20" width="10" height="160" fill="#3b82f6" stroke="none" />
+  <path d="M 140 170 L 140 30" stroke="#fff" stroke-width="2" marker-end="url(#arrowUp)" />
+  <text x="60" y="100" fill="#3b82f6" font-weight="bold">XYLEM</text>
+  <text x="60" y="120" fill="#3b82f6" font-size="12">(Water Up)</text>
+  
+  <!-- Phloem Tube -->
+  <rect x="155" y="20" width="10" height="160" fill="#ef4444" stroke="none" />
+  <path d="M 160 30 L 160 170" stroke="#fff" stroke-width="2" marker-end="url(#arrowDown)" />
+  <text x="210" y="100" fill="#ef4444" font-weight="bold">PHLOEM</text>
+  <text x="210" y="120" fill="#ef4444" font-size="12">(Food Down)</text>
+  
+  <defs>
+    <marker id="arrowUp" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#fff" />
+    </marker>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 5 10 L 10 0 z" fill="#fff" />
+    </marker>
+  </defs>
+</svg>
+</div>

@@ -1,0 +1,75 @@
+---
+title: "Multiplication of Fractions"
+description: "Learn how to multiply a fraction by a whole number, and a fraction by another fraction using area models and algebraic rules."
+date: 2024-04-10
+tags: ["fractions", "multiplication", "area-model"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Multiplying a Fraction by a Whole Number
+
+Imagine Aaron's pet tortoise walks at a slow pace of $\frac{1}{4}$ kilometre in $1$ hour. How far can it walk in $3$ hours?
+Just like whole numbers, we use multiplication for repeated addition:
+$$ \text{Distance in 3 hours} = 3 \times \frac{1}{4} \text{ km} $$
+$$ = \frac{1}{4} + \frac{1}{4} + \frac{1}{4} = \frac{3}{4} \text{ km} $$
+
+### The Rule
+To multiply a whole number by a fraction, multiply the whole number by the **numerator** of the fraction, and keep the denominator the same.
+$$ 5 \times \frac{2}{3} = \frac{5 \times 2}{3} = \frac{10}{3} $$
+
+## Multiplying a Fraction by a Fraction
+
+What if the tortoise only walks for $\frac{1}{2}$ an hour? We need to find:
+$$ \frac{1}{2} \times \frac{1}{4} $$
+
+We can visualize this by taking a unit square (representing 1 whole) and dividing it.
+1. Divide the whole into $4$ vertical columns (representing fourths). Shade $1$ column ($\frac{1}{4}$).
+2. Now, divide that shaded column in half horizontally ($\frac{1}{2}$).
+
+<div class="flex justify-center my-6">
+<svg width="200" height="200" viewBox="0 0 200 200" stroke="currentColor" fill="none" class="text-foreground">
+  <rect x="20" y="20" width="160" height="160" stroke-width="2" />
+  
+  <!-- Vertical lines (fourths) -->
+  <line x1="60" y1="20" x2="60" y2="180" stroke-width="1" />
+  <line x1="100" y1="20" x2="100" y2="180" stroke-width="1" />
+  <line x1="140" y1="20" x2="140" y2="180" stroke-width="1" />
+  
+  <!-- Horizontal line (halves) -->
+  <line x1="20" y1="100" x2="180" y2="100" stroke-width="1" />
+  
+  <!-- Shaded Area (1/8) -->
+  <rect x="20" y="20" width="40" height="80" fill="#fcd34d" opacity="0.8" />
+  <path d="M 20 20 L 60 100 M 60 20 L 20 100 M 20 60 L 60 60" stroke="#b45309" stroke-width="1" />
+  
+  <text x="40" y="65" fill="#000" font-weight="bold" text-anchor="middle">1/8</text>
+</svg>
+</div>
+
+The whole is now divided into $8$ equal parts, and our target area is exactly $1$ of those parts. 
+Therefore, $\frac{1}{2} \times \frac{1}{4} = \frac{1}{8}$.
+
+### Brahmagupta's Formula
+Generalizing this area model, we get the fundamental formula for multiplying fractions:
+$$ \frac{a}{b} \times \frac{c}{d} = \frac{a \times c}{b \times d} $$
+*(Multiply the numerators together, and multiply the denominators together).*
+
+## Simplifying to Lowest Form
+
+Sometimes, multiplying numerators and denominators results in large numbers. It is highly recommended to **cancel common factors** *before* you multiply.
+
+**Example:** Multiply $\frac{12}{7} \times \frac{5}{24}$
+
+Instead of doing $12 \times 5 = 60$ and $7 \times 24 = 168$, notice that $12$ (top) and $24$ (bottom) share a common factor of $12$.
+$$ \frac{\cancel{12}^1}{7} \times \frac{5}{\cancel{24}^2} = \frac{1 \times 5}{7 \times 2} = \frac{5}{14} $$
+
+## Is the Product Always Greater?
+
+When you multiply whole numbers (like $3 \times 5 = 15$), the product is larger than both numbers. **This is not always true for fractions!**
+
+*   **Situation 1:** If both fractions are $> 1$ (e.g., $\frac{4}{3} \times 4$), the product ($\frac{16}{3}$) is **greater** than both.
+*   **Situation 2:** If both fractions are between $0$ and $1$ (e.g., $\frac{3}{4} \times \frac{2}{5}$), the product ($\frac{3}{10}$) is **less** than both numbers.
+*   **Situation 3:** If one fraction is $> 1$ and the other is $< 1$, the product falls **between** the two numbers.

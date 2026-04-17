@@ -1,0 +1,64 @@
+---
+title: "The Notion of Letter-Numbers"
+description: "Understanding how and why we use letters to represent variable quantities in mathematics."
+date: 2024-04-10
+tags: ["algebra", "variables", "letter-numbers", "formulas"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Using Letters to Represent Unknowns
+
+Often, mathematical relationships are easiest to understand when we use a shorthand form. 
+Instead of writing out long phrases like `"The number of matchsticks required"`, we use a convenient symbol, usually a letter.
+
+### Example: Age Difference
+Shabnam is 3 years older than Aftab. 
+If we know Aftab's age, we just add 3 to get Shabnam's age.
+*   If Aftab is $10$, Shabnam is $10 + 3 = 13$.
+*   If Aftab is $23$, Shabnam is $23 + 3 = 26$.
+
+Let's use the letter **$a$** to denote Aftab's age, and **$s$** to denote Shabnam's age. The relationship can be written as:
+$$ s = a + 3 $$
+
+Here, $a$ and $s$ are **letter-numbers** (variables), and $a + 3$ is an **algebraic expression**.
+
+## Forming Expressions for Patterns
+
+Imagine making the letter "L" using matchsticks. 
+<div class="flex justify-center my-6">
+<svg width="200" height="60" viewBox="0 0 200 60" stroke="currentColor" fill="none">
+  <polyline points="10,10 10,50 40,50" stroke-width="4" stroke="#d97706" />
+  <circle cx="10" cy="10" r="3" fill="#dc2626" stroke="none" />
+  <circle cx="10" cy="50" r="3" fill="#dc2626" stroke="none" />
+  <circle cx="40" cy="50" r="3" fill="#dc2626" stroke="none" />
+</svg>
+</div>
+
+Every "L" requires exactly $2$ matchsticks.
+*   To make $5$ Ls: $5 \times 2 = 10$ matchsticks.
+*   To make $45$ Ls: $45 \times 2 = 90$ matchsticks.
+
+If we want to make **$n$** number of Ls, the number of matchsticks needed will be:
+$$ 2 \times n $$
+
+<Callout variant="tip">
+**Omission of the Multiplication Symbol:**
+As a standard practice in algebra, we shorten $4 \times n$ to **$4n$** by skipping the multiplication sign. We always write the number first, followed by the letter.
+So, $2 \times n$ is simply written as **$2n$**.
+</Callout>
+
+## Expressions with Multiple Variables
+
+Real-world scenarios often involve more than one changing quantity.
+
+**Example:** Ketaki prepares coconut-jaggery laddus. A coconut costs ₹35, and 1 kg of jaggery costs ₹60.
+If she buys $c$ coconuts and $j$ kg of jaggery, what is the total cost?
+
+*   Cost of coconuts $= c \times 35 = 35c$
+*   Cost of jaggery $= j \times 60 = 60j$
+*   **Total Cost Expression:** **$35c + 60j$**
+
+By replacing $c$ and $j$ with actual numbers, we can calculate the exact cost for any shopping trip instantly!

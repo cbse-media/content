@@ -1,0 +1,62 @@
+---
+title: "Electric Cells and Batteries"
+description: "Understand the basic source of portable electricity: the electric cell and how to combine them into a battery."
+date: 2024-04-10
+tags: ["electric-cell", "battery", "terminals", "electricity"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Electric Cell
+
+An **electric cell** is a portable source of electrical energy. If you look closely at a standard cell (like the ones used in remote controls or clocks), you will notice a few key features:
+
+1.  **Two Terminals:** Every electric cell has two ends, called terminals.
+2.  **Positive Terminal (+):** This is the end with the small protruding metal cap.
+3.  **Negative Terminal (-):** This is the flat metal disc on the opposite end.
+
+Electricity is generated inside the cell through chemical reactions.
+
+## What is a Battery?
+
+In many devices, a single cell does not provide enough energy, so we use two or more cells together. 
+
+<Callout variant="info">
+**Definition:**
+A combination of two or more electric cells is called a **battery**.
+</Callout>
+
+### How to Connect Cells in a Battery
+
+To make a battery work correctly, the cells must be connected in a specific order:
+**The positive terminal (+) of one cell must be connected to the negative terminal (-) of the next cell.**
+
+If you put two positive terminals together, or two negative terminals together, the current will not flow properly!
+
+<div class="flex justify-center my-6">
+<svg width="400" height="100" viewBox="0 0 400 100" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Cell 1 -->
+  <rect x="50" y="30" width="80" height="40" fill="#dc2626" rx="5" />
+  <rect x="130" y="40" width="10" height="20" fill="#9ca3af" /> <!-- Positive cap -->
+  <text x="120" y="55" fill="#fff" font-weight="bold">+</text>
+  <text x="60" y="55" fill="#fff" font-weight="bold">-</text>
+  
+  <!-- Wire connecting them (Internal or Spring) -->
+  <line x1="140" y1="50" x2="160" y2="50" stroke-width="4" stroke="#4b5563" />
+
+  <!-- Cell 2 -->
+  <rect x="160" y="30" width="80" height="40" fill="#dc2626" rx="5" />
+  <rect x="240" y="40" width="10" height="20" fill="#9ca3af" /> <!-- Positive cap -->
+  <text x="230" y="55" fill="#fff" font-weight="bold">+</text>
+  <text x="170" y="55" fill="#fff" font-weight="bold">-</text>
+  
+  <text x="150" y="90" fill="currentColor" text-anchor="middle">Correct Connection: (+ to -)</text>
+</svg>
+</div>
+
+*Note: In everyday language, people often call a single cell a "battery" (like your mobile phone battery), but technically, a battery is a collection of cells.*
+
+### Cells Side-by-Side
+Sometimes, devices like remote controls require you to place cells side-by-side instead of end-to-end. If you look inside the battery compartment, you will see a thick wire or metal strip connecting the positive terminal of one slot to the negative terminal of the next slot, achieving the exact same connection!

@@ -1,0 +1,91 @@
+---
+title: "Exercise 7.2: Angles & Altitudes"
+description: "Solutions dealing with finding missing angles, the angle sum property, and constructing different types of triangles."
+date: 2024-04-10
+tags: ["solutions", "angles", "angle-sum-property", "altitudes"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Figure it Out (Page 18 / PDF 163)
+
+**1. For each of the following angles, find another angle for which a triangle is (a) possible, (b) not possible.**
+*(Rule: A triangle is possible if Angle 1 + Angle 2 < 180°).*
+
+**(a) $30^\circ$**
+*   **Possible (sum < 180):** $50^\circ$, $100^\circ$ (e.g., $30+100 = 130 < 180$)
+*   **Not Possible (sum $\geq$ 180):** $150^\circ$, $160^\circ$ (e.g., $30+150 = 180$)
+
+**(b) $70^\circ$**
+*   **Possible:** $40^\circ$, $90^\circ$ 
+*   **Not Possible:** $110^\circ$, $120^\circ$
+
+**(c) $54^\circ$**
+*   **Possible:** $60^\circ$, $100^\circ$
+*   **Not Possible:** $126^\circ$, $150^\circ$
+
+**(d) $144^\circ$**
+*   **Possible:** $10^\circ$, $30^\circ$
+*   **Not Possible:** $36^\circ$, $50^\circ$
+
+---
+
+**2. Determine which of the following pairs can be the angles of a triangle and which cannot:**
+*(Rule: Sum must be strictly less than $180^\circ$ to leave room for a third angle).*
+
+**(a) $35^\circ, 150^\circ$** $\implies$ Sum $= 185^\circ$. **Cannot** (Too big).
+**(b) $70^\circ, 30^\circ$** $\implies$ Sum $= 100^\circ$. **Can**.
+**(c) $90^\circ, 85^\circ$** $\implies$ Sum $= 175^\circ$. **Can**.
+**(d) $50^\circ, 150^\circ$** $\implies$ Sum $= 200^\circ$. **Cannot**.
+
+---
+
+## Figure it Out (Page 20 / PDF 165)
+
+**1. Find the third angle of a triangle when two of the angles are:**
+*(Rule: Angle 3 = $180^\circ - (\text{Angle } 1 + \text{Angle } 2)$).*
+
+**(a) $36^\circ, 72^\circ$** $\implies 180 - (36+72) = 180 - 108 = \mathbf{72^\circ}$.
+**(b) $150^\circ, 15^\circ$** $\implies 180 - (150+15) = 180 - 165 = \mathbf{15^\circ}$.
+**(c) $90^\circ, 30^\circ$** $\implies 180 - (90+30) = 180 - 120 = \mathbf{60^\circ}$.
+**(d) $75^\circ, 45^\circ$** $\implies 180 - (75+45) = 180 - 120 = \mathbf{60^\circ}$.
+
+---
+
+**2. Can you construct a triangle all of whose angles are equal to $70^\circ$? If two are $70^\circ$, what is the third? If all angles must be equal, what is the measure?**
+*   **Solution:**
+    *   No, you cannot have a triangle with all angles equal to $70^\circ$, because $70+70+70 = 210^\circ$, which is greater than $180^\circ$.
+    *   If two angles are $70^\circ$, the sum is $140^\circ$. The third angle must be $180 - 140 = \mathbf{40^\circ}$.
+    *   If all three angles must be exactly equal, we divide the total sum by 3: $180^\circ \div 3 = \mathbf{60^\circ}$. (This forms an equilateral triangle!).
+
+---
+
+**3. Here is a triangle in which we know $\angle B = \angle C$ and $\angle A = 50^\circ$. Find $\angle B$ and $\angle C$.**
+*   **Solution:**
+    Sum of angles $= 180^\circ$.
+    $\angle A + \angle B + \angle C = 180^\circ$
+    Since $\angle B = \angle C$, we can substitute:
+    $50^\circ + 2(\angle B) = 180^\circ$
+    $2(\angle B) = 130^\circ$
+    $\angle B = \mathbf{65^\circ}$.
+    Therefore, both $\angle B$ and $\angle C$ are **$65^\circ$**.
+
+---
+
+## Figure it Out (Pages 25-26 / PDF 170-171)
+
+**3. Construct a right-angled triangle $\Delta ABC$ with $\angle B = 90^\circ$, $AC = 5\text{cm}$. How many different triangles exist with these measurements?**
+*   **Solution:** Take $AC$ as the base ($5\text{cm}$). We need the third vertex $B$ to form a $90^\circ$ angle. 
+If we pick an arbitrary angle for $\angle A$ (say $30^\circ$), then $\angle C$ must be $180 - 90 - 30 = 60^\circ$. 
+Because we can pick *any* acute angle for $\angle A$ (e.g., $10^\circ, 45^\circ, 89^\circ$), the third point $B$ can slide along a semi-circle path above the base $AC$. 
+Therefore, **infinitely many** different right-angled triangles exist with a hypotenuse of $5\text{cm}$.
+
+**4. Explore if it is possible to construct an equilateral triangle that is (i) right-angled (ii) obtuse-angled.**
+*   **Solution:** An equilateral triangle must have all three angles equal. $180 \div 3 = 60^\circ$. Because every angle must be exactly $60^\circ$ (which is acute), it is **impossible** for an equilateral triangle to be right-angled ($90^\circ$) or obtuse-angled ($>90^\circ$).
+
+**Also construct an isosceles triangle that is (i) right-angled (ii) obtuse-angled.**
+*   **Solution:** 
+    *   **(i) Right-angled Isosceles:** Yes, possible! One angle is $90^\circ$. The other two must be equal and add up to $90^\circ$. They are $45^\circ$ and $45^\circ$.
+    *   **(ii) Obtuse-angled Isosceles:** Yes, possible! Pick an obtuse angle, say $120^\circ$. The remaining $60^\circ$ is split equally between the other two angles: $30^\circ$ and $30^\circ$.

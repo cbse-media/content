@@ -1,0 +1,76 @@
+---
+title: "Understanding Parity"
+description: "Learn about the properties of even and odd numbers and how they interact when added or subtracted."
+date: 2024-04-10
+tags: ["parity", "even", "odd", "algebra"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is Parity?
+
+We use the word **parity** to denote the property of being even or odd. 
+*   **Even numbers:** $2, 4, 6, 8, 10, \dots$
+*   **Odd numbers:** $1, 3, 5, 7, 9, \dots$
+
+A great way to visualize parity is by pairing objects. Any even number can be arranged in pairs without any leftovers. An odd number is one more than a collection of pairs; it will always have one leftover.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor">
+  <!-- Even Number (6) -->
+  <text x="75" y="30" text-anchor="middle" font-size="16" fill="currentColor">Even (6)</text>
+  <circle cx="50" cy="60" r="8" fill="#10b981" />
+  <circle cx="50" cy="90" r="8" fill="#10b981" />
+  
+  <circle cx="75" cy="60" r="8" fill="#10b981" />
+  <circle cx="75" cy="90" r="8" fill="#10b981" />
+  
+  <circle cx="100" cy="60" r="8" fill="#10b981" />
+  <circle cx="100" cy="90" r="8" fill="#10b981" />
+  
+  <!-- Odd Number (7) -->
+  <text x="225" y="30" text-anchor="middle" font-size="16" fill="currentColor">Odd (7)</text>
+  <circle cx="190" cy="60" r="8" fill="#ec4899" />
+  <circle cx="190" cy="90" r="8" fill="#ec4899" />
+  
+  <circle cx="215" cy="60" r="8" fill="#ec4899" />
+  <circle cx="215" cy="90" r="8" fill="#ec4899" />
+  
+  <circle cx="240" cy="60" r="8" fill="#ec4899" />
+  <circle cx="240" cy="90" r="8" fill="#ec4899" />
+  
+  <circle cx="265" cy="75" r="8" fill="#ec4899" /> <!-- The Leftover -->
+  
+  <path d="M 255 75 L 240 40" stroke="currentColor" stroke-width="1.5" fill="none" />
+  <text x="240" y="35" text-anchor="middle" font-size="12" fill="currentColor">Leftover!</text>
+</svg>
+</div>
+
+## Adding Even and Odd Numbers
+
+When we add numbers together, we can predict the parity of the answer without doing the exact calculation!
+
+1.  **Even + Even = Even:** If you take two sets that pair up perfectly, merging them creates a larger set that also pairs up perfectly.
+2.  **Odd + Odd = Even:** If you have two odd sets, each has *one* leftover. When you merge the sets, those two leftovers pair up with each other! The final sum is Even.
+3.  **Even + Odd = Odd:** A perfect set plus a set with one leftover will always result in a set with one leftover. The sum is Odd.
+
+<Callout variant="tip">
+**Quick Check:** 
+Can $5$ odd numbers ever add up to $30$?
+*   Odd + Odd = Even
+*   Odd + Odd = Even
+*   Even + Even + (the 5th Odd) = **Odd**.
+Therefore, the sum of 5 odd numbers is *always* odd. It is impossible for them to add up to 30!
+</Callout>
+
+## Parity in Algebra
+
+We can represent parity using algebraic expressions. If $n$ is any position in a sequence ($1, 2, 3, \dots$):
+*   The $n^{th}$ **Even** number is given by the formula: **$2n$**
+*   The $n^{th}$ **Odd** number is given by the formula: **$2n - 1$**
+
+**Example:** What is the 100th odd number?
+Formula: $2n - 1$
+Substitute $n = 100$: $2(100) - 1 = 200 - 1 = \mathbf{199}$.

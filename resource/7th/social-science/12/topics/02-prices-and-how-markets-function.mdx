@@ -1,0 +1,70 @@
+---
+title: "Prices and How Markets Function"
+description: "Understanding the interactions between buyers and sellers, negotiation, and how prices are determined through demand and supply."
+date: 2026-04-17
+tags: ["economics", "price", "demand", "supply", "negotiation"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Core Features of a Market
+
+For any place (physical or online) to be called a market, certain features are required:
+1.  There must be a **Buyer** (who demands the product).
+2.  There must be a **Seller** (who supplies the product).
+3.  They must agree on a **Price**.
+
+<Callout variant="info">
+**Price:** The amount at which a buyer is willing to buy, and a seller is willing to sell particular goods or services.
+</Callout>
+
+Often, buyers and sellers negotiate and bargain to arrive at an acceptable price. 
+
+## How are Prices Determined?
+
+Prices respond to how buyers and sellers interact in the market. This interaction is basically the dance between **Demand** (from buyers) and **Supply** (from sellers).
+
+<Callout variant="tip">
+*   **Demand:** Quantity of a product or service that consumers are willing and able to purchase at a particular price at a given time.
+*   **Supply:** Quantity of a product or service that sellers are willing and able to sell at a particular price at a given time.
+</Callout>
+
+### The Guava Cart Scenario
+
+Imagine a seller with a cart full of guavas:
+
+1.  **If the seller fixes the price very high (e.g., ₹80/kg):** Buyers will find it too expensive and will not buy. The seller will be left with unsold, rotting guavas.
+2.  **If the seller fixes the price very low (e.g., ₹20/kg):** Buyers will rush to buy, and the guavas will sell out immediately, but the seller will hardly make any profit (or might even incur a loss).
+3.  **The "Just Right" Equilibrium (e.g., ₹40/kg):** Over time, the buyer and seller negotiate. The seller assesses how much buyers are willing to pay and how much profit he needs to survive. The price settles at a point that is high enough for the seller to make a living, and low enough for the buyer to afford.
+
+<div class="flex justify-center my-6">
+<svg viewBox="0 0 400 300" width="100%" max-width="500px" style="background-color: transparent; font-family: sans-serif;">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="350" y2="250" stroke="currentColor" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="currentColor" stroke-width="2" />
+  
+  <!-- Labels -->
+  <text x="180" y="280" fill="currentColor" font-weight="bold">Quantity of Guavas</text>
+  <text x="10" y="150" fill="currentColor" font-weight="bold" transform="rotate(-90 20 150)">Price (₹)</text>
+  
+  <!-- Demand Curve (Downward sloping) -->
+  <line x1="80" y1="70" x2="320" y2="220" stroke="#ef4444" stroke-width="3" />
+  <text x="330" y="230" fill="#ef4444" font-weight="bold">Demand</text>
+  
+  <!-- Supply Curve (Upward sloping) -->
+  <line x1="80" y1="220" x2="320" y2="70" stroke="#3b82f6" stroke-width="3" />
+  <text x="330" y="80" fill="#3b82f6" font-weight="bold">Supply</text>
+  
+  <!-- Equilibrium Point -->
+  <circle cx="200" cy="145" r="5" fill="currentColor" />
+  <line x1="50" y1="145" x2="200" y2="145" stroke="currentColor" stroke-dasharray="5,5" />
+  <line x1="200" y1="250" x2="200" y2="145" stroke="currentColor" stroke-dasharray="5,5" />
+  
+  <text x="210" y="140" fill="currentColor" font-weight="bold">"Just Right" Price</text>
+  <text x="15" y="150" fill="currentColor">₹40</text>
+</svg>
+</div>
+
+Learning from these scenarios, sellers assess approximately what quantity of goods are needed by the buyers and offer that quantity in the market in the future.

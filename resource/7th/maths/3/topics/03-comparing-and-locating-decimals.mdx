@@ -1,0 +1,86 @@
+---
+title: "Comparing and Locating Decimals"
+description: "Learn how to plot decimals on a number line and figure out which decimal number is larger."
+date: 2024-04-10
+tags: ["number-line", "comparing-decimals", "zero-dilemma"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Locating Decimals on a Number Line
+
+Consider the decimal number $1.4$. It is equal to $1$ unit and $4$ tenths. This means that if we look at the segment between $1$ and $2$ on a number line, we must divide it into $10$ equal parts. $1.4$ is located at the 4th mark after $1$.
+
+<div class="flex justify-center my-6">
+<svg width="500" height="80" viewBox="0 0 500 80" stroke="currentColor" fill="none" class="text-foreground">
+    <!-- Number line -->
+    <line x1="20" y1="40" x2="480" y2="40" stroke-width="2" />
+    <path d="M 470 30 L 480 40 L 470 50" stroke-width="2" />
+    <path d="M 30 30 L 20 40 L 30 50" stroke-width="2" />
+
+    <!-- Ticks -->
+    <!-- 6.4 -->
+    <line x1="100" y1="30" x2="100" y2="50" stroke-width="2" />
+    <text x="100" y="70" text-anchor="middle" fill="currentColor" font-size="14">6.4</text>
+    
+    <!-- 6.5 -->
+    <line x1="250" y1="30" x2="250" y2="50" stroke-width="2" />
+    <text x="250" y="70" text-anchor="middle" fill="currentColor" font-size="14">6.5</text>
+    
+    <!-- 6.6 -->
+    <line x1="400" y1="30" x2="400" y2="50" stroke-width="2" />
+    <text x="400" y="70" text-anchor="middle" fill="currentColor" font-size="14">6.6</text>
+
+    <!-- Sub-ticks (hundredths) between 6.4 and 6.5 -->
+    <line x1="115" y1="35" x2="115" y2="45" stroke-width="1" />
+    <line x1="130" y1="35" x2="130" y2="45" stroke-width="1" />
+    <line x1="145" y1="35" x2="145" y2="45" stroke-width="1" />
+    <line x1="160" y1="35" x2="160" y2="45" stroke-width="1" />
+    <line x1="175" y1="30" x2="175" y2="50" stroke-width="1.5" /> <!-- Middle tick 6.45 -->
+    <line x1="190" y1="35" x2="190" y2="45" stroke-width="1" />
+    <line x1="205" y1="35" x2="205" y2="45" stroke-width="1" />
+    <line x1="220" y1="35" x2="220" y2="45" stroke-width="1" />
+    <line x1="235" y1="35" x2="235" y2="45" stroke-width="1" />
+    
+    <text x="175" y="20" text-anchor="middle" fill="currentColor" font-size="12">6.45</text>
+</svg>
+</div>
+
+If we needed to locate $6.45$, we would look exactly halfway between $6.4$ and $6.5$.
+
+## The Zero Dilemma!
+
+Is $0.2$ the same as $0.20$ or $0.200$? 
+Some people think that putting zeros on the right side alters the value of the decimal number. Let's use place value to find out.
+
+| Decimal Number | Units | Tenths | Hundredths | Thousandths |
+| :--- | :---: | :---: | :---: | :---: |
+| $0.2$ | $0$ | $2$ | | |
+| $0.20$ | $0$ | $2$ | $0$ | |
+| $0.200$ | $0$ | $2$ | $0$ | $0$ |
+
+**Conclusion:** We can see that $0.2$, $0.20$, and $0.200$ represent the exact same quantity: $2$ tenths. Adding trailing zeros to the right of a decimal fraction does NOT change its value!
+*(Note: However, $0.2$, $0.02$, and $0.002$ are drastically different!)*
+
+## Comparing Decimals: Which is Larger?
+
+Which is larger: $6.456$ or $6.465$?
+
+To compare decimals, we follow a simple rule: **Start from the most significant digit (the leftmost digit) and compare moving right.**
+
+1.  **Compare Units:** Both numbers have a $6$ in the units place. ($6 = 6$)
+2.  **Compare Tenths:** Both numbers have a $4$ in the tenths place. ($4 = 4$)
+3.  **Compare Hundredths:** The first number has a $5$, but the second number has a $6$.
+4.  Since $6 > 5$, we know instantly that **$6.465 > 6.456$**.
+
+<Callout variant="tip">
+**Why can we stop comparing?**
+Once we find a difference in a larger place value (like hundredths), it doesn't matter what digits come after it (like thousandths). Even if the first number had a $9$ in the thousandths place and the second had a $0$, the hundredths place difference is far more powerful!
+</Callout>
+
+### Example
+Which is greater: $3.81$ or $13.800$?
+*   Look at the whole numbers first! The first number has $3$ units, the second has $13$ units. 
+*   Since $13 > 3$, **$13.800 > 3.81$**. We don't even need to look at the decimal parts.

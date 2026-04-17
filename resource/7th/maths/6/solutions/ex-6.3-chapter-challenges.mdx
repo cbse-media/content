@@ -1,0 +1,95 @@
+---
+title: "Exercise 6.3: Comprehensive Chapter Challenges"
+description: "Detailed solutions to the final block of puzzles, sequences, and cryptarithms."
+date: 2024-04-10
+tags: ["solutions", "cryptarithms", "fibonacci", "mixed-puzzles"]
+order: 8
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Figure it Out (Pages 17 - 19)
+
+**1. A light bulb is ON. Dorjee toggles its switch 77 times. Will the bulb be on or off? Why?**
+*   **Solution:** 
+    Start: ON.
+    1 toggle (Odd): OFF
+    2 toggles (Even): ON
+    3 toggles (Odd): OFF
+    Since $77$ is an **Odd** number of toggles, the bulb will end up in the **OFF** state.
+
+**2. Liswini has a large old encyclopaedia. She counted 50 loose sheets in total, each printed on both sides. Can the sum of the page numbers of the loose sheets be 6000? Why or why not?**
+*   **Solution:** 
+    50 sheets printed on both sides = 100 pages.
+    The sum of the first 100 page numbers is $(100 \times 101) / 2 = 5050$.
+    Even if the sheets were from the middle of the book (e.g., pages 101 to 200), the sum of 50 sheets (100 consecutive pages) must be evaluated by parity.
+    Every single sheet has one odd page number and one even page number (e.g., pg 1 and 2). 
+    Sum of 1 sheet = Odd + Even = **Odd**.
+    We have 50 sheets. So we are adding 50 Odd numbers together. 
+    Since 50 is an even amount, adding 50 Odd numbers results in an **Even** sum.
+    Wait, $6000$ is an even number. Can it be 6000?
+    Let the first page be $x$. Sum $= 100x + 4950$.
+    $100x + 4950 = 6000 \implies 100x = 1050 \implies x = 10.5$.
+    Since page numbers must be whole numbers, the sum **cannot be 6000**.
+
+**3. 2x3 Grid Parity filling**
+*(Given: Row 1 sum=O, Row 2 sum=E. Col 1 sum=E, Col 2 sum=E, Col 3 sum=O. Need to place 3 'e' and 3 'o'.)*
+*   **Solution:**
+    *   Row 1: **e, o, e** (Sum = o)
+    *   Row 2: **e, o, o** (Sum = e)
+    *   Check columns: Col 1 (e+e=e). Col 2 (o+o=e). Col 3 (e+o=o).
+    *   Check counts: 3 'e's and 3 'o's used. Perfect!
+
+**4. Make a $3 \times 3$ magic square with 0 as the magic sum. Use negative numbers.**
+*   **Solution:** 
+    Center must be $0 \div 3 = 0$.
+    Numbers used must balance out: $-4, -3, -2, -1, 0, 1, 2, 3, 4$.
+    Apply the standard layout:
+    Row 1: `-3, 4, -1`
+    Row 2: ` 2, 0, -2`
+    Row 3: ` 1,-4,  3`
+
+**6. What is the parity of the sum of the numbers from 1 to 100?**
+*   **Solution:** From 1 to 100, there are exactly 50 odd numbers and 50 even numbers.
+    The sum of any amount of even numbers is Even.
+    The sum of an *even amount* (50) of odd numbers is Even.
+    Even + Even = **Even**. (Actual sum is 5050).
+
+**7. Two consecutive Virahānka numbers are 987 and 1597. What are the next 2? What are the previous 2?**
+*   **Solution:** 
+    *   Next 1: $987 + 1597 = \mathbf{2584}$
+    *   Next 2: $1597 + 2584 = \mathbf{4181}$
+    *   Previous 1: $1597 - 987 = \mathbf{610}$
+    *   Previous 2: $987 - 610 = \mathbf{377}$
+
+**8. Staircase Problem: Climb an 8-step staircase taking 1 or 2 steps at a time. How many ways?**
+*   **Solution:** This exactly mirrors the Virahānka rhythm problem (beats of 1 and 2)! 
+    The sequence of ways for $n$ steps is: $1, 2, 3, 5, 8, 13, 21, 34$.
+    For 8 steps, there are **34 ways**.
+
+**9. What is the parity of the 20th term of the Virahānka sequence?**
+*   **Solution:** Look at the parity pattern of the sequence:
+    1(O), 2(E), 3(O), 5(O), 8(E), 13(O), 21(O), 34(E)...
+    Pattern: **Odd, Even, Odd, Odd, Even, Odd...**
+    Every 3rd term is Even (positions 2, 5, 8, 11, 14, 17, 20). 
+    The 20th term is an **Even** number.
+
+**10. Identify the statements that are true.**
+*   **(a) The expression $4m – 1$ always gives odd numbers.** $\implies$ **True.** (Even - 1 = Odd).
+*   **(b) All even numbers can be expressed as $6j – 4$.** $\implies$ **False.** This only generates specific even numbers (e.g., $2, 8, 14$). It skips $4, 6, 10, 12$.
+*   **(c) Both expressions $2p + 1$ and $2q – 1$ describe all odd numbers.** $\implies$ **True.** Both ensure the number is exactly 1 unit away from an even multiple.
+*   **(d) The expression $2f + 3$ gives both even and odd numbers.** $\implies$ **False.** $2f$ is always even. Even + 3 (Odd) = Always Odd.
+
+**11. Solve this cryptarithm:**
+$$ \begin{array}{r@{\quad}l} U T & \\ + T A & \\ \hline T A T & \end{array} $$
+*   **Solution:** 
+    A 2-digit plus a 2-digit number yields a 3-digit number. The hundreds digit ($T$) can only possibly be $1$ (maximum carry over from $99+99=198$).
+    So, **$T = 1$**.
+    Substitute $T=1$:
+    $$ U 1 + 1 A = 1 A 1 $$
+    Units column: $1 + A = 1 \implies$ **$A = 0$**.
+    Substitute $A=0$:
+    $$ U 1 + 1 0 = 1 0 1 $$
+    Tens column: $U + 1 = 10 \implies$ **$U = 9$**.
+    **Answer:** $T=1, A=0, U=9$. ($91 + 10 = 101$).

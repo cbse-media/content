@@ -1,0 +1,73 @@
+---
+title: "Angle Sum Property & Exterior Angles"
+description: "Proving that the angles of a triangle always add up to 180 degrees, and exploring the rules of exterior angles."
+date: 2024-04-10
+tags: ["angles", "angle-sum-property", "exterior-angles", "geometry"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Angle Sum Property
+
+What is the sum of the three interior angles of a triangle?
+Let's prove it using what we learned about parallel lines!
+
+Imagine a triangle $ABC$. We want to find $\angle A + \angle B + \angle C$.
+
+**The Proof:**
+1.  Draw a straight line $XY$ passing through the top vertex $A$, such that $XY$ is completely parallel to the base $BC$.
+2.  Because $XY \parallel BC$, the line $AB$ acts as a transversal. 
+    Therefore, the alternate interior angles are equal: **$\angle XAB = \angle B$**.
+3.  Similarly, the line $AC$ acts as a transversal.
+    Therefore, the alternate interior angles are equal: **$\angle YAC = \angle C$**.
+4.  Look at vertex $A$. The angles $\angle XAB$, $\angle BAC$ (which is $\angle A$), and $\angle YAC$ sit together on the straight line $XY$.
+    Therefore, they must add up to $180^\circ$:
+    $$ \angle XAB + \angle BAC + \angle YAC = 180^\circ $$
+5.  Substitute the alternate angles we found in steps 2 and 3:
+    $$ \angle B + \angle A + \angle C = 180^\circ $$
+
+<Callout variant="tip">
+**Angle Sum Property:**
+The sum of the three interior angles in *any* triangle is always exactly **$180^\circ$**.
+</Callout>
+
+## Exterior Angles
+
+An **exterior angle** of a triangle is formed when you extend one of the sides of the triangle outwards.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="150" viewBox="0 0 300 150" stroke="currentColor" fill="none" class="text-foreground">
+    <!-- Triangle -->
+    <polygon points="100,120 200,120 150,40" stroke-width="2" />
+    <!-- Extended side -->
+    <line x1="200" y1="120" x2="280" y2="120" stroke-width="2" />
+    
+    <!-- Labels -->
+    <text x="150" y="30" fill="currentColor" text-anchor="middle">A</text>
+    <text x="90" y="135" fill="currentColor">B</text>
+    <text x="200" y="135" fill="currentColor">C</text>
+    <text x="280" y="135" fill="currentColor">D</text>
+    
+    <!-- Exterior Angle Arc -->
+    <path d="M 220 120 A 20 20 0 0 0 207 109" stroke-width="2" />
+    <text x="260" y="100" fill="currentColor" font-size="12" text-anchor="middle">Exterior Angle</text>
+</svg>
+</div>
+
+In the figure, $\angle ACD$ is an exterior angle.
+
+### The Exterior Angle Theorem
+
+How is the exterior angle related to the interior angles?
+1.  We know $\angle ACB$ and $\angle ACD$ form a linear pair (a straight line):
+    $$ \angle ACB + \angle ACD = 180^\circ $$
+2.  We also know the sum of the interior angles of the triangle is $180^\circ$:
+    $$ \angle A + \angle B + \angle ACB = 180^\circ $$
+3.  Since both equations equal $180^\circ$, we can set them equal to each other:
+    $$ \angle ACB + \angle ACD = \angle A + \angle B + \angle ACB $$
+4.  Subtract $\angle ACB$ from both sides, and we are left with:
+    $$ \angle ACD = \angle A + \angle B $$
+
+**Rule:** The measure of an exterior angle of a triangle is exactly equal to the sum of the **two opposite interior angles**.

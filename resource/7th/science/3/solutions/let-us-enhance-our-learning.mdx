@@ -1,0 +1,87 @@
+---
+title: "Solutions: Let Us Enhance Our Learning"
+description: "Detailed answers to the textbook exercises on circuits, switches, conductors, and troubleshooting."
+date: 2024-04-10
+tags: ["solutions", "exercises", "circuits", "troubleshooting"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Multiple Choice and Objective Questions (Pages 37 - 39)
+
+**1. Choose the incorrect statement.**
+(i) A switch is the source of electric current in a circuit.
+(ii) A switch helps to complete or break the circuit.
+(iii) A switch helps us to use electricity as per our requirement.
+(iv) When the switch is in ‘OFF’ position, there is an air gap between its terminals.
+
+*   **Solution:** The incorrect statement is **(i)**. A switch is *not* the source of electric current; the electric cell or battery is the source. The switch merely controls the flow.
+
+**2. Observe Fig. 3.16. With which material connected between the ends A and B, the lamp will not glow?**
+*   **Solution:** The lamp will not glow if an **insulator** is connected between A and B. Examples of materials that would prevent the lamp from glowing: a piece of wood, a rubber eraser, a plastic ruler, or a piece of paper. (If a metal key or coin was used, the lamp *would* glow).
+
+**3. In Fig. 3.17, if the filament of one of the lamps is broken, will the other glow? Justify your answer.**
+*   *Observation of Fig 3.17:* The diagram shows two lamps connected in series (one after the other in a single loop) with a battery.
+*   **Solution:** **No, the other lamp will not glow.** Because the lamps are connected in a single sequential path, if the filament of one lamp breaks, it creates a physical gap in the circuit (an open circuit). The electric current cannot cross this gap to reach the second lamp.
+
+**4. A student forgot to remove the insulator covering from the connecting wires while making a circuit. If the lamp and the cell are working properly, will the lamp glow?**
+*   **Solution:** **No.** The plastic or rubber covering on the wire is an insulator. If it is not stripped away to expose the conductive metal inside, the metal cannot make contact with the terminals of the cell or the lamp. The circuit remains open, and current will not flow.
+
+**5. Draw a circuit diagram for a simple torch using symbols for electric components.**
+*   **Solution:** A simple torch circuit requires a battery (at least two cells), a switch, and a lamp, all connected in a single loop.
+    *   Draw a battery symbol (long line, short thick line, dashed line, long line, short thick line).
+    *   Connect it with a straight line to a switch symbol.
+    *   Connect the switch to a lamp symbol (circle with an X).
+    *   Connect the lamp back to the other side of the battery.
+
+**6. In Fig. 3.18 (Two lamps $L_1, L_2$ and two switches $S_1, S_2$):**
+*(Observation: The circuit has a main switch $S_1$ connected to the battery. After $S_1$, the path splits into two parallel branches. $L_1$ is on the top branch. $L_2$ is on the bottom branch, but the bottom branch also has its own switch $S_2$.)*
+*   **(i) If $S_2$ is ON, $S_1$ is OFF:** Neither lamp will glow. $S_1$ is the main switch; if it is OFF, no current can leave the battery area.
+*   **(ii) If $S_2$ is OFF, $S_1$ is ON:** **Only $L_1$ will glow.** Current flows through $S_1$, goes to the top branch through $L_1$, and returns. The bottom path is blocked by $S_2$.
+*   **(iii) If both are ON:** **Both $L_1$ and $L_2$ will glow.** Current can flow through both complete parallel paths.
+*   **(iv) If both are OFF:** Neither lamp will glow.
+
+**7. Vidyut made the circuit in Fig. 3.19. Even after closing the circuit, the lamp does not glow. What can be the possible reasons? What will you do to find out why?**
+*   **Possible Reasons:**
+    1.  The cell is dead/discharged.
+    2.  The bulb is fused (broken filament).
+    3.  The connections at the terminals are loose.
+    4.  The safety pin (switch) is dirty or rusted, preventing good contact.
+    5.  The wire itself is broken internally under the plastic casing.
+*   **Troubleshooting Steps:**
+    1.  Check connections: Press the wires firmly against the cell and bulb terminals.
+    2.  Check the bulb: Replace the bulb with one you know works.
+    3.  Check the cell: Replace the cell with a fresh one.
+    4.  Check the switch: Bypass the safety pin and touch the wires directly together.
+
+**8. In Fig. 3.20, in which case(s) the lamp will not glow when the switch is closed?**
+*(Observation: These feature LEDs and batteries. Remember, LEDs only work in one direction: Positive leg to Positive terminal).*
+*   **(a)** Battery $+$, LED $+ \implies$ Glows.
+*   **(b)** Battery $-$, LED $+ \implies$ **Will NOT glow.**
+*   **(c)** Battery $+$, LED $- \implies$ **Will NOT glow.**
+*   **(d)** Battery $-$, LED $- \implies$ Glows. *(Assuming the diagram correctly shows the triangle pointing towards the negative terminal of the battery to complete the circuit).*
+*   **Solution:** The lamp will not glow in cases **(b)** and **(c)** due to reverse polarity.
+
+**9. Suppose the ‘+’ and ‘–’ symbols cannot be read on a battery. Suggest a method to identify the two terminals.**
+*   **Solution:** Use an LED! Create a simple circuit with the unknown battery, wires, and an LED. 
+    1. Connect the longer leg (positive) of the LED to one end of the battery, and the shorter leg to the other. 
+    2. If the LED **glows**, the end of the battery connected to the longer leg is the **Positive (+)** terminal.
+    3. If the LED does **not glow**, flip the battery. The LED should now glow, indicating the new end connected to the long leg is Positive.
+
+**10. You are given six cells marked A to F. Some work, some do not. Design an activity to identify which are working.**
+*   **(i) Items required:** 1 known working incandescent lamp, 1 piece of connecting wire (or a cell holder with wires attached).
+*   **(ii) Procedure:**
+    1.  Take Cell A. Connect the base of the lamp to the positive terminal of Cell A.
+    2.  Use the wire to connect the negative terminal of Cell A to the metal casing of the lamp.
+    3.  Observe if the lamp glows.
+    4.  Repeat this exact process individually for Cells B, C, D, E, and F.
+*   **(iii) Conclusion:** The cells that make the lamp glow are the working cells. The ones that do not are dead. *(It is important to test them one by one, not in a battery, to isolate the faulty ones).*
+
+**11. An LED requires two cells in series to glow. Tanya made the circuit in Fig 3.21. Will the lamp glow? If not, draw the correct connections.**
+*   *(Observation of Fig 3.21: Tanya connected the positive terminal of Cell 1 to the positive terminal of Cell 2. She also connected the positive wire of the LED to the negative terminal of the cell).*
+*   **Solution:** **No, it will not glow.**
+    1.  The cells are connected incorrectly (Positive to Positive). They must be connected Positive to Negative to form a working battery.
+    2.  The LED is connected with reverse polarity. The long leg (+) must connect to the positive end of the combined battery assembly.
+    *(To fix: Turn one cell around so they are end-to-end + to -. Then connect the long LED leg to the exposed + end, and the short LED leg to the exposed - end).*

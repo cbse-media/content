@@ -1,0 +1,71 @@
+---
+title: "Constructing Triangles"
+description: "Learn how to accurately construct triangles using a compass and a ruler when given side lengths or angles."
+date: 2024-04-10
+tags: ["construction", "geometry", "compass", "ruler"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Why use a Compass?
+
+If you try to draw a triangle with sides $4\text{cm}$, $5\text{cm}$, and $6\text{cm}$ using *only* a ruler, it requires a lot of guesswork. You might draw the base easily, but getting the other two lines to meet perfectly at the right lengths is frustrating.
+
+A compass solves this problem perfectly because a circle represents all points that are a specific distance away from a center point!
+
+## Construction: When 3 Sides are Given (SSS)
+
+Let's construct a triangle with side lengths $4\text{cm}$, $5\text{cm}$, and $6\text{cm}$.
+
+**Step 1:** Choose the longest side to be the base. Draw a line segment $AB = 6\text{cm}$ using a ruler.
+**Step 2:** We need a point $C$ that is $4\text{cm}$ away from $A$. Open your compass to a width of $4\text{cm}$. Place the compass point on $A$ and draw a large arc above the line.
+**Step 3:** We also need point $C$ to be $5\text{cm}$ away from $B$. Open your compass to $5\text{cm}$. Place the point on $B$ and draw an arc intersecting the first arc.
+**Step 4:** The point where the two arcs cross is exactly $4\text{cm}$ from $A$ and $5\text{cm}$ from $B$! Label this point $C$. Join $A$ to $C$, and $B$ to $C$.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="250" viewBox="0 0 300 250" stroke="currentColor" fill="none" class="text-foreground">
+    <!-- Base AB -->
+    <line x1="50" y1="200" x2="250" y2="200" stroke-width="2" />
+    <circle cx="50" cy="200" r="3" fill="currentColor" />
+    <circle cx="250" cy="200" r="3" fill="currentColor" />
+    <text x="40" y="220" fill="currentColor">A</text>
+    <text x="250" y="220" fill="currentColor">B</text>
+    <text x="150" y="220" fill="currentColor" text-anchor="middle">6 cm</text>
+    
+    <!-- Arcs -->
+    <path d="M 50 100 A 100 100 0 0 1 150 160" stroke-dasharray="5,5" />
+    <path d="M 250 50 A 150 150 0 0 0 100 130" stroke-dasharray="5,5" />
+    
+    <!-- Point C -->
+    <circle cx="114" cy="116" r="3" fill="currentColor" />
+    <text x="114" y="105" fill="currentColor" text-anchor="middle">C</text>
+    
+    <!-- Sides AC and BC -->
+    <line x1="50" y1="200" x2="114" y2="116" stroke-width="2" />
+    <line x1="250" y1="200" x2="114" y2="116" stroke-width="2" />
+    
+    <text x="65" y="150" fill="currentColor">4 cm</text>
+    <text x="195" y="150" fill="currentColor">5 cm</text>
+</svg>
+</div>
+
+## Construction: Two Sides and the Included Angle (SAS)
+
+How do we construct a triangle if two sides and the angle *between* them are given?
+Example: $AB = 5\text{cm}$, $AC = 4\text{cm}$, and $\angle A = 45^\circ$.
+
+**Step 1:** Draw the base $AB$ of length $5\text{cm}$.
+**Step 2:** Using a protractor, measure and draw an angle of $45^\circ$ at point $A$. Draw a long ray extending from $A$.
+**Step 3:** Open your compass to $4\text{cm}$. Place the point on $A$ and draw an arc to cut the ray you just drew. Mark this intersection point as $C$.
+**Step 4:** Join $B$ to $C$ to complete the triangle.
+
+## Construction: Two Angles and the Included Side (ASA)
+
+Example: Base $AB = 5\text{cm}$, $\angle A = 45^\circ$, and $\angle B = 80^\circ$.
+
+**Step 1:** Draw the base $AB$ of length $5\text{cm}$.
+**Step 2:** Use a protractor to draw a ray from $A$ at an angle of $45^\circ$.
+**Step 3:** Use a protractor to draw a ray from $B$ at an angle of $80^\circ$.
+**Step 4:** The point where these two rays naturally cross each other is the third vertex, $C$!

@@ -1,0 +1,38 @@
+---
+title: "Practice: Shortest Path in a Box Puzzle"
+description: "A fun spatial reasoning puzzle about finding the shortest path across 3D surfaces."
+date: 2024-04-10
+tags: ["puzzle", "spatial-reasoning", "geometry", "shortest-path"]
+order: 8
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Spider's Dilemma
+
+**Puzzle:** There is a spider in the bottom-front-left corner of a rectangular box. It wants to reach the farthest opposite corner (top-back-right). Since it cannot fly, it must walk along the cardboard surfaces of the box. 
+
+What is the shortest path it can take?
+
+<Callout variant="tip">
+**Initial thought:**
+Most people think the shortest way is to walk along the edges: go up the edge, then across the top edge, then back along the top edge. 
+Or, they think about walking straight diagonally across the floor to the opposite bottom corner, and then climbing straight up the vertical edge.
+*Neither of these is the shortest path!*
+</Callout>
+
+## The Solution: "Unfolding" the Box
+
+To solve problems involving shortest paths on 3D surfaces, the best mathematical trick is to "unfold" the 3D object into a flat 2D plane (called a **net**).
+
+1.  Imagine the box is made of cardboard.
+2.  Take a pair of scissors and cut along the edges so you can lay the walls of the box completely flat next to the floor of the box.
+3.  Now, look at the spider's starting point and the target destination point on this flat cardboard.
+4.  What is the shortest distance between any two points on a flat surface? **A straight line!**
+
+Draw a straight line connecting the start and end points on the unfolded cardboard. 
+
+When you fold the box back into its 3D shape, that straight line will bend across the edge between two faces. The spider's shortest path actually requires it to walk diagonally across *two different faces* of the box, crossing over the edge at a specific calculated point!
+
+*(This puzzle beautifully demonstrates how geometric thinking and visualization can solve seemingly complex real-world physics problems!)*

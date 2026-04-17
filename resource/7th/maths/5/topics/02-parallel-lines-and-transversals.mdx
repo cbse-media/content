@@ -1,0 +1,82 @@
+---
+title: "Parallel Lines and Transversals"
+description: "Introduction to lines that never meet and the lines that cross them."
+date: 2024-04-10
+tags: ["parallel-lines", "transversals", "geometry"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Parallel Lines
+
+Look at the opposite edges of a ruler, or the metal tracks of a railway line. They maintain a constant distance apart and do not seem likely to intersect each other, no matter how far they are extended. 
+
+<Callout variant="info">
+**Definition:** **Parallel lines** are a pair of lines that lie on the same plane and do not meet, however far we extend them at both ends.
+</Callout>
+
+In mathematics, we use arrow marks (`>`) on the lines to visually indicate that a set of lines is parallel to each other.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Line 1 -->
+  <line x1="50" y1="50" x2="250" y2="50" stroke-width="2" />
+  <polygon points="55,45 45,50 55,55" fill="currentColor" />
+  <polygon points="245,45 255,50 245,55" fill="currentColor" />
+  <!-- Parallel Arrow 1 -->
+  <path d="M 145 45 L 155 50 L 145 55" stroke-width="2" />
+  
+  <!-- Line 2 -->
+  <line x1="50" y1="100" x2="250" y2="100" stroke-width="2" />
+  <polygon points="55,95 45,100 55,105" fill="currentColor" />
+  <polygon points="245,95 255,100 245,105" fill="currentColor" />
+  <!-- Parallel Arrow 2 -->
+  <path d="M 145 95 L 155 100 L 145 105" stroke-width="2" />
+  
+  <!-- Labels -->
+  <text x="260" y="55" fill="currentColor" font-size="16">l</text>
+  <text x="260" y="105" fill="currentColor" font-size="16">m</text>
+</svg>
+</div>
+
+## Transversals
+
+When a single line slices across a pair of lines, we give it a special name.
+
+<Callout variant="info">
+**Definition:** A line that intersects two or more lines at distinct points is called a **transversal**.
+</Callout>
+
+Notice that when a transversal intersects two lines, it creates exactly **8 angles**.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Line l -->
+  <line x1="50" y1="70" x2="250" y2="70" stroke-width="2" />
+  <text x="260" y="75" fill="currentColor" font-size="16">l</text>
+  
+  <!-- Line m -->
+  <line x1="50" y1="130" x2="250" y2="130" stroke-width="2" />
+  <text x="260" y="135" fill="currentColor" font-size="16">m</text>
+  
+  <!-- Transversal t -->
+  <line x1="120" y1="20" x2="180" y2="180" stroke-width="2" />
+  <text x="180" y="195" fill="currentColor" font-size="16">t</text>
+  
+  <!-- Angles for Intersection 1 -->
+  <text x="130" y="60" fill="currentColor" font-size="12">1</text>
+  <text x="155" y="60" fill="currentColor" font-size="12">2</text>
+  <text x="125" y="90" fill="currentColor" font-size="12">4</text>
+  <text x="150" y="90" fill="currentColor" font-size="12">3</text>
+  
+  <!-- Angles for Intersection 2 -->
+  <text x="150" y="120" fill="currentColor" font-size="12">5</text>
+  <text x="175" y="120" fill="currentColor" font-size="12">6</text>
+  <text x="145" y="150" fill="currentColor" font-size="12">8</text>
+  <text x="170" y="150" fill="currentColor" font-size="12">7</text>
+</svg>
+</div>
+
+Even if the lines $l$ and $m$ are completely random and not parallel, these 8 angles are always formed. In the next section, we will see the magical relationships that happen when lines $l$ and $m$ *are* parallel!

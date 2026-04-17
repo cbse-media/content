@@ -1,0 +1,87 @@
+---
+title: "Intersecting and Perpendicular Lines"
+description: "Understanding linear pairs, vertically opposite angles, and perpendicular lines when two lines cross."
+date: 2024-04-10
+tags: ["intersecting-lines", "linear-pairs", "vertically-opposite-angles", "perpendicular-lines"]
+order: 2
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Intersecting Lines
+
+When a pair of lines meet each other at a single point on a plane surface, we say that the lines **intersect** each other. When two lines intersect, they form exactly **four angles** around the point of intersection.
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Lines -->
+  <line x1="50" y1="100" x2="250" y2="100" stroke-width="2" />
+  <line x1="100" y1="180" x2="200" y2="20" stroke-width="2" />
+  
+  <!-- Arrows -->
+  <polygon points="55,95 45,100 55,105" fill="currentColor" />
+  <polygon points="245,95 255,100 245,105" fill="currentColor" />
+  <polygon points="95,175 100,185 105,175" fill="currentColor" />
+  <polygon points="195,25 200,15 205,25" fill="currentColor" />
+  
+  <!-- Labels -->
+  <text x="240" y="90" fill="currentColor" font-size="16">l</text>
+  <text x="180" y="25" fill="currentColor" font-size="16">m</text>
+  
+  <!-- Angles -->
+  <path d="M 134 100 A 16 16 0 0 1 142 87" stroke="red" stroke-width="2" />
+  <text x="125" y="90" fill="currentColor" font-size="14">a</text>
+  
+  <path d="M 158 87 A 16 16 0 0 1 166 100" stroke="blue" stroke-width="2" />
+  <text x="165" y="90" fill="currentColor" font-size="14">b</text>
+  
+  <path d="M 166 100 A 16 16 0 0 1 158 113" stroke="red" stroke-width="2" />
+  <text x="165" y="120" fill="currentColor" font-size="14">c</text>
+  
+  <path d="M 142 113 A 16 16 0 0 1 134 100" stroke="blue" stroke-width="2" />
+  <text x="125" y="120" fill="currentColor" font-size="14">d</text>
+</svg>
+</div>
+
+### Linear Pairs
+Adjacent angles (angles that are side-by-side) formed by two intersecting lines form a straight line. Because a straight line measures $180^\circ$, these adjacent angles always add up to $180^\circ$. They are called **linear pairs**.
+$$ \angle a + \angle b = 180^\circ $$
+$$ \angle b + \angle c = 180^\circ $$
+
+### Vertically Opposite Angles
+Opposite angles formed by two intersecting lines are called **vertically opposite angles**. 
+Because $\angle a + \angle b = 180^\circ$ and $\angle b + \angle c = 180^\circ$, it mathematically forces $\angle a$ to be exactly equal to $\angle c$.
+<Callout variant="tip">
+**Theorem:** Vertically opposite angles are always equal to each other.
+$$ \angle a = \angle c $$
+$$ \angle b = \angle d $$
+</Callout>
+
+## Perpendicular Lines
+
+Can you draw a pair of intersecting lines such that all four angles are equal?
+Since all four angles must add up to $360^\circ$, each angle would be $360^\circ \div 4 = 90^\circ$. 
+
+<div class="flex justify-center my-6">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Lines -->
+  <line x1="50" y1="150" x2="250" y2="50" stroke-width="2" />
+  <line x1="100" y1="30" x2="200" y2="170" stroke-width="2" />
+  
+  <!-- Arrows -->
+  <polygon points="55,140 45,150 55,155" fill="currentColor" />
+  <polygon points="245,45 255,45 245,55" fill="currentColor" />
+  <polygon points="95,40 100,25 105,35" fill="currentColor" />
+  <polygon points="195,160 200,175 205,165" fill="currentColor" />
+  
+  <!-- Labels -->
+  <text x="240" y="40" fill="currentColor" font-size="16">m</text>
+  <text x="180" y="30" fill="currentColor" font-size="16">l</text>
+  
+  <!-- Right Angle Square -->
+  <path d="M 150 100 L 140 85 L 155 75 L 165 90" stroke="currentColor" stroke-width="1.5" />
+</svg>
+</div>
+
+**Perpendicular lines** are a pair of lines which intersect each other exactly at right angles ($90^\circ$). In geometry, we often denote a $90^\circ$ angle with a small square symbol at the vertex instead of drawing a curved arc.

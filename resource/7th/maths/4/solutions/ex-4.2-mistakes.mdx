@@ -1,0 +1,70 @@
+---
+title: "Exercise 4.2: Mind the Mistake"
+description: "Identifying and correcting common algebra mistakes when evaluating and simplifying expressions."
+date: 2024-04-10
+tags: ["solutions", "common-mistakes", "evaluating", "simplification"]
+order: 7
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Mind the Mistake, Mend the Mistake (Page 87)
+
+**Observe each simplification. Identify the mistake, explain what went wrong, and correct it.**
+
+**1. If $a = -4$, then $10 - a = 6$.**
+*   **Mistake:** They subtracted 4 from 10 directly instead of substituting $(-4)$.
+*   **Correction:** $10 - (-4) = 10 + 4 = \mathbf{14}$.
+
+**2. If $d = 6$, then $3d = 36$.**
+*   **Mistake:** They placed the digit $6$ next to $3$ to make the number thirty-six. $3d$ means $3 \times d$, not placing digits together.
+*   **Correction:** $3 \times 6 = \mathbf{18}$.
+
+**3. If $s = 7$, then $3s - 2 = 15$.**
+*   **Mistake:** They did $7-2 = 5$, then $3 \times 5 = 15$. They failed to follow the order of operations (multiplication first).
+*   **Correction:** $(3 \times 7) - 2 = 21 - 2 = \mathbf{19}$.
+
+**4. If $r = 8$, then $2r + 1 = 29$.**
+*   **Mistake:** They placed the digit $8$ next to $2$ to make $28$, then added $1$ to get $29$.
+*   **Correction:** $(2 \times 8) + 1 = 16 + 1 = \mathbf{17}$.
+
+**5. If $j = 5$, then $2j = 10$.**
+*   **Mistake:** None! This is actually correct. $(2 \times 5) = 10$.
+*   **Correction:** The statement is **correct**.
+
+**6. If $m = -6$, then $3(m + 1) = 19$.**
+*   **Mistake:** They probably did $3 \times 6 = 18$, then added $1$.
+*   **Correction:** $3(-6 + 1) = 3(-5) = \mathbf{-15}$.
+
+**7. If $f = 3, g = 1$, then $2f - 2g = 2$.**
+*   **Mistake:** They probably calculated $2(3) = 6$ and $2(1) = 2$, but somehow got $2$? Wait, let's calculate: $2(3) - 2(1) = 6 - 2 = 4$. They likely wrote the digits "23" and "21", and $23 - 21 = 2$.
+*   **Correction:** $(2 \times 3) - (2 \times 1) = 6 - 2 = \mathbf{4}$.
+
+**8. If $t = 4, b = 3$, then $2t + b = 24$.**
+*   **Mistake:** Placed digits together: "24".
+*   **Correction:** $2(4) + 3 = 8 + 3 = \mathbf{11}$.
+
+**9. If $h = 5, n = 6$, then $h - (3 - n) = 4$.**
+*   **Mistake:** They ignored the negative result inside the bracket. $3 - 6 = -3$. Then $5 - (-3) = 8$. They might have done $5 - 3 + 6$? No. Maybe $5 - 3 = 2$, and then didn't know what to do.
+*   **Correction:** $5 - (3 - 6) = 5 - (-3) = 5 + 3 = \mathbf{8}$.
+
+---
+
+## Mind the Mistake (Page 94)
+
+**Some simplifications of algebraic expressions are done below. Correct them to their proper simplest form.**
+
+| Expression | Given Simplest Form (Incorrect) | Correct Simplest Form | Explanation of Mistake |
+| :--- | :--- | :--- | :--- |
+| **1.** $3a + 2b$ | $5$ | **$3a + 2b$** | $3a$ and $2b$ are unlike terms and cannot be added. |
+| **2.** $3b - 2b - b$ | $0$ | **$0$** | This is actually correct! $3b - 2b = 1b$. $1b - b = 0$. |
+| **3.** $6(p + 2)$ | $6p + 8$ | **$6p + 12$** | The $6$ must be distributed to BOTH terms inside the bracket. $6 \times 2 = 12$, not $6+2$. |
+| **4.** $(4x + 3y) - (3x + 4y)$ | $x + y$ | **$x - y$** | The negative sign distributes: $4x + 3y - 3x - 4y$. Grouping gives $(4x-3x) + (3y-4y) = x - y$. |
+| **5.** $5 - (2 - 6z)$ | $3 - 6z$ | **$3 + 6z$** | The negative sign in front of the bracket changes the $-6z$ to $+6z$. |
+| **6.** $2 + (x + 3)$ | $2x - 6$ | **$x + 5$** | This is addition, not multiplication! You simply drop brackets: $2 + x + 3 = x + 5$. |
+| **7.** $2y + (3y - 6)$ | $-y + 6$ | **$5y - 6$** | Bracket preceded by $+$, so drop it: $2y + 3y - 6 = 5y - 6$. |
+| **8.** $7p - p + 5q - 2q$ | $7p + 3q$ | **$6p + 3q$** | $-p$ is the same as $-1p$. $7p - 1p = 6p$. |
+| **9.** $5(2w + 3x + 4w)$ | $10w + 15x + 20w$ | **$30w + 15x$** | They distributed correctly but failed to combine the like terms for $w$. $10w + 20w = 30w$. |
+| **10.** $3j + 6k + 9h + 12$ | $3(j + 2k + 3h + 4)$ | **$3(j + 2k + 3h + 4)$** | This is correct factorization! |
+| **11.** $4(2r + 3s + 5)$ | $-20 - 8r - 12s$ | **$8r + 12s + 20$** | They distributed with a negative sign, but the $4$ is positive. |

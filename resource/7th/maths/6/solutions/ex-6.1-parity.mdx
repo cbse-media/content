@@ -1,0 +1,71 @@
+---
+title: "Exercise 6.1: Parity and Logic Puzzles"
+description: "Solutions to the 'Figure it Out' exercises dealing with height arrangements, piggy banks, and parity expressions."
+date: 2024-04-10
+tags: ["solutions", "parity", "logic"]
+order: 6
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Numbers Tell Us Things (Page 2)
+
+**1. Arrange the stick figure cutouts based on the rule: "Each child calls out the number of children in front of them who are taller than them."**
+*Note: Because this requires physical cutouts/drawing, we will analyze the logic behind the sequences.*
+**(b) 0, 0, 0, 0, 0, 0, 0** $\rightarrow$ This implies no one has a taller person in front of them. The arrangement must be perfectly ascending order (shortest at the front, tallest at the back).
+**(e) 0, 1, 1, 1, 1, 1, 1** $\rightarrow$ The first person is the tallest. Every subsequent person looks ahead and only sees that *one* tallest person.
+
+**2. Always True, Only Sometimes True, or Never True?**
+*(a) If a person says ‘0’, then they are the tallest in the group.*
+*   **Solution:** **Sometimes True.** They could be the tallest, OR they could be the shortest person but standing at the very front of the line (so no one is in front of them).
+*(b) If a person is the tallest, then their number is ‘0’.*
+*   **Solution:** **Always True.** Since they are the tallest, no one in front of them can be taller.
+*(c) The first person’s number is ‘0’.*
+*   **Solution:** **Always True.** There is no one standing in front of the first person.
+*(d) If a person is not first or last, they cannot say ‘0’.*
+*   **Solution:** **Never True.** If they are the tallest in the group, they will say '0' regardless of where they stand.
+*(e) The person who calls out the largest number is the shortest.*
+*   **Solution:** **Sometimes True.** If the shortest person is at the very back, they will call the largest number (everyone). But if a medium-height person is at the back, and the shortest is at the front, the medium person might call the largest number.
+*(f) What is the largest number possible in a group of 8 people?*
+*   **Solution:** **7.** If the shortest person is standing at the very back, there are 7 people in front of them, all taller.
+
+---
+
+## Parity Puzzles (Pages 5 - 6)
+
+**1. Find out the parity of the following sums:**
+**(a) Sum of 2 even numbers and 2 odd numbers.**
+*   **Solution:** (Even + Even) + (Odd + Odd) $\implies$ Even + Even = **Even**.
+**(b) Sum of 2 odd numbers and 3 even numbers.**
+*   **Solution:** (Odd + Odd) + (Even + Even + Even) $\implies$ Even + Even = **Even**.
+**(c) Sum of 5 even numbers.**
+*   **Solution:** Any amount of even numbers added together is **Even**.
+**(d) Sum of 8 odd numbers.**
+*   **Solution:** Odd numbers can be grouped into pairs. $8$ odds $= 4$ pairs of (Odd+Odd). Each pair is Even. Sum of Evens is **Even**.
+
+**2. Lakpa has an odd number of ₹1 coins, an odd number of ₹5 coins, and an even number of ₹10 coins. Total = ₹205. Did he make a mistake?**
+*   **Solution:** Let's check the parity of his total amount based on the coins.
+    *   (Odd number) $\times$ ₹1 = Odd amount.
+    *   (Odd number) $\times$ ₹5 = Odd amount.
+    *   (Even number) $\times$ ₹10 = Even amount.
+    *   Total parity = Odd + Odd + Even $\implies$ Even + Even = **Even**.
+    However, ₹205 is an **Odd** number. 
+    **Yes, he made a mistake!** His total must be an even number.
+
+**3. Find out the parity for the subtraction scenarios:**
+**(d) Even – Even =** **Even** (e.g., $10 - 4 = 6$)
+**(e) Odd – Odd =** **Even** (e.g., $9 - 5 = 4$)
+**(f) Even – Odd =** **Odd** (e.g., $10 - 3 = 7$)
+**(g) Odd – Even =** **Odd** (e.g., $9 - 2 = 7$)
+
+**4. Find the parity of the number of small squares in these grids (Product parity):**
+**(a) $27 \times 13$** $\implies$ Odd $\times$ Odd = **Odd**.
+**(b) $42 \times 78$** $\implies$ Even $\times$ Even = **Even**.
+**(c) $135 \times 654$** $\implies$ Odd $\times$ Even = **Even**.
+*(Rule: If there is at least one Even factor, the product is Even).*
+
+**5. Come up with expressions:**
+*   **Always Even Parity:** $2n$, $4n+6$, $10k$
+*   **Always Odd Parity:** $2n+1$, $4n-3$, $10k+5$
+*   **Either Odd or Even (Depends on variable):** $n$, $3n$, $5k+2$

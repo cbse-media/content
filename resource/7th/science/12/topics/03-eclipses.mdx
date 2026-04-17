@@ -1,0 +1,63 @@
+---
+title: "Solar and Lunar Eclipses"
+description: "Understand the geometry behind solar and lunar eclipses, and learn how to view them safely."
+date: 2024-04-10
+tags: ["solar-eclipse", "lunar-eclipse", "shadows", "astronomy"]
+order: 4
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## The Dance of Shadows
+
+We know that when an opaque object blocks light, it casts a shadow. Planets and moons are massive opaque objects! When the Earth, Moon, and Sun align perfectly, they cast massive shadows through space, creating an **eclipse**.
+
+## 1. Solar Eclipse
+
+A solar eclipse occurs when the **Moon comes exactly between the Sun and the Earth**. 
+
+Even though the Moon is millions of times smaller than the Sun, it is also much, much closer to the Earth. Because of this, their *apparent size* in the sky is almost identical.
+
+During a solar eclipse:
+*   The Moon blocks the sunlight from reaching the Earth.
+*   The Moon casts a dark shadow onto a small patch of the Earth's surface.
+*   If you are standing inside that small shadow, the sky turns dark during the middle of the day! You are witnessing a **Total Solar Eclipse**.
+*   If you are on the edges of the shadow, the Moon only covers a chunk of the Sun. This is a **Partial Solar Eclipse**.
+
+<Callout variant="warning">
+**Safe Viewing!**
+Never look directly at a solar eclipse with your naked eyes, regular sunglasses, binoculars, or telescopes! The Sun's intense rays can cause permanent blindness. You must use specialized, certified solar viewing glasses.
+</Callout>
+
+## 2. Lunar Eclipse
+
+A lunar eclipse occurs when the **Earth comes exactly between the Sun and the Moon**.
+
+During a lunar eclipse:
+*   The Earth blocks the sunlight from reaching the Moon.
+*   The Earth casts a massive shadow over the full Moon.
+*   If the Moon falls completely into the dark shadow, it is a **Total Lunar Eclipse**. Because Earth's atmosphere bends some sunlight, the Moon doesn't go totally black; instead, it glows an eerie, dark **blood red**!
+*   Unlike a solar eclipse, a lunar eclipse is completely safe to watch with the naked eye, and it can be seen by anyone on the night-side of the Earth.
+
+<div class="flex justify-center my-6">
+<svg width="400" height="200" viewBox="0 0 400 200" stroke="currentColor" fill="none" class="text-foreground">
+  <!-- Sun -->
+  <circle cx="50" cy="100" r="40" fill="#fde047" stroke="none" />
+  <text x="50" y="105" text-anchor="middle" fill="#000" font-weight="bold">SUN</text>
+  
+  <!-- Earth -->
+  <circle cx="200" cy="100" r="20" fill="#3b82f6" stroke="none" />
+  <text x="200" y="90" text-anchor="middle" fill="#fff" font-size="10">EARTH</text>
+  
+  <!-- Moon -->
+  <circle cx="320" cy="100" r="8" fill="#9ca3af" stroke="none" />
+  <text x="320" y="85" text-anchor="middle" fill="currentColor" font-size="10">MOON</text>
+  
+  <!-- Light Rays / Shadow -->
+  <polygon points="50,60 380,80 380,120 50,140" fill="#fde047" opacity="0.2" stroke="none" />
+  <polygon points="200,80 380,90 380,110 200,120" fill="#000" opacity="0.4" stroke="none" />
+  
+  <text x="200" y="180" text-anchor="middle" fill="currentColor" font-weight="bold">Geometry of a LUNAR Eclipse</text>
+</svg>
+</div>

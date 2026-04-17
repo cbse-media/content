@@ -1,0 +1,48 @@
+---
+title: "Digits in Disguise: Cryptarithms"
+description: "Become a math detective by solving alphametic puzzles where letters replace numbers."
+date: 2024-04-10
+tags: ["cryptarithms", "alphametics", "puzzles", "logic"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## What is a Cryptarithm?
+
+A **cryptarithm** (or alphametic) is a mathematical puzzle where the digits in an arithmetic operation have been replaced by letters. Your job as a math detective is to figure out which digit ($0$ through $9$) each letter stands for.
+
+**The Golden Rules:**
+1.  Each letter stands for one and only one distinct digit.
+2.  If a letter repeats, it represents the exact same digit.
+3.  The first letter of a multi-digit number cannot be zero.
+
+## Example 1
+
+$$ \begin{array}{r@{\quad}l} T & \\ T & \\ + T & \\ \hline U T & \end{array} $$
+
+**Step-by-step logic:**
+1.  Look at the units column: $T + T + T$ ends in $T$.
+2.  This means $3 \times T$ gives a number ending in $T$.
+3.  Let's test digits for $T$:
+    *   If $T=0$: $0+0+0 = 0$. (But $UT$ is a 2-digit number, it can't start with $U=0$).
+    *   If $T=5$: $5+5+5 = 15$. 
+4.  If $T=5$, the sum is $15$. In the answer $UT$, the $T$ is $5$, which matches! And the $U$ must be $1$.
+**Solution:** $T = 5, U = 1$.
+
+## Example 2
+
+$$ \begin{array}{r@{\quad}l} K 2 & \\ + K 2 & \\ \hline H M M & \end{array} $$
+
+**Step-by-step logic:**
+1.  Look at the units column: $2 + 2 = M$. Therefore, **$M = 4$**.
+2.  Substitute $M=4$ back into the puzzle:
+    $$ K 2 + K 2 = H 4 4 $$
+3.  Look at the tens column: $K + K$ must end in $4$ (since $M=4$). 
+4.  What single digit added to itself ends in 4?
+    *   $2 + 2 = 4$. (But if $K=2$, $22 + 22 = 44$. This is a 2-digit number, but we need a 3-digit sum $H44$).
+    *   $7 + 7 = 14$. 
+5.  If $K=7$, then $72 + 72 = 144$.
+6.  This perfectly fits $H M M$ where $H=1, M=4$.
+**Solution:** $M = 4, K = 7, H = 1$.

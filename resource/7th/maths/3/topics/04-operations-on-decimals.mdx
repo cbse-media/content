@@ -1,0 +1,54 @@
+---
+title: "Operations on Decimals"
+description: "How to add and subtract decimals safely using place value alignment, and how to estimate results."
+date: 2024-04-10
+tags: ["addition", "subtraction", "operations", "estimation"]
+order: 5
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Addition and Subtraction
+
+Adding and subtracting decimals uses the exact same standard procedure as whole numbers. The most critical rule is to **always align the decimal points** before performing the operation. This ensures that you are adding tenths to tenths, hundredths to hundredths, etc.
+
+### Example 1: Addition
+Priya requires $2.7 \text{ m}$ of cloth for her skirt, and Shylaja requires $3.5 \text{ m}$ for her kurti. What is the total quantity of cloth needed?
+
+**Step-by-step:**
+$$ \begin{array}{r@{\quad}l} 2.7 & \\ + 3.5 & \\ \hline \end{array} $$
+1. Add the tenths: $7 + 5 = 12$ tenths. 
+2. $12$ tenths is $1$ whole unit and $2$ tenths. Write down $2$, carry over $1$ to the units column.
+3. Add the units: $2 + 3 + 1 \text{ (carried)} = 6$.
+$$ \begin{array}{r@{\quad}l} \color{red}{^1} 2.7 & \\ + 3.5 & \\ \hline \mathbf{6.2} & \text{m} \end{array} $$
+
+### Example 2: Subtraction
+How much longer is Shylaja’s cloth compared to Priya’s? ($3.5 \text{ m} - 2.7 \text{ m}$)
+
+**Step-by-step:**
+$$ \begin{array}{r@{\quad}l} 3.5 & \\ - 2.7 & \\ \hline \end{array} $$
+1. Subtract the tenths: We cannot subtract $7$ from $5$.
+2. Borrow $1$ unit from the $3$. $1$ unit becomes $10$ tenths. Now we have $15$ tenths.
+3. $15 - 7 = 8$ tenths.
+4. Subtract the units: $2 - 2 = 0$.
+$$ \begin{array}{r@{\quad}l} \color{red}{^2} \cancel{3}. \color{red}{^{15}} \cancel{5} & \\ - 2.7 & \\ \hline \mathbf{0.8} & \text{m} \end{array} $$
+
+<Callout variant="warning">
+**Filling in the Blanks!**
+When adding or subtracting numbers with different decimal lengths (like $5.6$ and $2.15$), you can add a `0` to the end of the shorter decimal to help you align them visually!
+$5.60 - 2.15$ is much easier to read than $5.6 - 2.15$.
+</Callout>
+
+## Estimating Sums and Differences
+
+Estimating the result *before* computing can help you catch mistakes (like putting the decimal point in the wrong place!).
+
+**Claim:** "If we add two decimal numbers, the sum will always be greater than the sum of their whole number parts. Also, the sum will always be less than $2$ more than the sum of their whole number parts."
+
+**Let's test this:** Add $25.936$ and $8.202$.
+1.  **Lower Bound:** Add the whole numbers only: $25 + 8 = 33$. The true sum must be *greater* than 33 because we are also adding the fractional parts ($0.936 + 0.202$).
+2.  **Upper Bound:** The fractional parts are both less than $1$. Therefore, their combined sum must be less than $2$. So the total sum must be less than $33 + 2 = 35$.
+3.  **Conclusion:** The exact answer must be between $33$ and $35$. 
+
+*(Actual sum: $34.138$, which perfectly fits our estimation!)*

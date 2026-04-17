@@ -1,0 +1,47 @@
+---
+title: "The Triangle Inequality Theorem"
+description: "Discover why not every set of three lengths can form a triangle."
+date: 2024-04-10
+tags: ["triangle-inequality", "geometry", "rules"]
+order: 3
+draft: false
+---
+
+import Callout from '@/components/Callout.astro'
+
+## Can Any Three Lengths Make a Triangle?
+
+Imagine you are standing at your tent, and you want to walk to a tree. 
+*   **Path 1 (Direct):** You walk straight from the tent to the tree.
+*   **Path 2 (Roundabout):** You walk from the tent to a flagpole, and then from the flagpole to the tree.
+
+Which path is shorter? The direct, straight-line path will *always* be shorter than the roundabout path via a third point.
+
+This simple spatial intuition leads to one of the most important rules in geometry.
+
+<Callout variant="warning">
+**The Triangle Inequality Theorem**
+In any triangle, the sum of the lengths of any two sides must be strictly **greater** than the length of the third side.
+</Callout>
+
+### Testing the Theorem
+
+**Example 1:** Can a triangle have side lengths $10\text{cm}$, $15\text{cm}$, and $30\text{cm}$?
+Let's check the paths. The direct path between two vertices is $30\text{cm}$. The roundabout path is $10\text{cm} + 15\text{cm} = 25\text{cm}$.
+Is the roundabout path ($25$) greater than the direct path ($30$)? **No.** ($25 \ngtr 30$).
+Therefore, a triangle with these side lengths **cannot exist**. The two shorter sides would never be able to reach each other to form the top point!
+
+**Example 2:** Can a triangle have side lengths $4\text{cm}$, $5\text{cm}$, and $8\text{cm}$?
+To quickly check, we only need to test if the sum of the **two shortest sides** is greater than the longest side.
+*   Shortest sides: $4$ and $5$.
+*   Longest side: $8$.
+*   Check: $4 + 5 = 9$. Is $9 > 8$? **Yes!**
+Therefore, this triangle **does exist**.
+
+### Visualizing the Failure
+
+If you try to construct the impossible $10\text{cm}, 15\text{cm}, 30\text{cm}$ triangle with a compass:
+1. You draw the base of $30\text{cm}$.
+2. You draw an arc of radius $10\text{cm}$ from one end.
+3. You draw an arc of radius $15\text{cm}$ from the other end.
+Because $10 + 15 = 25$, and the distance between the centers is $30$, the two circles will **never intersect**. They will have a $5\text{cm}$ gap between them!
